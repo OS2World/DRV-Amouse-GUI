@@ -1,0 +1,4375 @@
+.************************************************************************
+.*                        SOFTWARE INSTALLER
+.* 5621-434 (C) COPYRIGHT IBM CORP. 1991, 1995. ALL RIGHTS RESERVED.
+.*               LICENSED MATERIALS - PROPERTY OF IBM
+.*
+.* Note to U.S. Government Users - Documentation related to restricted
+.* rights - Use, duplication or disclosure is subject to restrictions set
+.* forth in GSA ADP Schedule Contract with IBM Corp.
+.*
+.* Refer to your Licensing Agreement with IBM for the terms and
+.* conditions affecting the use of this source material.
+.*
+.* File name:    EPFIHLIB.ITL
+.* Contents:     Help panels for Software Installer for OS/2 (Swedish)
+.************************************************************************
+:userdoc.
+:prolog.
+:title.Software Installer - Hj„lp EPFIHLIB.ITL
+:tline.5621-434 (C) COPYRIGHT IBM CORP
+:tline.1991, 1995. ALL RIGHTS RESERVED.
+:tline.LICENSED MATERIALS - PROPERTY OF IBM.
+:tline.Software Installer - Hj„lppaneler
+:etitle.
+:eprolog.
+:body.
+.**********************************************************************
+.* The following symbols are used to define the various names used
+.* throughout the help panels that referred to documents and product
+.* names that we were unsure of at the time of this writing.
+.**********************************************************************
+.nameit symbol=online text='online documentation
+.**********************************************************************
+.* The following two symbols are used together to form the phrase:
+.* "OS/2" (trademark of IBM) Communications Interface panel
+.* They appear as "&os2. &comm." in the text and if replaced, should
+.* be replaced as such.
+.**********************************************************************
+.nameit symbol=os2 text='&odq.OS&slash.2&cdq. (trademark of IBM)
+.nameit symbol=comm text='Communications Interface panel
+.****************************************************************************
+.*  Installation and Maintenance - (General help)
+.****************************************************************************
+:h1 name=INSTALL res=5028.Installation och underh†ll
+:isyn root=ins.produktinstallation_och_underh†ll installation underh†ll
+:isyn root=ins.installera underh†lla
+:i1 roots='ins'.Installation och underh†ll
+:p.
+Med programmet :hp2.Installation och underh†ll:ehp2. kan du
+installera, uppdatera, †terst„lla eller ta bort en produkt.
+:p.
+V„lj :hp2.™ppna katalog:ehp2. p† Arkiv-menyn s† kan du
+ta fram en lista med produkter som du kan arbeta med.
+V„lj en produkt fr†n listan och g”r n†got av f”ljande&colon.
+:ul compact.
+:li.:link reftype=hd res=5009.Installera:elink.
+:li.:link reftype=hd res=5010.Uppdatera:elink.
+:li.:link reftype=hd res=5011.terst„ll:elink.
+:li.:link reftype=hd res=5012.Ta bort:elink.
+:eul.
+:eh1.
+
+.**********************************************************************
+.*  "File" pull-down (contextual help) -
+.**********************************************************************
+:h2 name=IL0 res=5100.Arkiv
+:isyn root=list.lista v„lja_produkt ”ppna
+:i1 id=Il0.Arkiv
+:p.
+P† :hp2.Arkiv:ehp2.-menyn kan du
+:ul compact.
+:li.”ppna eller uppdatera en produktlista
+:li.avsluta installationsprogrammet
+:eul.
+
+.**********************************************************************
+.*  "Open catalog..." on "File" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IL1 res=5101.™ppna katalog
+:isyn root=open.h„mta_filer
+:i1 id=IL1.™ppna
+:i2 refid=IL1.V„rddator
+:i2 refid=IL1.Enhet
+:p.
+V„lj :hp2.™ppna katalog:ehp2. p† Arkiv-menyn
+n„r du vill ”ppna en katalog med produkter som kan installeras.
+Du m†ste ”ppna en produktlista innan du kan installera
+eller uppdatera en produkt.
+:p.
+N„r du har valt :hp2.™ppna katalog:ehp2. kan du v„lja om du vill ”ppna
+en katalog i ett v„rdsystem eller i en enhet.
+
+.**********************************************************************
+.*  "Open catalog / Host..." on "File" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IL2 res=5102.™ppna v„rddatorkatalog
+:p.
+V„lj :hp2.V„rddator:ehp2. n„r du vill ”ppna en produktlista i ett
+MVS-, VM- eller VSE-system.
+:p.
+N„r du v„ljer :hp2.V„rddator:ehp2. visas ett f”nster d„r du v„ljer
+:ul compact.
+:li.en v„rdsession
+:li.fr†n vilket v„rdsystem du vill h„mta katalogen
+:li.namnet p† katalogfilen som du vill ”verf”ra fr†n v„rddatorn
+:eul.
+
+.**********************************************************************
+.*  "Open catalog / Drive..." on "File" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IL3 res=5103.™ppna enhetskatalog
+:p.
+V„lj :hp2.Enhet:ehp2. n„r du vill ”ppna en katalog med produkter som kan
+installeras fr†n en diskettenhet, CD-ROM-enhet, LAN-enhet eller
+AS/400 PC-supportmapp.
+:p.
+N„r du v„ljer :hp2.Enhet:ehp2. visas ett f”nster d„r du anger
+:ul compact.
+:li.fr†n vilken enhet du vill installera produkten
+:li.namnet p† katalogen och katalogfilen som du vill ”ppna
+:eul.
+
+.****************************************************************
+.*  "Exit..." on "List" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IL4 res=5104.Avsluta
+:isyn root=exit.avsluta l„mna g†_ur logga_av
+:i1 roots='exit'.avsluta programmet Installation och underh†ll
+:i1.Avsluta
+:p.
+V„lj :hp2.Avsluta:ehp2. p† Arkiv-menyn n„r du vill avsluta
+installationsprogrammet.
+
+.**********************************************************************
+.*  "Details" pull-down (contextual help) -
+.**********************************************************************
+:h2 name=ID0 res=5004.Detaljer
+:isyn root=info.information detalj detaljer
+:i1 roots='info'.Detaljer
+:p.
+V„lj menyn :hp2.Detaljer:ehp2. n„r du vill se
+:ul compact.
+:li.en beskrivning av produkten
+:li.status och serviceniv† f”r produkten i arbetsstationen
+:li.vilket diskutrymme som kr„vs f”r att installera produkten
+:eul.
+.****************************************************************
+.*  "Product Description..." on "Details" pull-down (contextual help) -
+.****************************************************************
+:h3 name=ID1 res=5005.Produktbeskrivning
+:i1 id='info'.Produktbeskrivning
+:p.
+N„r du v„ljer :hp2.Produktbeskrivning:ehp2. p† menyn Detaljer
+visas allm„n information om produkten.
+:p.
+N„r du v„ljer det h„r alternativet h„mtas
+en produktbeskrivning fr†n k„llan och visas i f”nstret.
+
+.****************************************************************
+.*  "PWS Status..." on "Details" pull-down (contextual help) -
+.****************************************************************
+:h3 name=ID2 res=5006.Produktstatus
+:i1.Produktstatus
+:p.
+V„lj :hp2.Produktstatus:ehp2. p† menyn Detaljer n„r du vill
+se f”ljande information om en produkt&colon.
+:ul compact.
+:li.Produktnamn
+:li.Produktnummer
+:li.Version, release och modification-nummer i arbetsstationen
+:li.Feature-nummer i arbetsstationen
+:li.Komponenter i arbetsstationen (om s†dana finns)
+:li.Serviceniv† i arbetsstationen
+:li.Enhet och kataloger d„r produkten „r installerad
+:eul.
+:p.
+Du kan bara v„lja alternativet f”r produktstatus om produkten som du har
+valt „r installerad.
+
+.**************************************************************
+.*  "Disk Space..." on "Details" pull-down (contextual help) -
+.****************************************************************
+:h3 name=ID3 res=5007.Diskutrymme
+:i1.Diskutrymme
+:p.
+V„lj :hp2.Diskutrymme:ehp2. p† menyn Detaljer n„r du vill se
+:ul compact.
+:li.hur mycket diskutrymme som kr„vs f”r att kunna installera produkten
+:li.den totala m„ngden ledigt diskutrymme i arbetsstationens enheter
+:li.om det g†r att installera produkten i en viss enhet i arbetsstationen
+:eul.
+:nt.
+Om du t„nker uppdatera en produkt kan det h„nda att produkten kr„ver
+mindre diskutrymme „n vad som anges, eftersom vissa filer kommer att skriva ”ver
+tidigare versioner.
+:ent.
+
+.**********************************************************************
+.*  "Action" pull-down (contextual help) -
+.**********************************************************************
+:h2 name=IA0 res=5008.tg„rd
+:p.
+V„lj menyn :hp2.tg„rd:ehp2. n„r du ska
+:ul compact.
+:li.installera en produkt
+:li.uppdatera en produkt till en ny serviceniv†
+:li.†terst„lla en tidigare serviceniv† av produkten
+:li.ta bort en produkt fr†n arbetsstationen
+:eul.
+
+.**********************************************************************
+.*  "Install..." on "Action" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IA1 res=5009.Installera
+:isyn root=inst.information installera
+:i1 roots='inst'.Installera
+:i1.Produktinformation
+:p.
+V„lj :hp2.Installera:ehp2. p† menyn tg„rd n„r du ska installera en produkt.
+:p.
+N„r du v„ljer :hp2.Installera:ehp2. h„nder f”ljande&colon.
+:ol.
+:li.Ett f”nster visas med information om produkten som du ska installera.
+:li.Ytterligare ett f”nster visas d„r du anger i vilka kataloger
+du vill installera produkten och vilka komponenter du vill
+installera (om produkten inneh†ller komponenter).
+:li.Ett statusf”nster visas d„r du kan se i vilka kataloger produkten
+installeras.
+:li.Menyalternativen :link reftype=hd res=5010.Uppdatera:elink. och
+:link reftype=hd res=5012.Ta bort:elink. blir tillg„ngliga f”r produkten.
+:eol.
+:p.
+Alternativet Installera „r bara tillg„ngligt om det finns
+produktkomponenter som inte „r installerade.
+
+.**********************************************************************
+.*  "Update..." on "Action" pull-down (contextual help)
+.**********************************************************************
+:h3 name=IA2 res=5010.Uppdatera
+:i1.Uppdatera
+:p.
+V„lj :hp2.Uppdatera:ehp2. p† menyn tg„rd n„r du vill
+uppdatera en installerad produkt till en senare serviceniv†.
+:p.
+N„r du v„ljer :hp2.Uppdatera:ehp2. h„nder f”ljande&colon.
+:ol.
+:li.Ett f”nster visas med information om produkten du ska uppdatera.
+:li.Ett statusf”nster visas d„r du kan se
+n„r produkten uppdateras i de kataloger du angav under installationen.
+:li.Menyalternativet :link reftype=hd res=5011.terst„ll:elink. blir
+tillg„ngligt f”r den uppdaterade produkten om det finns en s„kerhetskopia.
+:eol.
+:p.
+Alternativet Uppdatera „r tillg„ngligt f”r de produkter som har installerats
+eller som har minst en komponent installerad.
+
+.**********************************************************************
+.*  "Restore..." on "Action" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IA3 res=5011.terst„ll
+:i1.terst„ll
+:p.
+V„lj :hp2.terst„ll:ehp2. p† menyn tg„rd n„r du ska †terst„lla
+en produkt till en tidigare serviceniv†.
+:p.
+N„r du v„ljer :hp2.terst„ll:ehp2. h„nder f”ljande&colon.
+:ol.
+:li.Ett f”nster visas med information om produkten som du ska †terst„lla.
+:li.Ett statusf”nster visas d„r du kan se hur filerna i den installerade
+serviceniv†n ers„tts av tidigare serviceniv†.
+:li.Menyalternativet terst„ll sp„rras (visas nedtonat) f”r produkten.
+:eol.
+:p.
+Alternativet terst„ll „r bara tillg„ngligt om produkten „r installerad
+och har uppdaterats med alternativet :hp2.Lagra en s„kerhetskopia:ehp2.
+markerat.
+
+.**********************************************************************
+.*  "Delete..." on "Action" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IA4 res=5012.Ta bort
+:isyn root=delete.radera
+:i1 roots='delete'.Ta bort
+:p.
+V„lj :hp2.Ta bort:ehp2. p† menyn tg„rd n„r du vill ta bort en markerad
+produkt fr†n arbetsstationen.
+Om produkten inneh†ller komponenter kan du v„lja vilka komponenter du vill
+ta bort.
+:p.
+Med det h„r alternativet kan du ocks† ta bort s„kerhetskopior
+utan att ta bort den aktuella versionen.
+:p.
+N„r du v„ljer :hp2.Ta bort:ehp2. h„nder f”ljande&colon.
+:ol.
+:li.Ett f”nster visas med information om produkten som du ska ta bort.
+Om produkten inneh†ller komponenter kan du v„lja vilka komponenter
+du vill ta bort.
+:li.Ett statusf”nster visas d„r du kan se vilka produktfiler
+(eller komponenter) som tas bort.
+Om du markerar kryssrutan :hp2.Ta bara bort s„kerhetskopior:ehp2.
+kommer bara produktens s„kerhetskopior att tas bort.
+:li.Menyalternativen :link reftype=hd res=5010.Uppdatera:elink., Ta bort och
+:link reftype=hd res=5011.terst„ll:elink. sp„rras (visas nedtonade)
+om du har tagit bort hela produkten.
+:li.Menyalternativet :link reftype=hd res=5009.Installera:elink.
+blir tillg„ngligt f”r produkten.
+:eol.
+:p.
+Alternativet Ta bort blir tillg„ngligt om det finns minst
+en produktkomponent installerad.
+
+.**********************************************************************
+.*  "View" pull-down (contextual help) -
+.**********************************************************************
+:h2 name=IV0 res=5016.Visa
+:p.
+V„lj menyn :hp2.Visa:ehp2. n„r du vill g”ra „ndringar i produktlistan
+som visas i huvudf”nstret. Du kan
+:ul.
+:li.visa en lista med alla produkter som finns i en ”ppnad katalog
+:li.visa en lista med produkter som har minst en komponent installerad
+:li.visa en lista med installerade produkter som har uppdaterats
+:li.visa produktlistan i den ordning som visas i katalogfilen
+:li.sortera produktlistan i stigande alfabetisk ordning (A-™)
+:li.sortera produktlistan i fallande alfabetisk ordning (™-A)
+:eul.
+
+.**********************************************************************
+.*  "Current Catalog" on "View" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IV1 res=5017.Aktuell katalog
+:i1.Visa aktuell katalog
+:p.
+V„lj :hp2.Aktuell katalog:ehp2. p† menyn Visa n„r du vill se
+alla produkter som finns i den katalog som f”r n„rvarande „r ”ppen.
+I listan visas produkter som redan „r installerade eller som
+har uppdaterats i den aktuella katalogen. Produkter som „r installerade
+eller har uppdaterats men som inte finns i den aktuella katalogen
+visas inte i den h„r listan.
+
+.**********************************************************************
+.*  "Installed" on "View" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IV2 res=5018.Installerade produkter
+:i1.Visa installerade produkter
+:p.
+V„lj :hp2.Installerade produkter:ehp2. p† menyn Visa n„r du vill
+se vilka produkter som har minst en komponent installerad.
+Alla installerade produkter visas i listan oberoende av vilken
+k„lla eller vilket system de har installerats fr†n.
+N„r en produkt har installerats visas den i f”nstret f”r installerade
+produkter „ven om produkten inte l„ngre
+visas i den aktuella katalogen.
+P† s† s„tt kan du ta bort eller †terst„lla den
+(om du lagrade en s„kerhetskopia vid uppdateringen).
+
+.**********************************************************************
+.*  "Updated" on "View" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IV3 res=5019.Uppdaterade produkter
+:i1.Visa uppdaterade produkter
+:p.
+V„lj :hp2.Uppdaterade produkter:ehp2. p† menyn Visa n„r du vill se
+vilka produkter som har minst en komponent installerad och har uppdaterats.
+Alla installerade produkter som har uppdaterats visas i listan, oberoende av
+vilken k„lla eller system de har installerats fr†n.
+
+.**********************************************************************
+.*  "Catalog order" on "View" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IV6 res=5059.Katalogordning
+:i1.Katalogordning produktsortering
+:p.
+V„lj :hp2.Katalogordning:ehp2. p† menyn Visa n„r du vill
+att produkterna i produktlistan ska visas i samma ordning som de visas
+i katalogfilen.
+:p.
+Om listan visas under rubriken Installerade produkter eller Uppdaterade
+produkter, visas produkter som inte finns i den aktuella katalogen
+f”rst i listan, f”ljt av de produkter som finns i katalogen i den ordning
+de f”rekommer.
+
+.**********************************************************************
+.*  "Ascending order" on "View" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IV4 res=5020.Stigande ordning
+:i1.Stigande ordning produktsortering
+:p.
+V„lj :hp2.Stigande ordning:ehp2. p† menyn Visa n„r du vill
+visa produktlistan i stigande alfabetisk ordning (A-™).
+
+.**********************************************************************
+.*  "Descending order" on "View" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IV5 res=5021.Fallande ordning
+:i1.Fallande ordning produktsortering
+:p.
+V„lj :hp2.Fallande ordning:ehp2. p† menyn Visa n„r du vill visa
+produktlistan i fallande alfabetisk ordning (™-A).
+
+.**********************************************************************
+.*  "Help" pull-down (contextual help) -
+.**********************************************************************
+:h2 name=IH0 res=5022.Hj„lp
+:i1 roots='help'.Hj„lp
+:p.
+N„r du v„ljer det h„r alternativet kan du f† f”ljande hj„lp&colon.
+:p.
+:dl tsize=2 break=all compact.
+:dt.:link reftype=hd res=5023.Om hj„lpfunktionen:elink.
+:dd.Beskriver hur du anv„nder hj„lpfunktionen
+:dt.:link reftype=hd res=5024.Allm„n hj„lp:elink.
+:dd.Allm„n hj„lp om programf”nster
+:dt.:link reftype=hd res=5025.Tangentfunktioner:elink.
+:dd.Beskriver tangenternas olika funktioner
+:dt.:link reftype=hd res=5026.Hj„lpindex:elink.
+:dd.Visar ett index ”ver olika „mnen i hj„lpfunktionen
+:edl.
+
+.**********************************************************************
+.*  "Using help" on "Help" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IH1 res=5023.Om hj„lpfunktionen
+:i1 roots='hlphlp'.Om hj„lpfunktionen
+:p.
+N„r du v„ljer det h„r alternativet visas en beskrivning av vilken
+hj„lp du kan f† i programmet och hur du anv„nder hj„lpfunktionen.
+
+.**********************************************************************
+.*  "General help..." on "Help" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IH2 res=5024.Allm„n hj„lp
+:i1 roots='exthlp'.Allm„n hj„lp
+:p.
+V„lj det h„r alternativet om du vill ha allm„n
+hj„lp om det aktuella programmet.
+
+.**********************************************************************
+.*  "Keys help..." on "Help" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IH3 res=5025.Tangentfunktioner
+:p.
+V„lj det h„r alternativet om du vill veta mer om tangenternas olika
+funktioner.
+
+.**********************************************************************
+.*  "Help index..." on "Help" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IH4 res=5026.Hj„lpindex
+:i1 roots='hlpindx'.Hj„lpindex
+:p.
+V„lj det h„r alternativet n„r du vill anv„nda hj„lpindex. Du kan g”ra
+p† tv† s„tt&colon.
+:ul compact.
+:li.V„lj ett „mne fr†n listan med „mnen.
+:li.S”k efter ett „mne genom att v„lja :hp2.S”k:ehp2. p† menyn Avsnitt.
+:eul.
+
+.**********************************************************************
+.*  Keys Help - (General help)
+.**********************************************************************
+:h3 name=KEYSHELP res=5029.Tangentfunktioner
+:i1 roots='keyhlp'.Tangentfunktioner
+:p.
+V„lj det h„r alternativet n„r du vill veta mer om tangenternas olika
+funktioner.
+:p.
+V„lj ett „mne nedan&colon.
+:ul compact.
+:li.:link reftype=hd res=2060.Hj„lptangenter:elink.
+:li.:link reftype=hd res=2070.Systemtangenter:elink.
+:li.:link reftype=hd res=2080.F”nstertangenter:elink.
+:li.:link reftype=hd res=2090.Redigeringstangenter:elink.
+:li.:link reftype=hd res=2095.Programspecifika tangenter:elink.
+:eul.
+
+.**********************************************************************
+.*  Help keys - (General help)
+.**********************************************************************
+:h3 name=helpkeys res=2060.Hj„lptangenter
+:i2 refid=helpkeys.Hj„lptangenter
+:p.
+Du kan anv„nda f”ljande hj„lptangenter&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.F1:ehp2.
+:dd.Visar en hj„lptext
+:dt.:hp2.F2:ehp2.
+:dd.Allm„nt om programmet (fungerar bara fr†n hj„lpf”nster)
+:dt.:hp2.F9:ehp2.
+:dd.Visar en lista med tangentfunktioner (fungerar bara fr†n hj„lpf”nster)
+:dt.:hp2.F11:ehp2. eller :hp2.skift&plus.F1:ehp2.
+:dd.Aktiverar hj„lpindex (fungerar bara fr†n hj„lpf”nster)
+:dt.:hp2.Esc:ehp2.
+:dd.St„nger f”nstret med hj„lptext
+:dt.:hp2.Skift&plus.F10:ehp2.
+:dd.Hj„lp om hj„lp
+:dt.:hp2.Alt&plus.F6:ehp2.
+:dd.V„xlar mellan hj„lptext och program
+:dt.:hp2.Alt&plus.F4:ehp2.
+:dd.St„nger f”nstret med hj„lptext
+:edl.
+
+.**********************************************************************
+.*  System Keys- (General help)
+.**********************************************************************
+:h3 name=syskeys res=2070.Systemtangenter
+:i2 refid=syskeys.Systemtangenter
+:p.
+Du kan anv„nda f”ljande systemtangenter&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.F1:ehp2.
+:dd.Visar en hj„lptext
+:dt.:hp2.F3:ehp2.
+:dd.St„nger ett programf”nster
+:dt.:hp2.F10:ehp2.
+:dd.V„xlar till och fr†n menyraden
+:dt.:hp2.Piltangenter:ehp2.
+:dd.V„xlar mellan och ”ppnar menyer p† menyraden
+:dt.:hp2.End:ehp2.
+:dd.G†r till det sista alternativet p† en meny
+:dt.:hp2.Esc:ehp2.
+:dd.St„nger en meny eller systemmenyn
+:dt.:hp2.Home:ehp2.
+:dd.G†r till det f”rsta alternativet p† en meny
+:dt.:hp2.PgUp:ehp2.
+:dd.Bl„ddrar fram†t en sk„rmsida
+:dt.:hp2.PgDn:ehp2.
+:dd.Bl„ddrar bak†t en sk„rmsida
+:dt.:hp2.Understruken bokstav:ehp2.
+:dd.V„ljer alternativ p† menyer
+:dt.:hp2.Alt:ehp2.
+:dd.V„xlar till och fr†n menyraden
+:dt.:hp2.Alt&plus.Esc:ehp2.
+:dd.V„xlar till n„sta program, inklusive fullsk„rmsprogram
+:dt.:hp2.Alt&plus.tabb:ehp2.
+:dd.V„xlar till n„sta f”nstersession
+:dt.:hp2.Alt&plus.F4:ehp2.
+:dd.St„nger f”nstret
+:dt.:hp2.Alt&plus.F5:ehp2.
+:dd.terst„ller f”nstret
+:dt.:hp2.Alt&plus.F6:ehp2.
+:dd.St„nger det aktiva f”nstret i ett program
+:dt.:hp2.Alt&plus.F7:ehp2.
+:dd.Flyttar f”nstret
+:dt.:hp2.Alt&plus.F8:ehp2.
+:dd.ndrar storlek p† f”nstret
+:dt.:hp2.Alt&plus.F9:ehp2.
+:dd.Minimerar f”nstret
+:dt.:hp2.Alt&plus.F10:ehp2.
+:dd.Maximerar f”nstret
+:dt.:hp2.Ctrl&plus.Esc:ehp2.
+:dd.V„xlar till f”nstret Aktiva sessioner
+:dt.:hp2.Ctrl&plus.F6:ehp2.
+:dd.ndrar aktivt f”nster i ett program
+:dt.:hp2.Skift&plus.Esc:ehp2. eller :hp2.Alt&plus.mellanslag:ehp2.
+:dd.V„xlar till och fr†n systemmenyn
+:dt.:hp2.Skift&plus.Esc:ehp2. eller :hp2.Alt:ehp2.
+:dd.V„xlar till och fr†n systemmenyn i ett textf”nster
+:edl.
+
+.**********************************************************************
+.*  Pop-Up window keys (General help)
+.**********************************************************************
+:h3 name=popupkeys res=2080.F”nstertangenter
+:i2 refid=windkeys.F”nstertangenter
+:p.
+Du kan anv„nda f”ljande f”nstertangenter&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Enter:ehp2.
+:dd.Bekr„ftar ett val i f”nstret
+:dt.:hp2.Esc:ehp2.
+:dd.St„nger f”nstret utan att aktivera n†gra „ndringar
+:dt.:hp2.Mellanslag:ehp2.
+:dd.Markerar eller avmarkerar en kryssruta eller utf”r
+funktionen som „r knuten till den valda knappen
+:dt.:hp2.Tabb:ehp2.
+:dd.Flyttar till n„sta inmatningsf„lt, valf„lt eller hypertextl„nk
+:edl.
+
+.**********************************************************************
+.*  Editing Keys Help - (General help)
+.**********************************************************************
+:h3 name=editkeys res=2090.Redigeringstangenter
+:i2 refid=editkeys.Redigeringstangenter
+:p.
+Du kan anv„nda f”ljande redigeringstangenter&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Backstegare:ehp2.
+:dd.Raderar tecknet till v„nster om mark”ren
+:dt.:hp2.Del:ehp2. eller :hp2.Delete:ehp2.
+:dd.Raderar tecknet till h”ger om mark”ren
+:dt.:hp2.End:ehp2. eller :hp2.Ctrl&plus.h”gerpil:ehp2.
+:dd.Flyttar till slutet av f„ltet
+:dt.:hp2.Home:ehp2. eller :hp2.Ctrl&plus.v„nsterpil:ehp2.
+:dd.Flyttar till b”rjan av f„ltet
+:dt.:hp2.Ctrl&plus.Insert:ehp2.
+:dd.Kopierar den markerade texten till Urklipp
+:dt.:hp2.Print Screen:ehp2.
+:dd.Skriver ut informationen som visas i det aktiva f”nstret
+:edl.
+
+.**********************************************************************
+.*  Application Keys Help - (General help)
+.**********************************************************************
+:h3 name=Appkeys res=2095.Programspecifika tangenter
+:i2 refid=appkeys.Programspecifika tangenter
+:p.
+Du kan anv„nda f”ljande programspecifika tangenter&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.F1:ehp2.
+:dd.Visar en hj„lptext
+:dt.:hp2.F3:ehp2.
+:dd.Avslutar installationen
+:dt.:hp2.Ctrl&plus.D:ehp2.
+:dd.Visar en beskrivning av den markerade produkten
+:dt.:hp2.Ctrl&plus.H:ehp2.
+:dd.™ppnar en produktkatalog fr†n en v„rddator
+:dt.:hp2.Ctrl&plus.I:ehp2.
+:dd.Installerar den markerade produkten
+:dt.:hp2.Ctrl&plus.K:ehp2.
+:dd.Visar hur mycket diskutrymme som kr„vs f”r den markerade produkten
+:dt.:hp2.Ctrl&plus.O:ehp2.
+:dd.™ppnar en produktkatalog i en enhet
+:dt.:hp2.Ctrl&plus.R:ehp2.
+:dd.terst„ller tidigare serviceniv† f”r den markerade produkten
+:dt.:hp2.Ctrl&plus.S:ehp2.
+:dd.Visar status f”r arbetsstationen med den markerade produkten
+:dt.:hp2.Ctrl&plus.U:ehp2.
+:dd.Uppdaterar den markerade produkten
+:dt.:hp2.Delete:ehp2.
+:dd.Tar bort den markerade produkten
+:edl.
+
+.**********************************************************************
+.*  Text selection Keys Help - (General help)
+.**********************************************************************
+:h3 name=textkeys res=2100.Textmarkeringstangenter
+:i2 refid=textkeys.Textmarkeringstangenter
+:p.
+Du kan anv„nda f”ljande textmarkeringstangenter&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Skift&plus.piltangent:ehp2.
+:dd.Markerar text eller ut”kar markeringen i pilens riktning
+:dt.:hp2.Skift&plus.Home:ehp2.
+:dd.Markerar text eller ut”kar markeringen till b”rjan av den aktuella raden
+:dt.:hp2.Skift&plus.End:ehp2.
+:dd.Markerar text eller ut”kar markeringen till slutet av den aktuella raden
+:dt.:hp2.Skift&plus.Ctrl&plus.h”gerpil:ehp2.
+:dd.Markerar text eller ut”kar markeringen till b”rjan av n„sta ord
+:dt.:hp2.Skift&plus.Ctrl&plus.v„nsterpil:ehp2.
+:dd.Markerar text eller ut”kar markeringen till b”rjan av f”reg†ende ord
+:edl.
+
+.**********************************************************************
+.* Help push button, FIELD HELP PANEL - This panel appears for a help
+.*request when the cursor focus is on the "Help" push button.
+.**********************************************************************
+:h2 name=IHLPB res=5065.Hj„lp
+:p.
+Klicka p† den h„r knappen n„r du vill veta mer om
+f„ltet d„r mark”ren befinner sig.
+
+.**********************************************************************
+.*  "Cancel" push button on all dialogs (contextual help) -
+.**********************************************************************
+:h1 name=ICNPB res=5030.Avbryt
+:isyn root=cancel.avbryta stoppa
+:i1 roots='stop'.Avbryt (knapp)
+:p.
+Klicka p† den h„r knappen n„r du vill l„mna f”nstret utan att
+utf”ra n†gra „ndringar.
+:p.
+Om du v„ljer :hp2.Avbryt:ehp2. n„r en bearbetning p†g†r
+avbryts bearbetningen omedelbart och f”nstret st„ngs.
+:eh1.
+
+.**********************************************************************
+.*  "Open host catalog" dialog (General help) -
+.**********************************************************************
+:h1 name=IL100 res=5080.™ppna v„rddatorkatalog
+:p.
+Med det h„r alternativet kan du ta fram en lista ”ver tillg„ngliga
+produkter fr†n MVS-, VM- eller VSE-system.
+:p.
+G”r s† h„r&colon.
+:ol.
+:li.V„lj ID f”r den v„rdsession du vill kommunicera med i listrutan
+f”r v„rdsession.
+:li.Klicka p† knappen f”r det v„rdsystem som finns i v„rddatorn.
+:li.Skriv namnet p† katalogfilen som ska ”ppnas i rutan f”r
+filnamn. Om katalogfilen du vill ”ppna redan „r ”ppen kan du v„lja den
+fr†n listan i kombirutan.
+:li.Klicka p† :hp2.™ppna:ehp2. s† h„mtas katalogfilen fr†n v„rddatorn.
+Om filen g†r att ”ppna f”rsvinner f”nstret och produktlistan visas
+i huvudf”nstret.
+:eol.
+:eh1.
+
+.**********************************************************************
+.*  "Host Session:" list box of Open host catalog dialog (contextual help)
+.**********************************************************************
+:h2 name=IL101 res=5081.V„rdsession
+:p.
+I listan ”ver v„rdsessioner i f”nstret ™ppna v„rddatorkatalog
+v„ljer du vilken v„rdsession du vill anv„nda vid fil”verf”ring
+i Communications Manager (t&rbl.ex A, B eller C).
+Det f”rsta objektet i listrutan „r standardv„rde.
+
+.**********************************************************************
+.*  "MVS" or "VM" radio buttons of Open host catalog dialog (contextual help)
+.**********************************************************************
+:h2 name=IL102 res=5082.V„rdsystem
+:p.
+Klicka p† knappen :hp2.MVS:ehp2., :hp2.VM:ehp2. eller :hp2.VSE:ehp2. i
+f”nstret ™ppna v„rddatorkatalog beroende p† vilket v„rdsystem du angav
+i listrutan V„rdsession. Standardv„rdet „r MVS.
+
+.**********************************************************************
+.*  "Catalog filename" combination box of Open host catalog dialog (contextual help)
+.**********************************************************************
+:h2 name=IL103 res=5083.Namn p† katalogfil
+:p.
+Skriv namnet p† en katalogfil i f„ltet Filnamn eller v„lj
+ett namn fr†n listan i katalogen du vill ”ppna. I listan visas de
+katalogfiler som redan „r ”ppna.
+:p.
+N„r du v„ljer namnet p† en katalogfil i listan visas en kort
+beskrivning av katalogfilen i f„ltet ovanf”r kombirutan.
+:p.
+Du m†ste skriva in ett giltigt filnamn f”r MVS, VM eller VSE i f„ltet,
+beroende p† vilket v„rdsystem du har valt.
+:ul.
+:li.Exempel p† katalogfiler i MVS&colon.
+:sl compact.
+:li.PROJ.GRUPP.TYP(KATALOG)
+:li.EPF.V1R2M0.SEPFBENU(EPFICAT)
+:esl.
+:li.Exempel p† katalogfiler i VM&colon.
+:sl compact.
+:li.KATALOG ICF A
+:li.EPFIKAT ENUEPF12 *
+:esl.
+:li.Exempel p† katalogfiler i VSE&colon.
+:sl compact.
+:Li.BIBLIOTEK.UNDERBIBL.MEDLEMSNAMN.MEDLEMSTYP
+:LI.EPF.VIR2M0.SEPFBENU.KATALOG
+:esl.
+:eul.
+
+.**********************************************************************
+.*  "Description" push button of the Open host catalog dialog
+.*(contextual help)
+.**********************************************************************
+:h2 name=IL104 res=5084.Beskrivning
+:p.
+N„r du klickar p† knappen :hp2.Beskrivning:ehp2. i f”nstret ™ppna
+v„rddatorkatalog
+visas en kort beskrivning av katalogfilen i f„ltet Filnamn.
+Beskrivningen h„mtas fr†n v„rdsessionen du valde i listrutan
+V„rdsession.
+
+.**********************************************************************
+.*  "Open" push button of Open dialog (contextual help) -
+.**********************************************************************
+:h2 name=IL105 res=5085.™ppna
+:p.
+N„r du klickar p† knappen :hp2.™ppna:ehp2. i f”nstret ™ppna v„rddatorkatalog
+”ppnas produktkatalogen f”r den angivna v„rdsession.
+Kontrollera att
+:ol compact.
+:li.du „r p†loggad i v„rdsessionen som „r markerad i listrutan
+V„rdsession och att v„rdsessionen „r i indatal„ge
+:li.du har markerat knappen f”r det v„rdsystem som finns i v„rddatorn
+:eol.
+:p.
+N„r du har klickat p† knappen ”verf”rs katalogfilen fr†n v„rdsessionen,
+katalogfilen analyseras och produktlistan visas.
+
+.**********************************************************************
+.*  "Open drive catalog" dialog (General help)
+.**********************************************************************
+:h1 name=IL400 res=5090.™ppna enhetskatalog
+:p.
+I f”nstret ™ppna enhetskatalog kan du se vilka
+produkter som finns tillg„ngliga fr†n en diskettenhet, CD-ROM-enhet, LAN-enhet
+eller AS/400 PC-supportmapp.
+:p.
+G”r s† h„r&colon.
+:ol.
+:li.V„lj enheten som inneh†ller katalogfilen du vill ”ppna
+i kombirutan Enhet.
+Kombirutan Filnamn uppdateras med en lista ”ver
+alla ”ppna katalogfiler som finns i enheten.
+:li.Skriv namnet p† katalogfilen som ska ”ppnas i kombirutan
+Filnamn. Om katalogfilen du vill ”ppna redan „r ”ppen
+kan du v„lja den fr†n listan i kombirutan.
+:li.Klicka p† :hp2.™ppna:ehp2. s† ”ppnas katalogfilen i enheten.
+Om filen kan ”ppnas f”rsvinner f”nstret och den
+produktlistan visas i huvudf”nstret.
+:eol.
+:eh1.
+
+.**********************************************************************
+.*  "Drive" list box of Open drive catalog dialog (contextual help)
+.**********************************************************************
+:h2 name=IL401 res=5091.Enhet
+:p.
+V„lj enheten som inneh†ller katalogfilen.
+:p.
+I kombirutan visas alla enheter som „r anslutna till arbetsstationen.
+
+.**********************************************************************
+.* "Catalog filename" combination box of Open drive catalog dialog (contextual help)
+.**********************************************************************
+:h2 name=IL402 res=5092.Namn p† katalogfil
+:p.
+Skriv namnet p† en katalogfil i f„ltet Filnamn
+eller v„lj ett namn fr†n listan i katalogen som du vill ”ppna.
+I listan visas de ”ppna katalogfiler som finns i enheten.
+:p.
+N„r du v„ljer en katalogfil i listan
+visas en kort beskrivning (om en s†dan finns) av katalogfilen
+i f„ltet ovanf”r kombirutan.
+:p.
+Namnet p† katalogfilen m†ste vara ett giltigt
+OS&slash.2:link refid=tm1 reftype=fn.*:elink.-:fn id=tm1.Varum„rke som tillh”r IBM.:efn.filnamn
+:hp2.utan enhetsspecifikation:ehp2..
+:p.
+Exempel p† namn p† katalogfil&colon.
+:sl compact.
+:li.\paket\epfikat.icf
+:li.\katalog.icf
+:esl.
+
+.**********************************************************************
+.*  "Description" push button of Open drive catalog dialog (contextual
+.*help)
+.**********************************************************************
+:h2 name=IL403 res=5093.Beskrivning
+:p.
+N„r du klickar p† knappen :hp2.Beskrivning:ehp2. i f”nstret ™ppna enhetskatalog
+visas en kort beskrivning av katalogfilen i f„ltet Filnamn.
+Beskrivningen h„mtas fr†n enheten som „r markerad i listrutan Enhet.
+
+.**********************************************************************
+.* "Description" push button of Open drive catalog dialog (contextual
+.*help)
+.**********************************************************************
+:h2 name=IL404 res=5094.S”k
+:p.
+Klicka p† knappen :hp2.S”k:ehp2. i f”nstret ™ppna enhetskatalog
+n„r du vill s”ka efter katalogfiler i en markerad enhet.
+
+.**********************************************************************
+.*  "Open" push button of Open drive catalog dialog (contextual help)
+.**********************************************************************
+:h2 name=IL405 res=5095.™ppna
+:p.
+Klicka p† knappen :hp2.™ppna:ehp2. i f”nstret ™ppna enhetskatalog s† ”ppnas
+den angivna produktkatalogen.
+:p.
+N„r du har klickat p† knappen l„ses katalogfilen fr†n enheten
+och produktlistan visas.
+
+.**********************************************************************
+.*  "PWS Status" dialog - (General help)
+.**********************************************************************
+:h1 name=ID200 res=5035.Produktstatus
+:p.
+I f”nstret f”r produktstatus visas information om en produkt
+som „r installerad i arbetsstationen.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Produktnamn:ehp2.
+:dd.Namnet p† den markerade produkten i arbetsstationen
+:dt.:hp2.Produktnummer:ehp2.
+:dd.Produktens nummer
+:dt.:hp2.Version:ehp2.
+:dd.Produktens version, release och modification-nummer
+:dt.:hp2.Feature:ehp2.
+:dd.Produktens feature-nummer
+:dt.:hp2.Installerad i:ehp2.
+:dd.De kataloger d„r produkten „r installerad
+:edl.
+:p.Om du vill se produktens serviceniv† klickar du p† knappen
+:hp2.Serviceniv†:ehp2..
+:eh1.
+
+.**********************************************************************
+.*  "Cancel" button on "PWS Status" dialog - (contextual help)
+.**********************************************************************
+:h2 name=ID201 res=5060.Avbryt
+:p.
+Klicka p† knappen :hp2.Avbryt:ehp2. i f”nstret Produktstatus n„r du vill
+st„nga f”nstret och †terg† till huvudf”nstret.
+
+.**********************************************************************
+.*  "Disk Space" dialog (General help)
+.**********************************************************************
+:h1 name=ID300 res=5036.Diskutrymme
+:p.
+I f”nstret f”r diskutrymme kan du kontrollera hur mycket diskutrymme som
+kr„vs f”r att installera produkten.
+:p.
+H„r kan du ocks† kontrollera den totala m„ngden
+tillg„ngligt diskutrymme i arbetsstationens enheter och
+om det g†r att installera produkten i en viss enhet.
+:p.
+G”r s† h„r&colon.
+:ol compact.
+:li.V„lj en enhet i listrutan.
+:li.L„s meddelandet som visas bredvid listrutan
+och som anger om det finns tillr„ckligt med diskutrymme f”r att
+installera produkten i enheten.
+:eol.
+:nt.Om installationsprogrammet skriver ”ver vissa filer
+vid uppdateringen kan det beh”vas mindre diskutrymme „n vad som anges.
+Om det inte finns tillr„ckligt med diskutrymme i
+arbetsstationen f”r att installera produkten kan du alltid f”rs”ka
+uppdatera den.
+:ent.
+:p.
+F”nstret Diskutrymme inneh†ller f”ljande information&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Produktnamn:ehp2.
+:dd.Namnet p† den valda produkten
+:dt.:hp2.Antal byte som beh”vs:ehp2.
+:dd.M„ngden diskutrymme som kr„vs f”r att installera produkten
+:dt.:hp2.Antal tillg„ngliga byte i enheten:ehp2.
+:dd.M„ngden tillg„ngligt diskutrymme i arbetsstationens enhet
+:dt.:hp2.Installation kan genomf”ras:ehp2.
+:dd.Ett meddelande visas som anger om du kan installera produkten
+i enheten du har valt.
+:dt.:hp2.Installation kan inte genomf”ras:ehp2.
+:dd.Ett meddelande visas som talar om att det inte g†r att installera
+produkten i enheten du har valt.
+:edl.
+:eh1.
+
+.**********************************************************************
+.*  Available bytes list box of Disk Space dialog (contextual help)
+.**********************************************************************
+:h2 name=ID301 res=5037.Antal tillg„ngliga byte i enheten
+:p.
+I den h„r listrutan i f”nstret Diskutrymme
+visas m„ngden ledigt diskutrymme i varje diskenhet (utom diskettenheter) i
+arbetsstationen.
+I listan kan du se i vilken enhet du kan installera produkten.
+:p.
+N„r du v„ljer en enhet uppdateras statusmeddelandet bredvid listrutan.
+Meddelandet anger om det finns tillr„ckligt med diskutrymme f”r att
+installera produkten i enheten som du har valt.
+
+.**********************************************************************
+.*  "Cancel" push button of Disk Space dialog (contextual help) -
+.**********************************************************************
+:h2 name=ID302 res=5038.Avbryt
+:p.
+Klicka p† knappen :hp2.Avbryt:ehp2. i f”nstret Diskutrymme n„r du vill
+st„nga det.
+
+.**********************************************************************
+.*  "Change directories to selected drive" check box of Disk Space dialog
+.*  (contextual help)
+.**********************************************************************
+:h2 name=ID303 res=5033.Byt ut enheten i angivna kataloger
+:p.
+Markera den h„r kryssrutan n„r du vill „ndra alla enhetsbeteckningar f”r
+katalogerna i f”nstret Installation - kataloger till den enhetsbeteckning
+du v„ljer i listan ”ver enheter.
+
+.**********************************************************************
+.*  "OK" push button of Disk Space dialog (contextual help)
+.**********************************************************************
+:h2 name=ID304 res=5034.OK
+:p.
+Klicka p† knappen :hp2.OK:ehp2. n„r du vill g† tillbaka till f”nstret
+Installation - kataloger med den funktion som anges av kryssrutan
+:hp2.Byt ut enheten i angivna kataloger:ehp2. aktiverad.
+:p.
+Innan du klickar p† :hp2.OK:ehp2. g”r du f”ljande&colon.
+:ol.
+:li.V„lj en enhet som har tillr„ckligt med diskutrymme f”r de
+komponenter du ska installera.
+:li.Markera kryssrutan :hp2.Byt ut enheten i angivna kataloger:ehp2.
+f”r att uppdatera f„lten f”r kataloger i f”nstret Installation - kataloger.
+:eol.
+
+.**********************************************************************
+.*  "Install" dialog (General help) -
+.**********************************************************************
+:h1 name=IA100 res=5039.Installera
+:p.
+I f”nstret Installera visas information om produkten som du har valt att
+installera.
+:p.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Produktnamn:ehp2.
+:dd.Namnet p† produkten
+:dt.:hp2.Produktnummer:ehp2.
+:dd.Produktens nummer
+:dt.:hp2.Version:ehp2.
+:dd.Produktens version, release och modification-nummer
+:dt.:hp2.Feature:ehp2.
+:dd.Produktens feature-nummer
+:edl.
+:p.
+I f”nstret kan du ocks† v„lja om du vill att CONFIG.SYS-filen ska
+uppdateras automatiskt och om
+filerna ska skrivas ”ver automatiskt utan att det anges att
+det finns andra filer med samma namn som produktfilerna.
+:p.
+Klicka p† :hp2.OK:ehp2. om du vill installera produkten eller p†
+:hp2.Avbryt:ehp2. om du vill l„mna f”nstret och g† tillbaka till huvudmenyn.
+:eh1.
+
+.**********************************************************************
+.*  "Update CONFIG.SYS" checkbox on the "Install" dialog (contextual help)
+.**********************************************************************
+:h2 name=IO1 res=5014.Uppdatera CONFIG.SYS
+:i1.Uppdatera CONFIG.SYS
+:p.
+N„r du markerar kryssrutan :hp2.Uppdatera CONFIG.SYS:ehp2. kommer
+de variabler som anger i vilka kataloger produkten installeras
+att automatiskt l„ggas till eller „ndras i CONFIG.SYS-filen.
+:nt.En s„kerhetskopia av den ursprungliga CONFIG.SYS-filen lagras som
+CONFIG.BAK i samma enhet och med samma s”kv„g som den ursprungliga
+CONFIG.SYS-filen.
+:ent.
+:p.Om du inte markerar den h„r kryssrutan m†ste du uppdatera
+CONFIG.SYS-filen manuellt.
+Hur du uppdaterar CONFIG.SYS-filen beskrivs i
+installationsanvisningarna till produkten.
+
+.**********************************************************************
+.*  "Overwrite Files" checkbox on "Install" dialog (contextual help)
+.**********************************************************************
+:h2 name=IO2 res=5015.Skriv ”ver filer
+:i1.Skriv ”ver filer
+:p.
+Om du markerar kryssrutan :hp2.Skriv ”ver filer:ehp2. i f”nstret Installera
+kommer alla filer med samma namn och
+placering som produktfilerna som installeras att ers„ttas automatiskt
+i arbetsstationen.
+:p.
+Om du inte markerar den h„r kryssrutan visar installationsprogrammet
+ett meddelande innan filerna i arbetsstationen skrivs ”ver.
+
+.**********************************************************************
+.*  "OK..." push button of Install dialog (contextual help) -
+.**********************************************************************
+:h2 name=IA101 res=5040.OK
+:p.
+Klicka p† knappen :hp2.OK:ehp2. i f”nstret Installera
+n„r du ska installera produkten som du har markerat.
+:p.
+N„r du klickar p† :hp2.OK:ehp2. h„nder f”ljande&colon.
+:ol.
+:li.Installationsprogrammet ”verf”r och analyserar produktens paketfil,
+som inneh†ller information om hur programmet ska installera produkten.
+:li.Ett f”nster visas d„r du anger i vilka kataloger du vill
+placera produktfilerna.
+:eol.
+
+.**********************************************************************
+.*  "Install - File Errors" dialog (General help) -
+.**********************************************************************
+:h1 name=IA110 res=5041.Installation - filfel
+:isyn root=fel.produktfel filfel
+:i1 roots='errors'.Installation - filfel
+:p.
+I f”nstret Installation - filfel kan du se vilka fel som p†tr„ffats
+i den ”verf”rda katalog- eller paketfilen.
+:p.
+:hp5.Systemadministrat”rer&colon.:ehp5.
+:ol compact.
+:li.V„xla till k„llan.
+:li.R„tta felet genom att g”ra „ndringar i katalog- eller paketfilen.
+:li.V„lj :hp2.F”rs”k igen:ehp2..
+:eol.
+:p.
+:hp5.Anv„ndare&colon.:ehp5.
+:p.
+Skriv ut felmeddelandena genom att klicka p† :hp2.Skriv ut:ehp2.
+och kontakta systemadministrat”ren eller den produktansvarige.
+:eh1.
+
+.**********************************************************************
+.*  "Retry" push button on Install - File Errors dialog
+.*  (contextual help) -
+.**********************************************************************
+:h2 name=IA111 res=5042.F”rs”k igen
+:p.
+Klicka p† :hp2.F”rs”k igen:ehp2. i f”nstret Installation - filfel
+s† ”verf”rs och analyseras katalog- eller paketfilen p† nytt.
+:p.
+Innan du v„ljer :hp2.F”rs”k igen:ehp2. r„ttar du felet genom att
+g”ra „ndringar i katalog- eller paketfilen i k„llan.
+
+.**********************************************************************
+.*  "Print" push button of Setup Package File Errors dialog (contextual help)
+.**********************************************************************
+:h2 name=IA112 res=5043.Skriv ut
+:p.
+N„r du klickar p† knappen :hp2.Skriv ut:ehp2. i f”nstret Filfel skrivs
+felmeddelandena ut p† arbetsstationens skrivare.
+:p.
+Kontrollera att skrivaren „r p†slagen.
+
+.**********************************************************************
+.*  "Install - Directories" dialog (General help) -  no components
+.**********************************************************************
+:h1 name=IA120 res=5044.Installation - kataloger
+:isyn root=dirsnc.inst„llningar ange_kataloger
+:i1 roots='dirsnc'.Installation - kataloger, inga komponenter
+:p.
+I f”nstret Installation - kataloger anger du i vilka
+kataloger produkten ska installeras.
+:p.
+Du kan best„mma till vilka kataloger filerna ska ”verf”ras
+i arbetsstationen.
+Kom ih†g att enheten
+som du angav i katalogerna m†ste ha tillr„ckligt med diskutrymme
+f”r att kunna lagra de ”verf”rda filerna.
+:p.
+N„r du har valt kataloger startar du installationen genom att
+klicka p† :hp2.Installera:ehp2..
+:p.
+Du kan best„mma hur mycket diskutrymme en produkt beh”ver och se m„ngden
+tillg„ngligt diskutrymme i de olika diskenheterna genom att klicka p†
+knappen :hp2.Diskutrymme:ehp2..
+:eh1.
+
+.**********************************************************************
+.*  "Install - Directories" dialog (General help) -  components & Dirs
+.**********************************************************************
+:h2 name=IA130 res=5061.Installation - kataloger
+:isyn root=dirscd.inst„llningar ange_kataloger
+:i1 roots='dirscd'.Installation - kataloger, komponenter och kataloger
+:p.
+I f”nstret Installation - kataloger anger du i vilka
+kataloger produkten ska installeras.
+:p.
+Du kan best„mma vilka kataloger filerna ska ”verf”ras till i arbetsstationen.
+Kom ih†g att enheten som du angav i katalogerna m†ste ha tillr„ckligt
+med diskutrymme f”r att kunna lagra de ”verf”rda filerna.
+:p.
+I listrutan v„ljer du vilka produktkomponenter du vill installera.
+Du m†ste v„lja minst en komponent f”r att kunna forts„tta.
+:p.
+N„r du har valt komponenter installerar du dem genom att klicka p†
+:hp2.Installera:ehp2.. Du kan ocks† se hur mycket diskutrymme som
+kr„vs f”r att installera komponenterna genom att klicka p† :hp2.Diskutrymme:ehp2..
+
+.**********************************************************************
+.*  "Install - Directories" dialog (General help) -  components
+.**********************************************************************
+:h2 name=IA140 res=5062.Installation - kataloger
+:isyn root=dirscnd.inst„llningar ange_kataloger
+:i1 roots='dirscnd'.Installation - kataloger, komponenter men inga kataloger
+:p.
+En eller flera av produktens komponenter har redan installerats
+i katalogerna. I det h„r f”nstret kan du installera ytterligare
+produktkomponenter i samma kataloger.
+:p.
+V„lj produktkomponenter i listrutan.
+Du m†ste v„lja minst en komponent f”r att kunna forts„tta.
+:p.
+Klicka p† :hp2.Installera:ehp2. s† installeras komponenterna.
+Om du vill se hur mycket diskutrymme som kr„vs f”r att installera
+komponenterna klickar du p† :hp2.Diskutrymme:ehp2..
+
+.**********************************************************************
+.*  "File Dir:" entry field of Setup Directories dialog (contextual help) -
+.**********************************************************************
+:h2 name=IA121 res=5045.Katalog
+:p.
+I f„lten f”r katalog i f”nstret Installation - kataloger anger du
+i vilka kataloger produktfilerna ska installeras.
+:p.
+Katalognamnet f†r inneh†lla upp till 128 tecken.
+:ul.
+:li.Exempel p† giltiga kataloger&colon.
+:sl compact.
+:li.C&colon.&bslash.IBMRM
+:li.D&colon.&bslash.
+:li.D&colon.\TOOLS\KEDIT
+:esl.
+:li.Exempel p† ogiltiga kataloger&colon.
+:sl compact.
+:li.&bslash.IBMRM
+:li.C&colon.&bslash.F™RLNGTNAMN
+:li.C&colon.&bslash.IBMRM&bslash.
+:esl.
+:eul.
+
+.**********************************************************************
+.*  "Disk Space" entry field of Setup Directories dialog
+.*  (contextual help) -
+.**********************************************************************
+:h2 name=IA124 res=5048.Diskutrymme
+:p.
+N„r du klickar p† knappen :hp2.Diskutrymme:ehp2. i f”nstret
+Installation - kataloger visas hur mycket diskutrymme som kr„vs f”r
+att installera produkten och hur mycket diskutrymme som finns tillg„ngligt i
+arbetsstationens diskenheter.
+
+.**********************************************************************
+.*  "Install" push button of Setup-Directories dialog (contextual help)
+.**********************************************************************
+:h2 name=IA125 res=5049.Installera
+:p.
+Klicka p† :hp2.Installera:ehp2. i f”nstret Installation - kataloger
+n„r du vill installera produkten i de angivna katalogerna.
+
+.**********************************************************************
+.*  "Component List box" of Setup-Directories dialog (contextual help) -
+.**********************************************************************
+:h2 name=IA126 res=5063.Komponenter
+:p.
+I komponentlistan i f”nstret Installation - kataloger
+kan du se vilka komponenter som kan installeras f”r produkten
+som du har markerat (om produkten har n†gra komponenter).
+:p.
+Markera komponenterna du vill installera. Klicka sedan p†
+:hp2.Installera:ehp2. s† startar installationen, eller klicka p†
+:hp2.Diskutrymme:ehp2. f”r att se hur mycket diskutrymme komponenterna kr„ver
+i arbetsstationen.
+
+.**********************************************************************
+.*  "Update" dialog (General help)
+.**********************************************************************
+:h1 name=IA200 res=5050.Uppdatera
+:p.
+I f”nstret Uppdatera visas information om produkten du ska uppdatera&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Produktnamn:ehp2.
+:dd.Namnet p† produkten
+:dt.:hp2.Produktnummer:ehp2.
+:dd.Produktens nummer
+:dt.:hp2.Version:ehp2.
+:dd.Produktens version, release och modification-nummer
+:dt.:hp2.Feature:ehp2.
+:dd.Produktens feature-nummer
+:edl.
+:p.
+V„lj :hp2.Uppdatera CONFIG.SYS:ehp2. om du vill att
+CONFIG.SYS-filen ska uppdateras automatiskt.
+:p.V„lj :hp2.Lagra en s„kerhetskopia:ehp2. om du vill lagra s„kerhetskopior
+„ndrade filer i en katalog f”r s„kerhetskopior.
+N„r du v„ljer det h„r alternativet blir alternativet terst„ll tillg„ngligt
+s† att den aktuella serviceniv†n kan †terst„llas vid ett senare tillf„lle.
+Du kan †terst„lla serviceniv†n om den nya niv†n f”r
+produkten inte fungerar tillfredsst„llande.
+V„lj :hp1.inte:ehp1. det h„r alternativet om det inte finns tillr„ckligt
+med diskutrymme f”r att lagra s„kerhetskopiorna.
+:nt.
+Du kan ta bort produktfilernas s„kerhetskopior genom att v„lja
+:hp2.Ta bort:ehp2. p† menyn tg„rd.
+:ent.
+:p.
+V„lj :hp2.Uppdatera:ehp2. om du vill uppdatera produkten och :hp2.Avbryt:ehp2.
+om du vill l„mna f”nstret. Om produkten har flera komponenter p†verkar
+uppdateringen alla installerade komponenter som har uppdaterats.
+I f”nstret Produktstatus kan du se en lista ”ver installerade komponenter.
+:eh1.
+
+.**********************************************************************
+.*  "Save files in backup subdirectory" checkbox of Update dialog
+.*  (contextual help) -
+.**********************************************************************
+:h2 name=IA201 res=5051.Lagra en s„kerhetskopia
+:p.
+N„r du markerar kryssrutan :hp2.Lagra en s„kerhetskopia:ehp2. i f”nstret
+Uppdatera lagras en s„kerhetskopia av de filer som ers„tts vid uppdateringen.
+:p.
+Om du v„ljer det h„r alternativet kan du †terst„lla den tidigare
+produktversionen efter uppdateringen. V„lj
+:hp1.inte:ehp1. det h„r alternativet om det inte finns tillr„ckligt
+med diskutrymme f”r att kunna lagra s„kerhetskopiorna.
+:nt.
+N„r det h„r alternativet „r f”rkryssat kan du ta bort s„kerhetskopiorna
+genom att v„lja alternativet :hp2.Ta bara bort s„kerhetskopior:ehp2.
+i f”nstret Ta bort.
+:ent.
+
+.**********************************************************************
+.*  "OK..." push button of Update dialog (contextual help) -
+.**********************************************************************
+                                                                                                              :h2 name=IA202 res=5052.Uppdatera
+:p.
+Klicka p† knappen :hp2.Uppdatera:ehp2. i f”nstret Uppdatera n„r du vill
+uppdatera produkten som du har markerat.
+:p.
+N„r du klickar p† :hp2.Uppdatera:ehp2. h„nder f”ljande&colon.
+:ol compact.
+:li.Installationsprogrammet ”verf”r och analyserar produktens paketfil.
+:li.Produkten uppdateras genom att nuvarande produktfiler ers„tts med
+nyare filer.
+:eol.
+
+.**********************************************************************
+.*  Progress Indicator of "Install" dialog or "Update" dialog (General help)
+.**********************************************************************
+:h2 name=IPI00 res=5053.Status (installation eller uppdatering)
+:i1.Statusf”nster, installation eller uppdatering
+:p.
+I det h„r f”nstret kan du se hur installationen eller uppdateringen
+fortl”per.
+F”nstret inneh†ller f”ljande information&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Rubrik:ehp2.
+:dd.Namnet p† produkten och komponenten som installeras eller uppdateras
+:dt.:hp2.Statusruta:ehp2.
+:dd.Information om hur installationen eller uppdateringen fortl”per
+:dt.:hp2.Status:ehp2.
+:dd.Aktuell status f”r installationen eller uppdateringen.
+F„ltet kan ha f”ljande v„rden&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Bearbetar:ehp2.
+:dd.Installationsprogrammet utf”r en uppgift som kan ta en viss tid.
+:dt.:hp2.Ett fel har intr„ffat:ehp2.
+:dd.Ett fel har intr„ffat. Klicka p† :hp2.Stopp:ehp2. f”r att avbryta
+installationen eller uppdateringen.
+:dt.:hp2.™verf”r:ehp2.
+:dd.Programmet ”verf”r filer.
+:dt.:hp2.Packar upp:ehp2.
+:dd.Filerna packas upp.
+:dt.:hp2.Tar bort filer:ehp2.
+:dd.Filerna tas bort n„r du klickar p† :hp2.Stopp:ehp2. under
+installationen eller uppdateringen.
+:dt.:hp2.terst„ller filer:ehp2.
+:dd.Filerna †terst„lls till tidigare serviceniv† n„r du klickar p†
+:hp2.Stopp:ehp2..
+:edl.
+:p.
+:dt.:hp2.Tids†tg†ng:ehp2.
+:dd.Den tid som har g†tt sedan fil”verf”ringen p†b”rjades
+:dt.:hp2.Termometer:ehp2.
+:dd.Visar i grafisk form antalet filer som redan har ”verf”rts
+:dt.:hp2.Filruta:ehp2.
+:dd.Information om de filer som ”verf”rs
+:dt.:hp2.K„lla:ehp2.
+:dd.Namnet p† k„llfilen
+:dt.:hp2.Destination:ehp2.
+:dd.Namnet p† destinationsfilen i arbetsstationen
+:edl.
+
+.**********************************************************************
+.*  "Stop" push button on "Install" and "Update" progress indicator dialogs
+.*  (contextual help) -
+.**********************************************************************
+:h2 name=IPI01 res=5058.Stopp
+:p.
+Klicka p† knappen :hp2.Stopp:ehp2. i statusf”nstret n„r du vill
+avbryta installationen eller uppdateringen.
+
+.**********************************************************************
+.*  "Restore" dialog (General help)
+.**********************************************************************
+:h1 name=IA300 res=5054.terst„ll
+:p.
+I f”nstret terst„ll visas information om produkten du ska
+†terst„lla till tidigare serviceniv†&colon.
+:p.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Produktnamn:ehp2.
+:dd.Namnet p† produkten
+:dt.:hp2.Produktnummer:ehp2.
+:dd.Produktens nummer
+:dt.:hp2.Version:ehp2.
+:dd.Produktens version, release och modification-nummer
+:dt.:hp2.Feature:ehp2.
+:dd.Produktens feature-nummer
+:edl.
+:p.
+Med det h„r alternativet †terst„ller du produktens tidigare serviceniv†.
+Om produkten inneh†ller komponenter †terst„lls den tidigare serviceniv†n
+f”r de komponenter som har en s„kerhetskopia. F”r de komponenter som saknar
+s„kerhetskopia „ndras inte den aktuella serviceniv†n.
+:p.
+Om du klickar p† knappen :hp2.Serviceniv†:ehp2. i f”nstret Produktstatus
+visas aktuell serviceniv† f”r produkten och dess komponenter.
+:p.
+Klicka p† :hp2.terst„ll:ehp2. om du vill †terst„lla produktens
+tidigare serviceniv† eller p† :hp2.Avbryt:ehp2. om du vill l„mna f”nstret.
+:eh1.
+
+.**********************************************************************
+.*  "OK" push button of Restore dialog (contextual help)
+.**********************************************************************
+:h2 name=IA301 res=5055.terst„ll
+:p.
+Klicka p† knappen :hp2.terst„ll:ehp2. i f”nstret terst„ll n„r du vill
+†terst„lla produktens tidigare serviceniv†.
+:p.
+N„r du klickar p† :hp2.terst„ll:ehp2. kopierar installationsprogrammet
+s„kerhetskopiorna av den tidigare serviceniv†n till den
+aktuella serviceniv†n.
+:p.
+:warning.N„r du v„ljer :hp2.terst„ll:ehp2. skrivs den aktuella serviceniv†n
+”ver.
+:ewarning.
+
+.**********************************************************************
+.*  "Delete" dialog (General help)
+.**********************************************************************
+:h1 name=IA400 res=5056.Ta bort
+:p.
+I f”nstret Ta bort visas information om produkten som du har valt att
+ta bort&colon.
+:p.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Produktnamn:ehp2.
+:dd.Namnet p† produkten
+:dt.:hp2.Produktnummer:ehp2.
+:dd.Produktens nummer
+:dt.:hp2.Version:ehp2.
+:dd.Produktens version, release och modification-nummer
+:dt.:hp2.Feature:ehp2.
+:dd.Produktens feature-nummer
+:edl.
+:p.Klicka p† knappen :hp2.Ta bort:ehp2. n„r du vill ta bort produkten
+och eventuella s„kerhetskopior.
+:p.Om du markerar kryssrutan :hp2.Ta bara bort s„kerhetskopior:ehp2.
+kommer endast produktens s„kerhetskopior att tas bort. Den aktuella
+versionen tas inte bort.
+:eh1.
+
+.**********************************************************************
+.*  "OK" push button of Delete window (General help) -
+.**********************************************************************
+:h2 name=IA401 res=5057.Ta bort
+:p.
+Klicka p† knappen :hp2.Ta bort:ehp2. i f”nstret Ta bort n„r du vill ta
+bort en produkt eller komponenter.
+:p.
+:warning.N„r du v„ljer :hp2.Ta bort:ehp2. tas b†de den aktuella versionen
+och lagrade s„kerhetskopior av produkten bort om du inte markerar kryssrutan
+:hp2.Ta bara bort s„kerhetskopior:ehp2..
+:ewarning.
+
+.**********************************************************************
+.*  "Description" window General help
+.**********************************************************************
+:h1 name=IT101 res=5064.Beskrivning
+:i1 id='info1'.Beskrivning
+:p.
+I det h„r f”nstret visas en beskrivning av en katalogfil eller en produkt.
+Du kan bl„ddra igenom f”nstrets inneh†ll med hj„lp av bl„ddringsstapeln
+eller piltangenterna. Du kan ocks† „ndra storleken p† f”nstret. Texten i
+f”nstret anpassas d† automatiskt till den nya f”nsterstorleken.
+:eh1.
+
+.**********************************************************************
+.*  "Directories Installed In" groupbox  (on Product Status dialog)
+.**********************************************************************
+:h2 name=ID202 res=5066.Installerad i
+:p.
+H„r visas i vilka kataloger produkten „r installerad.
+Du kan inte g”ra n†gra „ndringar i f„lten, men du kan bl„ddra i dem
+s† att t&rbl.ex hela s”kv„gen visas.
+
+.**********************************************************************
+.*  "Service Level" push button  (on Product Status dialog)
+.**********************************************************************
+:h2 name=ID203 res=5067.Serviceniv†
+:p.
+Klicka p† den h„r knappen n„r du vill se den markerade produktens serviceniv†.
+
+.**********************************************************************
+.*  "Service Level" push button  (on Product Status dialog with Components)
+.**********************************************************************
+:h2 name=ID252 res=5070.Serviceniv†
+:p.
+Klicka p† den h„r knappen n„r du vill se den markerade produktens serviceniv†.
+:p.
+Knappen „r sp„rrad (visas nedtonad) tills du v„ljer en komponent
+i listrutan f”r installerade komponenter.
+
+.**********************************************************************
+.*  "Components" list box         (on Product Status dialog with Components)
+.**********************************************************************
+:h2 name=ID251 res=5069.Installerade komponenter
+:p.
+I den h„r listrutan visas de komponenter som har installerats f”r produkten.
+Markera en komponent i listan och klicka sedan p† :hp2.Serviceniv†:ehp2.
+om du vill se komponentens aktuella serviceniv†.
+
+.**********************************************************************
+.*  "Product Status" dialog w/Components - (General help)
+.**********************************************************************
+:h1 name=ID250 res=5068.Produktstatus
+:p.
+I f”nstret Produktstatus visas information om en markerad produkt som „r
+installerad i arbetsstationen.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Produktnamn:ehp2.
+:dd.Namnet p† den markerade produkten i arbetsstationen
+:dt.:hp2.Produktnummer:ehp2.
+:dd.Den markerade produktens nummer
+:dt.:hp2.Version:ehp2.
+:dd.Den markerade produktens version, release och modification-nummer
+:dt.:hp2.Feature:ehp2.
+:dd.Den markerade produktens feature-nummer
+:dt.:hp2.Installerade komponenter:ehp2.
+:dd.Namnet p† produktkomponenter i arbetsstationen
+:dt.:hp2.Installerad i:ehp2.
+:dd.De kataloger d„r produkten „r installerad
+:edl.
+:p.Om du vill se aktuell serviceniv† f”r en komponent markerar
+du komponenten i listrutan Installerade komponenter och klickar sedan p†
+knappen :hp2.Serviceniv†:ehp2..
+:eh1.
+
+.**********************************************************************
+.*  "Service Level" dialog  - General help
+.**********************************************************************
+:h2 name=ID280 res=5110.Serviceniv†
+:i1.serviceniv†
+:p.
+I det h„r f”nstret visas produktens eller komponentens serviceniv† samt
+n„r och varifr†n uppdateringen gjordes.
+:p.Du kan skriva ut informationen genom att klicka p† :hp2.Skriv ut:ehp2..
+
+.**********************************************************************
+.*  "Container" on the 'Service Level' dialog
+.**********************************************************************
+:h2 name=ID281 res=5111.Serviceniv†
+:p.
+I den h„r listan visas serviceniv†er f”r den markerade produkten eller
+komponenten. Listan anger ocks† n„r och varifr†n uppdateringen gjordes.
+:p.
+Uppdateringar kan g”ras fr†n f”ljande system&colon.
+:dl tsize=7.
+:dt.MVS
+:dd.Serviceniv†n uppdateras fr†n ett MVS-system.
+:dt.VM
+:dd.Serviceniv†n uppdateras fr†n ett VM-system.
+:dt.VSE
+:dd.Serviceniv†n uppdateras fr†n ett VSE-system.
+:dt.Enhet
+:dd.Serviceniv†n uppdateras fr†n en diskettenhet, CD-ROM-enhet, LAN-enhet
+eller AS/400 PC-supportmapp.
+:edl.
+
+.**********************************************************************
+.*  "Print" push button on the 'Service Level' dialog
+.**********************************************************************
+:h2 name=ID282 res=5112.Skriv ut
+:p.
+Skriver ut informationen om serviceniv† som visas i f”nstret
+Serviceniv†.
+
+.**********************************************************************
+.*  "Cancel" push button on the 'Service Level' dialog
+.**********************************************************************
+:h2 name=ID283 res=5113.Avbryt
+:p.
+Klicka p† knappen :hp2.Avbryt:ehp2. n„r du vill st„nga f”nstret Serviceniv†
+och g† tillbaka till f”nstret Produktstatus.
+
+.**********************************************************************
+.*  "Search" dialog
+.**********************************************************************
+:h1 name=IL300 res=5071.S”k
+:p.
+I f”nstret S”k kan du s”ka efter katalogfiler i systemet.
+:p.
+G”r s† h„r&colon.
+:ol.
+:li.Markera enheten som du vill s”ka igenom i kombirutan Enhet.
+N„r du markerar en enhet visas namnen p† katalogerna och filerna i enheten
+i listrutorna Katalog och Fil.
+:li.Om du vill s”ka efter alla filer med en speciell filtyp skriver du
+ett filnamn med jokertecken i f„ltet Namn p† katalogfil.
+Standards”kbegreppet „r *.ICF.
+:li.Starta s”kningen genom att dubbelklicka p† katalogen du vill s”ka igenom
+i listrutan :hp2.Katalog:ehp2..
+N„r du v„ljer katalogen visas i listrutan Fil en lista med katalogfiler
+som motsvarar s”kbegreppet.
+:p.
+Forts„tt att v„lja kataloger tills du hittar
+katalogfilen du s”ker i listrutan :hp2.Fil:ehp2..
+:li.N„r katalogfilen du s”kte efter visas markerar du den i
+listrutan :hp2.Fil:ehp2..
+:li.Klicka p† :hp2.OK:ehp2..
+Katalogfilen visas i f”nstret ™ppna enhetskatalog.
+:eol.
+:eh1.
+
+.**********************************************************************
+.*  "Catalog filename" entry field on the 'Search' dialog
+.**********************************************************************
+:h2 name=IL301 res=5072.Namn p† katalogfil
+:p.
+I det h„r f„ltet skriver du namnet p† katalogfilen du vill ”ppna.
+Du kan anv„nda jokertecken i f„ltet.
+:p.
+Du kan ocks† v„lja en katalogfil genom att markera ett objekt i listrutan Fil.
+
+.**********************************************************************
+.*  "Drive" combinationbox on the 'Search' dialog
+.**********************************************************************
+:h2 name=IL302 res=5073.Enhet
+:p.
+I den h„r kombirutan visas vilken enhet som s”ks igenom.
+Om du valde en ny enhet fr†n listan med enheter kan du se vilka kataloger
+och filer som finns i enheten i listrutorna Katalog och Fil.
+
+.**********************************************************************
+.*  "File" list box on the 'Search' dialog
+.**********************************************************************
+:h2 name=IL303 res=5074.Fil
+:p.
+I den h„r listrutan visas en lista ”ver filer som finns i enheten och
+katalogen som du s”ker igenom.
+Filnamnen i listrutan motsvarar s”kbegreppet som visas i f„ltet
+Namn p† katalogfil.
+Du v„ljer katalogfilen du vill ”ppna genom att markera ett objekt
+i listan.
+:p.
+Du kan bl„ddra igenom inneh†llet i listrutan b†de lodr„tt och v†gr„tt.
+
+.**********************************************************************
+.*  "Directory" list box on the 'Search' dialog
+.**********************************************************************
+:h2 name=IL304 res=5075.Katalog
+:p.
+I den h„r listrutan visas en lista ”ver kataloger som finns i enheten som du
+s”ker igenom.
+Du kan bl„ddra igenom inneh†llet i listrutan b†de lodr„tt och v†gr„tt.
+:p.
+Dubbelklicka p† katalogen som du vill s”ka igenom.
+Filerna som finns i katalogen visas i listrutan Fil.
+N„r du v„ljer en katalog visas ocks† alla underkataloger
+som finns i den i listrutan Katalog.
+
+.**********************************************************************
+.*  "OK" push button on the 'Search' dialog
+.**********************************************************************
+:h2 name=IL305 res=5076.OK
+:p.
+Klicka p† den h„r knappen n„r du vill g† tillbaka till f”nstret
+™ppna enhetskatalog.
+Namnet p† katalogfilen du markerade visas i f„ltet f”r filnamn.
+
+.**********************************************************************
+.*  "Insert disk" dialog General help
+.**********************************************************************
+:h1 name=II100 res=5130.S„tt in en diskett
+:p.
+F”nstret S„tt in en diskett anv„nds n„r en produkt har mer „n en
+installationsdiskett.
+F”nstret visas framf”r det aktuella f”nstret under installationen
+n„r det „r dags att s„tta in en ny diskett i diskettenheten.
+:eh1.
+
+.**********************************************************************
+.*  Help for the "Drive" combination box on the "Insert disk" dialog
+.**********************************************************************
+:h2 name=II101 res=5131.Enhet
+:p.
+I den h„r kombirutan anger du i vilken enhet du s„tter in
+disketten.
+Rutan inneh†ller en lista ”ver tillg„ngliga enheter.
+Den enhet som anv„nds f”r tillf„llet „r standardenhet.
+Om du har tv† diskettenheter kan du s„tta in tv†
+disketter och v„xla mellan enheterna i den h„r rutan.
+
+.**********************************************************************
+.*  Help for the "Continue" push button on the "Insert disk" dialog
+.**********************************************************************
+:h2 name=II102 res=5132.Forts„tt
+:p.
+Klicka p† den h„r knappen n„r du vill forts„tta med installationen eller
+uppdateringen. Den markerade enheten kontrolleras s† att den
+inneh†ller r„tt diskett.
+Om den inte g”r det visas det h„r f”nstret igen.
+
+.***************************************************************
+.*  "Delete only backups" checkbox on "Delete" dialog (contextual help) -
+.**********************************************************************
+:h2 name=IA402 res=5160.Ta bara bort s„kerhetskopior
+:i1.Ta bara bort s„kerhetskopior
+:p.
+Markera kryssrutan :hp2.Ta bara bort s„kerhetskopior:ehp2. i f”nstret Ta bort
+n„r du bara vill ta bort produktens eller komponenternas s„kerhetskopior.
+Den aktuella versionen tas inte bort.
+:p.
+Kryssrutan „r sp„rrad (visas nedtonad) om det inte finns n†gra s„kerhetskopior
+att ta bort.
+
+.**********************************************************************
+.*  "Delete" dialog (with Components)  (General help) -
+.**********************************************************************
+:h1 name=IA450 res=5170.Ta bort
+:p.
+I f”nstret Ta bort visas information om produkten som du har valt att
+ta bort&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Produktnamn:ehp2.
+:dd.Namnet p† produkten
+:dt.:hp2.Produktnummer:ehp2.
+:dd.Produktens nummer
+:dt.:hp2.Version:ehp2.
+:dd.Produktens version, release och modification-nummer
+:dt.:hp2.Feature:ehp2.
+:dd.Produktens feature-nummer
+:dt.:hp2.Komponenter:ehp2.
+:dd.En lista ”ver produktens installerade komponenter
+:edl.
+:p.V„lj vilka komponenter du vill ta bort i listan och klicka sedan p†
+:hp2.Ta bort:ehp2..
+De markerade komponenternas s„kerhetskopior tas ocks† bort.
+:p.Om du markerar kryssrutan :hp2.Ta bara bort s„kerhetskopior:ehp2.
+tas bara de markerade komponenternas s„kerhetskopior bort. Den
+aktuella versionen tas inte bort.
+:eh1.
+
+.**********************************************************************
+.*  "Component List box" on Delete dialog (contextual help) -
+.**********************************************************************
+:h2 name=IA451 res=5171.Komponenter
+:p.
+I listrutan i f”nstret Ta bort
+markerar du vilka installerade komponenter som du vill ta bort
+f”r den markerade produkten.
+:p.
+De komponenter som du markerar i listan tas bort, inklusive komponenternas
+s„kerhetskopior, om du inte har markerat kryssrutan :hp2.Ta bara bort
+s„kerhetskopior:ehp2.. Du tar bort komponenterna genom att markera dem
+i listan och sedan klicka p† knappen :hp2.Ta bort:ehp2..
+
+.**********************************************************************
+.*  "Select All" push button  (General help) -
+.**********************************************************************
+:h2 name=ISAPB res=5031.Markera alla
+:p.
+Klicka p† knappen :hp2.Markera alla:ehp2. n„r du vill markera alla objekt som
+visas i listrutan.
+Knappen sp„rras (visas nedtonad) n„r alla komponenter i listan „r markerade.
+.* **************************************************************************
+.* Select All push button
+.*************************************************************
+:h2 name=ISAPC res=5032.Avmarkera alla
+:p.
+Klicka p† knappen :hp2.Avmarkera alla:ehp2. n„r du vill avmarkera alla objekt
+som „r markerade i listrutan.
+Knappen sp„rras (visas nedtonad) om listrutan inte inneh†ller n†gra
+markerade objekt.
+.**********************************************************************
+.* "Progress Indicator" (graphical nofiles) - General help
+.**********************************************************************
+:h1 name=IP200 res=5114.Status (†terst„llning eller borttagning)
+:i1.Statusf”nster, †terst„llning eller borttagning
+:p.
+I statusf”nstret kan du se status f”r de filer som
+†terst„lls eller tas bort.
+F”nstret inneh†ller f”ljande information&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Rubrik:ehp2.
+:dd.Produktnamnet och -komponenten som ska †terst„llas eller tas bort
+:dt.:hp2.Statusruta:ehp2.
+:dd.Information om bearbetningens status
+:dt.:hp2.Status:ehp2.
+:dd.Aktuell status f”r †terst„llningen eller borttagningen.
+F„ltet kan ha f”ljande v„rden&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Bearbetar:ehp2.
+:dd.Installationsprogrammet utf”r en uppgift som kan ta
+en viss tid.
+:dt.:hp2.Ett fel har intr„ffat:ehp2.
+:dd.Ett fel har intr„ffat. Klicka p† :hp2.Stopp:ehp2. f”r att avbryta
+bearbetningen.
+:dt.:hp2.Tar bort filer:ehp2.
+:dd.Produktfilerna tas bort.
+:dt.:hp2.terst„ller filer:ehp2.
+:dd.Filerna †terst„lls till tidigare serviceniv†.
+:edl.
+:p.
+:dt.:hp2.Tids†tg†ng:ehp2.
+:dd.Den tid som har g†tt sedan bearbetningen p†b”rjades
+:dt.:hp2.Termometer:ehp2.
+:dd.Visar antalet filer som redan har †terst„llts eller tagits bort
+:edl.
+:eh1.
+
+.**********************************************************************
+.*  "Descriptions" push button (on Install dialogs)
+.**********************************************************************
+:h2 name=IA131 res=5180.Beskrivningar
+:p.
+N„r du klickar p† knappen :hp2.Beskrivningar:ehp2. visas ett f”nster
+med en kort beskrivning av varje komponent som „r markerad i listrutan.
+Om det inte finns n†gon beskrivning tillg„nglig visas ett meddelande som talar
+om att beskrivningen inte kan visas.
+:p.
+Knappen :hp2.Beskrivningar:ehp2. „r bara tillg„nglig n„r du har markerat
+en komponent.
+
+.**********************************************************************
+.*  "Stop" push button on (No Files) graphical progress indicator
+.*  used by Restore and Delete                (contextual help) -
+.**********************************************************************
+:h2 name=IP201 res=5115.Stopp
+:p.
+Klicka p† knappen :hp2.Stopp:ehp2. i statusf”nstret n„r du vill
+avbryta †terst„llningen eller borttagningen.
+
+.****************************************************************
+.* Main help for Error messages (General help)
+.****************************************************************
+:h1 name=ERROR res=10000.Felmeddelanden
+:p.&rbl.
+:eh1.
+
+.**********************************************************************
+.*  EPFIE107: The package file 'filename' cannot be found or cannot be
+.*            opened.
+.*         (General help)
+.**********************************************************************
+:h2 name=IHM107 res=107.EPFIE107
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet kan inte hitta paketfilen som anges
+i katalogfilen eller kan inte ”ppna paketfilen
+som ”verf”rts till arbetsstationen.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+:hp5.Anv„ndare:ehp5.
+:p.
+Kontrollera att du har tillg†ng till datasetet (MVS), „r l„nkad till
+minidisken (VM), har satt in r„tt diskett eller har anslutit till
+LAN-enheten med produktfilerna. G”r om ”verf”ringen genom att klicka p†
+:hp2.F”rs”k igen:ehp2.. Om felet kvarst†r rapporterar du det till
+systemadministrat”ren.
+:p.
+Du tar bort meddelandet och g†r tillbaka till f”reg†ende f”nster genom att klicka p†
+:hp2.Avbryt:ehp2..
+:p.
+:hp5.Systemadministrat”rer:ehp5.
+:p.
+Kontrollera att produktens paketfil finns i k„llan och att
+Package-satsen i katalogfilen pekar p† r„tt paketfil.
+R„tta eventuella fel och f”rs”k igen.
+:p.
+Du tar bort meddelandet och g†r tillbaka till f”reg†ende f”nster genom att klicka p†
+:hp2.Avbryt:ehp2..
+
+.**********************************************************************
+.*  EPFIE111: Unable to connect to the host session 'x:'. Make sure the
+.*session exists and is not in use.       (General help)
+.**********************************************************************
+:h2 name=IHM111 res=111.EPFIE111
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Ett fel intr„ffade n„r Installationsprogrammet skulle ansluta till v„rddatorn.
+:p.
+:hp7.tg„rd:ehp7.
+:ol.
+:li.Ta bort meddelandet och g† tillbaka till f”reg†ende f”nster genom att klicka
+p† :hp2.Avbryt:ehp2..
+:li.Kontrollera att v„rdsession som anges i f”nstret ™ppna v„rddatorkatalog
+„r aktiv och klar f”r kommunikation.
+Om du ska installera eller uppdatera ”ppnar du v„rddatorkatalogen igen
+genom att v„lja :hp2.™ppna v„rddatorkatalog:ehp2. p† Arkiv-menyn.
+:li.F”rs”k igen.
+:eol.
+
+.**********************************************************************
+.*  EPFIE112: Unable to download 'xxxx' - the file is in use or locked.
+.*            (General help)
+.**********************************************************************
+:h2 name=IHM112 res=112.EPFIE112
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet kan inte ”verf”ra filen eftersom
+den redan anv„nds i arbetsstationen.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+G”r n†got av f”ljande&colon.
+:ul.
+:li.St„ng programmet som anv„nder filen i arbetsstationen och klicka p†
+:hp2.F”rs”k igen:ehp2..
+:li.Om filen som ”verf”rs „r ett
+skrivbordsobjekt eller har klassen DLL m†ste du
+avregistrera klassen och starta om arbetsstationen f”r att frig”ra filen.
+:li.Klicka p† :hp2.Avbryt:ehp2. om du vill avbryta installationen eller
+uppdatera produkten.
+:eul.
+
+.**********************************************************************
+.*  EPFIE113: The host is not responding. Switch to the host session and make
+.*     sure that the host is in a ready state.   - (General help)
+.**********************************************************************
+:h2 name=IHM113 res=113.EPFIE113
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+V„rdsession som anges i f”nstret ™ppna v„rddatorkatalog svarar inte
+p† installationsprogrammets kommandon.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+:ul.
+:li.V„xla till v„rdsessionen och kontrollera att sessionen „r aktiv
+och „r klar f”r kommunikation.
+:li.Kontrollera att du har valt r„tt v„rdsystem i f”nstret ™ppna
+v„rddatorkatalog. V„lj n†got av f”ljande&colon.
+:dl tsize=8 break=none compact.
+:dt.:hp2.Avbryt:ehp2.
+:dd.Avbryter bearbetningen
+:dt.:hp2.F”rs”k igen:ehp2.
+:dd.Ger kommandot RECEIVE p† nytt
+:edl.
+:eul.
+
+.**********************************************************************
+.*  EPFIE114: 'file' cannot be found on the host. (General help)
+.**********************************************************************
+:h2 name=IHM114 res=114.EPFIE114
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet kan inte hitta filen i k„llan.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+:hp5.Anv„ndare:ehp5.
+:p.
+Kontrollera att filen finns i k„llan och klicka sedan p† :hp2.F”rs”k igen:ehp2.
+eller :hp2.Avbryt:ehp2..
+:p.
+Om felet kvarst†r kontaktar du systemadministrat”ren.
+:p.
+:hp5.Systemadministrat”rer:ehp5.
+:p.
+Kontrollera att filen finns i k„llan och att produktens katalog och paketfil
+pekar p† r„tt filer.
+
+.**********************************************************************
+.*  EPFIE115: The backup package file 'filename' was not found.  Unable to
+.*            restore (or delete) the product. (General help)
+.**********************************************************************
+:h2 name=IHM115 res=115.EPFIE115
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet kan inte hitta informationen
+som beh”vs f”r att ta bort eller †terst„lla den markerade produkten.
+Produktfilerna har f”rmodligen tagits bort p† n†got annat s„tt „n med
+alternativen Ta bort eller terst„ll i installationsprogrammet.
+:p.
+:hp7.tg„rd:ehp7.
+:ol.
+:li.Avbryt †terst„llningen eller borttagningen genom att klicka p†
+:hp2.Avbryt:ehp2..
+:li.Om produktfilerna fortfarande finns p† diskenheten kan du ta bort dem
+med OS&slash.2:link refid=tm1 reftype=fn.*:elink.-kommandot
+DELETE.
+Du †terst„ller produkten genom att kopiera filerna fr†n underkatalogen med
+s„kerhetskopior med OS&slash.2-kommandot COPY.
+:eol.
+
+.**********************************************************************
+.*  EPFIE116: Cannot restore or delete the last service level. Package file
+.*            errors were found. (General help)
+.**********************************************************************
+:h2 name=IHM116 res=116.EPFIE116
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet uppt„ckte ett fel n„r det f”rs”kte
+analysera s„kerhetskopian av paketfilen.
+:p.
+Du beh”ver en giltig paketfil f”r att kunna †terst„lla eller ta bort
+den installerade serviceniv†n.
+:p.
+:hp7.tg„rd:ehp7.
+:ol.
+:li.Avbryt borttagningen eller †terst„llningen genom att klicka p†
+:hp2.Avbryt:ehp2..
+:li.Du tar bort produkten genom att ta bort filerna manuellt
+med OS&slash.2:link refid=tm1 reftype=fn.*:elink.-kommandot
+DELETE. Du †terst„ller produkten genom att kopiera filerna manuellt
+fr†n underkatalogen med s„kerhetskopior med
+OS&slash.2-kommandot COPY.
+:eol.
+
+.**********************************************************************
+.*  EPFIW124: Cannot delete file 'filename'. File not found. (General help)
+.**********************************************************************
+:h2 name=IHM124 res=124.EPFIW124
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet kan inte hitta filen som ska tas
+bort i paketfilen. Filen har d„rf”r inte tagits bort.
+:p.
+Felet kommer inte att p†verka installationen eller uppdateringen.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Forts„tt genom att klicka p† :hp2.OK:ehp2..
+
+.**********************************************************************
+.*  EPFIQ125: You have aborted the installation.  The current version of the
+.*            product is inoperable.  Do you want to delete the files
+.*            already downloaded? (General help)
+.**********************************************************************
+:h2 name=IHM125 res=125.EPFIQ125
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet kunde
+bara ”verf”ra en del av filerna som beh”vs f”r att k”ra produkten p&rbl.g&rbl.a ett
+avbrott eller ett fel.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+V„lj n†got av f”ljande&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Ja:ehp2.
+:dd.Tar bort de ”verf”rda filerna. V„lj :hp2.Ja:ehp2. om du inte
+vill g”ra om installationen.
+:dt.:hp2.Nej:ehp2.
+:dd.Filerna finns kvar i arbetsstationen. De ”verf”rda filerna beh”ver
+inte ”verf”ras igen n„r installationen g”rs om.
+V„lj :hp2.Nej:ehp2. om du vill g”ra om installationen.
+:p.
+N„r du startar om installationsprogrammet forts„tter det att ”verf”ra
+filer som inte redan har ”verf”rts.
+:edl.
+
+.**********************************************************************
+.*  EPFIW127: 'xxxx' cannot be deleted because the disk specified is not
+.*             formatted. (General help)
+.**********************************************************************
+:h2 name=IHM127 res=127.EPFIW127
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet kan inte accessa filen eftersom den finns
+p† en disk vars format inte g†r att l„sa.
+:p.
+:hp7.tg„rd:ehp7.
+:ol compact.
+:li.Avbryt bearbetningen genom att klicka p† :hp2.Avbryt:ehp2..
+:li.Kontrollera att disken „r r„tt formaterad.
+:li.F”rs”k igen.
+:eol.
+
+.**********************************************************************
+.*  EPFIW128: Cannot delete 'xxxx'.  File is in use.
+.*            (General help)
+.**********************************************************************
+:h2 name=IHM128 res=128.EPFIW128
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet kan inte ta bort filen i arbetsstationen
+eftersom den anv„nds.
+:p.
+:hp7.tg„rd:ehp7.
+:ol.
+:li.Ta bort meddelandet genom att klicka p† :hp2.Avbryt:ehp2..
+:li.Kontrollera att produkten du ska installera, uppdatera, ta bort
+eller †terst„lla inte anv„nds.
+Om filen som ”verf”rs „r ett
+skrivbordsobjekt
+eller har klassen DLL
+m†ste du avregistrera klassen och starta om arbetsstationen
+f”r att frig”ra filen.
+:li.V„nta tills filen „r fri eller avsluta programmet som anv„nder filen.
+:li.F”rs”k igen.
+:eol.
+
+.**********************************************************************
+.*  EPFIE129: Out of hard disk space.              - (General help)
+.**********************************************************************
+:h2 name=IHM129 res=129.EPFIE129
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Det finns inte tillr„ckligt med utrymme i diskenheten f”r att ”verf”ra
+fler filer.
+:p.
+:hp7.tg„rd:ehp7.
+:ol.
+:li.Frig”r utrymme i enheten genom att ta bort filer som du inte anv„nder.
+:li.V„lj :hp2.Uppdatera:ehp2. eller :hp2.Installera:ehp2.
+p† menyn tg„rd och g”r sedan om ”verf”ringen.
+:p.
+Om du ska uppdatera kan du spara utrymme p† disken genom att
+avmarkera kryssrutan :hp2.Lagra en s„kerhetskopia:ehp2. n„r du g”r om
+uppdateringen.
+:eol.
+:p.
+eller
+:ol.
+:li.Avsluta installationen eller uppdateringen genom att v„lja
+:hp2.Avbryt:ehp2..
+:li.Installera produkten i en annan enhet eller ta bort filer som du inte
+anv„nder fr†n den aktuella enheten.
+:eol.
+
+.**********************************************************************
+.*  EPFIE130: 'filename' cannot be accessed because the disk specified is not
+.*            formatted. (General help)
+.**********************************************************************
+:h2 name=IHM130 res=130.EPFIE130
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet kan inte ”verf”ra filen till arbetsstationen
+eftersom destinationsdisken inte „r l„sbar eller inte har formaterats
+med r„tt filsystem. Problemet kan uppst† om en fil med ett
+HPFS-namn eller -filtyp
+”verf”rs till en enhet som formaterats med filsystemet FAT.
+:p.
+:hp7.tg„rd:ehp7.
+:ol compact.
+:li.Klicka p† knappen :hp2.F”rs”k igen:ehp2..
+:li.Om felet kvarst†r formaterar du om disken eller v„ljer en annan
+destinationsenhet.
+:eol.
+
+.**********************************************************************
+.*  EPFIE131: Cannot access 'filename'.  The workstation file is in use.
+.*            (General help)
+.**********************************************************************
+:h2 name=IHM131 res=131.Hj„lp f”r EPFIE131
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Ett annat program anv„nder den angivna filen. Installationsverktyget
+kan inte skriva ”ver eller modifiera filen.
+:p.
+:hp7.tg„rd:ehp7.
+:ol compact.
+:li.Kontrollera att programmet som ska installeras eller uppdateras inte „r ig†ng.
+:li.Avsluta alla program som har tillg†ng till filen.
+Om filen som ska ”verf”ras „r av typen
+Workplace Shell:link refid=tm1 reftype=fn.*:elink.-objekt
+eller DLL, m†ste du avregistrera klassen och starta om arbetsstationen
+f”r att filen ska frig”ras.
+:li.V„lj :hp2.F”rs”k igen.:ehp2.
+:eol.
+
+.**********************************************************************
+.*  EPFIE132: An error occurred while attempting to create the %1 directory.
+.*     - (General help)
+.**********************************************************************
+:h2 name=IHM132 res=132.EPFIE132
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet kunde inte skapa katalogerna i s”kv„gen.
+Det kanske redan finns en fil med samma namn.
+:p.
+:hp7.tg„rd:ehp7.
+:ol.
+:li.Avbryt bearbetningen genom att klicka p† :hp2.Avbryt:ehp2..
+:li.Kontrollera att det finns tillr„ckligt med diskutrymme
+i enheten f”r att kunna skapa katalogerna.
+:li.G”r n†got av f”ljande beroende p† vad som orsakade felet&colon.
+:ul.
+:li.En katalog med namnet EPFICAT.PKG finns som underkatalog i
+<startenhet>&colon.\OS2\SYSTEM\$EPFINST eller i
+<startenhet>&colon.%EPFINSTDIR% om installationsvariabeln
+EPFINSTDIR „r aktiverad.
+:ul.
+:li.Ta bort EPFICAT.PKG fr†n katalogen $EPFINST med
+OS/2-kommandot DEL.
+:li.Ta bort katalogen EPFICAT.PKG med OS/2-kommandot RD.
+:eul.
+:li.Det finns redan en fil med samma namn som n†gon av katalogerna.
+:ul.
+:li.Ta bort eller d”p om eventuella filer med smma namn som n†gon av
+destinationskatalogerna.
+:eul.
+:li.Sessionsdatavariablen EPFINSTDIR pekar p† ett ogiltigt katalognamn.
+:ul.
+:li.Kontrollera att katalognamnen „r giltiga i det filsystem som finns p†
+enheten.
+:eul.
+:eul.
+:li.G”r om installationen eller uppdateringen.
+:eol.
+
+.**********************************************************************
+.*  EPFIQ133: Cannot recover to a stable service level. (General help)
+.**********************************************************************
+:h2 name=IHM133 res=133.EPFIQ133
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Du f”rs”ker att avbryta en borttagning eller †terst„llning som inte har
+slutf”rts. Om du forts„tter kommer produkten att bli instabil.
+G”r om installationen eller uppdateringen innan du anv„nder produkten.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+V„lj n†got av f”ljande&colon.
+:dl tsize=5 break=none compact.
+:dt.:hp2.Ja:ehp2.
+:dd.Avbryter bearbetningen
+:dt.:hp2.Nej:ehp2.
+:dd.Forts„tter med borttagningen eller †terst„llningen
+:edl.
+
+.**********************************************************************
+.*  EPFIE134: Cannot access the profile file         (General help)
+.**********************************************************************
+:h2 name=IHM134 res=134.EPFIE134
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet kan inte l„sa profilen.
+Filen inneh†ller information som beh”vs f”r den aktuella
+bearbetningen.
+:p.
+Om informationen saknas kan bearbetningen inte utf”ras.
+:p.
+:hp7.tg„rd:ehp7.
+:ol.
+:li.Avbryt bearbetningen genom att klicka p† :hp2.Avbryt:ehp2..
+:li.Kontrollera att filen inte „r l†st genom n†gon annan bearbetning
+och f”rs”k igen. Om felet kvarst†r tar du bort profilen och f”rs”ker igen.
+:eol.
+
+.**********************************************************************
+.*  EPFIE137: An error occurred while attempting to back up the file '%1'.
+.*      -  (General help)
+.**********************************************************************
+:h2 name=IHM137 res=137.EPFIE137
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet kan inte kopiera filen till katalogen med
+s„kerhetskopior p&rbl.g&rbl.a n†got av f”ljande&colon.
+:ul compact.
+:li.Det finns inte tillr„ckligt med diskutrymme f”r att s„kerhetskopiera filerna.
+:li.Filen anv„nds redan.
+:li.Katalogen f”r s„kerhetskopior kunde inte skapas.
+:eul.
+:p.
+:hp7.tg„rd:ehp7.
+:ol.
+:li.Avbryt bearbetningen genom att klicka p† :hp2.Avbryt:ehp2..
+:li.Kontrollera att det finns tillr„ckligt med diskutrymme i enheten
+med katalogen.
+:li.G”r om uppdateringen.
+:eol.
+
+.**********************************************************************
+.*  EPFIW138: Cannot update the date and time of 'filename'. (General help)
+.**********************************************************************
+:h2 name=IHM138 res=138.EPFIW138
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Ett fel intr„ffade n„r installationsprogrammet skulle ge
+den ”verf”rda filen samma datum och tid som paketfilen.
+:p.
+Inst„llningen f”r datum och tid p†verkar inte installationen.
+Filen har f†tt samma datum och tid som i systemet.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Forts„tt genom att klicka p† :hp2.OK:ehp2..
+
+.**********************************************************************
+.*  EPFIQ139: 'filename.ext' already exists on the workstation. Overwrite the file?
+.*   (General help)
+.**********************************************************************
+:h2 name=IHM139 res=139.EPFIQ139
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet
+m†ste ers„tta en fil i arbetsstationen f”r att kunna ”verf”ra filen.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+V„lj n†got av f”ljande&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Ja:ehp2.
+:dd.Ers„tter filen i arbetsstationen och forts„tter med installationen
+eller uppdateringen.
+:dt.:hp2.Nej:ehp2.
+:dd.Hoppar ”ver den aktuella filen och forts„tter med n„sta.
+:dt.:hp2.Ja till alla:ehp2.
+:dd.Ers„tter den befintliga arbetsstationsfilen och alla f”ljande
+duplikatfiler som hittas p† arbetstationen.
+Det h„r meddelandet visas inte fler g†nger.
+:P.Installationen eller uppdateringen forts„tter.
+:edl.
+
+.**********************************************************************
+.*  EPFIE140: 'xxxx' is not a valid path. (General help)
+.**********************************************************************
+:h2 name=IHM140 res=140.EPFIE140
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Du har angett en ogiltig s”kv„g.
+:p.
+:hp7.tg„rd:ehp7.
+:ol.
+:li.G† tillbaka till f”nstret Installation - kataloger genom att klicka p†
+:hp2.Avbryt:ehp2..
+:li.ndra s”kv„gen och se till att
+:ul compact.
+:li.s”kv„gen inneh†ller en giltig enhetsbeteckning
+:li.katalognamnen inneh†ller h”gst 8 tecken
+(om enheten inte „r formaterad med filsystemet HPFS)
+:li.s”kv„gen inte avslutas med ett bakstreck &lpar.&bsl.&rpar.
+:eul.
+:li.Klicka p† :hp2.Installera:ehp2. och f”rs”k igen.
+:eol.
+
+.**********************************************************************
+.*  EPFIW141: Cannot update the file mode of 'filename'. (General help)
+.**********************************************************************
+:h2 name=IHM141 res=141.EPFIW141
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Ett fel intr„ffade n„r installationsprogrammet
+skulle s„tta l„s- eller g”mflagga
+p† den angivna filen. Informationen p†verkar inte
+installationen. Flaggorna har inte satts.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Forts„tt genom att klicka p† :hp2.OK:ehp2..
+
+.**********************************************************************
+.*  EPFIE142: Error copying the file 'filename' to the 'subdirectory'
+.*            directory. (General help)
+.**********************************************************************
+:h2 name=IHM142 res=142.EPFIE142
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Ett systemfel intr„ffade n„r filerna skulle installeras, uppdateras
+eller †terst„llas p&rbl.g&rbl.a n†got av f”ljande&colon.
+:ul compact.
+:li.Det finns inte tillr„ckligt med diskutrymme f”r att kopiera filerna.
+:li.En eller flera av filerna som kopieras anv„nds redan.
+:eul.
+:p.
+:hp7.tg„rd:ehp7.
+:ol.
+:li.Kontrollera diskutrymmet i enheten d„r produkten „r installerad.
+:li.Kontrollera att produkten inte redan anv„nds.
+:li.F”rs”k igen.
+:eol.
+
+.**********************************************************************
+.*  EPFIE144: An error occurred while attempting to load the user exit DLL
+.*            'xxxx'. User exits will not be executed.  (General help)
+.**********************************************************************
+:h2 name=IHM144 res=144.EPFIE144
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet kunde inte l„sa in eller hitta
+DLL-filen som beh”vs f”r att kunna forts„tta.
+:p.
+:hp7.tg„rd:ehp7.
+:ol.
+:li.Ta bort meddelandet genom att klicka p† :hp2.OK:ehp2..
+:li.Kontrollera att DLL-filen finns i en katalog som ing†r i LIBPATH-satsen.
+Om DLL-filen ”verf”rs vid installationen kan du beh”va l„gga till en
+punkt och ett semikolon &lparen..;&rparen.
+i b”rjan av LIBPATH-satsen i CONFIG.SYS-filen
+&lparen.t&rbl.ex
+LIBPATH=:hp2.&period.&semi.:ehp2.C&colon.&bsl.OS2&bsl.DLL&semi.&rparen..
+:li.Starta om arbetsstationen och g”r om installationen.
+:p.Om DLL-filen ing†r i installationsprogrammet kontrollerar du att
+den finns i samma katalog som resten av installationsfilerna.
+:eol.
+
+.**********************************************************************
+.*  EPFIE145: User Exit error.  Function 'xxxx' was not found in the exit DLL
+.*            'xxxx'. (General help)
+.**********************************************************************
+:h2 name=IHM145 res=145.EPFIE145
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet kan inte hitta en funktion som anges i nyckelordet
+EXIT i en FILE-sats i den angivna DLL-filen.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+:hp5.Anv„ndare:ehp5.
+:p.Det „r f”rmodligen fel p† produkten du ska installera eller uppdatera.
+Kontakta systemadministrat”ren.
+:p.
+:hp5.Systemadministrat”rer:ehp5.
+:ol compact.
+:li.Ta bort meddelandet genom att klicka p† :hp2.OK:ehp2..
+:li.Kontrollera att paketfilen „r giltig.
+:li.Om felet kvarst†r kontaktar du den produktansvarige.
+:eol.
+
+.**********************************************************************
+.*  EPFIE147: The path 'xxxx' does not specify a hard drive. (General help)
+.**********************************************************************
+:h2 name=IHM147 res=147.EPFIE147
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+S”kv„gen inneh†ller ingen giltig enhetsbeteckning.
+:p.
+:hp7.tg„rd:ehp7.
+:ol compact.
+:li.G† tillbaka till f”nstret Installation - kataloger genom att klicka p†
+:hp2.Avbryt:ehp2..
+:li.L„gg till r„tt enhet i s”kv„gen.
+:li.Klicka p† :hp2.Installera:ehp2. och f”rs”k igen.
+:eol.
+
+.**********************************************************************
+.*  EPFIE148: The path 'xxxx' does not specify a valid hard drive.
+.*            (General help)
+.**********************************************************************
+:h2 name=IHM148 res=148.EPFIE148
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Enheten som anges i s”kv„gen saknas eller „r en diskettenhet.
+:p.
+:hp7.tg„rd:ehp7.
+:ol.
+:li.G† tillbaka till f”nstret Installation - kataloger genom att klicka p†
+:hp2.Avbryt:ehp2..
+:li.ndra s”kv„gens enhetsspecifikation.
+:li.Klicka p† :hp2.Installera:ehp2. och f”rs”k igen.
+:eol.
+
+.**********************************************************************
+.*  EPFIE149: The path 'xxxx' cannot contain any global characters (i.e. '*'
+.*            or '?') (General help)
+.**********************************************************************
+:h2 name=IHM149 res=149.EPFIE149
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Du kan inte anv„nda jokertecken &lparen.? och
+&asterisk.&rparen. i s”kv„gen till det h„r f”nstret.
+:p.
+:hp7.tg„rd:ehp7.
+:ol.
+:li.G† tillbaka till f”nstret Installation - kataloger genom att klicka p†
+:hp2.Avbryt:ehp2..
+:li.Ta bort tecknen fr†n s”kv„gen.
+:li.Klicka p† :hp2.Installera:ehp2. och f”rs”k igen.
+:eol.
+
+.**********************************************************************
+.*  EPFIE150: Cannot download 'filename'. Directory overflow occurred.
+.*            (General help)
+.**********************************************************************
+:h2 name=IHM150 res=150.EPFIE150
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet kan inte ”verf”ra filen eftersom det
+finns f”r m†nga filer i katalogen.
+:p.
+:hp7.tg„rd:ehp7.
+:ol compact.
+:li.Ta bort filer som du inte anv„nder fr†n katalogen.
+:li.Klicka p† :hp2.F”rs”k igen.:ehp2.
+:eol.
+:p.
+eller
+:ol compact.
+:li.Klicka p† :hp2.Avbryt.:ehp2.
+:li.V„lj en annan destinationskatalog och f”rs”k igen.
+:eol.
+
+.**********************************************************************
+.*  EPFIE151: xxxx A communication error %4 occurred. (General help)
+.**********************************************************************
+:h2 name=IHM151 res=151.EPFIE151
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet uppt„ckte ett fel i v„rddatorkommunikationen.
+:p.
+:hp7.tg„rd:ehp7.
+:ol compact.
+:li.Kontrollera status f”r v„rdsessionen.
+:li.Klicka p† :hp2.F”rs”k igen.:ehp2.
+:eol.
+:p.
+Mer information om felkoden finns i anv„ndarhandboken f”r OS/2.
+:p.
+Om felet kvarst†r kontaktar du den produktansvarige.
+
+.**********************************************************************
+.*  EPFIE152: 'x' is not a valid host session. (General help)
+.**********************************************************************
+:h2 name=IHM152 res=152.EPFIE152
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Du har markerat fel v„rdsession i listrutan V„rdsession i f”nstret
+™ppna v„rddatorkatalog.
+:p.
+:hp7.tg„rd:ehp7.
+:ol compact.
+:li.Kontrollera att den angivna v„rdsessionen „r aktiv.
+:li.F”rs”k igen.
+:eol.
+:p.
+eller
+:ol compact.
+:li.V„lj :hp2.™ppna v„rddatorkatalog:ehp2. p† Arkiv-menyn.
+:li.™ppna produktkatalogen igen med en annan v„rdsession.
+:eol.
+
+.**********************************************************************
+.*  EPFIE153: Session 'xxxx' is busy. (General help)
+.**********************************************************************
+:h2 name=IHM153 res=153.EPFIE153
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+V„rdsessionen som ska anv„ndas f”r fil”verf”ringen ”verf”r redan en fil eller
+anv„nds i en annan session.
+:p.
+:hp7.tg„rd:ehp7.
+:ol compact.
+:li.V„nta tills v„rdsessionen „r ledig.
+:li.Klicka p† :hp2.F”rs”k igen:ehp2..
+:eol.
+
+.**********************************************************************
+.*  EPFIE155: An error occurred on the host while accessing the file
+.*            'filename'. (General help)
+.**********************************************************************
+:h2 name=IHM155 res=155.EPFIE155
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+EHLLAPI rapporterade ett systemfel. Felet kan bero p†
+en rad olika kommunikationsfel, t&rbl.ex att styrenheten inte fungerar eller att
+kabeln inte „r ansluten.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Kontrollera kommunikationsanslutningarna och g”r om installationen eller
+uppdateringen.
+:p.
+Om felet kvarst†r startar du om systemet och g”r om installationen
+eller uppdateringen.
+
+.**********************************************************************
+.*  EPFIE156: Host session 'x' is disconnected. Check the host window and the
+.*           workstation/host cable connections. (General help)
+.**********************************************************************
+:h2 name=IHM156 res=156.EPFIE156
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+F”nstret som v„rdsessionen k”r i „r aktivt men arbetsstationen „r inte
+ansluten till v„rddatorn.
+:p.
+:hp7.tg„rd:ehp7.
+:ol.
+:li.Kontrollera att du „r ansluten till v„rddatorn och att v„rddatorn „r
+klar f”r kommunikation.
+:li.F”rs”k igen.
+:eol.
+
+.**********************************************************************
+.*  EPFIE157: Cannot add 'xxxxxxxx' to the CONFIG.SYS file. (General help)
+.**********************************************************************
+:h2 name=IHM157 res=157.EPFIE157
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Ett fel intr„ffade n„r installationsprogrammet skulle l„gga till
+s”kv„gen i systemets konfigurationsfil (CONFIG.SYS).
+:p.
+:hp7.tg„rd:ehp7.
+:ol.
+:li.Forts„tt installationen eller uppdateringen genom att klicka p†
+:hp2.OK:ehp2..
+:li.L„gg till r„tt s”kv„gar i CONFIG.SYS-filen. Hur du g”r beskrivs i
+installationsanvisningarna till produkten.
+:p.
+En s„kerhetskopia av den ursprungliga CONFIG.SYS-filen
+finns i CONFIG.BAK, i den enhet och katalog d„r
+produkten „r installerad.
+:eol.
+
+.*******************************************************
+.*  EPFIE158: Cannot add the 'xxxxxxxxxxxxxx' group to the
+.*            Desktop Manager. (General help)
+.*****************************************************
+:h2 name=IHM158 res=158.EPFIE158
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Ett fel intr„ffade n„r installationsprogrammet skulle
+l„gga till mappen p† skrivbordet.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Forts„tt fil”verf”ringen genom att klicka p† :hp2.OK:ehp2..
+:p.
+Du kan l„gga till gruppen p† skrivbordet n„r
+installationen „r klar.
+
+.******************************************************
+.*  EPFIE159: Cannot add the 'xxxxxxxxxxxxxxx' program to the Workplace`
+.*            shell. (General help)
+.*********************************************************
+:h2 name=IHM159 res=159.EPFIE159
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Ett fel intr„ffade n„r installationsprogrammet skulle
+l„gga till programnamnet p† skrivbordet.
+Programnamnet kanske redan finns i mappen.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Forts„tt att l„gga till †terst†ende filer genom att klicka p† :hp2.OK:ehp2..
+:p.
+Du kan l„gga till programmet p† skrivbordet n„r
+installationen „r klar.
+Hur du g”r beskrivs i dokumentationen till
+OS&slash.2:link refid=tm1 reftype=fn.*:elink..
+
+.**********************************************************************
+.*  EPFIQ160: The service level you have selected to update is the same as
+.*            the service level already installed on your workstation.  Do you want
+.*            to continue? (General help)
+.**********************************************************************
+:h2 name=IHM160 res=160.EPFIQ160
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Den markerade produkten har samma serviceniv† som produkten som
+redan „r installerad i arbetsstationen.
+:p.
+Produkten har redan uppdaterats till den senaste serviceniv†n.
+Du beh”ver inte uppdatera produkten igen.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+V„lj n†got av f”ljande&colon.
+:dl tsize=5 break=none compact.
+:dt.:hp2.Ja:ehp2.
+:dd.Forts„tter uppdateringen av produkten
+:dt.:hp2.Nej:ehp2.
+:dd.Avbryter uppdateringen
+:edl.
+
+.**********************************************************************
+.*  EPFIE161: EPFIE161: Incorrect host session or host operating system
+.*            specified. (General help)
+.**********************************************************************
+:h2 name=IHM161 res=161.EPFIE161
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Du anv„nder inte samma system som har angetts f”r v„rdsessionen
+i f”nstret ™ppna v„rddatorkatalog.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Kontrollera i f”nstret ™ppna v„rddatorkatalog att v„rdsessionen
+och v„rdsystemet st„mmer ”verens och f”rs”k igen.
+
+.*********************************************************************
+.*EPFIE162 You do not have write access to the path you specified.
+.***********************************************************
+:h2 name=IHM162 res=162.EPFIE162
+:P.
+:hp7.F”rklaring:ehp7.
+:p.
+Du har inte skrivbeh”righet till den angivna enheten.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Byt enhet och f”rs”k igen eller be systemadministrat”ren om
+r„tt beh”righet.
+
+.**********************************************************************
+.*  EPFIE163: Out of memory. To release memory, end programs or allow memory
+.*            paging to your hard disk. (General help)
+.**********************************************************************
+:h2 name=IHM163 res=163.EPFIE163
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Systemet kr„ver ytterligare systemresurser eller systemminne f”r att kunna
+anv„nda installationsprogrammet.
+:p.
+:hp7.tg„rd:ehp7.
+:ol.
+:li.Avbryt bearbetningen genom att klicka p† :hp2.Avbryt:ehp2..
+:li.Avsluta program och sessioner som du inte anv„nder.
+:li.F”rs”k igen.
+:eol.
+
+.**********************************************************************
+.*  EPFIE165: Cannot execute 'programname(DOS return code: xxx)
+.*            (General help)
+.**********************************************************************
+:h2 name=IHM165 res=165.EPFIE165
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet kan inte k”ra det angivna programmet.
+:p.
+Om den k”rbara filen ing†r i installationsprogrammet m†ste den finnas
+i samma katalog som ”vriga installations- och underh†llsfiler.
+:p.
+:hp7.tg„rd:ehp7.
+:ol.
+:li.Ta bort meddelandet och g† tillbaka till f”reg†ende f”nster genom
+att klicka p† :hp2.Avbryt:ehp2..
+:p.Ytterligare information om DOS-returkoden finns i boken
+:hp1.OS/2 2.0 Toolkit Control Program Reference:ehp1..
+:li.Avsluta installationsprogrammet.
+:li.Byt till katalogen som inneh†ller installationsprogrammets k”rbara filer.
+:li.Starta om installationsprogrammet.
+:eol.
+:p.
+eller
+:ol.
+:li.Ta bort meddelandet och g† tillbaka till f”reg†ende f”nster genom
+att klicka p† :hp2.Avbryt:ehp2..
+:li.L„gg till katalogen som inneh†ller installationsprogrammets k”rbara filer
+i PATH-satsen i CONFIG.SYS-filen.
+:li.Starta om systemet.
+:li.Starta om installationsprogrammet.
+:eol.
+
+.**********************************************************************
+.*  EPFIE166: The catalog file contains too many package entries.
+.*            (General help)
+.**********************************************************************
+:h2 name=IHM166 res=166.EPFIE166
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Katalogfilen i k„llan inneh†ller f”r m†nga produkter. Katalogfilen
+f†r inneh†lla h”gst 80 produktpaket.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+:hp5.Anv„ndare:ehp5.
+:ol compact.
+:li.Ta bort meddelandet genom att klicka p† :hp2.Avbryt:ehp2..
+:li.Kontakta systemadministrat”ren.
+:eol.
+:p.
+:hp5.Systemadministrat”rer:ehp5.
+:p.
+G”r n†got av f”ljande&colon.
+:ul.
+:li.ndra katalogfilen i v„rddatorn och ta bort produkter som du inte anv„nder.
+:li.Dela upp katalogfilen i en eller flera katalogfiler.
+:eul.
+
+.**********************************************************************
+.* EPFIE167: The catalog file 'filename' cannot be found on the host. Contact
+.*           your system administrator. (General help)
+.**********************************************************************
+:h2 name=IHM167 res=167.EPFIE167
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet kan inte hitta katalogfilen i k„llan p&rbl.g&rbl.a att
+:ul.
+:li.filen saknas
+:li.du inte har tillg†ng till de MVS-dataset, VM-minidiskar, LAN-enheter
+eller disketter d„r katalogfilen finns
+:eul.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Ta bort meddelandet och g† tillbaka till f”reg†ende f”nster genom
+att klicka p† :hp2.Avbryt:ehp2..
+:p.
+G”r n†got av f”ljande&colon.
+:ul.
+:li.Kontakta systemadministrat”ren om filen inte finns i k„llan.
+:li.Accessa de MVS-dataset, VM-minidiskar, LAN-enheter eller
+disketter som inneh†ller katalogen.
+:eul.
+
+.**********************************************************************
+.* EPFIE168: The catalog file ('filename') is not valid.
+.*           Contact your system administrator. (General help)
+.**********************************************************************
+:h2 name=IHM168 res=168.EPFIE168
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet uppt„ckte ett syntaxfel
+n„r katalogfilen analyserades.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+:hp5.Anv„ndare:ehp5.
+:ol.
+:li.Ta bort meddelandet och g† tillbaka till f”nstret ™ppna genom
+att klicka p† :hp2.Avbryt:ehp2..
+:li.Kontrollera att namnet p† katalogfilen i f”nstret ™ppna „r ett giltigt
+namn p† en katalogfil.
+:li.Om felet kvarst†r rapporterar du det till systemadministrat”ren.
+:eol.
+:p.
+:hp5.Systemadministrat”rer:ehp5.
+:ol.
+:li.R„tta syntaxfelet i v„rddatorexemplaret av katalogfilen.
+:li.Ta bort meddelandet och g† tillbaka till f”nstret ™ppna
+genom att klicka p† :hp2.Avbryt:ehp2..
+:li.V„lj :hp2.™ppna:ehp2. p† nytt.
+:eol.
+
+.**********************************************************************
+.*  EPFIF169: Cannot download 'filename'. There are too many workstation files open.
+.*            (General help)
+.**********************************************************************
+:h2 name=IHM169 res=169.EPFIF169
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Det maximala antalet filer som kan vara ”ppna i systemet har ”verskridits.
+F”r att filen ska kunna ”verf”ras m†ste ytterligare en fil ”ppnas.
+:p.
+:hp7.tg„rd:ehp7.
+:ol.
+:li.St„ng de program som anv„nder m†nga filer.
+:li.F”rs”k igen.
+:eol.
+:p.
+Om felet kvarst†r startar du om systemet och installationsprogrammet.
+
+.**********************************************************************
+.*  EPFIE171: A data transfer error occurred while downloading 'filename'.
+.*            (General help)
+.**********************************************************************
+:h2 name=IHM171 res=171.EPFIE171
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+F”r m†nga ”verf”ringsfel intr„ffade under fil”verf”ringen.
+:p.
+Felet kan bero p† en felaktig kommunikationslinje.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+F”rs”k igen. Om felet kvarst†r tillkallar du service
+och kontrollerar kommunikationslinjen.
+
+.**********************************************************************
+.* EPFIE172: The host session is locked. Switch to the host session and issue
+.*           a reset. (General help)
+.**********************************************************************
+:h2 name=IHM172 res=172.EPFIE172
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+V„rddatorn v„ntar p† att du ska †terst„lla sessionen. Kommunikationen kan inte
+forts„tta om du inte †terst„ller sessionen eller tidsgr„nsen ”verskrids.
+:p.
+:hp7.tg„rd:ehp7.
+:ol compact.
+:li.V„xla till v„rdsessionen.
+:li.terst„ll sessionen.
+:li.F”rs”k igen.
+:eol.
+
+.**********************************************************************
+.*  EPFIQ173: You have aborted in the middle of an update.  Your current
+.*            version of the product is not operable.  Do you want to restore
+.*            the previous service level? (General help)
+.**********************************************************************
+:h2 name=IHM173 res=173.EPFIQ173
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet ”verf”rde endast en del av de filer
+i paketfilen som beh”vs vid uppdateringen av produkten.
+Du kan inte anv„nda produkten som den „r.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+V„lj n†got av f”ljande&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Ja:ehp2.
+:dd.terst„ller produkten till den status den hade innan uppdateringen.
+V„lj :hp2.Ja:ehp2. om du inte vill g”ra om uppdateringen.
+:dt.:hp2.Nej:ehp2.
+:dd.L„mnar filerna som de „r. V„lj :hp2.Nej:ehp2. om du t„nker
+g”ra om uppdateringen. P† s† s„tt sparar du tid om du ska g”ra om
+installationen eller uppdateringen.
+:edl.
+
+.**********************************************************************
+.*  EPFIQ174:  Do you want to exit the ISPF/PDF Tool Installation Utility?
+.*             (General help)
+.**********************************************************************
+:h2 name=IHM174 res=174.EPFIQ174
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Du har valt att avsluta installationsprogrammet.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+V„lj n†got av f”ljande&colon.
+:dl tsize=5 break=none compact.
+:dt.:hp2.Ja:ehp2.
+:dd.Avslutar programmet
+:dt.:hp2.Nej:ehp2.
+:dd.terg†r till huvudf”nstret utan att avsluta programmet
+:edl.
+
+.**********************************************************************
+.*  EPFIF175:  Out of semaphore resources.  to release resources, end
+.*             unneeded programs that use semaphores.
+.* (General help)
+.**********************************************************************
+:h2 name=IHM175 res=175.EPFIF175
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet misslyckades p&rbl.g&rbl.a att det inte fanns tillr„ckligt
+med systemresurser.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+St„ng program som du inte anv„nder och klicka sedan p† :hp2.F”rs”k igen.:ehp2.
+:p.
+Klicka p† :hp2.Avbryt:ehp2. om du vill l„mna programmet.
+
+.**********************************************************************
+.*  EPFIE176:  Not enough Presentation Manager resources to proceed with
+.*             operation. (General help)
+.**********************************************************************
+:h2 name=IHM176 res=176.EPFIE176
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet misslyckades med att skapa ett
+Presentation Manager:link refid=tm1 reftype=fn.*:elink.-f”nster.
+Felet kan bero p† att det inte finns tillr„ckligt med systemresurser
+eller minne.
+:p.
+:hp7.tg„rd:ehp7.
+:ul compact.
+:li.Klicka p† :hp2.Avbryt.:ehp2.
+:li.Avsluta alla program och sessioner som du inte anv„nder.
+:li.F”rs”k igen.
+:eul.
+
+.**********************************************************************
+.*  EPFII177:  The action you requested has completed.  You
+.*             must restart your operating system.  (General help)
+.**********************************************************************
+:h2 name=IHM177 res=177.EPFII177
+:p.
+:hp7.F”rklaring:ehp7.
+:p.Den beg„rda funktionen har genomf”rts. Starta om systemet.
+:p.
+:hp7.tg„rd:ehp7.
+:p.St„ng av och starta om systemet.
+
+.**********************************************************************
+.*  EPFII178:  The action you requested has stopped.  You must restart
+.*             your operating system and retry the action. (General help)
+.**********************************************************************
+:h2 name=IHM178 res=178.EPFII178
+:p.
+:hp7.F”rklaring:ehp7.
+:p.Den beg„rda funktionen har avbrutits. Starta om systemet och f”rs”k igen.
+:p.
+:hp7.tg„rd:ehp7.
+:ul.
+:li.Svara p† eventuella meddelanden fr†n programmet.
+:li.St„ng av och starta om systemet.
+:li.F”rs”k igen.
+:eul.
+
+.**********************************************************************
+.*  EPFIE180:An error occurred while downloading the product description file
+.*           '%1' from the host.           (General help)
+.**********************************************************************
+:h2 name=IHM180 res=180.EPFIE180
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Filen med produktbeskrivningen „r inte tillg„nglig i k„llan eller filnamnet
+som anges av nyckelordet PKGDESCRFILE i katalogfilen „r felaktigt.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+:hp5.Anv„ndare:ehp5.
+:p.
+Kontrollera att du har tillg†ng till r„tt VM-minidiskar, MVS-dataset,
+LAN-enheter eller disketter och v„lj n†got av f”ljande&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.F”rs”k igen:ehp2.
+:dd.F”rs”ker ”verf”ra filen med produktbeskrivningen igen
+:dt.:hp2.Avbryt:ehp2.
+:dd.Tar bort meddelandet och g†r tillbaka till huvudf”nstret
+:edl.
+:p.
+:hp5.Systemadministrat”rer:ehp5.
+:p.Kontrollera att filnamnet som anges av nyckelordet PKGDESCRFILE i
+katalogfilen „r r„tt och att filen finns i k„llan.
+
+.**********************************************************************
+.*  EPFIQ181: You will not be able to restore the product to the previous
+.*            service level since the 'Save a backup version' option was
+.*            not selected.  Do you want to continue?  (General help)
+.**********************************************************************
+:h2 name=IHM181 res=181.EPFIQ181
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Om du inte har valt alternativet :hp2.Lagra en s„kerhetskopia:ehp2.
+kan du inte †terst„lla produkten till tidigare serviceniv† n„r
+produkten har uppdaterats. Om du inte valde det h„r alternativet och ett
+o†terkalleligt fel uppst†r under uppdateringen kan produkten inte †terst„llas
+till en stabil serviceniv†.
+:p.
+V„lj alternativet :hp2.Lagra en s„kerhetskopia:ehp2. (om inte arbetsstationens
+diskutrymme „r begr„nsat) s† att du kan †terst„lla produkten till en
+stabil serviceniv† om ett fel skulle intr„ffa.
+:p.
+:hp7.tg„rd:ehp7.
+:p.V„lj n†got av f”ljande&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Ja:ehp2.
+:dd.Forts„tter uppdateringen utan att en s„kerhetskopia skapas
+:dt.:hp2.Nej:ehp2.
+:dd.Tar bort meddelandet och g†r tillbaka till uppdateringsf”nstret
+d„r du kan v„lja alternativet :hp2.Lagra en s„kerhetskopia:ehp2.
+:edl.
+
+.**********************************************************************
+.*  EPFII182:   NO HELP FOR THIS MESSAGE
+.*   -       A product description is not available for this package
+.**********************************************************************
+
+.**********************************************************************
+.*  EPFIE183:  An error was found in the parameters of a user exit.
+.*             The exit parameters were: 'xxxxxx'. (General help)
+.**********************************************************************
+:h2 name=IHM183 res=183.EPFIE183
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+En eller flera av parametrarna som angetts „r inte giltiga f”r en user exit.
+Ett fel intr„ffade vid analysering av argumentvariabler.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+:hp5.Anv„ndare:ehp5.
+:p.
+Kontakta systemadministrat”ren och tala om att det „r fel p† den markerade
+produktens paketfil.
+:p.
+:hp5.Systemadministrat”rer:ehp5.
+:p.
+Unders”k de angivna exit-parametrarna och r„tta eventuella fel i produktens
+paketfil.
+
+.**********************************************************************
+.*  EPFIQ184:  Installation of the 'xxx' component requires that the
+.*             'xxx' component also be installed.  Do you want to install
+.*             the 'yyy' component? (General help)
+.**********************************************************************
+:h2 name=IHM184 res=184.EPFIQ184
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Du m†ste installera ytterligare en komponent f”r att en av de valda
+komponenterna ska fungera ordentligt.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+:p.V„lj n†got av f”ljande&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Ja:ehp2.
+:dd.Installerar komponenten som kr„vs f”r att den redan installerade
+komponenten ska fungera
+:dt.:hp2.Nej:ehp2.
+:dd.Tar bort meddelandet och g†r tillbaka till f”nstret
+Installation - kataloger
+:edl.
+
+.***********************************************************************
+.* EPFIQ185:   Drive '%1' does not contain enough space to install the
+.*             product.  Do you want to continue?
+.***********************************************************************
+:h2 name=IHM185 res=185.EPFIQ185
+:p.
+:hp7.F”rklaring:ehp7.
+:p.Du kan inte installera produkten i enheten som anges i f„ltet Filkatalog
+p&rbl.g&rbl.a att det inte finns tillr„ckligt med diskutrymme.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+:p.V„lj n†got av f”ljande&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Ja:ehp2.
+:dd.Ignorerar varningen och forts„tter med installationen.
+Det kan h„nda att installationen misslyckas p&rbl.g&rbl.a det inte finns tillr„ckligt
+med diskutrymme.
+:dt.:hp2.Nej:ehp2.
+:dd.Tar bort meddelandet och g†r tillbaka till f”nstret
+Installation - kataloger. G”r sedan n†got av f”ljande&colon.
+:ol.
+:li.Installera produkten i en annan enhet genom att byta enhetsspecifikation
+i f„ltet Filkatalog. Du kan se i vilken enhet det finns tillr„ckligt
+med diskutrymme genom att klicka p† knappen :hp2.Diskutrymme:ehp2..
+:li.Om produkten inneh†ller komponenter v„ljer du f„rre komponenter och
+klickar sedan p† :hp2.Installera:ehp2. igen.
+:nt.
+Endast de komponenter som „r markerade installeras.
+:ent.
+:eol.
+:edl.
+
+.**********************************************************************
+.* EPFIQ186: Your CONFIG.SYS file will not be automatically updated.
+.*           After the installation or update is complete, you should manually
+.*           update your CONFIG.SYS file with the information found in the
+.*           CONFIG.ADD file.  Do you want to continue?
+.**********************************************************************
+:h2 name=IHM186 res=186.EPFIQ186
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Du har valt att inte uppdatera CONFIG.SYS-filen automatiskt.
+Om produkten som du installerar eller uppdaterar kr„ver att
+CONFIG.SYS-filen „ndras, m†ste du g”ra „ndringarna manuellt och
+starta om systemet. I annat fall kommer produkten inte att fungera ordentligt
+efter installationen eller uppdateringen.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+:p.V„lj n†got av f”ljande&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Ja:ehp2.
+:dd.Installerar produkten utan att uppdatera CONFIG.SYS-filen. N„r
+produktinstallationen eller uppdateringen „r klar m†ste du eventuellt uppdatera
+CONFIG.SYS-filen manuellt innan den kan k”ras.
+:p.
+Informationen som m†ste l„ggas till i CONFIG.SYS-filen skrivs i filen
+CONFIG.ADD, som finns i samma katalog som den aktuella CONFIG.SYS-filen.
+Ers„tt den aktuella CONFIG.SYS-filen med CONFIG.ADD-filen.
+:dt.:hp2.Nej:ehp2.
+:dd.Tar bort meddelandet och g†r tillbaka till f”reg†ende f”nster d„r
+du kan v„lja alternativet :hp2.Uppdatera CONFIG.SYS:ehp2.
+och g”ra om installationen eller uppdateringen.
+:edl.
+
+.**********************************************************************
+.* EPFIE187: An product specific installation error has occurred.
+.*           The return code is %1.
+.**********************************************************************
+:h2 name=IHM187 res=187.EPFIE187
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Ett fel intr„ffade n„r en rutin fr†n produkten som du
+installerar, uppdaterar eller †terst„ller skulle k”ras.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Anteckna returkoden och avsluta sedan installationen eller uppdateringen
+genom att klicka p† :hp2.Avbryt:ehp2.. Mer information om returkoder finns
+i installationsanvisningarna till produkten som du installerar.
+:p.
+Om felet kvarst†r kontaktar du systemadministrat”ren eller
+den produktansvarige.
+
+.**********************************************************************
+.* EPFIE188: The host file '%2' is in use or cannot be accessed.
+.**********************************************************************
+:h2 name=IHM188 res=188.EPFIE188
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Ett fel intr„ffade n„r filen skulle accessas i k„llan p&rbl.g&rbl.a
+n†got av f”ljande&colon.
+:ul.
+:li.Ett annat program eller en annan anv„ndare anv„nder filen eller datasetet
+som inneh†ller filen.
+:li.Filen eller datasetet finns inte i k„llan.
+:eul.
+:p.
+:hp7.tg„rd:ehp7.
+:ol.
+:li.Om k„llan „r en v„rddator v„xlar du till v„rddatorns emuleringsf”nster
+och kontrollerar om det finns n†gra felmeddelanden.
+:li.Kontrollera att filen eller datasetet finns.
+:li.G† tillbaka till arbetssessionen och f”rs”k igen genom att
+klicka p† :hp2.F”rs”k igen:ehp2..
+:eol.
+:p.
+Om felet kvarst†r v„ntar du tills v„rdfilen inte anv„nds och f”rs”ker igen.
+
+.**********************************************************************
+.* EPFIE189: Cancelling the update has left the product in an unstable state.
+.*           After cancelling this message you should either update the
+.*           product again or delete the product.
+.**********************************************************************
+:h2 name=IHM189 res=189.EPFIE189
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Du har inte valt alternativet :hp2.Lagra en s„kerhetskopia:ehp2. och
+uppdateringen misslyckades. Installationsprogrammet kan d„rf”r inte
+†terst„lla produkten till en stabil serviceniv†.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Du kan inte anv„nda produkten f”rr„n du har †terst„llt den till en
+stabil niv†.
+:ol.
+:li.Ta bort felmeddelandet genom att klicka p† :hp2.Avbryt:ehp2..
+:li.G† tillbaka till huvudf”nstret och f”rs”k att uppdatera produkten igen.
+:li.Om felet kvarst†r tar du bort produkten och installerar om den.
+:eol.
+:eh1.
+
+.**********************************************************************
+.* EPFIE190: An error occurred while attempting to access the workstation printer.
+.**********************************************************************
+:h2 name=IHM190 res=190.EPFIE190
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Systemet kan inte fullf”lja utskriften p&rbl.g&rbl.a ett skrivfel i arbetsstationen.
+Felet kan bero p† n†got av f”ljande&colon.
+:ul compact.
+:li.Otillr„ckligt med diskutrymme
+:li.Skrivaren „r offline
+:li.Det finns inget aktivt skrivarobjekt i
+OS&slash.2 :link refid=tm1 reftype=fn.*:elink.
+:nt.
+Ett skrivarobjekt m†ste vara aktivt och arbetsstationens skrivare m†ste
+vara knuten till LPT1 f”r att det ska g† att skriva ut.
+:ent.
+:eul.
+:p.
+:hp7.tg„rd:ehp7.
+:ol.
+:li.Ta bort felmeddelandet genom att klicka p† :hp2.Avbryt:ehp2..
+:li.Kontrollera att skrivarobjektet „r r„tt inst„llt och aktivt.
+:eol.
+.**********************************************************************
+.* EPFIE191: Drive '%1' is not ready.
+.**********************************************************************
+:h2 name=IHM191 res=191.EPFIE191
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Bearbetningen kan inte genomf”ras p&rbl.g&rbl.a att enheten inte kan accessas.
+Felet kan bero p† n†got av f”ljande&colon.
+:ul compact.
+:li.Enheten „r en diskettenhet och du har inte satt in n†gon diskett.
+:li.Enheten „r inte ansluten till datorn.
+:eul.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+:ol.
+:li.Kontrollera att det finns en diskett i enheten och att enheten
+„r ansluten.
+:li.F”rs”k igen genom att klicka p† :hp2.F”rs”k igen:ehp2..
+:eol.
+.**********************************************************************
+.* EPFII192: Insert a disk in drive '%1'.  Select OK when ready.
+.**********************************************************************
+:h2 name=IHM192 res=192.EPFII192
+:p.
+:hp7.F”rklaring:ehp7.
+:p.Du m†ste anv„nda en annan enhet „n standardenheten.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+S„tt in disketten i enheten och klicka p† :hp2.OK:ehp2..
+Om disketten redan finns i enheten klickar du bara p† :hp2.OK:ehp2..
+
+.**********************************************************************
+.* EPFIE193: The filename ('%2') is not valid.
+.**********************************************************************
+:h2 name=IHM193 res=193.EPFIE193
+:p.
+:hp7.F”rklaring:ehp7.
+:p.Filnamnet „r inte ett giltigt
+OS&slash.2:link refid=tm1 reftype=fn.*:elink.-filnamn eller finns inte
+i k„llenheten. Jokertecken kan inte anv„ndas i namn p† installationsfiler.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Om felet intr„ffade n„r filen skulle ”ppnas g”r du s† h„r&colon.
+:ol.
+:li.Klicka p† knappen :hp2.Avbryt:ehp2. i meddelanderutan.
+:li.Kontrollera att filnamnet i f„ltet Filnamn i f”nstret
+™ppna enhetskatalog eller ™ppna v„rddatorkatalog „r giltigt.
+:li.F”rs”k igen.
+:eol.
+:p.
+Om felet intr„ffade vid ett annat tillf„lle g”r du s† h„r&colon.
+:ol.
+:li.™ppna katalogen igen genom att v„lja :hp2.™ppna katalog:ehp2. p†
+Arkiv-menyn.
+:li.F”rs”k igen.
+:li.Om felet kvarst†r rapporterar du det till systemadministrat”ren.
+Det „r f”rmodligen fel p† katalog- eller paketfilerna som
+installationsprogrammet l„ser.
+:eol.
+:p.
+:hp5.Systemadministrat”rer:ehp5.
+:p.
+Det h„r felet kan intr„ffa om du anv„nder ett filnamn som inneh†ller en
+enhetsspecifikation i nyckelorden HOSTLOC, PACKAGEFILE eller PKGDESCRFILE
+i katalogfilen eller i nyckelorden FILE-SOURCE eller INCLUDE-NAME i paketfilen.
+Filnamnen i nyckelorden f†r inte inneh†lla enhetsbeteckningar.
+Exempel p† giltiga nyckelord&colon.
+:xmp.
+packagefile = '\wsp2\epfipkg.pkg;
+               vm&colon. epfipkg enuepf12 *'
+pkgdescfile = '\wsp2\epfidesc.dsc;
+               vm&colon. epfidesc enuepf12 *'
+hostloc     = '\wsp2\; vm&colon. ;'
+source      = 'fil.exe; vm: fil exebin *'
+:exmp.
+
+.**********************************************************************
+.* EPFIE195: A cyclic redundancy check (CRC) error occurred while
+.*                    transferring '%2'.
+.**********************************************************************
+:h2 name=IHM195 res=195.EPFIE195
+:p.
+:hp7.F”rklaring:ehp7.
+:p.Ett fel har intr„ffat som p†verkar dataintegriteten i filen som ”verf”rs.
+K„llfilen kan vara skadad. Felet m†ste r„ttas till f”r att installationen
+eller uppdateringen ska kunna fullf”ljas.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+:ol.
+:li.G”r om fil”verf”ringen genom att klicka p† :hp2.F”rs”k igen:ehp2..
+:li.Om felet kvarst†r „r det f”rmodligen fel p† k„llfilerna.
+Kontakta den produktansvarige och be om en ny upps„ttning k„llfiler.
+:eol.
+
+.**********************************************************************
+.* EPFIE196: An abnormal error occurred while a executing %1.
+.**********************************************************************
+:h2 name=IHM196 res=196.EPFIE196
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Ett fel intr„ffade n„r en komprimerad fil skulle packas upp.
+Felet m†ste r„ttas till f”r att installationen
+eller uppdateringen ska kunna fullf”ljas.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+:ol.
+:li.F”rs”k att packa upp filen igen genom att klicka p† :hp2.F”rs”k igen:ehp2..
+:li.Om felet kvarst†r „r det f”rmodligen fel p† produkten.
+Kontakta den produktansvarige och be om en ny upps„ttning
+installationsfiler eller -disketter.
+:eol.
+
+.**********************************************************************
+.* EPFIE197: An error occurred while unpacking %3 (return code: %2).
+.**********************************************************************
+:h2 name=IHM197 res=197.EPFIE197
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Ett fel intr„ffade n„r en komprimerad fil skulle packas upp.
+Felet m†ste r„ttas till f”r att installationen
+eller uppdateringen ska kunna fullf”ljas.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+:ol.
+:li.F”rs”k att packa upp filen igen genom att klicka p† :hp2.F”rs”k igen:ehp2..
+:li.Om felet kvarst†r „r det f”rmodligen fel p† produkten.
+Kontakta den produktansvarige och be om en ny upps„ttning
+installationsfiler eller -disketter.
+:eol.
+
+.**********************************************************************
+.* EPFIE198: '%1' could not be found within the specified PACK file.
+.**********************************************************************
+:h2 name=IHM198 res=198.EPFIE198
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+En fil som beh”vs f”r installationen eller uppdateringen saknades i
+den komprimerade filen p&rbl.g&rbl.a att
+:ul.
+:li.filen inte inkluderades n„r den komprimerade filen skapades
+:li.det „r fel p† produktens paketfil.
+FILE-satsen som motsvarar den angivna filen
+inneh†ller f”rmodligen ett v„rde
+f”r nyckelordet PACKID som inte motsvarar r„tt PACK-fil.
+:eul.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+:hp5.Anv„ndare&colon.:ehp5.
+:p.
+Rapportera felet till systemadministrat”ren.
+:p.
+:hp5.Till dig som bygger paketfiler&colon.:ehp5.
+:ol.
+:li.Unders”k FILE-satsen som motsvarar den angivna filen
+och r„tta eventuella fel.
+:li.Om paketfilen inte inneh†ller n†gra fel bygger du om den komprimerade
+filen. Se till att filen som saknades inkluderas i den komprimerade filen.
+:li.F”rs”k igen.
+:eol.
+
+.**********************************************************************
+.* EPFIE199: A PACKFILE entry that corresponds to the PACKID ('%1') was
+.*          not found.
+.**********************************************************************
+:h2 name=IHM199 res=199.EPFIE199
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Det „r fel p† produktens paketfil.
+FILE-satsen som motsvarar filen inneh†ller ett ogiltigt PACKID.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+:hp5.Anv„ndare&colon.:ehp5.
+:p.
+Rapportera felet till systemadministrat”ren.
+:p.
+:hp5.Till dig som bygger paketfiler&colon.:ehp5.
+:ol.
+:li.Unders”k FILE-satsen som motsvarar filen och r„tta eventuella fel.
+Se till att det finns
+en PACKFILE-sats som motsvarar det PACKID som anges i
+FILE-satsen.
+:li.F”rs”k igen.
+:eol.
+
+.**********************************************************************
+.* EPFIE200: The PACKFILE ('%3') could not be found.
+.**********************************************************************
+:h2 name=IHM200 res=200.EPFIE200
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationsprogrammet kan inte hitta en paketfil i k„llsystemet.
+Filen saknas i k„llsystemet eller s† „r det fel p† paketfilen.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+:hp5.Anv„ndare:ehp5.
+:ol.
+:li.V„lj n†got av f”ljande&colon.
+:dl tsize=8 break=none compact.
+:dt.:hp2.Avbryt:ehp2.
+:dd.Avbryter fil”verf”ringen
+:dt.:hp2.F”rs”k igen:ehp2.
+:dd.Ger ”verf”ringskommandona p† nytt
+:edl.
+:li.Kontakta systemadministrat”ren om felet kvarst†r.
+:eol.
+:p.
+:hp5.Systemadministrat”rer:ehp5.
+:ol.
+:li.Kontrollera nyckelordet SOURCE i PACKFILE-satsen som motsvarar
+filen s† att filnamnet „r korrekt.
+:li.Om det inte „r fel p† paketfilen kontrollerar du att filen finns
+i k„llsystemet.
+:li.F”rs”k igen.
+:eol.
+
+.**********************************************************************
+.* EPFIE201: The opened catalog contains only updates to product(s) that
+.*           are not currently installed.  You must install the product(s)
+.*           before these updates can be applied.
+.**********************************************************************
+:h2 name=IHM201 res=201.EPFIE201
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Katalogen som ”ppnades inneh†ller inga nya produkter, utan endast
+programfixar f”r andra produkter. Innan fixarna
+kan anv„ndas m†ste du installera produkten/produkterna.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Om du vill anv„nda fixar m†ste du f”rst installera produkten/produkterna.
+Om du redan har installerat produkten/produkterna kan felet bero p† att
+programmets profil „r skadad eller har tagits bort.
+I s† fall m†ste du installera om produkterna. Se till att du installerar
+produkterna i samma kataloger som tidigare.
+
+.**********************************************************************
+.* EPFIE203: An invalid value was specified for the '%1' command line option.
+.**********************************************************************
+:h2 name=IHM203 res=203.EPFIE203
+:p.
+:hp7.F”rklaring:ehp7.
+:p.Kommandoradsparametern du angav „r giltig men v„rdet
+(till h”ger om likhetstecknet) „r ogiltigt.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Ange r„tt v„rde f”r :link reftype=hd res=2041.kommandoradsparametern:elink.
+och f”rs”k igen.
+
+.**********************************************************************
+.* EPFIE204: An invalid command line option (%1) was specified.
+.**********************************************************************
+:h2 name=IHM204 res=204.EPFIE204
+:p.
+:hp7.F”rklaring:ehp7.
+:p.Du har angett en ogiltig kommandoradsparameter.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Ange r„tt :link reftype=hd res=2041.kommandoradsparameter:elink.
+och f”rs”k igen.
+
+.**********************************************************************
+.* Help for command line parameters.
+.**********************************************************************
+:h2 res=2041.Kommandoradsparametrar
+:p.
+Skriv kommandot EPFINSTS f”ljt av en eller flera av f”ljande parametrar
+vid OS/2-kommandosymbolen.
+:p.
+Om n†got av parameterv„rdena inneh†ller mellanslag
+m†ste v„rdet skrivas inom dubbla citattecken.
+:p.
+Parametrarna kan skrivas i valfri ordning.
+:dl tsize=10 break=all.
+:dthd.Parameter
+:ddhd.Beskrivning
+.*
+:dt.&slash.A=:hp1.†tg„rd:ehp1.
+:dd.Anger vilken funktion som ska utf”ras.
+:p.
+Om parametern anges med ett giltigt v„rde visas inte installationsprogrammets
+huvudf”nster. Alla f”nster visas i st„llet direkt p† skrivbordet i
+OS&slash.2:link refid=tm1 reftype=fn.*:elink..
+:p.
+Om du inte anv„nder den h„r parametern startar installationsprogrammet
+normalt och visar alla f”nster.
+V„rdet kan skrivas med b†de sm† och stora bokst„ver.
+Giltiga parameterv„rden&colon.
+:dl.
+:dt.:hp2.d:ehp2. :dd.Ta bort
+:dt.:hp2.i:ehp2. :dd.Installera
+:dt.:hp2.r:ehp2. :dd.terst„lla
+:dt.:hp2.u:ehp2. :dd.Uppdatera
+:edl.
+:p.Parametern m†ste anv„ndas i kombination med parametern /P.
+.*
+:dt.&slash.C=:hp1.namn p† katalogfil:ehp1.
+:dd.Anger katalogfilens namn och plats.
+:p.
+Om katalogfilen finns i ett v„rdsystem m†ste namnet p† katalogfilen inledas
+med v„rdsessionens ID.
+:p.
+Om katalogfilen finns p† en diskett, i LAN eller i en delad mapp i AS/400
+m†ste namnet p† katalogfilen inledas med en enhet och en katalog.
+:p.
+Exempel p† parametern &slash.C i olika k„llor&colon.
+:dl tsize=5 break=all.
+:dt.Enhet
+:dd.&slash.C=Z&colon.\EPFIKAT.CAT
+:dt.MVS
+:dd.&slash.C=B&colon.EPF.V1R1M0.SEPFBENU(EPFICAT)
+:dt.VM
+:dd.&slash.C="B&colon.EPFIKAT ENUEPF11 *"
+:dt.VSE
+:dd.&slash.C=B&colon.BIB.SIBBIB.MEDLEMSNAM.MEDLEMSTYP
+:edl.
+:p.N„r parametern anv„nds ”ppnas katalogfilen automatiskt.
+.*
+:dt.&slash.G&colon.:hp1.l„ss”kv„g:ehp1.
+:dd.Anger enhet och s”kv„g f”r de allm„nna svarsfiler som anges i den
+specifika svarsfilen.
+:p.Installationsprogrammet tilldelar installationsvariabeln EPFIGENRESPDIR
+l„ss”kv„gen.
+:p.Exempel&colon.
+:xmp.
+   /G&colon.L&colon.\XYZ
+:exmp.
+.*
+:dt.&slash.L=:hp1.xpos:ehp1.,:hp1.ypos:ehp1.
+:dd.Anger initiala x- och y-koordinater i installationsf”nstret
+p† skrivbordet i f”rh†llande till sk„rmens nedre v„nstra h”rn.
+:p.N„r parametern anv„nds ers„tts alla tidigare lagrade standardpositioner.
+.*
+:dt.&slash.L1&colon.:hp1.fellogg:ehp1.
+:dd.Anger enhet, s”kv„g och filnamn p† loggfilens destination.
+:p.Installationsprogrammet tilldelar installationsvariabeln EPFIERRORLOG
+felloggen.
+:p.
+Om du inte anger n†gon enhet och s”kv„g anv„nds enheten och s”kv„gen
+f”r EPFINSTS.EXE.
+Om du inte anger n†got filnamn loggas felen i filen EPFINSTS.OUT.
+:p.Exempel&colon.
+:xmp.
+   /L1&colon.C&colon.\ABC\FEL.LOG
+:exmp.
+.*
+:dt.&slash.L2&colon.:hp1.historiklogg:ehp1.
+:dd.Anger enhet, s”kv„g och filnamn p† historikloggens destination.
+:p.Installationsprogrammet tilldelar installationsvariabeln EPFIHISTORYLOG
+historikloggen.
+:p.
+Om du inte anger n†gon enhet och s”kv„g anv„nds enheten och s”kv„gen f”r
+EPFINSTS.EXE.
+:p.
+Om parametern inte anges skapas ingen historiklogg.
+:p.Exempel&colon.
+:xmp.
+   /L2&colon.C&colon.\ABC\HISTORIK.LOG
+:exmp.
+.*
+:dt.&slash.L3&colon.  &slash.L4&colon.  &slash.L5&colon.:hp1.loggfiler:ehp1.
+:dd.
+Var och en av parametrarna kan inneh†lla enheten, s”kv„gen och filnamnet
+p† en loggfil.
+De sparas i installationsvariablerna EPFIL3LOG, EPFIL4LOG och EPFIL5LOG.
+.*
+:dt.&slash.P=:hp1.produktnamn:ehp1.
+:dd.Anger namnet p† produkten d„r funktionen utf”rs.
+:p.
+Om produktnamnet inneh†ller mellanslag m†ste det skrivas inom dubbla
+citattecken (").
+:p.
+Exempel p† giltiga produktnamn:
+:sl compact.
+:li.&slash.P="Produktnamn med mellanslag"
+:li.&slash.P=produktnamn
+:esl.
+.*
+:dt.&slash.R&colon.:hp1.svarsfil:ehp1.
+:dd.Anger enhet, s”kv„g och filnamn p† en viss svarsfil.
+:p.Installationsprogrammet tilldelar installationsvariabeln EPFIRESPFILE
+svarsfilen.
+:p.Exempel&colon.
+:xmp.
+   /R&colon.L&colon.\XYZ\SVARSFIL.DAT
+:exmp.
+.*
+:dt.&slash.O=:hp1.k„llsystem:ehp1.
+:dd.Anger installationens eller uppdateringens k„llsystem.
+Giltiga parameterv„rden&colon.
+:ul compact.
+:li.ENHET
+:li.MVS
+:li.VM
+:li.VSE
+:eul.
+:p.Parametern ignoreras vid borttagning eller †terst„llning.
+.*
+:dt.&slash.S&colon.:hp1.k„lla:ehp1.
+:dd.Anger enhet och s”kv„g f”r k„llfilen som ska installeras.
+:p.Installationsprogrammet tilldelar installationsvariabeln EPFISOURCEDIR
+k„llan.
+:p.N„r du anv„nder den h„r parametern f†r parametern &slash.S v„rdet ENHET
+och ”vertrumfar v„rdet p† nyckelordet HOSTLOC i produktens katalogfil.
+:p.Om du inte anv„nder parametern ”vertrumfas v„rdet p† nyckelordet HOSTLOC.
+:p.Exempel&colon.
+:xmp.
+   /S&colon.L&colon.\XYZ
+:exmp.
+.*
+:dt.&slash.T&colon.:hp1.destinationskatalog:ehp1.
+:dd.Anger enhet och s”kv„g till den plats d„r produktfilerna ska installeras.
+:p.Parametern p†verkar endast v„rdet p† katalogen FILE
+(katalog som motsvarar nyckelordet FILELABEL).
+:p.Installationsprogrammet tilldelar installationsvariabeln EPFITARGETDIR
+destinationskatalogen.
+:p.Exempel&colon.
+:xmp.
+   /T&colon.C&colon.\IBB
+:exmp.
+.*
+:dt.&slash.TU&colon.:hp1.katalog f”r uppdaterad CONFIG.SYS:ehp1.
+:dd.Anger enhet och s”kv„g f”r CONFIG.SYS-filen som ska uppdateras.
+:p.Installationsprogrammet tilldelar installationsvariabeln EPFITARGETCNF
+katalogen f”r den uppdaterade CONFIG.SYS-filen.
+:p.Om parametern inte anges uppdateras CONFIG.SYS-filerna enligt vad som
+anges i produktens paketfil.
+:p.Exempel&colon.
+:xmp.
+   /TU&colon.C&colon.\
+:exmp.
+.*
+:dt./X
+:dd.Anger att funktionen inte ska k”ras obevakat.
+:p.
+N„r du anger den h„r parametern visas ingen status.
+:p.
+Om information som kr„vs f”r att funktionen ska kunna fullf”ljas inte anges
+intr„ffar ett fel.
+Om du anger /L1&colon. loggas alla felmeddelanden
+i den angivna felloggen. Om /L1&colon. inte anges loggas alla
+felmeddelanden i filen EPFINSTS.OUT.
+:p.
+Om parametern inte anges m†ste anv„ndaren skriva in all
+information som kr„vs f”r att funktionen ska kunna fullf”ljas.
+I det bevakade l„get visas status, och alla felmeddelanden
+visas i meddelanderutor.
+:edl.
+
+.**********************************************************************
+.* Help for response file parameters
+.**********************************************************************
+:h2 res=2042.Svarsfilsparametrar
+:p.Formatet f”r svarsfilsparametrar „r vanligtvis
+:hp1.parameter = v„rde:ehp1..
+:p.Endast en parameter kan anges per rad.
+Parametrarna kan d„remot skrivas i valfri ordning.
+:p.
+Giltiga svarsfilsparametrar vid installation&colon.
+:dl tsize=11 break=all.
+:dthd.Parameter
+:ddhd.Beskrivning
+:dt.aux:hp1.n:ehp1.
+:dd.Anger ny standards”kv„g f”r tillvalskatalog d„r
+:hp1.n:ehp1. „r ett tal mellan 1 och 18. (Det finns
+18 m”jliga tillvalskataloger&colon. AUX1, AUX2,...AUX18.)
+Anv„nd bara den h„r parametern vid installation.
+:dt.comp
+:dd.Anger en produktkomponent som funktionen ska utf”ras p†.
+Du kan ange flera comp-parametrar n„r du ska ange mer „n en komponent.
+Ogiltiga komponenter ignoreras.
+:dt.cfgupdate
+:dd.Anger om CONFIG.SYS-filen ska uppdateras automatiskt.
+Giltiga v„rden f”r parametern „r AUTO
+(automatisk uppdatering av CONFIG.SYS) eller MANUAL
+(CONFIG.SYS uppdateras inte).
+Parametern anv„nds bara vid installation eller uppdatering
+och ignoreras om n†gon annan funktion anges.
+:dt.copy
+:dd.Anger k„ll- och destinationsfiler vid kopiering.
+Parameterns format „r
+:xmp.
+  COPY = fr†n_filspec till_filspec
+:exmp.
+:p.
+d„r :hp1.fr†n_filspec:ehp1. „r k„llfilen och
+:hp1.till_filspec:ehp1. destinationsfilen. Om till_filspec
+redan finns skrivs den ”ver. Om n†gon av filspecifikationerna „r ogiltig
+sker ingen kopiering.
+:dt.deletebackup
+:dd.Anger om bara produktens s„kerhetskopia eller hela produkten ska
+tas bort.
+Giltiga parameterv„rden „r YES
+eller NO. Parametern anv„nds bara vid borttagning och ignoreras
+om n†gon annan funktion anges.
+:dt.file
+:dd.Anger i vilken filkatalog produkten ska installeras.
+Parametern anv„nds bara vid installation och ignoreras
+om n†gon annan funktion anges.
+:dt.include
+:dd.Anger vilka allm„nna svarsfiler som ska ing† i en viss svarsfil.
+Parameterns format „r
+:xmp.
+  INCLUDE = filspecifikation
+:exmp.
+:p.
+d„r :hp1.filspecifikation:ehp1. „r den allm„nna svarsfilen som ska
+inkluderas. Om filspecifikationen inneh†ller jokertecken
+(&asterisk. eller ?) inkluderas den f”rsta filen som motsvarar
+specifikationen. Om specifikationen inte „r giltig
+inkluderas ingen allm„n svarsfil.
+:p.
+F”ljande s”kordning anv„nds vid s”kning efter allm„nna svarsfiler&colon.
+:ol compact.
+:li.Den fullst„ndiga filspecifikationen om den anges med :hp1.filspecifikation:ehp1.
+:li.Aktuell katalog
+:li.Filnamnet samt l„ss”kv„gsparametern /G&colon.
+:li.Varje katalog i milj”variabeln PATH
+:li.Varje katalog i milj”variabeln DPATH
+:eol.
+:dt.overwrite
+:dd.Anger om filer ska skrivas ”ver automatiskt vid
+installationen. Giltiga parameterv„rden „r YES eller NO.
+Parametern anv„nds endast vid installation och ignoreras
+om n†gon annan funktion anges.
+:dt.savebackup
+:dd.Anger om en s„kerhetskopia av produkten ska lagras vid uppdatering.
+Giltiga parameterv„rden „r YES
+eller NO. Parametern anv„nds bara vid uppdatering och ignoreras
+om n†gon annan funktion anges.
+:dt.userexit
+:dd.Anger namnet p† en user exit som du vill starta.
+Parameterns format „r
+:xmp.
+  USEREXIT = filspecifikation
+:exmp.
+:p.
+d„r :hp1.filspecifikation:ehp1. „r namnet p† en user exit.
+Om filspecifikationen inneh†ller jokertecken
+(&asterisk. eller ?) kommer den f”rsta k”rbara user exit-rutinen som motsvarar
+specifikationen att startas. Om specifikationen „r ogiltig
+startar ingen user exit.
+:p.
+F”ljande s”kordning anv„nds f”r s”kning efter en viss user exit.
+:ol compact.
+:li.Den fullst„ndiga filspecifikationen om den anges med :hp1.filspecifikation:ehp1.
+:li.Aktuell katalog
+:li.Varje katalog i milj”variabeln PATH
+:li.Varje katalog i milj”variabeln DPATH
+:eol.
+:dt.work
+:dd.Anger vilken arbetskatalog som ska anv„nds vid produktinstallationen.
+Parameter anv„nds bara vid installation och ignoreras om n†gon annan
+funktion anges.
+:edl.
+
+.**********************************************************************
+.* EPFIE205: %1 has already been installed.  You cannot install a
+.*           product twice.
+.**********************************************************************
+:h2 name=IHM205 res=205.EPFIE205
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Installationen kan inte genomf”ras eftersom produkten redan „r installerad
+i arbetsstationen.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Om du vill installera en ny version av produkten m†ste du f”rst ta bort den
+aktuella versionen. Hur du g”r beskrivs i dokumentationen till produkten.
+:p.
+Om du ska l„gga in en programfix v„ljer du alternativet Uppdatera.
+
+.**********************************************************************
+.* EPFIE206: An invalid response file parameter was found on line %3 of %2.
+.**********************************************************************
+:h2 name=IHM206 res=206.EPFIE206
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Svarsfilen inneh†ller en ogiltig parameter.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Skriv in r„tt parametrar i :link reftype=hd res=2042.svarsfilen:elink.
+och f”rs”k igen.
+
+.**********************************************************************
+.* EPFIE207: An invalid value for a response file parameter was found
+.*           on line %3 of %2.
+.**********************************************************************
+:h2 name=IHM207 res=207.EPFIE207
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Svarsfilens parameter „r giltig men v„rdet
+(till h”ger om likhetstecknet) „r ogiltigt.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Ange r„tt parameterv„rde f”r
+:link reftype=hd res=2042.svarsfilen:elink. och f”rs”k igen.
+
+.**********************************************************************
+.* EPFIE208: The response file contains
+.*           more than 100 component specifications.
+.**********************************************************************
+:h2 name=IHM208 res=208.EPFIE208
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Det finns mer „n 100 komponentparametrar i svarsfilen.
+H”gst 100 komponenter kan anv„ndas.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Ta bort komponentparametrar som inte anv„nds fr†n svarsfilen och f”rs”k igen.
+
+.**********************************************************************
+.* EPFIE209: Currently unused
+.**********************************************************************
+
+.**********************************************************************
+.* EPFIE210: The product name specified with the /p parameter ('%1') could
+.*           not be found within the product catalog list.
+.**********************************************************************
+:h2 name=IHM210 res=210.EPFIE210
+:p.
+:hp7.F”rklaring:ehp7.
+:p.Bearbetningen kan inte genomf”ras p&rbl.g&rbl.a att produktnamnet „r ogiltigt.
+Produktnamnet som anges som v„rde i parametern
+&slash.p m†ste exakt motsvara produktnamnet i produktlistan.
+Produktnamn som inneh†ller mellanslag m†ste skrivas inom dubbla citattecken (").
+:p.
+Exempel p† giltiga produktnamn&colon.
+:sl compact.
+:li.&slash.p="produktnamn med mellanslag"
+:li.&slash.p=produktnamn
+:esl.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+ndra v„rdet f”r parametern &slash.p och f”rs”k igen.
+
+.**********************************************************************
+.* EPFIE211: A product name is required to perform the requested action,
+.*           but one was not specified.
+.**********************************************************************
+:h2 name=IHM211 res=211.EPFIE211
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Den beg„rda bearbetningen kan inte utf”ras
+p&rbl.g&rbl.a att parametern &slash.p saknas. Du m†ste ange ett produktnamn vid
+installation, uppdatering, †terst„llning eller borttagning.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+L„gg till parametern &slash.p och ange ett produktnamn.
+F”rs”k sedan igen.
+
+
+.**********************************************************************
+.* EPFIE212: The requested action could not be performed in a unattended mode.
+.*           Additional command line options or response file information
+.*           must be specified.
+.**********************************************************************
+:h2 name=IHM212 res=212.EPFIE212
+:p.
+:hp7.F”rklaring:ehp7.
+:p.Kommandoradsparametern &slash.x anger att en obevakad installation
+ska g”ras men information saknas.
+F”r att bearbetningen ska kunna genomf”ras m†ste ytterligare
+information anges p† kommandoraden eller i svarsfilen.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+:ol.
+:li.F”rs”k igen genom att ta bort parametern &slash.x.
+Installationsprogrammet kan d† s”ka efter informationen som saknas.
+:li.N„r du vet vilka uppgifter som saknas skriver du in
+informationen med hj„lp av
+:link reftype=hd res=2041.kommandoradsparametrar:elink.
+och :link reftype=hd res=2042.svarsfilsparametrar:elink..
+:li.Ge kommandot igen med parametern &slash.x.
+:li.Om bearbetningen misslyckas g”r du om proceduren igen fr†n steg 1.
+:eol.
+
+.**********************************************************************
+.* EPFIE213: %1 cannot be updated because it is not installed.
+.**********************************************************************
+:h2 name=IHM213 res=213.EPFIE213
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Den beg„rda uppdateringen kan inte genomf”ras eftersom produkten inte „r
+installerad. Endast produkter som „r installerade kan uppdateras.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Om du vill uppdatera produkten m†ste du f”rst installera den.
+Hur du g”r beskrivs i dokumentationen till produkten.
+
+.**********************************************************************
+.* EPFIE214: %1 cannot be deleted because it is not installed.
+.**********************************************************************
+:h2 name=IHM214 res=214.EPFIE214
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Den beg„rda borttagningen kan
+inte utf”ras eftersom produkten inte „r installerad.
+Du kan bara ta bort en produkt som „r installerad.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Om du har installerat produkten kan felet bero p† att programprofilen
+„r skadad eller borttagen. I s† fall m†ste f”rst du installera om produkten
+innan du kan ta bort den. Se till att du installerar om produkten
+i samma kataloger som tidigare. Installationen kommer att g† snabbt
+eftersom inga filer beh”ver ”verf”ras.
+
+.**********************************************************************
+.* EPFIE215: %1 cannot be restored.  This may be because the product has
+.*           not yet been installed and updated.
+.**********************************************************************
+:h2 name=IHM215 res=215.EPFIE215
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Den beg„rda †terst„llningen
+kan inte genomf”ras eftersom produkten inte har installerats
+och uppdaterats.
+Du kan bara †terst„lla en produkt som har installerats och sedan
+uppdaterats minst en g†ng
+(med alternativet :hp2.Lagra en s„kerhetskopia:ehp2. markerat).
+
+.**********************************************************************
+.* EPFIQ216: Deletion of the '%1' component requires that the '%2' component
+.*           also be deleted.  Do you want to delete the '%2'?
+.**********************************************************************
+:h2 name=IHM216 res=216.EPFIQ216
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Den markerade komponenten (eller komponentens s„kerhetskopia) kan inte tas bort
+eftersom den „r kopplad till en annan komponent.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+V„lj n†got av f”ljande&colon.
+:dl tsize=5 break=all compact.
+:dt.:hp2.Ja:ehp2.
+:dd.Tar bort komponenten som „r knuten till den aktuella komponenten
+:dt.:hp2.Nej:ehp2.
+:dd.Tar bort meddelandet och g†r tillbaka till borttagningsf”nstret.
+Du kan avmarkera komponenten och g”ra om borttagningen.
+:edl.
+
+.**********************************************************************
+.* EPFIE218: The requested action cannot be performed because a
+.*           Communications Manager DLL cannot be found.
+.**********************************************************************
+:h2 name=IHM218 res=218.EPFIE218
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+tg„rden kr„ver ett HLLAPI-gr„nssnitt mot
+Communications Manager, men HLLAPI DLL (ACS3EHAP.DLL) kan inte
+l„sas in.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+:ol.
+:li.Kontrollera att Communications Manager „r installerat, inklusive
+HLLAPI-gr„nssnitt.
+:li.Om HLLAPI „r installerat kontrollerar du att LIBPATH-satsen i
+CONFIG.SYS-filen inneh†ller s”kv„gen till HLLAPI.DLL.
+Om du har „ndrat CONFIG.SYS-filen
+m†ste du starta om arbetsstationen s† att „ndringarna aktiveras.
+:li.F”rs”k igen.
+:eol.
+
+.**********************************************************************
+.* EPFIE219: A catalog or package file '%3' has been included by
+.*           another catalog or package file more than once.
+.**********************************************************************
+:h2 name=IHM219 res=219.EPFIE219
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Tv† katalog- eller paketfiler anropar varandra i en o„ndlig slinga.
+:p.
+Det enklaste exemplet p† det h„r felet „r en produkt som inneh†ller tv†
+paketfiler&colon. A och B. Om paketfilen A anropar paketfil B
+och paketfil B anropar paketfil A resulterar det i en o„ndlig slinga.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Ta bort INCLUDE-satsen som orsakar felet fr†n katalog-
+eller paketfilen och f”rs”k igen.
+
+
+.**********************************************************************
+.* EPFIE220: A /O command line option must be specified.
+.**********************************************************************
+:h2 name=IHM220 res=220.EPFIE220
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Kommandoparametern &slash.o m†ste anges om kommandoparametern
+&slash.c anv„nds. Parametern &slash.o anger
+k„llan till funktionen (VM, MVS, VSE eller enhet)
+och kr„vs f”r att funktionen ska kunna utf”ras.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Ange k„llan med
+:link reftype=hd res=2041.kommandoparametern:elink. /o och
+f”rs”k sedan igen.
+
+.**********************************************************************
+.* EPFIE223: The requested operation could not be performed because
+.*           Installation and Maintenance is missing information about the
+.*           selected product.
+.**********************************************************************
+:h2 name=IHM223 res=223.EPFIE223
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Den markerade produkten har installerats med en tidigare version av
+installationsprogrammet. Den aktuella versionen av installationsprogrammet
+kr„ver ytterligare information f”r att bearbetningen ska kunna utf”ras.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Ta fram informationen som saknas genom att ”ppna katalogen med den
+markerade produkten.
+N„r du har ”ppnat katalogen markerar du produkten och f”rs”ker igen.
+.****************************************************************
+.* EPFIE224: Only a drive may be entered for the '%1' entry.
+.****************************************************************
+:h2 name=IHM224 res=224.EPFIE224
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Enhetsbokst„ver m†ste f”ljas av kolon (t&rbl.ex C&colon.).
+:p.
+:hp7.tg„rd:ehp7.
+:ul.
+:li.Skriv in informationen r„tt.
+:li.F”rs”k igen.
+:eul.
+:eh1.
+
+.**********************************************************************
+.* EPFIE225: The temporary directory for deferred installation files could
+.*           not be created. (%1)
+.**********************************************************************
+:h2 name=IHM225 res=225.EPFIE225
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Det g†r inte att skapa en tillf„llig katalog f”r uppskjutna installationsfiler
+p&rbl.g&rbl.a att
+:ul.
+:li.datorn inte k„nner igen enheten.
+Felet kan uppst† om en fil med HPFS-namn eller
+-filtyp ”verf”rs till en enhet som formaterats med filsystemet FAT.
+:li.ett annat program anv„nder enheten
+:eul.
+:p.
+:hp7.tg„rd:ehp7.
+:ol.
+:li.G”r n†got av f”ljande&colon.
+:ul.
+:li.V„lj en annan enhet.
+:li.Formatera enheten.
+:li.V„nta tills det andra programmet inte l„ngre anv„nder enheten.
+:eul.
+:li.F”rs”k igen.
+:eol.
+:eh1.
+
+.**********************************************************************
+.* EPFIE226: An error occurred writing information to the deferred
+.*           installation command file. (%1)
+.**********************************************************************
+:h2 name=IHM226 res=226.EPFIE226
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Det g†r inte att skriva i kommandofilen f”r den uppskjutna installationen.
+Ett annat program kanske redan anv„nder filen eller det finns inget
+ledigt diskutrymme i startenheten.
+:p.
+:hp7.tg„rd:ehp7.
+:ol compact.
+:li.Kontrollera diskutrymmet.
+:li.St„ng de program som anv„nder filen.
+:li.F”rs”k igen.
+:eol.
+:eh1.
+
+.**********************************************************************
+.* EPFIE227: An error occurred completing the deferred installation
+.*           preparation.
+.**********************************************************************
+:h2 name=IHM227 res=227.EPFIE227
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+F”rberedelsen f”r uppskjuten installation misslyckades p&rbl.g&rbl.a att CONFIG.SYS-filen
+„r skrivskyddad eller att det inte finns tillr„ckligt med diskutrymme i
+startenheten.
+:p.
+:hp7.tg„rd:ehp7.
+:ol compact.
+:li.Kontrollera att CONFIG.SYS-filen inte „r skrivskyddad.
+:li.Ta bort filer som du inte beh”ver fr†n startenheten.
+:li.F”rs”k igen.
+:eol.
+
+.**********************************************************************
+.* EPFIE232: The syntax of an expression within the package file is invalid.
+.*           The expression in error is: '%1'.
+.**********************************************************************
+:h2 name=IHM232 res=232.EPFIE232
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Uttrycket „r ogiltigt p&rbl.g&rbl.a n†got av f”ljande&colon.
+:ul compact.
+:li.Parenteserna st„mmer inte. Du har gl”mt en v„nster- eller h”gerparentes.
+:li.Du har angett fel syntax. En operator kanske saknar en operand, eller
+en operand saknar en operator.
+:li.Utv„rderingen av uttrycket orsakar division med noll.
+:eul.
+:p.
+:hp7.tg„rd:ehp7.
+:ol compact.
+:li.R„tta uttrycket i paketfilen.
+:li.F”rs”k igen.
+:eol.
+
+.**********************************************************************
+.* EPFIE233: An expression within the package file contains an operand
+.*           type conflict.  One or more of the operands within the
+.*           following expression do not have the same type: '%1'.
+.**********************************************************************
+:h2 name=IHM233 res=233.EPFIE233
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+En av operatorerna i uttrycket inneh†ller olika typer av operander.
+Alla operatorer kr„ver operander av samma typ.
+Exempel p† uttryck med olika typer av operander&colon.
+:xmp.
+ "str„ng" == 123
+ "str„ng" / "str„ng"
+ ("str„ng" == "str„ng") &amp.&amp. "str„ng2"
+:exmp.
+:p.
+:hp7.tg„rd:ehp7.
+:ol compact.
+:li.R„tta uttrycket i paketfilen.
+:li.F”rs”k igen.
+:eol.
+
+.**********************************************************************
+.* EPFIE234: Cannot create the '%1' object on the Workplace Shell.  The
+.*           setup string parameter was '%2'
+.**********************************************************************
+:h2 name=IHM234 res=234.EPFIE234
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Exitrutinen CREATEWPSOBJECT kunde inte skapa objektet.
+Objektet kanske redan finns p† skrivbordet.
+:p.
+:hp7.tg„rd:ehp7.
+:ol compact.
+:li.Ange parametern 'R' i paketfilen s† byts objektet ut.
+:li.Kontrollera att parametrarna i inst„llningsstr„ngen „r giltiga f”r
+den aktuella objektklassen.
+:li.F”rs”k igen.
+:eol.
+
+.**********************************************************************
+.* EPFIW235: A back-level version of the operating system has been
+.*           found.
+.**********************************************************************
+:h2 name=IHM235 res=235.EPFIW235
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Om du inte har r„tt version av OS/2 2.0 installerad kan det h„nda att
+arbetsstationen h„nger sig under produktinstallationen.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+Installera den senaste versionen av OS/2 (CSD XRx6055 eller h”gre).
+:nt.
+.**********************************************************************
+.*EPFIE236: Drive %1 does not contain enough disk space to
+.*          save a backup.
+.**********************************************************************
+:h2 name=IHM236 res=236.Hj„lp f”r EPFIE236
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Det finns inte tillr„ckligt mycket ledigt utrymme p† den angivna enheten
+f”r att rymma en s„kerhetskopia.
+:p.
+:hp7.tg„rd:ehp7.
+:ol compact.
+:li.Frig”r utrymme p† enheten.
+:li.V„lj :hp2.F”rs”k igen:ehp2..
+:eol.
+eller
+:p.V„lj :hp2.Avbryt:ehp2..
+
+.**********************************************************************
+.* EPFIW237: The drive, directory, or file specified for the '%1' log parameter
+.*           cannot be written to.  Select OK to continue without writing to
+.*           the log or select Cancel to exit.
+.**********************************************************************
+:h2 name=IHM237 res=237.Hj„lp f”r EPFIW237
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+V„rdet som anges f”r loggparametern kan inte anv„ndas. V„rdet
+„r ogiltigt om loggfilen inte kan skapas p† den angivna enheten
+eller i den angivna s”kv„gen, eller om den angivna loggfilen inte
+kan ta emot ny information. Det kan bero
+p† f”ljande&colon.
+:ul.
+:li.Den angivna enheten finns inte
+:li.Den angivna enheten, katalogen eller filen „r skrivskyddad
+:eul.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+G”r n†got av f”ljande&colon.
+:ul.
+:li.V„lj :hp2.OK:ehp2. om du vill forts„tta utan att skriva till
+den angivna loggfilen.
+:li.V„lj :hp2.Avbryt:ehp2. om du vill avbryta †tg„rden.
+G”r sedan om din beg„ran men anv„nd ett giltigt v„rde f”r loggfilen.
+:eul.
+
+.**********************************************************************
+.* EPFIW238: The drive, directory, or file specified for the '%1' log parameter
+.*           cannot be written to.  Select OK to continue with a log value
+.*           of '%2' or select Cancel to exit.
+.**********************************************************************
+:h2 name=IHM238 res=238.Hj„lp f”r EPFIW238
+:p.
+:hp7.F”rklaring:ehp7.
+:p.
+Det angivna v„rdet f”r loggparametern kan inte anv„ndas. Om du forts„tter
+kommer ett annat v„rde att anv„ndas. V„rdet som du har angett „r ogiltigt
+om loggfilen inte kan skapas p† den angivna enheten eller i den angivna
+s”kv„gen, eller om det inte g†r att skriva ny information i loggfilen. Det
+kan bero p† f”ljande&colon.
+:ul.
+:li.Den angivna enheten finns inte
+:li.Den angivna enheten, katalogen eller filen „r skrivskyddad
+:eul.
+:p.
+:hp7.tg„rd:ehp7.
+:p.
+G”r n†got av f”ljande&colon.
+:ul.
+:li.V„lj :hp2.OK:ehp2. om du vill forts„tta processen med det andra
+parameterv„rdet.
+:li.V„lj :hp2.Avbryt:ehp2. om du vill avbryta †tg„rden. G”r sedan om din
+beg„ran, men anv„nd ett giltigt v„rde f”r loggfilen.
+:eul.
+
+
+:euserdoc.
+

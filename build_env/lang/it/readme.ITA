@@ -1,0 +1,114 @@
+
+                            AMouse - READ.ME
+                            -----------------
+
+Benvenuti in AMouse. Questo driver permette di controllare sia i mouse
+di tipo tradizionale che quelli dotati di rotella, come per es.:
+- Logitech Pilot Mouse+ per porta seriale o PS/2
+- Logitech Mouse Man+
+- Logitech MX700/MX1000
+- Microsoft Intellimouse
+- IBM Scrollpoint Mouse
+- Typhoon 40159
+- Trust 250S
+- Mouse USB
+
+Questo file contiene le informazioni relative all'installazione di AMouse.
+
+Sono presenti le seguenti sezioni:
+   -  Prerequisiti per l'installazione
+       - Prerequisiti software
+       - Prerequisiti hardware
+   -  Note
+   -  Supporto
+   -  Installazione di AMouse
+
+
+Prerequisiti per l'installazione
+--------------------------------
+   Prerequisiti software
+   ---------------------
+   - OS/2 a partire dalla versione 3.0.
+
+   Prerequisiti hardware
+   ---------------------
+   - Mouse per porta seriale, PS/2 o USB.
+
+Note
+----
+   - A partire dalla versione 2.1, AMouse implementa un supporto multimedia di
+     base che permette di cambiare il volume utilizzando la rotellina del mouse.
+     La libreria che gestisce funzione, "nbaudio.dll", Š la stessa utilizzata
+     dal nostro driver DCF77. Nel caso si stia usando una vecchia versione del
+     nostro pacchetto potrebbe essere necessario cancellare o rimpiazzare il file
+     DLL omonimo con quello incluso in questo pacchetto. E' sufficiente che vi
+     sia uno solo di questi file (il pi— recente) presente nel percorso LIBPATH.
+   - Alcune delle versioni pi— vecchie del file "som.dll" del sistema operativo non
+     sono compatibili con la classe WPS "AMouse.dll". Se si riscontrano problemi,
+     come il blocco della Workplace Shell durante l'avvio, si possono rimpiazzare
+     i vecchi file "som*.dll" con versioni pi— recenti oppure usare la versione
+     eseguibile del programma di configurazione ("AMouse.exe") - si veda
+     pi— sotto.
+
+Supporto
+--------
+   Aiuto in linea
+   Service and technical support of nb software (non in lingua italiana)
+
+        noller & breining software
+        Eichhalde 3
+        71554 Weissach im Tal
+        Germany
+
+        Tel.: (+49)7191/960345
+        e-mail: info@nbsoftware.de
+        http://www.nbsoftware.de
+
+
+Installazione di AMouse
+-----------------------
+E' sufficiente avviare la procedura di installazione con il comando
+"INSTALL" dalla cartella in cui si Š decompresso il pacchetto AMouse.
+
+Installazione di mouse su porta USB
+-----------------------------------
+Per utilizzare un mouse USB Š necessario aver gi… installato il
+pacchetto OS/2 per il supporto USB ed aggiunto al file CONFIG.SYS
+le necessarie istruzioni:
+    BASEDEV=USBOHCD.SYS /V
+o
+    BASEDEV=USBUHCD.SYS /V
+o
+    BASEDEV=USBEHCD.SYS /V
+(vi possono essere pi— tipi di hardware USB presenti contemporaneamente; nel
+caso specificare pi— di una riga)
+
+    BASEDEV=USBD.SYS /V /REQ:USBxHCD$  (dove "x" dipende dal tipo di driver
+                                             precedente, OHCD, UHCD o EHCD)
+    BASEDEV=USBHID.SYS
+    DEVICE=D:\OS2\BOOT\USBMOUSE.SYS
+
+Il programma di installazione sostituisce il driver mouse USB OS/2 originale,
+USBMOUSE.SYS, con una versione modificata che supporta 5 tasti anzich‚ 3.
+Il file originale viene salvato come USBMOUSE.ORG.
+
+Perch‚ un mouse USB venga rilevato Š necessario che:
+a) USBMOUSE.SYS sia stato caricato e non sia stato rilevato nessun altro mouse, oppure
+b) USBMOUSE.SYS sia stato avviato specificando nel file CONFIG.SYS il parametro /DEVICE:1.
+In entrambi i casi, la effettiva presenza o meno di un mouse non Š rilevante.
+Per quanto riguarda il caso a): non Š vietato collegare al PC anche un mouse PS/2 o seriale,
+ma si tenga presente che sar… quest'ultimo a definire la configurazione  hardware del driver
+(numero di rotelle e numero di tasti).
+
+Configurazione del Mouse
+------------------------
+A seconda dell'opzione di configurazione scelta, una volta terminata
+l'installazione e riavviato il sistema sar… disponibile per la configurazione
+del  mouse uno dei due sistemi qui di seguito elencati:
+1.) classe WPS: nella cartella AMOUSE viene creata una copia dell'oggetto per
+    la configurazione del mouse, contenente pagine di impostazioni aggiuntive per
+    il mouse e per la rotellina. Al riavvio del sistema tali pagine compaiono anche
+    nell'oggetto Mouse standard di OS/2, presente nella cartella Impostazione
+    del sistema.
+2.) programma EXE: nella cartella AMOUSE sar… disponibile un programma per
+    configurare la rotellina.

@@ -1,0 +1,1 @@
+mreplace \amouse\amoudll.dll amoudll.dll

@@ -1,0 +1,31 @@
+#ifndef OS2_INCLUDED
+   #include <os2.h>
+#endif
+DLGINCLUDE 1 "dlg.h"
+
+DLGTEMPLATE IDD_IEXIT LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Selection of configuration program", IDD_IEXIT, 0, 0, 200,
+            105, WS_VISIBLE, FCF_SYSMENU | FCF_TITLEBAR | FCF_MINBUTTON
+    BEGIN
+        AUTORADIOBUTTON "Workplace Shell Class", DID_WPS, 10, 36, 180, 10,
+                        WS_TABSTOP
+        AUTORADIOBUTTON "Executable Program", DID_PROGRAM, 10, 23, 180,
+                        10, WS_TABSTOP
+        LTEXT           "There exist two methods to configure the device driver:",
+                        -1, 11, 83, 180, 15, DT_WORDBREAK
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00000000L
+                        PRESPARAMS PP_FONTNAMESIZE, "9.Helv"
+        LTEXT           "The Workplace Shell Class extends the OS/2 mouse configuration",
+                        -1, 18, 68, 172, 15, DT_WORDBREAK
+                        PRESPARAMS PP_FONTNAMESIZE, "9.Helv"
+        LTEXT           "The Executable Program is a normal "".exe""-file, that may be started from the command line interpreter",
+                        -1, 18, 51, 172, 15, DT_WORDBREAK
+                        PRESPARAMS PP_FONTNAMESIZE, "9.Helv"
+        LTEXT           "-", 103, 10, 75, 5, 8
+                        PRESPARAMS PP_FONTNAMESIZE, "8.Helv"
+        LTEXT           "-", 104, 10, 58, 5, 8
+                        PRESPARAMS PP_FONTNAMESIZE, "8.Helv"
+        PUSHBUTTON      "~OK", DID_OK, 10, 5, 40, 14
+    END
+END

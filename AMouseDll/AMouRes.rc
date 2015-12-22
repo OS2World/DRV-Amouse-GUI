@@ -1,0 +1,180 @@
+/***************************************************************************\
+ *
+ * PROGRAM NAME: AMouDLL
+ * -------------
+ *
+ * VERSION: 2.70
+ * --------
+ *
+ * MODULE NAME:  AMouRes.RC
+ * ------------
+ *
+ * DESCRIPTION:
+ * ------------
+ *   Resource file for AMouse system dll
+ *
+ *  Ver.    Date      Comment
+ *  ----    --------  -------
+ *  2.00    10-03-01  First release
+ *  2.10    05-12-02  Handling of shift-keys
+ *  2.40    02-01-03  support for 2 wheels; wildcards for process name
+ *  2.50    04-20-03  application behaviour support added
+ *  2.60    06-13-04  remove unused settings pages from mouse object
+ *  2.70    10-23-04  support for 7 buttons added
+ *
+ *  Copyright (C) noller & breining software 2002...2004
+ *
+\******************************************************************************/
+#define IS_RESOURCE
+#include "AMouRes.h"
+
+/***************************************************************************\
+ * Description of RCID_POSTDATA table
+ * ==================================
+ * Each line defines an action for a single control, used for all 4 wheel
+ * directions. The definitions are read from top to bottom line and the
+ * matching algorithm stops, if the first 4 columns match.
+ *
+ * - application (string):
+ *      "<file>"    filename: executed only on this program;
+ *                  wildcards '*' and '?' are supported
+ *      ""          empty string: valid for all applications
+ *
+ * - class (string):
+ *      "class"     executed, if control is of this class
+ *      ""          executed for all window classes
+ *
+ * - parent class (string):
+ *      "class"     executed, if parent of control is of this class
+ *      ""          parent is not of interest
+ *
+ * - option (string):
+ *                  ...used for some of the options; see description there
+ *
+ * - mode (unsigned short):
+ *                  corresponds to the settings radio buttons in the group
+ *                  "defines the message type for scroll operations".
+ *      MODE_STD    matches, if "scroll messages" is set
+ *      MODE_CSR    matches, if "keyboard messages" is set
+ *      MODE_PAGE   matches, if "scroll entire page" is set
+ *      MODE_LINE   matches, if MODE_STD or MODE_CSR
+ *      MODE_ALL    matches always
+ *
+ * - vRelation / hRelation (unsigned short):
+ *                  defines to which control the mouse event is passed
+ *      REL_NONE    event is handled by the detected control
+ *      REL_PARENT  event is passed to the parent of the detected control
+ *      REL_OWNER   event is passed to the owner of the detected control
+ *      REL_NEXT    event is passed to the window below the detected control,
+ *                  that also contains the current pointer position
+ *      REL_IGLB    mainly for use with combobox. It occupies all the space
+ *                  of the opened listbox even if it is closed. So: if detected
+ *                  control is listbox of combobox and is currently invisible,
+ *                  then action is identical to REL_NEXT, otherwise REL_NONE
+ *      REL_SPEC    event is passed to a sibling window of the detected control
+ *                  with the class in "option"
+ *
+ * - vOption / hOption (unsigned short):
+ *                  defines various options that depend on the message type;
+ *                  see also there for descriptions
+ *      VKP_PAGE    scroll by page up / page down
+ *      VKP_CUD     scroll by cursor up/down    (multiplied by scroll increments)
+ *      VKP_CLR     scroll by cursor left/right (multiplied by scroll increments)
+ *      VKP_SUD     scroll by single cursor up/down
+ *      VKP_SLR     scroll by single cursor left/right
+ *
+ * - up / down / left / right (unsigned short):
+ *                  window message type to be sent; supported messages:
+ *      WM_NULL
+ *      WM_CONTROL  in this application used to directly insert character codes
+ *                  into the keyboard driver
+ *                      h/voption: VKP_PAGE: PgUp / PgDn code sent
+ *                                 VKP_CLR:  Left / Right code sent
+ *                                 VKP_CUD:  Up / Down code sent
+ *                                 VKP_SLR:  Left / Right code sent
+ *                                 VKP_SUD:  Up / Down code sent
+ *      WM_COMMAND  post this message with:
+ *                      up:   mp1 set to h/voption +1
+ *                      down: mp1 set to h/voption
+ *                      mp2 is set to 0
+ *      WM_VSCROLL  vertically scroll multiple lines, according to
+ *                  multiplication factor
+ *                      h/voption: 0x0000:  message sent to vertical scrollbar
+ *                                 other:   message sent to other id
+ *      WM_HSCROLL  horziontally scroll multiple lines, according to
+ *                  multiplication factor
+ *                      option: 0x0000:  message sent to horizontal scrollbar
+ *                              other:   message sent to other id
+ *      WM_VSCROLL1 vertically scroll single line
+ *                      option: 0x0000:  message sent to vertical scrollbar
+ *                              other:   message sent to other id
+ *      WM_HSCROLL1 horizontally scroll single column
+ *                      option: 0x0000:  message sent to horizontal scrollbar
+ *                              other:   message sent to other id
+ *      WM_CHAR         option: VKP_PAGE: PgUp / PgDn code sent
+ *                              VKP_CLR:  Left / Right code sent
+ *                              VKP_CUD:  Up / Down code sent
+ *                              VKP_SLR:  Left / Right code sent
+ *                              VKP_SUD:  Up / Down code sent
+ *      SPBM_SPINUP
+ *      SPBM_SPINDOWN
+ *      VM_SELECTITEM   option: VS_VERT: vertical scrolling
+ *                              VS_HORZ: horizontal scrolling
+ *      SLM_SETSLIDERINFO
+ *      CSM_SETVALUE    note: does not work correctly with volume control
+ *
+\******************************************************************************/
+RCDATA RCID_POSTDATA
+    {
+//  "application"   "class"                "parent class"        "option"           mode       vRelation   vOption   up                 down               hRelation   hOption   left               right
+    "PMVIEW.EXE",   "#5",                  "#5",                 "",                MODE_ALL,  REL_OWNER,  0x0000,   WM_NULL,           WM_NULL,           REL_OWNER,  0x0000,   WM_NULL,           WM_NULL            // WC_STATIC
+    "PMVIEW.EXE",   "#5",                  "#1",                 "",                MODE_STD,  REL_NONE,   0x0000,   WM_VSCROLL,        WM_VSCROLL,        REL_NONE,   0x0000,   WM_HSCROLL,        WM_HSCROLL         // WC_STATIC
+    "PMVIEW.EXE",   "#5",                  "#1",                 "",                MODE_CSR,  REL_NONE,   0x03F5,   WM_COMMAND,        WM_COMMAND,        REL_NONE,   0x03F5,   WM_COMMAND,        WM_COMMAND         // WC_STATIC
+    "PMVIEW.EXE",   "#5",                  "#1",                 "",                MODE_PAGE, REL_NONE,   0x03F5,   WM_COMMAND,        WM_COMMAND,        REL_NONE,   0x03F5,   WM_COMMAND,        WM_COMMAND         // WC_STATIC
+    "PMVIEW.EXE",   "PMViewCnrCtlViewWnd", "",                   "",                MODE_LINE, REL_OWNER,  0x0000,   WM_VSCROLL,        WM_VSCROLL,        REL_OWNER,  0x0000,   WM_HSCROLL,        WM_HSCROLL         // PMView container window
+    "PMVIEW.EXE",   "PMViewCnrCtlViewWnd", "",                   "",                MODE_PAGE, REL_NONE,   VKP_PAGE, WM_CHAR,           WM_CHAR,           REL_OWNER,  0x0000,   WM_HSCROLL,        WM_HSCROLL         // PMView container window
+    "VPPM.EXE",     "VPPM",                "",                   "",                MODE_LINE, REL_NONE,   VKP_CUD,  WM_CHAR,           WM_CHAR,           REL_NONE,   VKP_CLR,  WM_CHAR,           WM_CHAR            // Virtual Pascal
+    "VPPM.EXE",     "VPPM",                "",                   "",                MODE_PAGE, REL_NONE,   VKP_PAGE, WM_CHAR,           WM_CHAR,           REL_NONE,   VKP_CLR,  WM_CHAR,           WM_CHAR            // Virtual Pascal
+    "JAVA*.EXE",    "awtCdwClazz",         "",                   "",                MODE_LINE, REL_NONE,   VKP_CUD,  WM_CHAR,           WM_CHAR,           REL_NONE,   VKP_CLR,  WM_CHAR,           WM_CHAR            // Java
+    "JAVA*.EXE",    "awtCdwClazz",         "",                   "",                MODE_PAGE, REL_NONE,   VKP_PAGE, WM_CHAR,           WM_CHAR,           REL_NONE,   VKP_CLR,  WM_CHAR,           WM_CHAR            // Java
+    "SOFFICE.EXE",  "SALFRAME",            "",                   "",                MODE_LINE, REL_NONE,   VKP_CUD,  WM_CHAR,           WM_CHAR,           REL_NONE,   VKP_CLR,  WM_CHAR,           WM_CHAR            // Star Office
+    "SOFFICE.EXE",  "SALFRAME",            "",                   "",                MODE_PAGE, REL_NONE,   VKP_PAGE, WM_CHAR,           WM_CHAR,           REL_NONE,   VKP_CLR,  WM_CHAR,           WM_CHAR            // Star Office
+    "SWRITER3.EXE", "#6",                  "",                   "",                MODE_ALL,  REL_NONE,   VKP_SUD,  WM_CHAR,           WM_CHAR,           REL_NONE,   VKP_SLR,  WM_CHAR,           WM_CHAR            // EntryField in StarWriter 3
+    "SCALC3.EXE",   "#6",                  "",                   "",                MODE_ALL,  REL_NONE,   VKP_SUD,  WM_CHAR,           WM_CHAR,           REL_NONE,   VKP_SLR,  WM_CHAR,           WM_CHAR            // EntryField in StarCalc 3
+    "",             "#10",                 "EHXMAIN",            "",                MODE_STD,  REL_NONE,   0x0000,   WM_NULL,           WM_NULL,           REL_NONE,   0x0000,   WM_HSCROLL1,       WM_HSCROLL1        // Systemeditor
+//  "",             "#2",                  "",                   "",                MODE_ALL,  REL_IGLB,   0x0000,   WM_NULL,           WM_NULL,           REL_IGLB,   0x0000,   WM_NULL,           WM_NULL            // WC_COMBOBOX
+    "",             "#2",                  "",                   "",                MODE_ALL,  REL_NONE,   VKP_SUD,  WM_CHAR,           WM_CHAR,           REL_NONE,   0x0000,   WM_NULL,           WM_NULL            // WC_COMBOBOX
+    "",             "#3",                  "",                   "",                MODE_ALL,  REL_PARENT, 0x0000,   WM_NULL,           WM_NULL,           REL_PARENT, 0x0000,   WM_NULL,           WM_NULL            // WC_BUTTON
+    "",             "#5",                  "",                   "",                MODE_ALL,  REL_NEXT,   0x0000,   WM_NULL,           WM_NULL,           REL_NEXT,   0x0000,   WM_NULL,           WM_NULL            // WC_STATIC
+    "",             "#6",                  "",                   "",                MODE_ALL,  REL_OWNER,  0x0000,   WM_NULL,           WM_NULL,           REL_OWNER,  0x0000,   WM_NULL,           WM_NULL            // WC_ENTRYFIELD
+    "",             "#7",                  "",                   "",                MODE_STD,  REL_NONE,   0x0000,   WM_VSCROLL,        WM_VSCROLL,        REL_NONE,   0x0000,   WM_HSCROLL,        WM_HSCROLL         // WC_LISTBOX
+    "",             "#7",                  "",                   "",                MODE_CSR,  REL_NONE,   VKP_CUD,  WM_CHAR,           WM_CHAR,           REL_NONE,   VKP_CLR,  WM_CHAR,           WM_CHAR            // WC_LISTBOX
+    "",             "#7",                  "",                   "",                MODE_PAGE, REL_NONE,   VKP_PAGE, WM_CHAR,           WM_CHAR,           REL_NONE,   VKP_CLR,  WM_CHAR,           WM_CHAR            // WC_LISTBOX
+    "",             "#32",                 "",                   "",                MODE_ALL,  REL_NONE,   0x0000,   SPBM_SPINUP,       SPBM_SPINDOWN,     REL_NONE,   0x0000,   WM_NULL,           WM_NULL            // WC_SPINBUTTON
+    "",             "#38",                 "",                   "",                MODE_ALL,  REL_NONE,   0x0000,   SLM_SETSLIDERINFO, SLM_SETSLIDERINFO, REL_NONE,   0x0000,   SLM_SETSLIDERINFO, SLM_SETSLIDERINFO  // WC_SLIDER
+    "",             "#39",                 "",                   "",                MODE_ALL,  REL_NONE,   VS_VERT,  VM_SELECTITEM,     VM_SELECTITEM,     REL_NONE,   VS_HORZ,  VM_SELECTITEM,     VM_SELECTITEM      // WC_VALUESET
+    "",             "#50",                 "",                   "",                MODE_ALL,  REL_PARENT, 0x0000,   WM_NULL,           WM_NULL,           REL_PARENT, 0x0000,   WM_NULL,           WM_NULL            // Container
+    "",             "#51",                 "",                   "",                MODE_ALL,  REL_PARENT, 0x0000,   WM_NULL,           WM_NULL,           REL_PARENT, 0x0000,   WM_NULL,           WM_NULL            // Container
+    "",             "#57",                 "",                   "",                MODE_ALL,  REL_OWNER,  0x0000,   WM_NULL,           WM_NULL,           REL_OWNER,  0x0000,   WM_NULL,           WM_NULL            // part of Spin Button
+//  "",             "#65",                 "",                   "",                MODE_ALL,  REL_NONE,   0x0000,   CSM_SETVALUE,      CSM_SETVALUE,      REL_NONE,   0x0000,   WM_NULL,           WM_NULL            // WC_CIRCULARSLIDER
+    "",             "#65",                 "",                   "",                MODE_ALL,  REL_NONE,   VKP_CLR,  WM_CHAR,           WM_CHAR,           REL_NONE,   VKP_CLR,  WM_CHAR,           WM_CHAR            // WC_CIRCULARSLIDER
+    "",             "#68",                 "",                   "",                MODE_ALL,  REL_NONE,   VKP_CLR,  WM_CHAR,           WM_CHAR,           REL_NONE,   VKP_CLR,  WM_CHAR,           WM_CHAR            // alternative WC_CIRCULARSLIDER
+    "SWRITER3.EXE", "",                    "#1",                 "",                MODE_STD,  REL_NONE,   0x0000,   WM_VSCROLL,        WM_VSCROLL,        REL_NONE,   0x0000,   WM_HSCROLL,        WM_HSCROLL         // StarWriter 3
+    "SWRITER3.EXE", "",                    "",                   "",                MODE_STD,  REL_PARENT, 0x0000,   WM_NULL,           WM_NULL,           REL_PARENT, 0x0000,   WM_NULL,           WM_NULL            // StarWriter 3
+    "SCALC3.EXE",   "",                    "#1",                 "",                MODE_STD,  REL_NONE,   0x0000,   WM_VSCROLL,        WM_VSCROLL,        REL_NONE,   0x0000,   WM_HSCROLL,        WM_HSCROLL         // StarCalc 3
+    "SCALC3.EXE",   "",                    "",                   "",                MODE_STD,  REL_PARENT, 0x0000,   WM_NULL,           WM_NULL,           REL_PARENT, 0x0000,   WM_NULL,           WM_NULL            // StarCalc 3
+//    "",             "MozillaWindowClass",  "MozillaWindowClass", "",                MODE_LINE, REL_PARENT, VKP_CUD,  WM_CONTROL,        WM_CONTROL,        REL_PARENT, VKP_CLR,  WM_CONTROL,        WM_CONTROL         // Mozilla
+//    "",             "MozillaWindowClass",  "MozillaWindowClass", "",                MODE_PAGE, REL_PARENT, VKP_PAGE, WM_CONTROL,        WM_CONTROL,        REL_PARENT, VKP_CLR,  WM_CONTROL,        WM_CONTROL         // Mozilla
+    "",             "JPTCMDPM:CLIENT",     "",                   ""                 MODE_STD,  REL_OWNER,  0x0000,   WM_NULL,           WM_NULL,           REL_OWNER,  0x0000,   WM_NULL,           WM_NULL            // Take Command main window
+    "",             "JPTCMDPM:CLIENT",     "",                   "JPTCMDPM:PARENT", MODE_CSR,  REL_SPEC,   VKP_CUD,  WM_CHAR,           WM_CHAR,           REL_OWNER,  0x0000,   WM_NULL,           WM_NULL            // Take Command main window
+    "",             "JPTCMDPM:CLIENT",     "",                   "JPTCMDPM:PARENT", MODE_PAGE, REL_SPEC,   VKP_PAGE, WM_CHAR,           WM_CHAR,           REL_OWNER,  0x0000,   WM_NULL,           WM_NULL            // Take Command main window
+    "",             "XWPAMouseWidget",     "",                   "",                MODE_ALL,  REL_NONE,   0x0000,   SPBM_SPINUP,       SPBM_SPINDOWN,     REL_NONE,   0x0000,   SPBM_SPINUP,       SPBM_SPINDOWN      // AMouse XWidget
+    "",             "SeamlessClass",       "",                   "",                MODE_LINE, REL_NONE,   VKP_CUD,  WM_CONTROL,        WM_CONTROL,        REL_NONE,   VKP_CLR,  WM_CONTROL,        WM_CONTROL         // Seamless Windows
+    "",             "SeamlessClass",       "",                   "",                MODE_PAGE, REL_NONE,   VKP_PAGE, WM_CONTROL,        WM_CONTROL,        REL_NONE,   VKP_CLR,  WM_CONTROL,        WM_CONTROL         // Seamless Windows
+    "",             "Shield",              "",                   "",                MODE_CSR,  REL_NONE,   VKP_CUD,  WM_CONTROL,        WM_CONTROL,        REL_NONE,   VKP_CLR,  WM_CONTROL,        WM_CONTROL         // Command line windows
+    "",             "Shield",              "",                   "",                MODE_PAGE, REL_NONE,   VKP_PAGE, WM_CONTROL,        WM_CONTROL,        REL_NONE,   VKP_CLR,  WM_CONTROL,        WM_CONTROL         // Command line windows
+    "",             "",                    "",                   ""                 MODE_STD,  REL_NONE,   0x0000,   WM_VSCROLL,        WM_VSCROLL,        REL_NONE,   0x0000,   WM_HSCROLL,        WM_HSCROLL         // Last Entry; do not change
+    "",             "",                    "",                   "",                MODE_CSR,  REL_NONE,   VKP_CUD,  WM_CHAR,           WM_CHAR,           REL_NONE,   VKP_CLR,  WM_CHAR,           WM_CHAR            // Last Entry; do not change
+    "",             "",                    "",                   "",                MODE_PAGE, REL_NONE,   VKP_PAGE, WM_CHAR,           WM_CHAR,           REL_NONE,   VKP_CLR,  WM_CHAR,           WM_CHAR            // Last Entry; do not change
+    }
+

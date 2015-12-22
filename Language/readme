@@ -1,0 +1,24 @@
+This archive contains all files necessary to produce the language dependent files
+of AMouse.
+
+There are three directories:
+- Resource: contains all files necessary to produce the DLL containing the panels
+            and other language dependent resources of AMouse. They all reside in
+            single DLL, called AMouXXX.dll, where XXX is the country code.
+            After compiling (rc.exe -r amoures.rc amoures.res), it
+            has to be added to amoudll.dll (rc.exe amoures.res amoudll.dll).
+
+- Help:     contains all files necessary to create the help file. There is only a
+            single help file for all parts of AMouse. It is named AMouXXX.hlp,
+            where XXX is the country code.
+            Please note, that we are using IPFCPREP as a preprocessor for IPF
+            files to be able to use symbolic panel ids.
+
+- Install:  contains all files necessary to create the installation program. As
+            the language of the installer is independent from the AMouse package
+            itself, it has not necessarily to be translated to create a new
+            language version of AMouse.
+
+The main directory contains additional header files common to the language
+dependent directories (and of course of the rest of our code...).
+

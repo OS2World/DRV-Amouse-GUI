@@ -1,0 +1,144 @@
+#include <os2.h>
+#include "res.h"
+#include "dlg.h"
+
+ICON IDI_ICON AMOUSE_ICON
+
+BITMAP (IDB_LOGI_BATT_BASE + 0) "batt0.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 1) "batt1.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 2) "batt2.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 3) "batt3.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 4) "batt4.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 5) "batt5.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 6) "batt6.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 7) "batt7.bmp"
+
+RCINCLUDE AMou034.dlg
+
+STRINGTABLE
+    {
+    // common strings AMouse.dll, AMouse.exe
+    IDS_ABOUT,              "Informaci¢n"
+    IDS_PAGENAME_DEVINFO,   "~Informaci¢n del dispositivo"
+    IDS_PAGENAME_WHEEL,     "~Rueda"
+    IDS_PAGENAME_BUTTONS,   "~Teclas"
+    IDS_PAGENAME_TIMING,    "~Tiempos"
+
+    IDS_BATT_EMPTY,         "Rat¢n: Bater¡a vac¡a"
+
+    IDS_PORT_UNKNOWN,       ""
+    IDS_PORT_SERIAL,        "COM0:"
+    IDS_PORT_PS2,           "PS/2"
+    IDS_PORT_USB,           "USB"
+
+    IDS_WHEEL_0,            ""
+    IDS_WHEEL_1,            "presente"
+    IDS_WHEEL_2,            "2 presentes"
+
+    IDS_ACCEL_VAL_OFF,      "off"
+    IDS_ACCEL_VAL_FAST,     "max"
+
+    IDS_PAGE_WHEEL,         "PM + Pantalla Completa"
+    IDS_PAGE_WHEEL_C,       "Ctrl + Rueda"
+    IDS_PAGE_WHEEL_A,       "Alt + Rueda"
+
+    IDS_PAGENUMBER,         "P gina %1 de %2"
+
+    IDS_TYPE_AMBIGUOUS,     "\n\t(o similar)"
+
+    IDS_UNKNOWN,            "Desconocido"
+    IDS_UNKNOWN_DEVICE,     "Dispositivo desconocido"
+    IDS_UNKNOWN_RECEIVER,   "Receptor desconocido"
+
+    IDS_PAGE_BUTTON,        "Bot¢n"
+    IDS_PAGE_BUTTON_C,      "Ctrl+Bot¢n"
+    IDS_PAGE_BUTTON_A,      "Alt+Bot¢n"
+
+    // strings for AMouse.exe only
+    IDS_SWENTRY,            "Configuraci¢n de AMouse"
+    IDS_NOMOUSE,            "Rat¢n con rueda no presente"
+    IDS_ERR_SEM,            "Incapaz de abrir sem foro"
+
+    IDS_HELPWINDOWTITLE,    "Ayuda para AMouse"
+
+    // hotkey descriptions
+    IDS_KEY_CTRL            "Ctrl+"                 // ???
+    IDS_KEY_ALT             "Alt+"                  // ???
+    IDS_KEY_SHIFT           "Shift+"                // ???
+    IDS_KEY_BACKSPACE       "Backspace"             // ???
+    IDS_KEY_TAB             "Tab"                   // ???
+    IDS_KEY_BACKTABTAB      "Backtab"               // ???
+    IDS_KEY_ENTER           "Enter"                 // ???
+    IDS_KEY_ESC             "Esc"                   // ???
+    IDS_KEY_SPACE           "Space"                 // ???
+    IDS_KEY_PAGEUP          "Page Up"               // ???
+    IDS_KEY_PAGEDOWN        "Page Down"             // ???
+    IDS_KEY_END             "End"                   // ???
+    IDS_KEY_HOME            "Home"                  // ???
+    IDS_KEY_LEFT            "Left"                  // ???
+    IDS_KEY_UP              "Up"                    // ???
+    IDS_KEY_RIGHT           "Right"                 // ???
+    IDS_KEY_DOWN            "Down"                  // ???
+    IDS_KEY_PRINTSCRN       "Print"                 // ???
+    IDS_KEY_INSERT          "Insert"                // ???
+    IDS_KEY_DELETE          "Delete"                // ???
+    IDS_KEY_SCRLLOCK        "Scroll"                // ???
+    IDS_KEY_NUMLOCK         "NumLock"               // ???
+    IDS_KEY_WINLEFT         "Win95 left"            // ???
+    IDS_KEY_WINRIGHT        "Win95 right"           // ???
+    IDS_KEY_WINMENU         "Win95 Menu"            // ???
+    IDS_KEY_SYSRQ           "SysReq"                // ???
+    }
+
+// common strings AMouse.dll, AMouse.exe
+RCDATA IDRC_MOUSETYPE
+    {
+    PORT_UNKNOWN,   WHEEL_0, TYPE_UNAMBIG, "Desconocido"
+    PORT_UNKNOWN,   WHEEL_0, TYPE_UNAMBIG, "Rat¢n Bus"
+    PORT_SERIAL,    WHEEL_0, TYPE_AMBIG,   "Rat¢n MS serie"
+    PORT_UNKNOWN,   WHEEL_0, TYPE_UNAMBIG, "Rat¢n Inport"
+    PORT_PS2,       WHEEL_0, TYPE_UNAMBIG, "Rat¢n PS/2"
+    PORT_UNKNOWN,   WHEEL_0, TYPE_AMBIG,   "Pantalla t ctil IBM 8516"
+    PORT_SERIAL,    WHEEL_0, TYPE_AMBIG,   "Rat¢n Logitech"
+    PORT_UNKNOWN,   WHEEL_0, TYPE_AMBIG,   "Teclado lector de pantalla"
+    PORT_UNKNOWN,   WHEEL_0, TYPE_UNAMBIG, "Sin rat¢n"
+    PORT_SERIAL,    WHEEL_1, TYPE_AMBIG,   "MS-IntelliMouse"
+    PORT_PS2,       WHEEL_1, TYPE_AMBIG,   "MS-IntelliMouse"
+    PORT_PS2,       WHEEL_1, TYPE_AMBIG,   "Typhoon 40159 / Trust 250S"
+    PORT_USB,       WHEEL_1, TYPE_UNAMBIG, "Rat¢n USB"
+    PORT_PS2,       WHEEL_1, TYPE_AMBIG,   "PS/2+"
+    PORT_PS2,       WHEEL_1, TYPE_UNAMBIG, "Tipo 14"
+    }
+
+// common strings AMouse.dll, AMouse.exe
+RCDATA IDRC_BUTTONSETTINGS
+    {
+    IDR_NONE,               "Ninguna acci¢n"
+    IDR_CLIPBOARD_CUT,      "Cortar"
+    IDR_CLIPBOARD_COPY,     "Copiar"
+    IDR_CLIPBOARD_INSERT,   "Pegar"
+    IDR_BUTTON3,            "Bot¢n central"
+    IDR_MINIMIZE_ALL,       "Minimizar/Ocultar todas las ventanas"
+    IDR_RESTORE_ALL,        "Restaurar todas las ventanas"
+    IDR_WINDOW_LIST,        "Lista de Ventanas"
+    IDR_CLOSE_APPLICATION,  "Cerrar aplicaci¢n"
+    IDR_DOUBLECLICK,        "Doble click"
+    IDR_MAXIMIZE_WND,       "Maximizar ventana"
+    IDR_MINIMIZE_WND,       "Minimizar/Ocultar ventana"
+    IDR_RESTORE_WND,        "Restaurar ventana"
+    IDR_TOGGLE_SCROLL,      "Alternar direcci¢n de desplazamiento"
+    IDR_PUSH_TO_BACK,       "Colocar ventana al fondo"
+    IDR_KEY,                "Key combination"           // ???
+    IDR_END,                ""
+    }
+
+// menu used in AMouse.dll
+MENU IDM_MAINMENU LOADONCALL MOVEABLE DISCARDABLE
+    {
+    MENUITEM "Informaci¢n",               IDM_ABOUT,          MIS_TEXT
+    #ifdef DEBUG
+    MENUITEM "DEPURAR (AMOUSE)",      IDM_OPENDEBUG,      MIS_TEXT
+    #endif
+    }
+
+

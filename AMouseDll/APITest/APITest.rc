@@ -1,0 +1,5 @@
+#include <OS2.H>
+#include "dlg.h"
+
+rcinclude APITest.dlg
+

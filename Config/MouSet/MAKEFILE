@@ -1,0 +1,66 @@
+# The actions included in this makefile are:
+#   BIND::Resource Bind
+#   COMPILE::CLC C
+#   COMPILE::Resource Compile
+#   COMPILE::SOM
+#   LINK::CLC Link
+
+.SUFFIXES:
+
+.SUFFIXES: .c .idl .rc .res .dlg
+
+.all: \
+  .\AMouse.res \
+  .\AMouse.exe
+
+.rc.res:
+      @echo " Compile::Resource Compiler "
+      rc.exe -r -i . -i .. -i ..\.. $(RDB) %s %|fF.RES
+
+{..}.rc.res:
+      @echo " Compile::Resource Compiler "
+      rc.exe -r -i . -i .. -i ..\.. $(RDB) %s %|fF.RES
+
+.c.obj:
+      @echo " Compile::C++ Compiler "
+      icc.exe /I. /I.. /I..\.. /Ss $(CDB) /Q /Wcnveffparprorearetuse /Gm /Ge+ /G5 /Gf /Fo"%|fF.obj" /Ms /C %s
+
+{..}.c.obj:
+      @echo " Compile::C++ Compiler "
+      icc.exe /I. /I.. /I..\.. /Ss $(CDB) /Q /Wcnveffparprorearetuse /Gm /Ge+ /G5 /Gf /Fo"%|fF.obj" /Ms /C %s
+
+.\amouse.exe: \
+    .\amouse.obj \
+    .\amousedata.obj \
+    .\dialogs.obj \
+    .\common.obj \
+    .\commonDlg.obj \
+    .\Vendor.obj \
+    .\amouse.res \
+    {$(LIB)}amouse.def
+      @echo "Link::Linker "
+      icc.exe @<<
+ /B" $(LDB) /dbgpack /pmtype:pm /nologo /m /noi /exep /packc /packd /al:16"
+ amouse.def
+ cutil.lib
+ .\amouse.obj
+ .\amousedata.obj
+ .\dialogs.obj
+ .\common.obj
+ .\commonDlg.obj
+ .\Vendor.obj
+<<
+      @echo "Bind::Resource Bind "
+      rc.exe -p -x .\amouse.res amouse.exe
+
+!include MAKEFILE.Dep
+
+cleanall:
+      @if exist *.obj del *.obj
+      @if exist *.res del *.res
+      @if exist *.exe del *.exe
+
+copyall:
+      @if exist AMouse.exe copy AMouse.exe ..\Install_Source
+
+

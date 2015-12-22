@@ -1,0 +1,11 @@
+LIBRARY AMOU033 INITINSTANCE TERMINSTANCE
+
+PROTMODE
+
+DESCRIPTION   '@#NB:X.XX.XX#@ Librairie pour l''internationalisation (fran‡ais) du pilote de souris AMouse (c) nb-software 2001...2007'
+
+DATA MULTIPLE NONSHARED READWRITE LOADONCALL
+
+CODE LOADONCALL
+
+

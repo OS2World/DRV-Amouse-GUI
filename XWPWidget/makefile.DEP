@@ -1,0 +1,12 @@
+
+all: \
+    .\XWPmouse.dll
+
+.\XWPWidget.res: \
+    .\XWPWidget.rc \
+    {.;$(INCLUDE)}res.h
+
+.\XWPWidget.obj: \
+    .\XWPWidget.c \
+    {.;e:\cvsroot\xwphelpers\include;e:\work\c\log;..;$(INCLUDE);}AMouseGlobal.h \
+    {.;e:\cvsroot\xwphelpers\include;e:\work\c\log;..;$(INCLUDE);}res.h

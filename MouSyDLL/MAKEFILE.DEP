@@ -1,0 +1,5 @@
+.\MOUSYDLL.obj: \
+    MOUSYDLL.C \
+    makefile
+
+

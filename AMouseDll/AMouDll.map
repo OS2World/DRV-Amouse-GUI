@@ -1,0 +1,403 @@
+
+ AMOUDLL
+
+ Start         Length     Name                   Class
+ 0001:00000000 000005089H CODE32                 CODE 32-bit
+	at offset 00000000 02DF8H bytes from C:\work\c\amouse\AMouseDll\AMouDll.obj (.\AMouDll.c)
+	at offset 00002e00 0069CH bytes from C:\work\c\amouse\AMouseDll\AMouIni.obj (.\AMouIni.c)
+	at offset 0000349c 00005H bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\cfree.c)
+	at offset 000034a4 00013H bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\cmalloc.c)
+	at offset 000034b8 0001FH bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\memcpy.c)
+	at offset 000034d8 0002CH bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\memset.c)
+	at offset 00003504 000F1H bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\rinit.c)
+	at offset 000035f8 00019H bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\strcmp.c)
+	at offset 00003614 0002AH bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\strcpy.c)
+	at offset 00003640 00011H bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\strlen.c)
+	at offset 00003654 0001EH bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\strrchr.c)
+	at offset 00003674 002BFH bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\rcreate.c)
+	at offset 00003934 0174CH bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\rmalloc.c)
+	at offset 00005080 00003H bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\wk_walk.c)
+	at offset 00005084 00005H bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\wk_rmem.c)
+
+ 0002:00000000 0000003E4H GLOBAL_SEG             DATA 32-bit
+	at offset 00000000 003B4H bytes from C:\work\c\amouse\AMouseDll\AMouDll.obj (.\AMouDll.c)
+	at offset 000003b4 00018H bytes from C:\work\c\amouse\AMouseDll\AMouData.obj (.\AMouData.c)
+	at offset 000003cc 00018H bytes from C:\work\c\amouse\AMouseDll\AMouIni.obj (.\AMouIni.c)
+
+ 0003:00000000 000000004H DDE4_DATA32            DATA 32-bit
+	at offset 00000000 00004H bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\dllstub.asm)
+
+ 0004:00000000 000000000H CONST32_RO             CONST 32-bit
+
+ 0004:00000000 0000003A8H DATA32                 DATA 32-bit
+	at offset 00000000 00090H bytes from C:\work\c\amouse\AMouseDll\AMouDll.obj (.\AMouDll.c)
+	at offset 00000090 00304H bytes from C:\work\c\amouse\AMouseDll\AMouIni.obj (.\AMouIni.c)
+	at offset 00000394 00004H bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\rinit.c)
+	at offset 00000398 00010H bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\rmalloc.c)
+
+ 0004:000003A8 000000000H CTOR_DTOR1             DATA 32-bit
+
+ 0004:000003A8 000000000H CTOR_DTOR2             DATA 32-bit
+
+ 0004:000003A8 000000000H CTOR_DTOR3             DATA 32-bit
+
+ 0004:000003A8 00000002CH BSS32                  BSS 32-bit
+	at offset 00000000 00028H bytes from C:\work\c\amouse\AMouseDll\AMouDll.obj (.\AMouDll.c)
+	at offset 00000028 00004H bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\rinit.c)
+
+ 0004:000003D4 00000000CH c_common               BSS 32-bit
+
+
+ Origin   Group
+ 0000:0   FLAT
+ 0004:0   DGROUP
+
+ Address       Export                  Alias
+
+ 0001:00000000 ManualCall              ManualCall
+ 0001:00000010 WinRegisterForWheelMsg  WinRegisterForWheelMsg
+ 0001:00002260 WinSetMasterVolume      WinSetMasterVolume
+ 0001:000003B0 _PM_Init                _PM_Init
+
+  Address         Publics by Name
+
+ 0004:000003B4       bFirstInstance
+ 0002:00000063       bKeyAlt
+ 0002:00000064       bKeyCtrl
+ 0002:00000062       bKeyShift
+ 0001:000007F0       CheckProcessName
+ 0001:00003350       clsInitData
+ 0001:000005EA       CompareProcessName
+ 0000:00000000  Imp  DosAllocMem          (DOSCALLS.299)
+ 0000:00000000  Imp  DosAllocSharedMem    (DOSCALLS.300)
+ 0000:00000000  Imp  DosClose             (DOSCALLS.257)
+ 0000:00000000  Imp  DosCloseEventSem     (DOSCALLS.326)
+ 0000:00000000  Imp  DosCreateEventSem    (DOSCALLS.324)
+ 0000:00000000  Imp  DosCreateMutexSem    (DOSCALLS.331)
+ 0000:00000000  Imp  DosCreateThread      (DOSCALLS.311)
+ 0000:00000000  Imp  DosDevIOCtl          (DOSCALLS.284)
+ 0000:00000000  Imp  DosExit              (DOSCALLS.234)
+ 0000:00000000  Imp  DosExitList          (DOSCALLS.296)
+ 0000:00000000  Imp  DosFreeMem           (DOSCALLS.304)
+ 0000:00000000  Imp  DosFreeModule        (DOSCALLS.322)
+ 0000:00000000  Imp  DosGetInfoBlocks     (DOSCALLS.312)
+ 0000:00000000  Imp  DosGetNamedSharedMem (DOSCALLS.301)
+ 0000:00000000  Imp  DosGetResource       (DOSCALLS.352)
+ 0000:00000000  Imp  DosGiveSharedMem     (DOSCALLS.303)
+ 0000:00000000  Imp  DosKillThread        (DOSCALLS.111)
+ 0000:00000000  Imp  DosLoadModule        (DOSCALLS.318)
+ 0000:00000000  Imp  DosMapCase           (NLS.7)
+ 0000:00000000  Imp  DosOpen              (DOSCALLS.273)
+ 0000:00000000  Imp  DosOpenEventSem      (DOSCALLS.325)
+ 0000:00000000  Imp  DosOpenMutexSem      (DOSCALLS.332)
+ 0000:00000000  Imp  DosPostEventSem      (DOSCALLS.328)
+ 0000:00000000  Imp  DosQueryModuleName   (DOSCALLS.320)
+ 0000:00000000  Imp  DosQueryProcAddr     (DOSCALLS.321)
+ 0000:00000000  Imp  DosQueryResourceSize (DOSCALLS.572)
+ 0000:00000000  Imp  DosQuerySysInfo      (DOSCALLS.348)
+ 0000:00000000  Imp  DosQuerySysState     (DOSCALLS.368)
+ 0000:00000000  Imp  DosReleaseMutexSem   (DOSCALLS.335)
+ 0000:00000000  Imp  DosRequestMutexSem   (DOSCALLS.334)
+ 0000:00000000  Imp  DosResetEventSem     (DOSCALLS.327)
+ 0000:00000000  Imp  DosWaitEventSem      (DOSCALLS.329)
+ 0002:00000008       driverMode
+ 0001:000003BC       exitList
+ 0001:00000EB2       FindApplicationDefinition
+ 0001:000008CE       FindOwnedListbox
+ 0001:00000D10       findOwnerFrame
+ 0001:00000A1E       FindScrollbar
+ 0001:00000980       FindWindowOfClass
+ 0001:0000349C       free
+ 0001:00002132       getMouseButtonState
+ 0001:000020CC       getShiftKeyState
+ 0000:00000000  Imp  GpiBeginPath         (PMGPI.354)
+ 0000:00000000  Imp  GpiBox               (PMGPI.356)
+ 0000:00000000  Imp  GpiCloseFigure       (PMGPI.360)
+ 0000:00000000  Imp  GpiEndPath           (PMGPI.387)
+ 0000:00000000  Imp  GpiFillPath          (PMGPI.392)
+ 0000:00000000  Imp  GpiMove              (PMGPI.404)
+ 0000:00000000  Imp  GpiPolyLine          (PMGPI.415)
+ 0000:00000000  Imp  GpiSetColor          (PMGPI.517)
+ 0002:000003B8       hab
+ 0001:00001098       HandleWheelEvent
+ 0001:000022C0       handleWheelTurns
+ 0004:000003CC       hevPaintVolume
+ 0002:000003C4       hevWheelThreadUpdate
+ 0002:000003C8       hevXWPWidgetUpdate
+ 0004:000003A8       hFileDriver
+ 0004:000003AC       hModAudio
+ 0004:000003B0       hModHookDll
+ 0002:000003B4       hModule
+ 0002:000003C0       hmtxWheelThread
+ 0001:0000028A       initDLLEntries
+ 0001:00001E50       initWheelThread
+ 0001:00000040       insertHook
+ 0002:00000065       keyState
+ 0001:00000DAE       keyViaIOCTL
+ 0001:00000134       loadMMOS2
+ 0002:00000014       lVolume
+ 0001:000034A4       malloc
+ 0001:00000000       ManualCall
+ 0001:000034B8       memcpy
+ 0001:000034D8       memset
+ 0001:00000510       NextChildBelow
+ 0001:0000045A       NextWindowBelow
+ 0001:000029D8       PaintVolumeThread
+ 0004:000003B8       pfnAddWindowHandle
+ 0004:000003BC       pfnFindWindowHandle
+ 0004:000003C0       pfnMciGetMasterVolume
+ 0004:000003C8       pfnMciSaveMasterVolume
+ 0004:000003C4       pfnMciSetMasterVolume
+ 0002:0000001C       pidVolumePaint
+ 0000:00000000  Imp  PrfQueryProfileData  (PMSHAPI.117)
+ 0000:00000000  Imp  PrfQueryProfileInt   (PMSHAPI.114)
+ 0000:00000000  Imp  PrfQueryProfileSize  (PMSHAPI.101)
+ 0002:000003BC       pShMemMouseData
+ 0001:00002E00       queryData
+ 0001:00000706       QuerySysState
+ 0002:00000020       rcl_BackGnd
+ 0001:000000E0       releaseHook
+ 0001:00001062       restoreShiftKeys
+ 0001:00001E8C       SetExtendedMode
+ 0001:00001F7E       SetFullScreenMode
+ 0001:0000219E       setMasterVolume
+ 0001:00000E20       setMouseTimingValues
+ 0001:00000FF6       setShiftKeys
+ 0002:0000005E       shiftState
+ 0001:000035F8       strcmp
+ 0001:00003614       strcpy
+ 0001:00003640       strlen
+ 0001:00003654       strrchr
+ 0002:00000004       szAudioDllName
+ 0002:00000000       szHookDllName
+ 0002:00000018       tidVolumePaint
+ 0002:0000000C       ulProcessCount
+ 0002:00000010       ulThreshold
+ 0001:00002990       UpdateThread
+ 0002:0000005C       usShiftState
+ 0001:0000241C       WheelThread
+ 0000:00000000  Imp  Win16DefDlgProc      (PMMERGE.2095)
+ 0000:00000000  Imp  WinBeginEnumWindows  (PMWIN.702)
+ 0000:00000000  Imp  WinCancelShutdown    (PMWIN.705)
+ 0000:00000000  Imp  WinCreateMsgQueue    (PMWIN.716)
+ 0000:00000000  Imp  WinDestroyMsgQueue   (PMWIN.726)
+ 0000:00000000  Imp  WinEndEnumWindows    (PMWIN.737)
+ 0000:00000000  Imp  WinGetKeyState       (PMWIN.752)
+ 0000:00000000  Imp  WinGetNextWindow     (PMWIN.756)
+ 0000:00000000  Imp  WinGetScreenPS       (PMWIN.759)
+ 0000:00000000  Imp  WinInvalidateRect    (PMWIN.765)
+ 0000:00000000  Imp  WinIsWindow          (PMWIN.772)
+ 0000:00000000  Imp  WinIsWindowEnabled   (PMWIN.773)
+ 0000:00000000  Imp  WinMapWindowPoints   (PMWIN.788)
+ 0000:00000000  Imp  WinPostMsg           (PMWIN.919)
+ 0000:00000000  Imp  WinPtInRect          (PMWIN.797)
+ 0000:00000000  Imp  WinQueryAnchorBlock  (PMWIN.800)
+ 0000:00000000  Imp  WinQueryClassName    (PMWIN.805)
+ 0000:00000000  Imp  WinQueryFocus        (PMWIN.817)
+ 0000:00000000  Imp  WinQueryPointerPos   (PMWIN.823)
+ 0000:00000000  Imp  WinQuerySysValue     (PMWIN.829)
+ 0000:00000000  Imp  WinQueryWindow       (PMWIN.834)
+ 0000:00000000  Imp  WinQueryWindowPos    (PMWIN.837)
+ 0000:00000000  Imp  WinQueryWindowProcess (PMWIN.838)
+ 0000:00000000  Imp  WinQueryWindowRect   (PMWIN.840)
+ 0000:00000000  Imp  WinQueryWindowULong  (PMWIN.843)
+ 0000:00000000  Imp  WinQueryWindowUShort (PMWIN.844)
+ 0001:00000010       WinRegisterForWheelMsg
+ 0000:00000000  Imp  WinReleasePS         (PMWIN.848)
+ 0000:00000000  Imp  WinSendMsg           (PMWIN.920)
+ 0000:00000000  Imp  WinSetFocus          (PMWIN.860)
+ 0000:00000000  Imp  WinSetKeyboardStateTable (PMWIN.921)
+ 0001:00002260       WinSetMasterVolume
+ 0000:00000000  Imp  WinWindowFromPoint   (PMWIN.900)
+ 0004:00000394       _default_heap
+ 0003:00000000       _dllentry
+ 0001:000002E0       _DLL_InitTerm
+ 0004:000003A8       _edata
+ 0004:000003E0       _end
+ 0004:000003D4       _matherr_ptr
+ 0001:000003B0       _PM_Init
+ 0004:000003D8       _reg_heap
+ 0001:00003528       _rmem_init
+ 0001:00003504       _rmem_term
+ 0001:00003D2C       _rnode_delete
+ 0001:000037D4       _uaddmem
+ 0001:00003674       _ucreate
+ 0001:00003D78       _ufree
+ 0001:00004CFC       _umalloc
+ 0004:000003DC       _walk_used
+ 0001:00005088       _w_int_unlink_item
+ 0001:00005084       _w_uheap_verify
+ 0001:00005080       _w_walking
+
+  Address         Publics by Value
+
+ 0000:00000000  Imp  WinIsWindowEnabled   (PMWIN.773)
+ 0000:00000000  Imp  WinSetKeyboardStateTable (PMWIN.921)
+ 0000:00000000  Imp  WinGetKeyState       (PMWIN.752)
+ 0000:00000000  Imp  WinQueryWindow       (PMWIN.834)
+ 0000:00000000  Imp  DosGetResource       (DOSCALLS.352)
+ 0000:00000000  Imp  DosPostEventSem      (DOSCALLS.328)
+ 0000:00000000  Imp  WinQueryWindowPos    (PMWIN.837)
+ 0000:00000000  Imp  WinBeginEnumWindows  (PMWIN.702)
+ 0000:00000000  Imp  DosCreateThread      (DOSCALLS.311)
+ 0000:00000000  Imp  DosCreateEventSem    (DOSCALLS.324)
+ 0000:00000000  Imp  WinGetScreenPS       (PMWIN.759)
+ 0000:00000000  Imp  WinQueryPointerPos   (PMWIN.823)
+ 0000:00000000  Imp  DosOpen              (DOSCALLS.273)
+ 0000:00000000  Imp  WinWindowFromPoint   (PMWIN.900)
+ 0000:00000000  Imp  GpiCloseFigure       (PMGPI.360)
+ 0000:00000000  Imp  WinMapWindowPoints   (PMWIN.788)
+ 0000:00000000  Imp  GpiMove              (PMGPI.404)
+ 0000:00000000  Imp  DosReleaseMutexSem   (DOSCALLS.335)
+ 0000:00000000  Imp  PrfQueryProfileInt   (PMSHAPI.114)
+ 0000:00000000  Imp  DosQueryModuleName   (DOSCALLS.320)
+ 0000:00000000  Imp  Win16DefDlgProc      (PMMERGE.2095)
+ 0000:00000000  Imp  DosOpenEventSem      (DOSCALLS.325)
+ 0000:00000000  Imp  DosGiveSharedMem     (DOSCALLS.303)
+ 0000:00000000  Imp  DosQuerySysInfo      (DOSCALLS.348)
+ 0000:00000000  Imp  DosQueryProcAddr     (DOSCALLS.321)
+ 0000:00000000  Imp  WinQueryClassName    (PMWIN.805)
+ 0000:00000000  Imp  DosCloseEventSem     (DOSCALLS.326)
+ 0000:00000000  Imp  DosResetEventSem     (DOSCALLS.327)
+ 0000:00000000  Imp  DosWaitEventSem      (DOSCALLS.329)
+ 0000:00000000  Imp  WinEndEnumWindows    (PMWIN.737)
+ 0000:00000000  Imp  WinInvalidateRect    (PMWIN.765)
+ 0000:00000000  Imp  DosQuerySysState     (DOSCALLS.368)
+ 0000:00000000  Imp  WinQuerySysValue     (PMWIN.829)
+ 0000:00000000  Imp  WinGetNextWindow     (PMWIN.756)
+ 0000:00000000  Imp  DosOpenMutexSem      (DOSCALLS.332)
+ 0000:00000000  Imp  WinCancelShutdown    (PMWIN.705)
+ 0000:00000000  Imp  WinCreateMsgQueue    (PMWIN.716)
+ 0000:00000000  Imp  GpiBox               (PMGPI.356)
+ 0000:00000000  Imp  DosAllocSharedMem    (DOSCALLS.300)
+ 0000:00000000  Imp  DosGetInfoBlocks     (DOSCALLS.312)
+ 0000:00000000  Imp  DosCreateMutexSem    (DOSCALLS.331)
+ 0000:00000000  Imp  WinQueryWindowUShort (PMWIN.844)
+ 0000:00000000  Imp  WinSetFocus          (PMWIN.860)
+ 0000:00000000  Imp  WinPtInRect          (PMWIN.797)
+ 0000:00000000  Imp  DosDevIOCtl          (DOSCALLS.284)
+ 0000:00000000  Imp  WinQueryWindowProcess (PMWIN.838)
+ 0000:00000000  Imp  GpiBeginPath         (PMGPI.354)
+ 0000:00000000  Imp  GpiPolyLine          (PMGPI.415)
+ 0000:00000000  Imp  DosAllocMem          (DOSCALLS.299)
+ 0000:00000000  Imp  GpiSetColor          (PMGPI.517)
+ 0000:00000000  Imp  DosRequestMutexSem   (DOSCALLS.334)
+ 0000:00000000  Imp  DosClose             (DOSCALLS.257)
+ 0000:00000000  Imp  DosFreeMem           (DOSCALLS.304)
+ 0000:00000000  Imp  WinQueryAnchorBlock  (PMWIN.800)
+ 0000:00000000  Imp  WinSendMsg           (PMWIN.920)
+ 0000:00000000  Imp  DosMapCase           (NLS.7)
+ 0000:00000000  Imp  WinPostMsg           (PMWIN.919)
+ 0000:00000000  Imp  PrfQueryProfileData  (PMSHAPI.117)
+ 0000:00000000  Imp  GpiFillPath          (PMGPI.392)
+ 0000:00000000  Imp  WinQueryFocus        (PMWIN.817)
+ 0000:00000000  Imp  DosFreeModule        (DOSCALLS.322)
+ 0000:00000000  Imp  DosKillThread        (DOSCALLS.111)
+ 0000:00000000  Imp  DosLoadModule        (DOSCALLS.318)
+ 0000:00000000  Imp  PrfQueryProfileSize  (PMSHAPI.101)
+ 0000:00000000  Imp  WinQueryWindowRect   (PMWIN.840)
+ 0000:00000000  Imp  WinQueryWindowULong  (PMWIN.843)
+ 0000:00000000  Imp  GpiEndPath           (PMGPI.387)
+ 0000:00000000  Imp  WinIsWindow          (PMWIN.772)
+ 0000:00000000  Imp  WinReleasePS         (PMWIN.848)
+ 0000:00000000  Imp  DosQueryResourceSize (DOSCALLS.572)
+ 0000:00000000  Imp  DosExitList          (DOSCALLS.296)
+ 0000:00000000  Imp  DosGetNamedSharedMem (DOSCALLS.301)
+ 0000:00000000  Imp  DosExit              (DOSCALLS.234)
+ 0000:00000000  Imp  WinDestroyMsgQueue   (PMWIN.726)
+ 0001:00000000       ManualCall
+ 0001:00000010       WinRegisterForWheelMsg
+ 0001:00000040       insertHook
+ 0001:000000E0       releaseHook
+ 0001:00000134       loadMMOS2
+ 0001:0000028A       initDLLEntries
+ 0001:000002E0       _DLL_InitTerm
+ 0001:000003B0       _PM_Init
+ 0001:000003BC       exitList
+ 0001:0000045A       NextWindowBelow
+ 0001:00000510       NextChildBelow
+ 0001:000005EA       CompareProcessName
+ 0001:00000706       QuerySysState
+ 0001:000007F0       CheckProcessName
+ 0001:000008CE       FindOwnedListbox
+ 0001:00000980       FindWindowOfClass
+ 0001:00000A1E       FindScrollbar
+ 0001:00000D10       findOwnerFrame
+ 0001:00000DAE       keyViaIOCTL
+ 0001:00000E20       setMouseTimingValues
+ 0001:00000EB2       FindApplicationDefinition
+ 0001:00000FF6       setShiftKeys
+ 0001:00001062       restoreShiftKeys
+ 0001:00001098       HandleWheelEvent
+ 0001:00001E50       initWheelThread
+ 0001:00001E8C       SetExtendedMode
+ 0001:00001F7E       SetFullScreenMode
+ 0001:000020CC       getShiftKeyState
+ 0001:00002132       getMouseButtonState
+ 0001:0000219E       setMasterVolume
+ 0001:00002260       WinSetMasterVolume
+ 0001:000022C0       handleWheelTurns
+ 0001:0000241C       WheelThread
+ 0001:00002990       UpdateThread
+ 0001:000029D8       PaintVolumeThread
+ 0001:00002E00       queryData
+ 0001:00003350       clsInitData
+ 0001:0000349C       free
+ 0001:000034A4       malloc
+ 0001:000034B8       memcpy
+ 0001:000034D8       memset
+ 0001:00003504       _rmem_term
+ 0001:00003528       _rmem_init
+ 0001:000035F8       strcmp
+ 0001:00003614       strcpy
+ 0001:00003640       strlen
+ 0001:00003654       strrchr
+ 0001:00003674       _ucreate
+ 0001:000037D4       _uaddmem
+ 0001:00003D2C       _rnode_delete
+ 0001:00003D78       _ufree
+ 0001:00004CFC       _umalloc
+ 0001:00005080       _w_walking
+ 0001:00005084       _w_uheap_verify
+ 0001:00005088       _w_int_unlink_item
+ 0002:00000000       szHookDllName
+ 0002:00000004       szAudioDllName
+ 0002:00000008       driverMode
+ 0002:0000000C       ulProcessCount
+ 0002:00000010       ulThreshold
+ 0002:00000014       lVolume
+ 0002:00000018       tidVolumePaint
+ 0002:0000001C       pidVolumePaint
+ 0002:00000020       rcl_BackGnd
+ 0002:0000005C       usShiftState
+ 0002:0000005E       shiftState
+ 0002:00000062       bKeyShift
+ 0002:00000063       bKeyAlt
+ 0002:00000064       bKeyCtrl
+ 0002:00000065       keyState
+ 0002:000003B4       hModule
+ 0002:000003B8       hab
+ 0002:000003BC       pShMemMouseData
+ 0002:000003C0       hmtxWheelThread
+ 0002:000003C4       hevWheelThreadUpdate
+ 0002:000003C8       hevXWPWidgetUpdate
+ 0003:00000000       _dllentry
+ 0004:00000394       _default_heap
+ 0004:000003A8       hFileDriver
+ 0004:000003A8       _edata
+ 0004:000003AC       hModAudio
+ 0004:000003B0       hModHookDll
+ 0004:000003B4       bFirstInstance
+ 0004:000003B8       pfnAddWindowHandle
+ 0004:000003BC       pfnFindWindowHandle
+ 0004:000003C0       pfnMciGetMasterVolume
+ 0004:000003C4       pfnMciSetMasterVolume
+ 0004:000003C8       pfnMciSaveMasterVolume
+ 0004:000003CC       hevPaintVolume
+ 0004:000003D4       _matherr_ptr
+ 0004:000003D8       _reg_heap
+ 0004:000003DC       _walk_used
+ 0004:000003E0       _end
+ILink : warning LNK4097: no debug packing DLL name provided./DBGPACK ignored.
+
+Program entry point at 0001:000002E0

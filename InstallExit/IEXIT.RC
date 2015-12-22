@@ -1,0 +1,6 @@
+#include <os2.h>
+#include "dlg.h"
+
+ICON 1 "amouse.ico"
+
+

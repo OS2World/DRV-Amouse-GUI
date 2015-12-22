@@ -1,0 +1,129 @@
+
+                            AMouse - read.me
+                            ----------------
+
+Bienvenue ! Ce pilote fonctionne avec la plupart des souris standards
+connues ainsi qu'avec celles disposant d'une roulette comme :
+ - Logitech Pilot Mouse+ sur port s‚rie ou PS/2
+ - Logitech Mouse Man+
+ - Logitech MX700/MX1000
+ - Microsoft Intellimouse
+ - Souris IBM Scrollpoint
+ - Typhoon 40159
+ - Trust 250S
+ - diverses souris USB
+
+Ce fichier vous donne des informations concernant l'installation
+d'AMouse.
+
+Ce fichier contient les cat‚gories suivantes :
+   -  Pr‚requis pour l'installation
+       - Pr‚requis logiciel
+       - Pr‚requis mat‚riel
+   -  Remarques
+   -  Support
+   -  Installation d'AMouse
+
+
+Pr‚requis pour l'installation
+-----------------------------
+   Pr‚requis logiciel
+   ------------------
+   - OS/2 version 3.0 et ult‚rieure
+
+   Pr‚requis mat‚riel
+   ------------------
+   - Souris sur port s‚rie ou PS/2
+
+Remarques
+---------
+   - · partir de la version 2.1 d'AMouse, un support multimedia de
+     base a ‚t‚ impl‚ment‚. Il vous permet de modifier le volume en
+     actionnant la roulette de la souris. Le fichier .DLL permettant
+     cette fonctionnalit‚, "nbaudio.dll", est aussi utilis‚e dans
+     notre pilote pour DCF77. Si vous utilisez une ancienne version
+     de ce logiciel, il sera peut-ˆtre n‚cessaire de supprimer ou
+     remplacer le fichier .DLL du mˆme nom par celui fourni dans ce
+     logiciel. Il suffit de conserver uniquement une seule version
+     (la plus r‚cente) de ce fichier dans un des chemins figurant
+     dans LIBPATH.
+   - Certaines anciennes versions de som.dll du systŠme
+     d'exploitation ne sont pas compatibles avec la classe WPS
+     "AMouse.dll". Si vous rencontrez des difficult‚s telles qu'un
+     blocage du bureau ‚lectronique au d‚marrage, vous devrez alors
+     soit remplacer les fichiers "som*.dll" par des plus r‚cents ou
+     devrez utiliser la version du programme de configuration sous
+     forme d'ex‚cutable ("AMouse.exe") - voir ci-dessous.
+
+Support
+-------
+   Aide en ligne
+   Support technique et services assur‚s par nb software
+
+             noller & breining software
+             Eichhalde 3
+             71554 Weissach im Tal
+             Allemagne
+
+             T‚l.: (+49)7191/960345
+             Ml:  info@nbsoftware.de
+             http://www.nbsoftware.de
+
+
+Installation d'AMouse
+---------------------
+Pour l'installation veuillez lancer la proc‚dure en tapant
+"INSTALL" depuis le r‚pertoire contenant la distribution
+d'AMouse.
+
+AMouse et les souris USB
+------------------------
+L'installation des souris USB requiert l'installation pr‚alable
+de l'USB driver package pour OS/2, consistant en un certain nombre de
+pilotes, devant ˆtre ajout‚ au fichier CONFIG.SYS :
+    BASEDEV=USBOHCD.SYS /V
+ou
+    BASEDEV=USBUHCD.SYS /V
+ou
+    BASEDEV=USBEHCD.SYS /V
+(ou plusieurs, si plusieurs types de mat‚riel USB sont pr‚sents)
+
+    BASEDEV=USBD.SYS /V /REQ:USBxHCD$  (x est fonction du pilote
+                                        mat‚riel OHCD, UHCD ou EHCD)
+    BASEDEV=USBHID.SYS
+    DEVICE=D:\OS2\BOOT\USBMOUSE.SYS
+
+Le programme d'installation remplace le pilote pour souris USB
+original USBMOUSE.SYS d'OS/2 par une version modifi‚e qui supporte 5
+boutons au lieu de 3. Le pilote original sera sauvegard‚ sous
+USBMOUSE.ORG.
+
+Si le pilote est charg‚ sans argument comme ci-dessus, le systŠme
+recherchera, dans l'ordre, la pr‚sence d'une souris s‚rie, PS/2 puis
+USB. Bien que le systŠme permette l'usage d'une souris USB en plus
+d'une souris s‚rie ou PS/2, les propri‚t‚ du mat‚riel (nombre de
+boutons et roulettes) seront toujours celles del a souris s‚rie ou
+PS/2. Cela doit ˆtre pris en consid‚ration lorsqu'on utilise une
+souris avec roulette sur un ordinateur portable, puisque le
+p‚riph‚rique de pointage int‚gr‚ (tablette ou similaire) est toujours
+attach‚ au systŠme par le port souris PS/2.
+Un remŠde … cela est d'ajouter au pilote l'argument '/DEVICE:1' :
+   DEVICE=D:\OS2\BOOT\USBMOUSE.SYS /DEVICE:1
+Dans ce cas, les propri‚t‚s du mat‚riel seront celles de la premiŠre
+souris USB d‚tect‚e et la souris s‚rie ou PS/2 sera d‚sactiv‚e.
+
+Configuration de la souris
+--------------------------
+En fonction des options de configuration s‚lectionn‚es, l'une des
+deux m‚thodes suivantes pour la configuration du pilote est
+disponible aprŠs param‚trage et r‚amor‡age :
+
+1.) Via une classe WPS : dans le dossier AMouse, vous trouverez une
+    copie de l'objet configuration. Il contient une page de
+    paramŠtres pour la souris et la configuration de la(les)
+    roulette(s). AprŠs un nouveau r‚amor‡age, cette page figurera
+    dans l'objet d'OS/2 original figurant dans le dossier
+    "Configuration du systŠme" (dossier "OS/2").
+2.) Via un programme EXE : dans le dossier AMouse, vous trouverez
+    un programme de configuration de la souris.
+

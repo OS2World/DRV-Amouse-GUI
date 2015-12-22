@@ -1,0 +1,8 @@
+NAME           AMOUSE  WINDOWAPI
+
+DESCRIPTION   '@#NB:2.80.04#@ AMouse configuration program (c) nb-software 2001...2007'
+
+PROTMODE
+
+DATA MULTIPLE NONSHARED LOADONCALL
+

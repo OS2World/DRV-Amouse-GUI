@@ -1,0 +1,398 @@
+/***************************************************************************\
+ *
+ * PROGRAMMNAME: AMOUSE
+ * -------------
+ *
+ * VERSION: 2.80
+ * --------
+ *
+ * MODULNAME: AMOUSE.IDL
+ * ----------
+ *
+ * BESCHREIBUNG:
+ * -------------
+ *   idl file for AMouse class: mouse settings program derived from standard
+ *   OS/2 WPMouse class
+ *
+ *  Ver.    Date      Comment
+ *  ----    --------  -------
+ *  1.00    20-02-00  First release
+ *  2.00    06-16-01  WheelThread in separate process
+ *  2.10    05-12-02  Handling of shift-keys
+ *  2.20    10-03-02  USB support added
+ *  2.40    02-01-03  support for 2 wheels; wildcards for process name
+ *  2.50    04-20-03  application behaviour support added
+ *  2.60    06-13-04  remove unused settings pages from mouse object
+ *  2.70    10-23-04  support for 7 buttons added
+ *  2.80    10-02-06  support of arbitary key combinations
+ *
+ *  Copyright (C) noller & breining software 2001...2006
+ *
+\******************************************************************************/
+
+// =====================================================================#
+//                                                                      #
+//  CLASS: AMouse                                                       #
+//                                                                      #
+//  CLASS HIERARCHY:                                                    #
+//                                                                      #
+//      SOMObject                                                       #
+//        ÀÄÄ WPObject                                                  #
+//              ÀÄÄ WPAbstract                                          #
+//                    ÀÄÄ WPMouse                                       #
+//                          ÀÄÄ AMouse                                  #
+//                                                                      #
+// =====================================================================#
+#ifndef AMouse_idl
+#define AMouse_idl
+
+#include "wpmouse.idl"
+#include <somcls.idl>
+
+
+//# ================================================================== #
+//# Private declaration section:                                       #
+//# ================================================================== #
+
+
+
+//# ================================================================== #
+//# Interface declaration section:                                     #
+//# ================================================================== #
+
+interface M_AMouse;
+
+interface AMouse : WPMouse
+{
+   ULONG AddDeviceInfoPage (in HWND hwndNotebook);
+   // METHOD: AddDeviceInfoPage                              ( ) PRIVATE
+   //                                                        (X) PUBLIC
+   // DESCRIPTION:
+   //   This method adds the device info page to the settings
+   //   notebook.
+   //
+   // RETURN:
+   //   0              Unsuccessful
+   //   ulPageId       Identifier for the inserted page
+   //
+   // HOW TO OVERRIDE:
+   //   Method should always be overridden in order to replace or remove
+   //   the device info page from an object which is a descendent of AMouse.
+   //   In most cases, an override of this method will not call the parent.
+
+   ULONG AddWlDeviceInfoPage (in HWND hwndNotebook);
+   // METHOD: AddWlDeviceInfoPage                            ( ) PRIVATE
+   //                                                        (X) PUBLIC
+   // DESCRIPTION:
+   //   This method adds the wireless device info page to the settings
+   //   notebook.
+   //
+   // RETURN:
+   //   0              Unsuccessful
+   //   ulPageId       Identifier for the inserted page
+   //
+   // HOW TO OVERRIDE:
+   //   Method should always be overridden in order to replace or remove
+   //   the device info page from an object which is a descendent of AMouse.
+   //   In most cases, an override of this method will not call the parent.
+
+   ULONG AddWheelSettings1Page (in ULONG ulWheelPageType, in HWND hwndNotebook);
+   // METHOD: AddWheelSettings1Page                          ( ) PRIVATE
+   //                                                        (X) PUBLIC
+   // DESCRIPTION:
+   //   This method adds the device info page to the settings
+   //   notebook.
+   //
+   // RETURN:
+   //   0              Unsuccessful
+   //   ulPageId       Identifier for the inserted page
+   //
+   // HOW TO OVERRIDE:
+   //   Method should always be overridden in order to replace or remove
+   //   the device info page from an object which is a descendent of AMouse.
+   //   In most cases, an override of this method will not call the parent.
+
+   ULONG AddWheelSettings2Page (in HWND hwndNotebook);
+   // METHOD: AddWheelSettings2Page                          ( ) PRIVATE
+   //                                                        (X) PUBLIC
+   // DESCRIPTION:
+   //   This method adds the device info page to the settings
+   //   notebook.
+   //
+   // RETURN:
+   //   0              Unsuccessful
+   //   ulPageId       Identifier for the inserted page
+   //
+   // HOW TO OVERRIDE:
+   //   Method should always be overridden in order to replace or remove
+   //   the device info page from an object which is a descendent of AMouse.
+   //   In most cases, an override of this method will not call the parent.
+
+   ULONG AddWheelSettings3Page (in HWND hwndNotebook);
+   // METHOD: AddWheelSettings3Page                          ( ) PRIVATE
+   //                                                        (X) PUBLIC
+   // DESCRIPTION:
+   //   This method adds the device info page to the settings
+   //   notebook.
+   //
+   // RETURN:
+   //   0              Unsuccessful
+   //   ulPageId       Identifier for the inserted page
+   //
+   // HOW TO OVERRIDE:
+   //   Method should always be overridden in order to replace or remove
+   //   the device info page from an object which is a descendent of AMouse.
+   //   In most cases, an override of this method will not call the parent.
+
+   ULONG AddKeySettings1Page (in ULONG ulBtnPageType, in HWND hwndNotebook);
+   // METHOD: AddKeySettings1Page                            ( ) PRIVATE
+   //                                                        (X) PUBLIC
+   // DESCRIPTION:
+   //   This method adds the key setings 1 page to the settings
+   //   notebook.
+   //
+   // RETURN:
+   //   0              Unsuccessful
+   //   ulPageId       Identifier for the inserted page
+   //
+   // HOW TO OVERRIDE:
+   //   Method should always be overridden in order to replace or remove
+   //   the device info page from an object which is a descendent of AMouse.
+   //   In most cases, an override of this method will not call the parent.
+
+   ULONG AddKeySettings2Page (in HWND hwndNotebook);
+   // METHOD: AddKeySettings2Page                            ( ) PRIVATE
+   //                                                        (X) PUBLIC
+   // DESCRIPTION:
+   //   This method adds the key settings 2 page to the settings
+   //   notebook.
+   //
+   // RETURN:
+   //   0              Unsuccessful
+   //   ulPageId       Identifier for the inserted page
+   //
+   // HOW TO OVERRIDE:
+   //   Method should always be overridden in order to replace or remove
+   //   the device info page from an object which is a descendent of AMouse.
+   //   In most cases, an override of this method will not call the parent.
+
+   ULONG AddTimingSettingsPage (in HWND hwndNotebook);
+   // METHOD: AddTimingSettingsPage                          ( ) PRIVATE
+   //                                                        (X) PUBLIC
+   // DESCRIPTION:
+   //   This method adds the timing page to the settings
+   //   notebook.
+   //
+   // RETURN:
+   //   0              Unsuccessful
+   //   ulPageId       Identifier for the inserted page
+   //
+   // HOW TO OVERRIDE:
+   //   Method should always be overridden in order to replace or remove
+   //   the device info page from an object which is a descendent of AMouse.
+   //   In most cases, an override of this method will not call the parent.
+
+   ULONG RemoveUnusedMousePage (in HWND hwndNotebook);
+   // METHOD: RemoveUnusedMousePage                          ( ) PRIVATE
+   //                                                        (X) PUBLIC
+   // DESCRIPTION:
+   //   This method removes unused settings pages from the settings
+   //   notebook.
+   //
+   // RETURN:
+   //   SETTINGS_PAGE_REMOVED
+
+#ifdef __SOMIDL__
+  implementation
+  {
+    //#============================================================================#
+    //# Release order -- specify the release order for any new methods, including  #
+    //#                  the _get and _set accessor methods for each attribute.    #
+    //#============================================================================#
+    releaseorder: AddDeviceInfoPage,
+                  AddWlDeviceInfoPage,
+                  AddWheelSettings1Page,
+                  AddWheelSettings2Page,
+                  AddWheelSettings3Page,
+                  AddKeySettings1Page,
+                  AddKeySettings2Page,
+                  AddTimingSettingsPage,
+                  RemoveUnusedMousePage;
+
+    //#============================================================================#
+    //# Class modifier statements
+    //#============================================================================#
+          externalstem = AMouse;
+          externalprefix = AMouseX_;
+          majorversion = 1;
+          minorversion = 1;
+          local;
+          filestem = AMouse;
+          metaclass = M_AMouse;
+          callstyle = oidl;
+
+    //# ================================================================== #
+    //# Passthru Statements:                                               #
+    //# ================================================================== #
+    passthru C_ih_before =  ""      //# Internal definitions for this object
+      "/* General constants */"
+      "#define RESOURCE_MODULE           \"AMOUSE\""
+      "#define AMOUSE_HELPFILE           \"AMOUSEWP.HLP\"    /* Help file */"
+      "#define BUFFERSIZE                  256"
+      ""
+      "#define NUM_DEVICETYPES           10"
+      ""
+      "/* Suppression of 'unused parameter' warning */"
+      "#define USE_SOMSELF somSelf = somSelf;"
+      "";
+
+    passthru C_h_before =  "";  //# Private definitions for this object
+
+    passthru C_h_after  =  ""   //# Private definitions for this object
+      " /* Benutzerdefinierte Ansichten; siehe auch IDM_*-Werte in res.h */"
+      " #define OPEN_ABOUT      OPEN_USER           // Produktinformation"
+      " #define OPEN_DEBUG      OPEN_USER+1         // DEBUG-Einstellungen"
+      ""
+      " #define CCHMAXPGNAME    32                  // max. Stringl„nge fr Seitennamen"
+      "";
+
+    //# ================================================================== #
+    //# Internal instance variables                                        #
+    //# ================================================================== #
+    PSZ             pszMyRealName;          //# This object's real name
+
+    USEITEM         aboutUseItem;           //#>> AboutDlgProc
+    VIEWITEM        aboutViewItem;
+
+
+    //# ================================================================== #
+    //# Method modifiers                                                   #
+    //# ================================================================== #
+    wpAddMouseTimingPage:   override;
+    wpAddMouseMappingsPage: override;
+    wpAddSettingsPages:     override;
+    wpModifyPopupMenu:      override;
+    wpFilterPopupMenu:      override;
+    wpMenuItemSelected:     override;
+    wpOpen:                 override;
+    wpSetup:                override;
+  };
+#endif /* __SOMIDL__ */
+};
+
+typedef somToken       STRUCTAPPL;
+
+//# ================================================================== #
+//# Metaclass section:                                                 #
+//# ================================================================== #
+
+interface M_AMouse
+{
+  //* New types -- Define OS/2 type names to the class interface
+  typedef unsigned long  HMODULE;
+  typedef unsigned long  HPOINTER;
+  typedef string         PSZ;
+
+  //* New class methods
+  void    clsSaveData ();
+  void    clsSetScrollMode (in ULONG ulWheelPageType, in ULONG ulScrollMode);
+  ULONG   clsGetScrollMode (in ULONG ulWheelPageType);
+  void    clsSetScrollNum (in ULONG ulWheelPageType, in ULONG ulNewScrollNum);
+  ULONG   clsGetScrollNum (in ULONG ulWheelPageType);
+  void    clsSetWheelTarget (in ULONG ulWheelPageType, in ULONG ulNewWheelTarget);
+  ULONG   clsGetWheelTarget (in ULONG ulWheelPageType);
+  void    clsSetStartupMode (in ULONG ulStartupMode);
+  ULONG   clsGetStartupMode ();
+  void    clsSetAccelDelay (in ULONG ulAccelDelay);
+  ULONG   clsGetAccelDelay ();
+  void    clsSetAccelValue (in ULONG ulAccelValue);
+  ULONG   clsGetAccelValue ();
+  void    clsSetPollingRate (in ULONG ulPollingRate);
+  ULONG   clsGetPollingRate ();
+  void    clsSetAccelLevel1 (in ULONG ulAccelLevel);
+  ULONG   clsGetAccelLevel1 ();
+  void    clsSetAccelLvl1Mult (in ULONG ulAccelLvlMult);
+  ULONG   clsGetAccelLvl1Mult ();
+  void    clsSetAccelLevel2 (in ULONG ulAccelLevel);
+  ULONG   clsGetAccelLevel2 ();
+  void    clsSetAccelLvl2Mult (in ULONG ulAccelLvlMult);
+  ULONG   clsGetAccelLvl2Mult ();
+  void    clsSetBtnMode (in ULONG ulKeyPageType, in ULONG ulKeyNum, in ULONG ulBtnMode);
+  ULONG   clsGetBtnMode (in ULONG ulKeyPageType, in ULONG ulKeyNum);
+  void    clsSetBtnKeyCombMP1 (in ULONG ulKeyPageType, in ULONG ulKeyNum, in ULONG ulMP1);
+  ULONG   clsGetBtnKeyCombMP1 (in ULONG ulKeyPageType, in ULONG ulKeyNum);
+  void    clsSetBtnKeyCombMP2 (in ULONG ulKeyPageType, in ULONG ulKeyNum, in ULONG ulMP2);
+  ULONG   clsGetBtnKeyCombMP2 (in ULONG ulKeyPageType, in ULONG ulKeyNum);
+  void    clsSetWheelCount (in ULONG ulWheelCount);
+  ULONG   clsGetWheelCount ();
+  void    clsSetApplications (in STRUCTAPPL *pstructApplications);
+  STRUCTAPPL *clsGetApplications ();
+  void    clsSetPMCtlsFlags (in ULONG ulFlgPmCtls);
+  ULONG   clsGetPMCtlsFlags ();
+  void    clsSetSmartCruise (in ULONG ulSmartCruise);
+  ULONG   clsGetSmartCruise ();
+
+#ifdef __SOMIDL__
+  implementation
+  {
+    releaseorder: clsSaveData,
+                  clsSetScrollMode,
+                  clsGetScrollMode,
+                  clsSetScrollNum,
+                  clsGetScrollNum,
+                  clsSetWheelTarget,
+                  clsGetWheelTarget,
+                  clsSetStartupMode,
+                  clsGetStartupMode,
+                  clsSetAccelDelay,
+                  clsGetAccelDelay,
+                  clsSetAccelValue,
+                  clsGetAccelValue,
+                  clsSetPollingRate,
+                  clsGetPollingRate,
+                  clsSetAccelLevel1,
+                  clsGetAccelLevel1,
+                  clsSetAccelLvl1Mult,
+                  clsGetAccelLvl1Mult,
+                  clsSetAccelLevel2,
+                  clsGetAccelLevel2,
+                  clsSetAccelLvl2Mult,
+                  clsGetAccelLvl2Mult,
+                  clsSetBtnMode,
+                  clsGetBtnMode,
+                  clsSetBtnKeyCombMP1,
+                  clsGetBtnKeyCombMP1,
+                  clsSetBtnKeyCombMP2,
+                  clsGetBtnKeyCombMP2,
+                  clsSetWheelCount,
+                  clsGetWheelCount,
+                  clsSetApplications,
+                  clsGetApplications,
+                  clsSetPMCtlsFlags,
+                  clsGetPMCtlsFlags,
+                  clsSetSmartCruise,
+                  clsGetSmartCruise;
+
+    //# Instance Variables
+    HPOINTER hMyIcon;       //# Icon handle for AMouse
+
+    //# Class Modifiers
+    functionprefix = AMouseM_;
+    majorversion = 1;
+    minorversion = 1;
+    local;
+    filestem = AMouse;
+    callstyle = oidl;
+
+    //# Class method Modifiers
+    wpclsInitData:         override;
+    wpclsUnInitData:       override;
+    wpclsQueryDefaultView: override;
+    wpclsQueryIcon:        override;
+    wpclsQueryDefaultHelp: override;
+  };
+#endif /* __SOMIDL__ */
+};
+
+#endif  /* AMouse_idl */
+

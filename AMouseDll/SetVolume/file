@@ -1,0 +1,942 @@
+
+                  Prozesse und Threads - Informationen
+
+          Eltern-
+Prozeá-   Prozeá    Sitzungs- Prozeá-   Thread-
+  ID        ID        ID       name       ID    Priorit„t  Block-ID   Status
+
+ 0041      0000       17      C:\IBMLAN\SERVICES\PEER.EXE    01      0300     FFFE3DC0   Block
+                                          02      0300     FFFE3DBC   Block
+                                          03      0300     FFFE3DBF   Block
+                                          04      0300     FFFE3F17   Block
+                                          05      0300     FFFE3F7E   Block
+ 0040      0000       17      C:\IBMLAN\SERVICES\PEER.EXE    01      0301     FFF37AD8   Block
+                                          02      0300     FFFE3DBD   Block
+                                          03      0300     0B00893C   Block
+                                          04      0300     FFFE3DC8   Block
+                                          05      0300     0B003C8F   Block
+                                          06      0301     FFFE3DCF   Block
+ 003E      0000       17      C:\MUGLIB\MUGLRQST.EXE    01      0200     0B00892A   Block
+                                          02      0200     FD7601EC   Block
+ 003D      0000       17      C:\IBMLAN\SERVICES\MSRV.EXE    01      0200     0B00891E   Block
+                                          02      0200     FFFE3D09   Block
+ 003B      0000       17      C:\IBMLAN\SERVICES\WKSTAHLP.EXE    01      031E     2F30D3AC   Block
+                                          02      0200     2F200610   Block
+                                          03      031E     2F20219E   Block
+                                          04      031E     2F20062E   Block
+ 003A      0000       17      C:\IBMLAN\SERVICES\WKSTA.EXE    01      0300     FFFE3D78   Block
+                                          02      021F     FFFD008C   Block
+                                          03      0200     FFFE3CE5   Block
+                                          04      021F     FFFD0098   Block
+ 0032      0000       14      C:\TCPIP\BIN\PORTMAP.EXE    01      0205     00010032   Block
+ 002A      0000       00      C:\OS2\EPWMUX.EXE    01      0200     FFFE3053   Block
+ 0029      0000       00      C:\OS2\EPWPSI.EXE    01      0200     09B000EE   Block
+ 0028      0000       00      C:\OS2\EPWMUX.EXE    01      0200     FFFE1572   Block
+ 0027      0000       00      C:\OS2\EPWMP.EXE    01      0200     FD457EA0   Block
+                                          02      0200     FFFE3054   Block
+                                          03      0200     FFF37AD8   Block
+ 0022      0000       01      C:\OS2\DRIVERS\SNAP\SDDDAEMN.EXE    01      0300     F98C3E94   Block
+                                          02      0300     FD414CD8   Block
+                                          03      0300     FD414D14   Block
+ 001D      0000       00      C:\CDWFS\CDWFSD.EXE    01      0400     FFFE0760   Block
+                                          02      0400     09B00012   Block
+ 001C      0000       00      C:\MMOS2\MIDIDMON.EXE    01      031F     43D0171D   Block
+ 001B      0000       00      C:\OS2\EPWROUT.EXE    01      0200     FFFE157B   Block
+                                          02      0200     FFFE1501   Block
+ 001A      0000       00      C:\OS2\SYSTEM\LOGDAEM.EXE    01      021F     04E80352   Block
+ 0019      0000       00      C:\IBMLAN\NETPROG\VNRMINIT.EXE    01      0200     FD6B1238   Block
+ 0018      0000       00      C:\IBMLAN\NETPROG\LSDAEMON.EXE    01      0200     FFF37AD8   Block
+ 0017      0000       00      C:\OS2\SMSTART.EXE    01      0200     FFC20017   Block
+ 0021      0017       00      C:\OS2\FFST.EXE    01      0200     09B0006A   Block
+ 0020      0017       00      C:\OS2\ERLOGGER.EXE    01      021F     09B0003E   Block
+ 001F      0017       00      C:\OS2\DMISL.EXE    01      0200     FFFE083A   Block
+                                          02      0200     FFFE0820   Block
+ 0015      0000       00      C:\ECS\SYSTEM\ECLOCK\CLKBASIC.EXE    01      0200     FFF37AD8   Block
+                                         02   0200
+                                          03      0200     09B00096   Block
+                                          04      0200     FFF37AD8   Block
+                                          05      0200     FFF37AD8   Block
+ 0014      0000       00      C:\MPTN\BIN\VDOSCTL.EXE    01      0300     FD632958   Block
+ 0013      0000       00      C:\IBMCOM\PROTOCOL\NBTCP.EXE    01      0401     00010013   Block
+                                          02      0401     42524943   Block
+                                          03      0401     00030013   Block
+                                          04      0401     42554E59   Block
+                                          05      0401     FFF37AD8   Block
+                                          06      0200     FFF37AD8   Block
+ 0010      0000       00      C:\MPTN\BIN\DHCPCD.EXE    01      0200     FD6BD980   Block
+                                          03      0200     FD654FBC   Block
+                                          04      0200     00040010   Block
+ 0009      0000       00      C:\MPTN\BIN\CNTRL.EXE    01      0304     FFF37AD8   Block
+                                          02      0304     F691AEC0   Block
+                                          03      0304     F691AE90   Block
+                                          04      0304     F684B360   Block
+                                          05      0304     F275002A   Block
+ 0008      0000       00      C:\MPTN\BIN\AFNBINI.EXE    01      0200     F275000C   Block
+                                          02      0301     F275000B   Block
+ 0007      0000       00      C:\IBMCOM\LANMSGEX.EXE    01      0200     FFFEF636   Block
+ 0004      0000       00      C:\OS2\SYSTEM\LVMALERT.EXE    01      0200     FFF37AD8   Block
+ 0001      0000       00      (kernel)    01      0100     FFEC59CC   Block
+                                          02      031F     F98B6020   Block
+                                          03      031F     F98B6324   Block
+                                          04      0200     FFF361EA   Block
+                                          05      0200     FFF0A89D   Block
+                                          06      0300     FFEC4C74   Block
+                                          07      0300     FFEC5C5C   Block
+                                          09      031E     0B00330C   Block
+ 001E      0001       01      C:\OS2\PMSHELL.EXE    01      0200     FD4BC588   Block
+                                          02      0300     FFC2001E   Block
+                                          03      0300     FFFD002C   Block
+                                          04      0300     FFFD002D   Block
+                                          05      0300     0B002F0E   Block
+                                          06      031E     0B003326   Block
+                                          07      0200     FD4DE118   Block
+                                          08      0200     FD5BB00C   Block
+                                          09      031E     FD6E09F8   Block
+                                          0A      0200     09B000C2   Block
+                                          0B      041F     FD478EB4   Block
+                                          0C      0200     5262942E   Block
+                                          0D      0200     FD45AC90   Block
+                                          0E      0200     FFF37AD8   Block
+                                          0F      0200     0EB80319   Block
+                                          10      0200     FD4670DC   Block
+                                          11      0200     FFFE1515   Block
+                                          12      0200     FD4670DC   Block
+                                          13      0200     FD4178A4   Block
+                                          14      0200     FFFD0044   Block
+                                          15      0300     FFFE3004   Block
+                                          16      0300     FFFE3005   Block
+                                          17      0300     FFFE3002   Block
+                                          18      0304     FFFD004D   Block
+                                          19      0304     0B002F00   Block
+                                          1A      0200     FFFD004F   Block
+                                          1B      0301     FFFE30C5   Block
+                                          1C      0300     FFFE30B8   Block
+                                          1D      041F     FFC165CC   Block
+                                          1E      0400     FFC165FC   Block
+                                          1F      0200     FD3A0E4C   Block
+ 004C      001E       1B      C:\OS2\CMD.EXE    01      0200     FFC2004C   Block
+ 004D      004C       1B      C:\PROGRAMME\4OS2304\4OS2.EXE    01      0200     FFC2004D   Block
+ 0051      004D       1B      C:\OS2\PSTAT.EXE    01      0200     00000000  Running
+ 0047      001E       17      C:\OS2\CMD.EXE    01      0200     FFC20047   Block
+ 0048      0047       17      C:\PROGRAMME\4OS2304\4OS2.EXE    01      0200     FFFE3FF2   Block
+ 0038      001E       1A      C:\CDWFS\CDWPOPUP.EXE    01      0200     FD768760   Block
+                                          03      0200     09B001CA   Block
+ 0037      001E       19      C:\OS2\BOOT\USBMON.EXE    01      0200     FD768844   Block
+                                          02      0200     FD766E0C   Block
+ 0036      001E       18      C:\PROGRAMME\DTOC\STARTUP.EXE    01      0200     FD76449C   Block
+ 0033      001E       16      C:\OS2\USBMON.EXE    01      0200     09B00172   Block
+                                          02      0200     FD75D950   Block
+ 0030      001E       15      C:\ECS\SYSTEM\ECLOCK\SCHEDULR.EXE    01      0200     FD7599C8   Block
+                                          02      0200     FFF37AD8   Block
+                                          03      0200     FFF37AD8   Block
+                                          04      0200     09B0019E   Block
+ 002E      001E       13      C:\PROGRAMME\WPS\XWORKPLACE\BIN\XWPDAEMN.EXE    01      0200     FD749C84   Block
+                                          02      0200     FFF37AD8   Block
+                                          03      0200     FFF37AD8   Block
+                                          04      021F     FD74ABEC   Block
+ 002D      001E       12      C:\OS2\MULTIPT.EXE    01      0200     FD74589C   Block
+                                          02      0300     FD74651C   Block
+                                          03      0300     FFF37AD8   Block
+ 002C      001E       11      C:\OS2\PMSHELL.EXE    01      0200     FD405E54  Running
+                                          02      0300     FD457CF4   Block
+                                          03      030A     FD457D30   Block
+                                          04      0300     FD7367D8   Block
+                                          05      0300     FD736780   Block
+                                          06      0300     FFF37AD8   Block
+                                          07      0200     FD3A0EDC   Block
+                                          08      0400     48C01400   Block
+                                          09      0400     FD7368D8   Block
+                                          0A      0400     FD746938   Block
+                                          0B      021F     FD743B94   Block
+                                          0C      011F     FD747314   Block
+                                          0D      021F     FD747344   Block
+                                          0E      0100     FFF37AD8   Block
+                                          0F      0200     FD746E9C   Block
+                                          10      0200     09B00146   Block
+                                          11      0200     FD746EE8   Block
+                                          12      0200     FD758E98   Block
+                                          13      0119     FD751BF8   Block
+                                          14      0200     FD751E34   Block
+                                          15      0200     FD75002C   Block
+                                          16      0200     FD74D5C4   Block
+                                          17      0200     FD74AB54   Block
+                                          18      0300     FD75251C   Block
+                                          19      0400     FD753E78   Block
+                                          1A      0400     FD754894   Block
+                                          1B      0400     FFF37AD8   Block
+                                          1D      0300     FD7639EC   Block
+                                          1F      0200     FD4670C4   Block
+                                          20      0200     FD76B57C   Block
+ 002B      001E       10      C:\OS2\PMSPOOL.EXE    01      0200     FFF37AD8   Block
+                                          02      0200     FD736A24   Block
+                                          03      0200     48A8000E   Block
+                                          04      0200     FFF37AD8   Block
+ 0024      001E       00      C:\OS2\SYSTEM\HARDERR.EXE    01      0300     0B002F2A   Block
+                                          02      0300     0B00323E   Block
+                                          03      0300     0B00324C   Block
+ 0023      001E       FF0      VDM         01      0300     FD4EF1C4   Block
+
+                    Systemsemaphorinformationen
+
+   Eignerprozeá              Anzahl      Anzahl     Mar-   Semaphor-
+(Name  ID  Sitzung)  Index  Verweise    Anfragen   kierung    name
+
+                      889A      2F         00     0000   \SEM\VIOPOPUP
+                      88A0      11         00     0008   \SEM\VIOPRTSC
+                      88A6      01         00     0000   \SEM\POPXBLOK.SEM
+                      88AC      01         00     0000   \SEM\EPW\PMSHELL.RDY
+                      88B2      0D         00     0008   \SEM\IPCQUEUE.SEM
+                      88B8      01         00     0008   \SEM\LOGDAEM\JGRENBLF.SEM
+                      88BE      01         00     0000   \SEM\LKNED000.SEM
+                      88C4      01         00     0000   \SEM\LKNED001.SEM
+                      88CA      01         00     0000   \SEM\LKNED002.SEM
+                      88D0      01         00     0000   \SEM\LKNED003.SEM
+                      88D6      02         00     0000   \SEM\SMGCONT.SEM
+C:\OS2\PMSHELL.EXE  001E  01    88DC      01         00     0002   \SEM\PMHDERR.SEM
+C:\IBMLAN\SERVICES\WKSTA.EXE  003A  17    88E2      02         00     0002   \SEM\NET\BROWSNCB.0
+C:\IBMLAN\SERVICES\WKSTA.EXE  003A  17    88E8      02         00     0002   \SEM\NET\BROWSNCB.1
+C:\IBMLAN\SERVICES\WKSTA.EXE  003A  17    88EE      01         00     0002   \SEM\NET\BROWSNCB.2
+C:\IBMLAN\SERVICES\WKSTA.EXE  003A  17    88F4      01         00     0002   \SEM\NET\BROWSNCB.3
+C:\IBMLAN\SERVICES\WKSTA.EXE  003A  17    88FA      01         00     0002   \SEM\NET\BROWSNCB.4
+C:\IBMLAN\SERVICES\WKSTA.EXE  003A  17    8900      01         00     0002   \SEM\NET\BROWSNCB.5
+C:\IBMLAN\SERVICES\WKSTA.EXE  003A  17    8906      01         00     0002   \SEM\NET\BROWSNCB.6
+C:\IBMLAN\SERVICES\WKSTA.EXE  003A  17    890C      02         00     0002   \SEM\NET\HOSTANNC.SEM
+C:\IBMLAN\SERVICES\WKSTA.EXE  003A  17    8912      01         00     0002   \SEM\NET\WKSTA\INTERGT.SEM
+C:\IBMLAN\SERVICES\WKSTA.EXE  003A  17    8918      01         00     0002   \SEM\NET\WKSTA\RELOGON.SEM
+C:\IBMLAN\SERVICES\MSRV.EXE  003D  17    891E      04         00     0001   \SEM\MSRVWU0
+C:\MUGLIB\MUGLRQST.EXE  003E  17    892A      01         00     0001   \SEM\MUG\REQUESTR
+C:\IBMLAN\SERVICES\PEER.EXE  0040  17    893C      01         00     0001   \SEM\NET\SRVSCAV
+C:\IBMLAN\SERVICES\PEER.EXE  0041  17    8942      01         00     0000   \SEM\NET\LM386STOP1
+C:\IBMLAN\SERVICES\PEER.EXE  0041  17    8948      01         00     0000   \SEM\NET\LM386STOP2
+                      0000      01         00     0009   \SEM32\INET
+C:\OS2\SMSTART.EXE  0017  00    0001      01         00     0009   \SEM32\SMSTART
+                      0002      01         00     0009    
+                      0003      16         00     0009   \SEM32\PMWIN32.SEM
+                      0004      01         00     0011    
+                      0005      16         02     0051    
+                      0006      16         02     0051    
+                      0007      16         01     0051    
+                      0008      16         00     0011    
+                      0009      16         07     0051    
+                      000A      16         00     0011    
+                      000B      16         01     0051    
+                      000C      16         00     0011    
+                      000D      16         01     0051    
+                      000E      16         00     0011    
+                      000F      16         00     0011    
+                      0010      16         00     0011    
+                      0011      16         00     0011    
+                      0012      16         00     0011    
+                      0013      16         00     0011    
+                      0014      16         00     0011    
+                      0015      16         04     0051    
+                      0016      16         01     0051    
+                      0017      16         00     0023   \SEM32\MUXWAIT
+                      0018      16         00     0009   \SEM32\HEAPSEM
+                      0019      12         00     0011    
+                      001A      12         00     0011    
+                      001B      12         00     0011    
+                      001C      12         1F     0051    
+                      001D      12         00     0011    
+                      001E      12         00     0011    
+                      001F      12         00     0011    
+                      0020      12         03     0051    
+                      0021      12         00     0011    
+                      0022      12         00     0011    
+                      0023      12         03     0051    
+                      0024      12         00     0011    
+                      0025      12         00     0011    
+                      0026      12         00     0011    
+                      0027      12         00     0011    
+                      0028      12         00     0011    
+                      0029      12         01     0051    
+                      002A      12         00     0011    
+                      002B      12         00     0011    
+                      002C      16         00     0009    
+                      002D      06         00     0009   \SEM32\SERVMUTEX
+                      002E      02         00     0211   \SEM32\DHCPCD
+                      002F      01         00     0011   \SEM32\DHCPCSEM
+                      0030      01         00     0009   \SEM32\GTIMEQUEUE
+                      0031      01         01     0051   \SEM32\DHCPRDY
+                      0032      01         00     0009   \SEM32\DHCPCOM
+                      0033      0D         00     0009   \SEM32\PMDRAG.SEM
+                      0034      0D         00     0009    
+                      0035      0D         00     0009    
+                      0036      0D         00     0009    
+                      0037      0D         00     0009   \SEM32\PMCTLS.SEM
+                      0038      0D         00     0009    
+                      0039      0D         00     0009    
+                      003A      16         00     0009    
+                      003B      01         00     0009    
+                      003C      14         00     0009    
+                      003D      14         00     0009    
+                      003E      01         00     0011   \SEM32\DMI\SL
+                      003F      01         00     0009   \SEM32\ERLOGGER\BJRNGBLI.SEM
+C:\OS2\FFST.EXE  0021  00    0040      01         00     0009   \SEM32\FFST_UP
+                      0041      01         00     0009   \SEM32\FFSTPCT.SEM
+                      0042      01         00     0009   \SEM32\FFSTCONF.SEM
+                      0043      02         00     0011   \SEM32\SDD\DAEMON
+                      0044      01         00     0009   \SEM32\FFSTDUMP.SEM
+                      0045      01         00     0009    
+                      0046      13         00     0011    
+                      0047      13         00     0009    
+                      0048      13         00     0009    
+                      0049      01         00     0009    
+                      004A      01         00     0009   \SEM32\DSTSWITCH.SETTINGS
+                      004B      02         01     0051   \SEM32\SDDGRADD\STARTUP
+                      004C      01         00     0009    
+                      004D      01         00     0011    
+                      004E      01         1E     0051    
+                      004F      01         00     0011    
+                      0050      01         00     0009   \SEM32\DTOP
+                      0051      01         00     0009   \SEM32\DTOPBKGND
+                      0052      02         00     0009   \SEM32\FILTMMIO
+                      0053      02         00     0009   \SEM32\MDMINIT
+                      0054      02         00     0009    
+                      0055      02         00     0009    
+                      0056      02         00     0009    
+                      0057      01         00     0011    
+                      0058      02         00     0009    
+                      0059      01         00     0011    
+                      005A      02         00     0009    
+                      005B      01         00     0011    
+                      005C      02         00     0009    
+                      005D      01         00     0011    
+                      005E      02         00     0009    
+                      005F      01         00     0011    
+                      0060      02         00     0009    
+                      0061      01         00     0011    
+                      0062      02         00     0009    
+                      0063      01         00     0011    
+                      0064      02         00     0009    
+                      0065      01         00     0011    
+                      0066      02         00     0009    
+                      0067      01         00     0011    
+                      0068      01         00     0009    
+                      0069      01         00     0011    
+                      006A      01         00     0011    
+                      006B      02         00     0009    
+                      006C      09         00     0009   \SEM32\WHEELTHREADMTX
+                      006D      02         00     0011   \SEM32\WHEELTHREADUPDATE
+                      006E      02         00     0009   \SEM32\MMIO
+                      006F      09         00     0011   \SEM32\XWPWIDGETUPDATE
+                      0070      01         01     0051    
+                      0071      01         00     0009   \SEM32\REXXAPI.SEM
+                      0072      01         00     0011   \SEM32\REXXMEM.SEM
+                      0073      0C         00     0009   \SEM32\REGMUTEX
+                      0074      0C         00     0011    
+                      0075      0C         00     0011    
+                      0076      01         00     0011    
+                      0077      0C         00     0011    
+                      0078      0C         00     0011    
+                      0079      0C         02     0051    
+                      007A      0C         01     0051    
+                      007B      0C         00     0009    
+                      007C      0C         00     0009    
+                      007D      0C         00     0009    
+                      007E      01         00     0011    
+                      007F      02         00     0009   \SEM32\PMWP_SHMEMORY_BIGBLOCK
+                      0080      01         01     0051    
+                      0081      01         00     0011    
+                      0082      01         00     0011    
+                      0083      01         00     0011    
+                      0084      01         00     0011    
+                      0085      01         00     0011    
+                      0086      01         01     0051    
+                      0087      01         00     0011    
+                      0088      02         00     0011   \SEM32\WORKPLAC\LAZYWRIT.SEM
+                      0089      02         01     0051   \SEM32\WORKPLAC\SHELL1WT.SEM
+                      008A      02         01     0051   \SEM32\WORKPLAC\SHELL2WT.SEM
+                      008B      02         01     0051   \SEM32\WORKPLAC\SHELL3WT.SEM
+                      008C      01         01     0051   \SEM32\WORKPLAC\RESULTS.SEM
+                      008D      01         00     0009   \SEM32\WORKPLAC\SENDMSG.SEM
+                      008E      01         00     0011    
+                      008F      01         00     0011    
+                      0090      01         01     0051    
+                      0091      01         00     0011    
+                      0092      01         00     0011    
+                      0093      01         00     0009    
+                      0094      01         00     0011    
+                      0095      01         00     0011    
+                      0096      01         00     0009   \SEM32\IWAV
+                      0097      01         00     0011    
+                      0098      01         00     0009   \SEM32\WORKPLAC\CLASSTBL.SEM
+                      0099      02         00     0011   \SEM32\SMOUSE\MAIN
+                      009A      01         00     0011    
+                      009B      01         00     0011    
+                      009C      01         00     0011    
+                      009D      01         00     0011    
+                      009E      01         00     0011    
+                      009F      01         00     0011    
+                      00A0      01         00     0011    
+                      00A1      01         00     0011    
+                      00A2      01         00     0011    
+C:\PROGRAMME\WPS\XWORKPLACE\BIN\XWPDAEMN.EXE  002E  13    00A3      01         00     0009   \SEM32\XWORKPLC\ONEINST.MTX
+                      00A4      02         00     0009   \SEM32\LSWORKER
+                      00A5      01         00     0009    
+                      00A6      01         00     0009    
+                      00A7      01         00     0009   \SEM32\DIVE
+                      00A8      01         00     0009    
+                      00A9      01         00     0011    
+                      00AA      01         00     0011    
+                      00AB      01         00     0011   \SEM32\IWFTRACE.V30
+                      00AC      01         00     0011    
+                      00AD      01         00     0011    
+                      00AE      01         00     0011    
+                      00AF      01         00     0009    
+                      00B0      01         01     0051    
+                      00B1      01         00     0011    
+                      00B2      01         00     0011    
+                      00B3      01         00     0011    
+C:\OS2\PMSHELL.EXE  002C  11    00B4      01         00     0009   \SEM32\WORKPLAC\OPENLIST.SEM
+                      00B5      01         00     0009    
+                      00B6      01         00     0011    
+                      00B7      01         00     0011    
+                      00B8      01         01     0051    
+                      00B9      02         00     0211    
+                      00BA      01         00     0009    
+                      00BB      01         00     0009    
+                      00BC      01         00     0011    
+                      00BD      01         00     0011   \SEM32\$USBPRT.MON
+                      00BE      01         00     0009   \SEM32\ECSSCHEDULER
+                      00BF      01         00     0009    
+                      00C0      01         00     0011   \SEM32\$CHSEMPH.MON
+                      00C1      01         00     0011   \SEM32\$EJSEMPH.MON
+                      00C2      01         02     0023   \SEM32\$CONFSEM.MON
+                      00C3      01         00     0011    
+                      00C4      01         00     0011    
+                      00C5      01         00     0011    
+                      00C6      01         00     0011    
+                      00C7      01         00     0011    
+                      00C8      01         00     0011    
+                      00C9      01         00     0011    
+                      00CA      01         00     0011    
+                      00CB      01         00     0011    
+                      00CC      01         00     0011   \SEM32\DMI26
+                      00CD      01         00     0011    
+                      00CE      01         00     0011    
+
+          Informationen zum gemeinsam benutzten Speicher
+
+            Internes       Anzahl        Name d. gemeinsam
+  Handle    Kennzeichen   Verweise       benutzten Speichers
+
+   014B        DDAF           03          BVS\BVS00
+   057F        DD1F           01          INETXXX
+   0786        D92F           16          PMGLOBAL.MEM
+   065B        DC1F           01          DHCPCLNT
+   065D        DC17           01          SERVICE
+   078A        D91F           0D          PMDRAG.MEM
+   07EA        D8AF           02          SMG\SGTITLE
+   0821        D7FF           0E          ULSMEM\IBM850
+   087F        D70F           01          FFSTMEM.DAT
+   07EC        D68F           01          BVS\BVS01
+   08F0        D277           01          BVS\BVS03
+   090B        CE5F           02          SMG\PMHDERR.DAT
+   093B        C21F           01          VP21
+   0939        C227           02          DSTSWITCH.BASE
+   0938        C217           01          DSTSWITCH.ST
+   093A        C20F           01          DSTSWITCH.DST
+   093D        C207           01          DSTSWITCH.SETTINGS
+   093E        C1FF           01          DSTSWITCH.INFO
+   09D6        BFDF           09          AMOUSE.DAT
+   0A03        BED7           02          EPWPID
+   0D0F        BE4F           01          PMWP\CLASS.TBL
+   0D91        BDF7           01          DDE4@@@@.@19
+   0DDF        BDEF           02          XWORKPLC\DMNSHARE.DAT
+   0ED9        BCA7           02          LSWORKER
+   0FF6        B977           01          IWFTRACE.V30
+   1010        B937           01          XWORKPLC\HOTKEYS.DAT
+   1038        B8B7           01          PMVIEW\PMVDDROP.MEM
+   1050        B627           01          DCF77.DAT
+   1410        B537           01          NET\SERVICE.INF
+   1445        B727           01          DDE4@@@@.@18
+   148C        B6A7           01          VIEWER
+   1497        B697           01          NET\WKSTA.INF
+   149B        B68F           01          NET\BROWSENM.SEG
+   149D        B687           01          NET\HOSTLIST.SEG
+   14A0        B67F           04          NET\UCBSEG
+   14A1        B677           04          NET\URECSEG
+   14A2        B66F           04          NET\PERMIT0
+   14A3        B667           04          NET\PERMIT1
+   14A4        B65F           04          NET\PERMIT2
+   14A5        B657           04          NET\PERMIT3
+   14A6        B64F           04          NET\PERMIT4
+   14A7        B647           04          NET\PERMIT5
+   14A8        B63F           04          NET\PERMIT6
+   14A9        B637           04          NET\PERMIT7
+   14AA        B62F           04          NET\PERMIT8
+   14AB        B527           04          NET\PERMIT9
+   14AC        B4EF           04          NET\PERMITA
+   14AD        B4E7           04          NET\PERMITB
+   14AE        B4DF           04          NET\PERMITC
+   14AF        B4D7           04          NET\PERMITD
+   14B0        B4CF           04          NET\PERMITE
+   14B1        B4C7           04          NET\PERMITF
+   149F        B4BF           01          MSRV.DAT
+   14E0        B4AF           01          MAILSLOT\MESSNGR
+   1496        B487           03          NET\SRVINFO
+   1502        B47F           02          NET\SRVOPTBL
+   152F        B477           02          NET\SRVSRCH
+   15B9        B17F           03          BVS\BVS1B
+   155E        B1E7           03          BVS\BVS17
+   15AD        B19F           01          4OS2.156\SHELL023.000
+   160B        B197           02          JP4OS2_A
+   1533        B45F           03          NET\SVNETBUF
+   1534        B457           03          NET\SVNBBUF
+   1545        B2BF           01          MAILSLOT\NET\RAMPLEEZ
+   15B3        B18F           01          JP4OS2_H.023
+   15AF        B187           02          JP4OS2_D
+   15A2        B5DF           01          4OS2.156\SHELL027.000
+   1625        B157           01          JP4OS2_H.027
+
+                   Laufzeitverbindungsbibliotheken
+
+ Prozeá-   Prozeá-  Sitzungs-  Bibliotheks-
+  name       ID        ID       liste
+
+ C:\IBMLAN\SERVICES\PEER.EXE   0041       17      C:\OS2\DLL\DOSCALL1.DLL
+                                  C:\OS2\DLL\DOSCALL1.DLL*
+                                  C:\OS2\DLL\SESMGR.DLL
+                                     C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\MUGLIB\DLL\MAILSLOT.DLL
+                                  C:\OS2\DLL\DOSCALL1.DLL*
+                                  C:\OS2\DLL\NLS.DLL
+                                     C:\OS2\DLL\DOSCALL1.DLL*
+                                  C:\MUGLIB\DLL\NETAPI.DLL
+                                     C:\OS2\DLL\DOSCALL1.DLL*
+                                     C:\MUGLIB\DLL\NETSPOOL.DLL
+                                        C:\MUGLIB\DLL\NETAPI.DLL*
+                                        C:\OS2\DLL\DOSCALL1.DLL*
+                                        C:\OS2\DLL\NLS.DLL*
+                                     C:\MUGLIB\DLL\NETAPI32.DLL
+                                        C:\MUGLIB\DLL\NETAPI.DLL*
+                                        C:\MUGLIB\DLL\MAILSLOT.DLL*
+                                        C:\OS2\DLL\DOSCALL1.DLL*
+                                        C:\OS2\DLL\NLS.DLL*
+                                     C:\MUGLIB\DLL\MAILSLOT.DLL*
+                                     C:\OS2\DLL\KBDCALLS.DLL
+                                        C:\OS2\DLL\DOSCALL1.DLL*
+                                     C:\OS2\DLL\VIOCALLS.DLL
+                                        C:\OS2\DLL\DOSCALL1.DLL*
+                                     C:\OS2\DLL\NLS.DLL*
+                                     C:\OS2\DLL\SESMGR.DLL*
+                                     C:\OS2\DLL\NAMPIPES.DLL
+                                        C:\OS2\DLL\DOSCALL1.DLL*
+                                     C:\OS2\DLL\MSG.DLL
+                                        C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\MUGLIB\DLL\NETAPI.DLL*
+                               C:\MUGLIB\DLL\NETAPI32.DLL*
+                               C:\MUGLIB\DLL\NETSPOOL.DLL*
+                               C:\OS2\DLL\NAMPIPES.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+ C:\IBMLAN\SERVICES\PEER.EXE   0040       17      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\MUGLIB\DLL\MAILSLOT.DLL*
+                               C:\MUGLIB\DLL\NETAPI.DLL*
+                               C:\MUGLIB\DLL\NETAPI32.DLL*
+                               C:\MUGLIB\DLL\NETSPOOL.DLL*
+                               C:\OS2\DLL\NAMPIPES.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+ C:\MUGLIB\MUGLRQST.EXE   003E       17      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+ C:\IBMLAN\SERVICES\MSRV.EXE   003D       17      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+                               C:\MUGLIB\DLL\NETAPI.DLL*
+                               C:\MUGLIB\DLL\MAILSLOT.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+ C:\IBMLAN\SERVICES\WKSTAHLP.EXE   003B       17      C:\MUGLIB\DLL\NETAPI.DLL*
+                               C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+ C:\IBMLAN\SERVICES\WKSTA.EXE   003A       17      C:\MUGLIB\DLL\NETAPI.DLL*
+                               C:\MUGLIB\DLL\MAILSLOT.DLL*
+                               C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\QUECALLS.DLL
+                                  C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+ C:\TCPIP\BIN\PORTMAP.EXE   0032       14      C:\TCPIP\DLL\RPCDLL32.DLL
+                                  C:\OS2\DLL\DOSCALL1.DLL*
+                                  C:\OS2\DLL\NLS.DLL*
+                                  C:\OS2\DLL\MSG.DLL*
+                                  C:\MPTN\DLL\TCPIP32.DLL
+                                     C:\OS2\DLL\DOSCALL1.DLL*
+                                     C:\OS2\DLL\MSG.DLL*
+                               C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\MPTN\DLL\TCPIP32.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+ C:\OS2\EPWMUX.EXE   002A       00      C:\OS2\DLL\EPWSVC16.DLL
+                                  C:\OS2\DLL\DOSCALL1.DLL*
+                                  C:\OS2\DLL\QUECALLS.DLL*
+                                  C:\OS2\DLL\NAMPIPES.DLL*
+                               C:\OS2\DLL\DOSCALL1.DLL*
+ C:\OS2\EPWPSI.EXE   0029       00      C:\OS2\DLL\EPWPRO.DLL
+                                  C:\OS2\DLL\EPWSVC16.DLL*
+                                  C:\OS2\DLL\EPWPSI16.DLL
+                                     C:\OS2\DLL\EPWSVC16.DLL*
+                                     C:\OS2\DLL\DOSCALL1.DLL*
+                                  C:\OS2\DLL\DOSCALL1.DLL*
+                                  C:\OS2\DLL\NLS.DLL*
+                                  C:\OS2\DLL\PMWIN.DLL
+                                     C:\OS2\DLL\PMMERGE.DLL
+                                        C:\OS2\DLL\PMGPI.DLL
+                                           C:\OS2\DLL\PMMERGE.DLL*
+                                           C:\OS2\DLL\DOSCALL1.DLL*
+                                           C:\OS2\DLL\PMGRE.DLL
+                                              C:\OS2\DLL\PMMERGE.DLL*
+                                              C:\OS2\DLL\SOFTDRAW.DLL
+                                                 C:\OS2\DLL\PMMERGE.DLL*
+                                                 C:\OS2\DLL\DOSCALL1.DLL*
+                                                 C:\OS2\DLL\PMGRE.DLL*
+                                           C:\OS2\DLL\PMWIN.DLL*
+                                           C:\OS2\DLL\VIOCALLS.DLL*
+                                           C:\OS2\DLL\PMSHAPI.DLL
+                                              C:\OS2\DLL\PMMERGE.DLL*
+                                           C:\OS2\DLL\PMSPL.DLL
+                                              C:\OS2\DLL\SPL1B.DLL
+                                                 C:\OS2\DLL\PMSPL.DLL*
+                                                 C:\OS2\DLL\DOSCALL1.DLL*
+                                              C:\OS2\DLL\DOSCALL1.DLL*
+                                              C:\OS2\DLL\PMGRE.DLL*
+                                              C:\OS2\DLL\PMGPI.DLL*
+                                              C:\OS2\DLL\PMWIN.DLL*
+                                              C:\OS2\DLL\KBDCALLS.DLL*
+                                              C:\OS2\DLL\VIOCALLS.DLL*
+                                              C:\OS2\DLL\NLS.DLL*
+                                              C:\OS2\DLL\PMSHAPI.DLL*
+                                              C:\OS2\DLL\SESMGR.DLL*
+                                              C:\OS2\DLL\MSG.DLL*
+                                           C:\OS2\DLL\MSG.DLL*
+                                        C:\OS2\DLL\PMVIOP.DLL
+                                           C:\OS2\DLL\PMMERGE.DLL*
+                                           C:\OS2\DLL\DOSCALL1.DLL*
+                                           C:\OS2\DLL\PMGPI.DLL*
+                                           C:\OS2\DLL\PMSHLTKT.DLL
+                                              C:\OS2\DLL\DOSCALL1.DLL*
+                                              C:\OS2\DLL\PMWIN.DLL*
+                                              C:\OS2\DLL\NLS.DLL*
+                                              C:\OS2\DLL\MSG.DLL*
+                                              C:\OS2\DLL\PMMERGE.DLL*
+                                        C:\OS2\DLL\DOSCALL1.DLL*
+                                        C:\OS2\DLL\SOFTDRAW.DLL*
+                                        C:\OS2\DLL\FFST.DLL
+                                           C:\OS2\DLL\DOSCALL1.DLL*
+                                           C:\OS2\DLL\NLS.DLL*
+                                           C:\OS2\DLL\MSG.DLL*
+                                        C:\OS2\DLL\PMGRE.DLL*
+                                        C:\OS2\DLL\PMWIN.DLL*
+                                        C:\OS2\DLL\MOUCALLS.DLL
+                                           C:\OS2\DLL\DOSCALL1.DLL*
+                                        C:\OS2\DLL\VIOCALLS.DLL*
+                                        C:\OS2\DLL\NLS.DLL*
+                                        C:\OS2\DLL\PMSHAPI.DLL*
+                                        C:\OS2\DLL\SESMGR.DLL*
+                                        C:\OS2\DLL\QUECALLS.DLL*
+                                        C:\OS2\DLL\UCONV.DLL
+                                           C:\OS2\DLL\DOSCALL1.DLL*
+                                        C:\OS2\DLL\MSG.DLL*
+                                  C:\OS2\DLL\PMSHAPI.DLL*
+                                  C:\OS2\DLL\MSG.DLL*
+                               C:\OS2\DLL\DOSCALL1.DLL*
+ C:\OS2\EPWMUX.EXE   0028       00      C:\OS2\DLL\EPWSVC16.DLL*
+                               C:\OS2\DLL\DOSCALL1.DLL*
+ C:\OS2\EPWMP.EXE   0027       00      C:\OS2\DLL\EPWCUA.DLL
+                                  C:\OS2\DLL\EPWNL001.DLL
+                                     C:\OS2\DLL\DOSCALL1.DLL*
+                                     C:\OS2\DLL\NLS.DLL*
+                                     C:\OS2\DLL\MSG.DLL*
+                                  C:\OS2\DLL\DOSCALL1.DLL*
+                                  C:\OS2\DLL\MSG.DLL*
+                                  C:\OS2\DLL\PMWIN.DLL*
+                                  C:\OS2\DLL\PMGPI.DLL*
+                                  C:\OS2\DLL\OS2SM.DLL
+                                     C:\OS2\DLL\PMMERGE.DLL*
+                                  C:\OS2\DLL\PMSHAPI.DLL*
+                                  C:\OS2\DLL\HELPMGR.DLL
+                                     C:\OS2\DLL\DOSCALL1.DLL*
+                                     C:\OS2\DLL\PMGPI.DLL*
+                                     C:\OS2\DLL\PMWIN.DLL*
+                                     C:\OS2\DLL\NLS.DLL*
+                                     C:\OS2\DLL\PMSHAPI.DLL*
+                                     C:\OS2\DLL\PMSPL.DLL*
+                                     C:\OS2\DLL\SESMGR.DLL*
+                                     C:\OS2\DLL\PMMERGE.DLL*
+                                     C:\OS2\DLL\MSG.DLL*
+                                  C:\OS2\DLL\NLS.DLL*
+                               C:\OS2\DLL\EPWPSI16.DLL*
+                               C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\PMWIN.DLL*
+ C:\OS2\DRIVERS\SNAP\SDDDAEMN.EXE   0022       01      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\KBDCALLS.DLL*
+                               C:\OS2\DLL\VIOCALLS.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+ C:\CDWFS\CDWFSD.EXE   001D       00      C:\CDWFS\CDWFSLIB.DLL
+                                  C:\CDWFS\CDIO.DLL
+                                     C:\CDWFS\CDMGR.DLL
+                                        C:\OS2\DLL\DOSCALL1.DLL*
+                                        C:\OS2\DLL\NLS.DLL*
+                                        C:\OS2\DLL\MSG.DLL*
+                                     C:\OS2\DLL\DOSCALL1.DLL*
+                                     C:\OS2\DLL\NLS.DLL*
+                                     C:\OS2\DLL\MSG.DLL*
+                                  C:\OS2\DLL\DOSCALL1.DLL*
+                                  C:\OS2\DLL\NLS.DLL*
+                                  C:\OS2\DLL\MSG.DLL*
+                               C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\PMSHAPI.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+ C:\MMOS2\MIDIDMON.EXE   001C       00      C:\OS2\DLL\DOSCALL1.DLL*
+ C:\OS2\EPWROUT.EXE   001B       00      C:\OS2\DLL\EPWNL001.DLL*
+                               C:\OS2\DLL\EPWPSI16.DLL*
+                               C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\QUECALLS.DLL*
+ C:\OS2\SYSTEM\LOGDAEM.EXE   001A       00      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\LFAPI.DLL
+                                  C:\OS2\DLL\LIBUNI.DLL
+                                     C:\OS2\DLL\DOSCALL1.DLL*
+                                     C:\OS2\DLL\UCONV.DLL*
+                                  C:\OS2\DLL\DOSCALL1.DLL*
+                                  C:\OS2\DLL\UCONV.DLL*
+                                  C:\OS2\DLL\NLS.DLL*
+                                  C:\OS2\DLL\MSG.DLL*
+                               C:\OS2\DLL\NAMPIPES.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+ C:\IBMLAN\NETPROG\VNRMINIT.EXE   0019       00      C:\OS2\DLL\DOSCALL1.DLL*
+ C:\IBMLAN\NETPROG\LSDAEMON.EXE   0018       00      C:\OS2\DLL\DOSCALL1.DLL*
+ C:\OS2\SMSTART.EXE   0017       00      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+ C:\OS2\FFST.EXE   0021       00      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\FFDUMP.DLL
+                                  C:\OS2\DLL\DOSCALL1.DLL*
+                                  C:\OS2\DLL\MSG.DLL*
+                                  C:\OS2\DLL\LIBUNI.DLL*
+                                  C:\OS2\DLL\UCONV.DLL*
+                                  C:\OS2\DLL\LFAPI.DLL*
+                                  C:\OS2\DLL\NLS.DLL*
+                               C:\OS2\DLL\FFIPC.DLL
+                                  C:\OS2\DLL\DOSCALL1.DLL*
+                                  C:\OS2\DLL\LIBUNI.DLL*
+                                  C:\OS2\DLL\UCONV.DLL*
+                                  C:\OS2\DLL\NLS.DLL*
+                                  C:\OS2\DLL\MSG.DLL*
+                               C:\OS2\DLL\FFCONFIG.DLL
+                                  C:\OS2\DLL\DOSCALL1.DLL*
+                                  C:\OS2\DLL\LIBUNI.DLL*
+                                  C:\OS2\DLL\UCONV.DLL*
+                                  C:\OS2\DLL\NLS.DLL*
+                                  C:\OS2\DLL\MSG.DLL*
+                               C:\OS2\DLL\LIBUNI.DLL*
+                               C:\OS2\DLL\UCONV.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+ C:\OS2\ERLOGGER.EXE   0020       00      C:\OS2\DLL\LIBUNI.DLL*
+                               C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\QUECALLS.DLL*
+                               C:\OS2\DLL\UCONV.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+ C:\OS2\DMISL.EXE   001F       00      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\QUECALLS.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+ C:\ECS\SYSTEM\ECLOCK\CLKBASIC.EXE   0015       00      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\MPTN\DLL\SO32DLL.DLL
+                                  C:\MPTN\DLL\TCPIP32.DLL*
+                                  C:\OS2\DLL\DOSCALL1.DLL*
+                                  C:\MPTN\DLL\TCPIP32.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+                               C:\OS2\DLL\PMWIN.DLL*
+                               C:\OS2\DLL\PMSHAPI.DLL*
+ C:\MPTN\BIN\VDOSCTL.EXE   0014       00      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+ C:\IBMCOM\PROTOCOL\NBTCP.EXE   0013       00      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\MPTN\DLL\SO32DLL.DLL*
+                               C:\MPTN\DLL\TCP32DLL.DLL
+                                  C:\MPTN\DLL\TCPIP32.DLL*
+                                  C:\OS2\DLL\DOSCALL1.DLL*
+                                  C:\OS2\DLL\MSG.DLL*
+                                  C:\MPTN\DLL\TCPIP32.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+ C:\MPTN\BIN\DHCPCD.EXE   0010       00      C:\MPTN\DLL\TCPIP32.DLL*
+                               C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+                               C:\OS2\DLL\SESMGR.DLL*
+                               C:\OS2\DLL\QUECALLS.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+ C:\MPTN\BIN\CNTRL.EXE   0009       00      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\KBDCALLS.DLL*
+                               C:\OS2\DLL\VIOCALLS.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+ C:\MPTN\BIN\AFNBINI.EXE   0008       00      C:\OS2\DLL\DOSCALL1.DLL*
+ C:\IBMCOM\LANMSGEX.EXE   0007       00      C:\IBMCOM\DLL\LANMSGDL.DLL
+                                  C:\OS2\DLL\DOSCALL1.DLL*
+                                  C:\OS2\DLL\KBDCALLS.DLL*
+                                  C:\OS2\DLL\MSG.DLL*
+                                  C:\OS2\DLL\VIOCALLS.DLL*
+                               C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+                               C:\OS2\DLL\VIOCALLS.DLL*
+ C:\OS2\SYSTEM\LVMALERT.EXE   0004       00      C:\OS2\DLL\FFST.DLL*
+                               C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+ (kernel)   0001       00       
+ C:\OS2\PMSHELL.EXE   001E       01      C:\OS2\DLL\PMWP.DLL
+                                  C:\OS2\DLL\PMMERGE.DLL*
+                                  C:\OS2\DLL\IMP.DLL
+                                     C:\OS2\DLL\DOSCALL1.DLL*
+                                     C:\OS2\DLL\PMSHAPI.DLL*
+                                  C:\OS2\DLL\PMCTLS.DLL
+                                     C:\OS2\DLL\PMMERGE.DLL*
+                                     C:\OS2\DLL\PMGRE.DLL*
+                                     C:\OS2\DLL\DOSCALL1.DLL*
+                                     C:\OS2\DLL\PMGPI.DLL*
+                                     C:\OS2\DLL\PMSPL.DLL*
+                                     C:\OS2\DLL\FFST.DLL*
+                                  C:\OS2\DLL\PMGPI.DLL*
+                                  C:\OS2\DLL\SEAMLESS.DLL
+                                     C:\OS2\DLL\PMVIOP.DLL*
+                                     C:\OS2\DLL\PMMERGE.DLL*
+                                     C:\OS2\DLL\DOSCALL1.DLL*
+                                     C:\OS2\DLL\PMGPI.DLL*
+                                  C:\OS2\DLL\LIBUNI.DLL*
+                                  C:\OS2\DLL\UCONV.DLL*
+                                  C:\OS2\DLL\DOSCALL1.DLL*
+                                  C:\OS2\DLL\PMWIN.DLL*
+                                  C:\OS2\DLL\NLS.DLL*
+                                  C:\OS2\DLL\PMSHAPI.DLL*
+                                  C:\OS2\DLL\SESMGR.DLL*
+                                  C:\OS2\DLL\QUECALLS.DLL*
+                                  C:\OS2\DLL\PMDRAG.DLL
+                                     C:\OS2\DLL\PMCTLS.DLL*
+                                  C:\OS2\DLL\MSG.DLL*
+                                  C:\OS2\DLL\SOM.DLL
+                                     C:\OS2\DLL\DOSCALL1.DLL*
+                                     C:\OS2\DLL\NLS.DLL*
+                                     C:\OS2\DLL\MSG.DLL*
+                                  C:\OS2\DLL\SOMU.DLL
+                                     C:\OS2\DLL\SOM.DLL*
+                                     C:\OS2\DLL\SOMTC.DLL
+                                        C:\OS2\DLL\SOM.DLL*
+                                        C:\OS2\DLL\DOSCALL1.DLL*
+                                        C:\OS2\DLL\NLS.DLL*
+                                        C:\OS2\DLL\MSG.DLL*
+                                     C:\OS2\DLL\SOMIR.DLL
+                                        C:\OS2\DLL\SOM.DLL*
+                                        C:\OS2\DLL\SOMTC.DLL*
+                                        C:\OS2\DLL\DOSCALL1.DLL*
+                                        C:\OS2\DLL\NLS.DLL*
+                                        C:\OS2\DLL\MSG.DLL*
+                                     C:\OS2\DLL\DOSCALL1.DLL*
+                                     C:\OS2\DLL\NLS.DLL*
+                                     C:\OS2\DLL\MSG.DLL*
+                                  C:\OS2\DLL\FFST.DLL*
+                                  C:\OS2\DLL\BDWPCLS.DLL
+                                     C:\OS2\DLL\SOM.DLL*
+                                     C:\OS2\DLL\DOSCALL1.DLL*
+                                     C:\OS2\DLL\PMWIN.DLL*
+                                     C:\OS2\DLL\HELPMGR.DLL*
+                                     C:\OS2\DLL\PMWP.DLL*
+                                     C:\OS2\DLL\PMMERGE.DLL*
+                                     C:\OS2\DLL\PMBIDI.DLL
+                                        C:\OS2\DLL\BDCALL32.DLL
+                                           C:\OS2\DLL\DOSCALL1.DLL*
+                                        C:\OS2\DLL\DOSCALL1.DLL*
+                                        C:\OS2\DLL\PMGPI.DLL*
+                                        C:\OS2\DLL\PMWIN.DLL*
+                                        C:\OS2\DLL\PMMERGE.DLL*
+                               C:\OS2\DLL\PMMERGE.DLL*
+                               C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\PMWIN.DLL*
+ C:\OS2\CMD.EXE   004C       1B      C:\OS2\DLL\DOSCALL1.DLL*
+ C:\PROGRAMME\4OS2304\4OS2.EXE   004D       1B      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\KBDCALLS.DLL*
+                               C:\OS2\DLL\VIOCALLS.DLL*
+                               C:\OS2\DLL\QUECALLS.DLL*
+                               C:\OS2\DLL\SESMGR.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+ C:\OS2\PSTAT.EXE   0051       1B      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+ C:\OS2\CMD.EXE   0047       17      C:\OS2\DLL\DOSCALL1.DLL*
+ C:\PROGRAMME\4OS2304\4OS2.EXE   0048       17      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\KBDCALLS.DLL*
+                               C:\OS2\DLL\VIOCALLS.DLL*
+                               C:\OS2\DLL\QUECALLS.DLL*
+                               C:\OS2\DLL\SESMGR.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+ C:\CDWFS\CDWPOPUP.EXE   0038       1A      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\PMWIN.DLL*
+                               C:\OS2\DLL\PMSHAPI.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+ C:\OS2\BOOT\USBMON.EXE   0037       19      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\PMWIN.DLL*
+                               C:\OS2\DLL\SESMGR.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+ C:\PROGRAMME\DTOC\STARTUP.EXE   0036       18      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\PMWIN.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+                               C:\PROGRAMME\DTOC\COMMON.DLL
+                                  C:\OS2\DLL\DOSCALL1.DLL*
+                                  C:\OS2\DLL\NLS.DLL*
+                                  C:\OS2\DLL\PMSHAPI.DLL*
+                                  C:\OS2\DLL\MSG.DLL*
+ C:\OS2\USBMON.EXE   0033       16      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\PMWIN.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+                               C:\OS2\DLL\PMSHAPI.DLL*
+                               C:\OS2\DLL\PMWP.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+ C:\ECS\SYSTEM\ECLOCK\SCHEDULR.EXE   0030       15      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\ECS\DLL\CLKDLL.DLL
+                                  C:\OS2\DLL\DOSCALL1.DLL*
+                                  C:\MPTN\DLL\SO32DLL.DLL*
+                                  C:\OS2\DLL\SESMGR.DLL*
+                                  C:\OS2\DLL\PMWIN.DLL*
+                                  C:\OS2\DLL\PMSHAPI.DLL*
+                               C:\OS2\DLL\PMWIN.DLL*
+                               C:\OS2\DLL\PMSHAPI.DLL*
+ C:\PROGRAMME\WPS\XWORKPLACE\BIN\XWPDAEMN.EXE   002E       13      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\PROGRAMME\WPS\XWORKPLACE\BIN\XWPHOOK.DLL
+                                  C:\OS2\DLL\DOSCALL1.DLL*
+                                  C:\OS2\DLL\PMWIN.DLL*
+                                  C:\OS2\DLL\NLS.DLL*
+                                  C:\OS2\DLL\MSG.DLL*
+                               C:\OS2\DLL\PMGPI.DLL*
+                               C:\OS2\DLL\PMWIN.DLL*
+                               C:\OS2\DLL\KBDCALLS.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+                               C:\OS2\DLL\PMSHAPI.DLL*
+                               C:\OS2\DLL\SESMGR.DLL*
+                               C:\OS2\DLL\QUECALLS.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+ C:\OS2\MULTIPT.EXE   002D       12      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\PMGPI.DLL*
+                               C:\OS2\DLL\PMWIN.DLL*
+                               C:\OS2\DLL\KBDCALLS.DLL*
+                               C:\OS2\DLL\NLS.DLL*
+                               C:\OS2\DLL\PMSHAPI.DLL*
+                               C:\OS2\DLL\PMWP.DLL*
+                               C:\OS2\DLL\MSG.DLL*
+ C:\OS2\PMSHELL.EXE   002C       11      C:\OS2\DLL\PMWP.DLL*
+                               C:\OS2\DLL\PMMERGE.DLL*
+                               C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\PMWIN.DLL*
+ C:\OS2\PMSPOOL.EXE   002B       10      C:\OS2\DLL\DOSCALL1.DLL*
+                               C:\OS2\DLL\PMWIN.DLL*
+                               C:\OS2\DLL\PMSPL.DLL*
+ C:\OS2\SYSTEM\HARDERR.EXE   0024       00      C:\OS2\DLL\DOSCALL1.DLL*
+ VDM        0023       FF0       

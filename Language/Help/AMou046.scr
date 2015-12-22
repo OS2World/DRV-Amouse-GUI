@@ -1,0 +1,557 @@
+.************************************************
+.*
+.*   Kopieringsr„ttigheter 2002-2006 nb software
+.*
+.*   Hj„lp f”r AMouse
+.************************************************
+
+.imd panel.h
+:userdoc.
+
+:h1 res=&PANEL_MAIN. id=aboutMain.AMouse - Avancerade Musinst„llningar
+:i1 id=aboutMain.AMouse - Avancerade Musinst„llningar
+:p.:artwork name='amouse.bmp' runin align=left.
+:hp2.AMouse:ehp2. kan anv„ndas f”r att ut”ka funktionerna hos p† hjulm”ss (t.ex. Intellimouse) s†som&colon.
+
+:ul compact.
+:li.hastighet p† muspekaren
+:li.v„xla mellan h”ger och v„nsterh„nt
+:li.kontrollera kombinationer med :hp2.Alt:ehp2., :hp2.Ctrl:ehp2. och Shift.
+:li.st„lla in utformningen av pekarna
+:li.st„lla hjulets funktion
+:li.st„lla hjulets scrollhastighet
+:eul.
+
+:h1 res=&PANEL_WHEELSETTINGS1. id=wheel1.Hjul - sida 1/2/3
+:i1 id=wheel1.Hjul - sida 1/2/3
+:p.Sidan anv„nds f”r att st„lla in funktionaliteten f”r scrollning.
+:p.Det finns en sida som denna f”r varje kombination av hjul och shift-tangent.
+:p.En mer utf”rlig f”rklaring av funktionaliteten f”r varje del visas om du klickar i listan nedan&colon.
+:ul compact.
+:li.:link reftype=hd refid=no_func.Ingen funktion:elink.
+:li.:link reftype=hd refid=msgscroll.Scrolla:elink.
+:li.:link reftype=hd refid=msgline.Tangentbord:elink.
+:li.:link reftype=hd refid=msgpage.Scrolla hel sida:elink.
+:li.:link reftype=hd refid=msgvol.St„ll in ljudvolymen:elink.
+:li.:link reftype=hd refid=keyboard.P†verka aktivt f”nster:elink.
+:li.:link reftype=hd refid=pointer.P†verka f”nstret under muspekaren:elink.
+:li.:link reftype=hd refid=scrollitem.Scrolla x rader:elink.
+:li.:link reftype=hd refid=cancel.Avbryt:elink.
+:li.:link reftype=hd refid=standard.Standard:elink.
+:eul.
+:note text='Notera&colon.'.
+Denna sida visas endast n„r en mus med hjul uppt„ckts.
+
+:h2 res=&PANEL_NOFUNCTION. id=no_func.Funktion p† hjul - Ingen funktion
+:p.Funktionen p† hjulet ignoreras om alternativet markerats.
+
+:h2 res=&PANEL_MSG_STD. id=msgscroll.Funktion p† hjul - Scrolla
+:p.(WM_SCROLL) Rullningslisten p†verkas om Scrolla markerats. Detta simulerar f”rflyttningen av rullningslisten.
+
+:h2 res=&PANEL_MSG_LINE. id=msgline.Funktion p† hjul - Tangentbord (knappar p† pekdon)
+:p.(WM_CHAR) Mark”ren flyttas om alternativet Tangentbord markerats. Detta simulerar tangenttryckning p† n†gon av piltangenterna under f”ruts„ttning att funktionen st”ds av f”nstret som avses.
+
+:h2 res=&PANEL_MSG_PAGE. id=msgpage.Funktion p† hjul - Scrolla hel sida       
+:p.(WM_CHAR) Den aktuella vyn f”rflyttas upp/ner en sida i taget. Detta simulerar tangenttryckning p† Sida upp eller Sida ner under f”ruts„ttning att funktionen st”ds av f”nstret som avses.
+
+:h2 res=&PANEL_MSG_VOLUME. id=msgvol.Funktion p† hjul - St„ll in ljudvolymen
+:p.Hjulets r”relser p†verkar systemvolymen i multimediainst„llningarna.
+
+:h2 res=&PANEL_KBD_FOCUS. id=keyboard.P†verkar aktivt f”nster
+:p.Hjulets r”relser kopplas till det aktiva f”nstrets vertikala rullningslist om alternativet markerats.
+:p.Genom att h†lla in hjulknappen p† musen kan f”nstret under muspekaren aktiveras. G„ller vissa modeller.
+:note text='Notera&colon.'.
+I vissa f”nster kan det finnas ytterligare f”nster med rullningslister (t.ex. i Netscape Communicator). I s†dana fall p†verkas det senast valda f”nstret.
+
+:h2 res=&PANEL_POINTER_FOCUS. id=pointer.P†verkar f”nstret under muspekaren
+:p.Hjulets r”relser p†verkar rullningslisten i vertikal led f”r det f”nster som befinner sig under muspekaren om alternativet markerats.
+:note text='Notera&colon.'.
+Det spelar ingen roll om f”nstret „r aktivt eller inte, ej heller om det „r delvis dolt bakom andra f”nster.
+
+:h2 res=&PANEL_SCROLLITEMS. id=scrollitem.Scrolla x rader
+:p.Inst„llningen anger hur m†nga rader som skall f”rflyttas f”r varje hack.
+
+:h2 id=cancel.Cancel
+:p.Inst„llningarna „ndras tillbaka till de v„rdena de hade innan „ndringarna genomf”rdes.
+
+:h2 id=standard.Standard
+:p.Standardinst„llningarna kommer att anv„ndas.
+
+:h1 res=&PANEL_WHEELSETTINGS2. id=wheel2.Hjul - sida 4
+:i1 id=wheel2.Hjul - sida 4
+:p.Denna sida anger startv„rden f”r drivrutinen n„r datorn startas upp.
+:p.Inst„llningarna kan f”r„ndras med hj„lp av knapparna p† sidan f”r inst„llningar.
+:p.En mer utf”rlig f”rklaring av funktionaliteten f”r varje del visas om du klickar nedan i listan&colon.
+:ul compact.
+:li.:link reftype=hd refid=scroll_vert.Scrolla vertikalt:elink.
+:li.:link reftype=hd refid=scroll_horz.Scrolla horisontellt:elink.
+:li.:link reftype=hd refid=accel_delay.F”rdr”jning av accelereration:elink.
+:li.:link reftype=hd refid=accel_value.Hastighet p† accelereration:elink.
+:li.:link reftype=hd refid=trackball.Antal hjul:elink.
+:li.:link reftype=hd refid=cancel.Avbryt:elink.
+:li.:link reftype=hd refid=standard.Standard:elink.
+:eul.
+:note text='Notera&colon.'.                                            
+Denna sida visas endast n„r en mus med hjul uppt„ckts.
+
+:h2 res=&PANEL_SCROLL_VERT. id=scroll_vert.Startv„rden - Scrolla vertikalt
+:p.Hjulr”relser med detta alternativ inneb„r att rullister i vertikal led p†verkas.
+
+:h2 res=&PANEL_SCROLL_HORZ. id=scroll_horz.Startv„rden - Scrolla horisontellt
+:p.Hjulr”relser med detta alternativ inneb„r att rullister i horisontal led p†verkas.
+
+:h2 res=&PANEL_ACCEL_DELAY. id=accel_delay.F”rdr”jning av accelereration (Tidsf”rdr”jning)
+:p.Scrollhastigheten ”kar om hjulet anv„nds l„ngre „n den angivna tidf”rdr”jningen f”r att scrolla.
+Tidsf”rdr”jningen kan justeras mellan 100 och 2000 ms.
+
+:h2 res=&PANEL_ACCEL_VALUE. id=accel_value.Hastighet p† accelereration (Accelerationsv„rde)
+:p.Justerar hur mycket accelererationen skall ”kas om hjulet rullas snabbt.
+
+:h2 res=&PANEL_TRACKBALL. id=trackball.Antal hjul
+:p.Vissa m”ss anger inte till drivrutinen antalet hjul som finns tillg„ngliga eller om musen har en styrkula. 
+Om s† „r fallet, finns det m”jlighet att g”ra de inst„llningarna h„r.
+
+:h1 res=&PANEL_WHEELSETTINGS3. id=wheel3.Hjul - sida 5
+:i1 id=wheel3.Hjul - sida 5
+:p.P† sidan :hp2.Hjul 5:ehp2. anges funktioner som anv„nds speciellt f”r vissa program.
+Rulla hjulet p† musen f”r att s”ka igenom listan efter en passande beskrivning av f”nstret / inneh†llet som efters”ks.
+Listan :hp2.Beskrivning:ehp2. genoms”kes ned†t efter en matchning med applikationen under muspekaren.
+Om ingen matchning p†tr„ffas anv„nds :hp2.AMouse:ehp2.s f”rdefinierade lista (definerad i :font facename=Courier size=14x14.AMouRes.rc:font facename=default.).
+Listan ger en beskrivning f”r att underl„tta f”r an v„ndaren att identifiera applikation, d„rf”r „r namnet godtyckligt; det kan „ven finnas dubletter.
+:p.ndra p† inst„llningarna genom att klicka p† n†gon av knapparna p† sidan.
+:p.En mer detaljerad f”rklaring till de olika delarna finns att till g† nedan&colon.
+:ul compact.
+:li.:link reftype=hd refid=wheel_up.&uarrow.:elink.
+:li.:link reftype=hd refid=wheel_down.&darrow.:elink.
+:li.:link reftype=hd refid=wheel_delete.Ta bort:elink.
+:li.:link reftype=hd refid=wheel_insert.Infoga:elink.
+:li.:link reftype=hd refid=cancel.Avbryt:elink.
+:eul.
+:note.
+Denna sida visas endast n„r en mus med hjul uppt„ckts.
+
+:p.:hp7.Beskrivning av f„lten:ehp7.
+:p.Utf”rande visas i den nedre rutan. Den v„nstra kolumnen anger f”nster / kontroll,
+som reagerar p† hjulr”relser. Betydelserna „r&colon.
+:ul compact.
+:li.:hp2.Applikation:ehp2.
+.br
+Namnet p† applikationen (t.ex. :font facename=Courier size=14x14.PROGRAM.EXE:font facename=default.). 
+Om detta f„lt „r tomt „r j„mf”relsen alltid sann (TRUE). F„ltet m†ste alltid vara tomt f”r WPS-klasser.
+:li.:hp2.Klass:ehp2.
+.br
+F”nsterklass f”r f”nstret / kontrollen. H„r anges antingen klassnamn (noggrant med gemener och versaler!) eller &osq.&numsign.&csq. och identitetskoden.
+Om detta f„lt „r tomt „r j„mf”relsen alltid sann (TRUE).
+:li.:hp2.F”r„ldraklass:ehp2.
+.br
+F”r„ldraf”nsterklassen f”r f”nstret / kontrollen. H„r anges antingen klassnamn (noggrant med gemener och versaler!) eller &osq.&numsign.&csq. och identitetskoden.
+Om detta f„lt „r tomt „r j„mf”relsen alltid sann (TRUE).
+:li.:hp2.Inst„llningar:ehp2.
+.br
+Om en specifik &osq.vRelation&csq. eller &osq.hRelation&csq. beh”vs enges den h„r (Se beskrivning).
+I alla andra fall „r f„ltet tomt.
+:eul.
+:p.I h”ger kolumn anges h„ndelser som p†verkas av hjulet. Betydelserna „r&colon.
+:ul compact.
+:li.:hp2.Typ:ehp2.
+.br
+Anger funktion av typen
+:hp2.Scrollning:ehp2. som anv„nds om inst„llningen p† sida
+:link reftype=hd refid=wheel1.Hjul 1:elink. valts till
+:link reftype=hd refid=msgscroll.Scrolla:elink..
+:hp2.Pekaren:ehp2. reagerar p† 
+:link reftype=hd refid=msgline.Tangentbord:elink.,
+:hp2.Sida:ehp2. p†
+:link reftype=hd refid=msgpage.Scrolla hel sida per enhet:elink..
+:hp2.Scroll eller Pekare:ehp2. reagerar, om inst„llningen valts till antingen
+:link reftype=hd refid=msgscroll.Scrolla:elink. eller
+:link reftype=hd refid=msgline.Tangentbord:elink..
+:hp2.Alla:ehp2. reagerar p† alla inst„llningar.
+:li.:hp2.vRelation resp. hRelation:ehp2.
+.br
+Anger f”nstret / kontrollen, eller om ytterligare s”kningar m†ste genomf”ras
+i f”nster-hirarkin. Betydelserna „r&colon.
+:ul compact.
+:li.:hp2.Ingen:ehp2.&colon. Vald funktion p†verkar kontrollen direkt.
+:li.:hp2.F”r„lder:ehp2.&colon. Vald funktionen p†verkar passande f”r„lder som hittas i listan med beskrivningar.
+:li.:hp2.gare:ehp2.&colon. Vald funktion p†verkar passande „gare som hittas i listan med beskrivningar.
+:li.:hp2.N„sta:ehp2.&colon. Vald funktion p†verkar kontrollerna i djupled (z-ordning) f”r kontroller som ocks† finns under
+muspekaren.
+:li.:hp2.CB N„sta:ehp2.&colon. Endast f”r kombinationsrutor. G”r samma som :hp2.N„sta:ehp2.,
+men hanterar den osynliga delen under inmatningsf„ltet om listan inte „r synlig.
+:li.:hp2.Syskon[Inst„llning]:ehp2.&colon. Funktionen p†verkar syskon-f”nster i listan med beskrivningar vars klassnamn
+motsvarar inmatningsf„ltet f”r :hp2.inst„llning:ehp2.ar.
+:eul.
+:li.:hp2.vInst„llning / hInst„llning:ehp2.
+.br
+Inneh†ller inst„llning beroende av typ som angetts. (Se beskrivning)
+:li.:hp2.Upp / Ner resp. V„nster / H”ger:ehp2.
+.br
+Anger funktion f”r f”nster / kontroll. Betydelserna „r&colon.
+:ul compact.
+:li.:hp2.WM_NULL:ehp2.&colon. Ingen funktion. Anv„nds normalt om
+:hp2.vRelation:ehp2./:hp2.hRelation:ehp2. satts till :hp2.Ingen:ehp2..
+:li.:hp2.WM_CONTROL:ehp2.&colon. Motsvarar tangentbordskod som skickas till drivrutinen f”r tangentbordet.
+F”ljande inst„llningar „r m”jliga&colon.
+:ul compact.
+:li.:hp2.Sida:ehp2.&colon. Motsvarar tangenterna Sida Upp/Sida Ner (PgUp/PgDn).
+:li.:hp2.Upp/Ner:ehp2.&colon. Motsvarar tangenterna Upp/Ner (Up/Dn).
+:li.:hp2.V„nster/H”ger:ehp2.&colon. Motsvarar tangenterna V„nster/H”ger (Left/Right).
+:li.:hp2.Upprepat Upp/Ner:ehp2.&colon. Motsvarar tangenterna Upp/Ner (Up/Down) upprepade g†nger.
+Antalet g†nger Upp/Ner anv„nds utg†r fr†n inst„llningen av :link reftype=hd refid=scrollitem.Hjulhastighet:elink.en.
+:li.:hp2.Upprepat V„nster/H”ger:ehp2.&colon. Motsvarar tangenterna V„nster/H”ger (Left/Right) upprepade g†nger.
+Antalet g†nger V„nster/H”ger anv„nds utg†r fr†n inst„llningen av :link reftype=hd refid=scrollitem.Hjulhastighet:elink.en.
+:eul.
+:li.:hp2.WM_VSCROLL:ehp2.&colon. Motsvarar f”rflyttning av draglisten i vertikal led.
+:li.:hp2.WM_HSCROLL:ehp2.&colon. Motsvarar f”rflyttning av draglisten i horisontell led.
+:li.:hp2.N x WM_VSCROLL:ehp2.&colon. Som :hp2.WM_VSCROLL:ehp2., men hastigheten p† f”rflyttningen ”kas med N
+i inst„llningarna f”r :link reftype=hd refid=scrollitem.Hjulhastighet:elink.en.
+:li.:hp2.N x WM_HSCROLL:ehp2.&colon. Som :hp2.WM_HSCROLL:ehp2., :hp2.CROLL:ehp2., men hastigheten p† f”rflyttningen ”kas med N
+i inst„llningarna f”r :link reftype=hd refid=scrollitem.Hjulhastighet:elink.en.
+:li.:hp2.WM_CHAR:ehp2.&colon. Motsvarar ett tecken. De m”jliga alternativen „r desamma som f”r
+:hp2.WM_CONTROL:ehp2..
+:eul.:eul.
+
+:p.:hp7.Exempel:ehp7.
+:p.P.g.a. en bugg (of”rutsett programmeringsfel) i „ldre versioner av Mozilla (version 1.3 och tidigare) fungerar inte horizontell scrollning genom att anv„nda s.k. WM_SCROLL.
+En tempor„r l”sning f”r att komma runt problemet har skapats och kan utnyttjas genom att anv„nda n†got av de tv† f”ljande alternativen.
+:p.:artwork name='Mozilla_Line_046.bmp' align=left.
+:p.Fungerar som, om :link reftype=hd refid=wheel1.Hjul 1:elink. valts, inst„llningen
+:hp2.Scrolla:ehp2. eller :hp2.Tangentbord:ehp2..
+I detta fall f†r f”r„ldraf”nstret sk”ta om horisontell och vertikal f”rflyttning.
+(&odq.Snabbf”rflyttning&cdq.). Mozilla identifieras, om :hp2.Klass:ehp2. s† v„l som
+:hp2.F”r„ldraklassen:ehp2. „r av typen :hp2.MozillaWindowClass:ehp2..
+:p.:artwork name='Mozilla_Page_046.bmp' align=left.
+:p.F”r sidvis scrollning (:hp2.Typ = Sida:ehp2.) f”rflyttas Sida Upp/Sida Ner (PgUp/PgDown) i vertikal led.
+:p.:artwork name='Command_Line_046.bmp' align=left.
+:p.Om du rullar hjulet n„r pekaren befinner sig ”ver en kommandorad s† „r standardinst„llningen att scrolla inneh†llet i f”nstret (om rullister 
+finns tillg„ngliga).
+Inst„llningen g”r ist„llet att kommandon som anv„nts tidigare, visas ist„llet.
+
+:h2 res=&PANEL_W3_UP. id=wheel_up.&uarrow. (Flytta upp†t)
+:p.Flyttar vald rad i listan ett steg upp†t.
+
+:h2 res=&PANEL_W3_DOWN. id=wheel_down.&darrow. (Flytta ned†t)
+:p.Flyttar vald rad i listan ett steg ned†t.
+
+:h2 res=&PANEL_W3_DELETE. id=wheel_delete.Ta bort
+:p.Tar bort raden i listan till v„nster om knappen.
+
+:h2 res=&PANEL_W3_INSERT. id=wheel_insert.Infoga
+:p.Infogar en rad i listan till v„nster om knappen.
+
+:h1 res=&PANEL_INSERTAPPL. id=insertappl.Infoga applikation
+:i1 id=insertappl.Infoga applikation
+:p.Denna ruta anv„nds f”r att infoga en ny inst„llning f”r hur hjulmusen skall fungera tillsammans med utvalda applikationer.
+Betydelsen hos kontrollerna f”ljer beskrivningen i
+:link reftype=hd refid=wheel3.hjul 5:elink. :hp2.Beskrivning:ehp2. och kan anv„ndas f”r att infoga
+valfri text som klarg”r f”r anv„ndaren inneh†llet i listan 
+:link reftype=hd refid=wheel3.hjul 5:elink..
+
+:h1 res=&PANEL_KEYSETTINGS1. id=keys1.Knappar 1
+:i1 id=keys.Knappar 1
+:p.Inst„llningarna p† denna sida p†verkar knappar 3, 4 och 5 p† musen.
+:p.Inst„llningarna kan f”r„ndras med hj„lp av knapparna p† sidan f”r inst„llningar.
+:p.En mer utf”rlig f”rklaring av funktionaliteten f”r varje del visas om du klickar i listan nedan&colon.
+:ul compact.
+:li.:link reftype=hd refid=button3.Knapp 3:elink.
+:li.:link reftype=hd refid=button4.Knapp 4:elink.
+:li.:link reftype=hd refid=button5.Knapp 5:elink.
+:li.:link reftype=hd refid=button6.Knapp 6:elink.
+:li.:link reftype=hd refid=button7.Knapp 7:elink.
+:li.:link reftype=hd refid=button8.Knapp 8:elink.
+:li.:link reftype=hd refid=button9.Knapp 9:elink.
+:li.:link reftype=hd refid=button10.Knapp 10:elink.
+:li.:link reftype=hd refid=cbutton3.Ctrl+Knapp 3:elink.
+:li.:link reftype=hd refid=cbutton4.Ctrl+Knapp 4:elink.
+:li.:link reftype=hd refid=cbutton5.Ctrl+Knapp 5:elink.
+:li.:link reftype=hd refid=cbutton6.Ctrl+Knapp 6:elink.
+:li.:link reftype=hd refid=cbutton7.Ctrl+Knapp 7:elink.
+:li.:link reftype=hd refid=cbutton8.Ctrl+Knapp 8:elink.
+:li.:link reftype=hd refid=cbutton9.Ctrl+Knapp 9:elink.
+:li.:link reftype=hd refid=cbutton10.Ctrl+Knapp 10:elink.
+:li.:link reftype=hd refid=abutton3.Alt+Knapp 3:elink.
+:li.:link reftype=hd refid=abutton4.Alt+Knapp 4:elink.
+:li.:link reftype=hd refid=abutton5.Alt+Knapp 5:elink.
+:li.:link reftype=hd refid=abutton6.Alt+Knapp 6:elink.
+:li.:link reftype=hd refid=abutton7.Alt+Knapp 7:elink.
+:li.:link reftype=hd refid=abutton8.Alt+Knapp 8:elink.
+:li.:link reftype=hd refid=abutton9.Alt+Knapp 9:elink.
+:li.:link reftype=hd refid=abutton10.Alt+Knapp 10:elink.
+:li.:link reftype=hd refid=keycombset3.S„tt 3:elink.
+:li.:link reftype=hd refid=keycombset4.S„tt 4:elink.
+:li.:link reftype=hd refid=keycombset5.S„tt 5:elink.
+:li.:link reftype=hd refid=keycombset6.S„tt 6:elink.
+:li.:link reftype=hd refid=keycombset7.S„tt 7:elink.
+:li.:link reftype=hd refid=keycombset8.S„tt 8:elink.
+:li.:link reftype=hd refid=keycombset9.S„tt 9:elink.
+:li.:link reftype=hd refid=keycombset10.S„tt 10:elink.
+:li.:link reftype=hd refid=keycomb.Tangentkombination:elink.
+:li.:link reftype=hd refid=cancel.Avbryt:elink.
+:li.:link reftype=hd refid=standard.Standard:elink.
+:eul.                                             
+:note text='Notera&colon.'.
+Denna sida visas endast n„r en hjulmus uppt„ckts
+
+:p.:hp2.Knappfunktioner:ehp2.
+:p.F”ljande funktioner finns tillg„ngliga&colon.
+
+:ul.
+:li.:hp5.Klipp ut:ehp5.
+.br
+Funktionen "Klipp ut" utf”rs (Shift-Del)
+:li.:hp5.Kopiera:ehp5.
+.br
+Funktionen "Kopiera" utf”rs (Ctrl-Ins)
+:li.:hp5.Klistra in:ehp5.
+.br
+Funktionen "Klistra in" utf”rs (Shift-Ins)
+:li.:hp5.Mittenknapp:ehp5.
+.br
+Knappens funktion motsvarar standardknapp 3 p† en mus. Funktioner som styrs av huruvida
+shifttangenten tryckts in p† tangentbordet hanteras som vanligt.
+:li.:hp5.Minimera/G”m alla f”nster:ehp5.
+.br
+Alla f”nster minimeras eller g”ms, beroende p† inst„llningen som gjorts f”r f”nstret.
+:li.:hp5.terst„ll alla f”nster:ehp5.
+.br
+Alla f”nster †terst„lls till den storlek de hade innan de minimerades/g”mdes/maximerades.
+:li.:hp5.F”nsterlista:ehp5.
+.br
+Listan ”ver f”nster visas.
+:li.:hp5.Avsluta applikation:ehp5.
+.br
+Applikationen avslutas.
+:li.:hp5.Dubbelklicka:ehp5.
+.br
+Dubbelklick skickas till applikationen.
+:li.:hp5.Maximera f”nster:ehp5.
+.br
+F”nstret maximeras.
+:li.:hp5.Minimera/G”m f”nster:ehp5.
+.br
+F”nstret minimeras eller g”ms beroende p† inst„llningen som gjorts f”r f”nstret.
+:li.:hp5.terst„ll f”nster:ehp5.
+.br
+F”nstrets storlek †terst„lls till den storlek det hade innan det minimerades/g”mdes/maximerades.
+:li.:hp5.Byt scrollriktning:ehp5.
+.br
+Scrollriktningen alterneras mellan horisontell och vertikal led.
+:li.:hp5.Placera f”nster i bakgrunden:ehp5.
+.br
+F”nstret under muspekaren flyttas bakom alla andra f”nster p† skrivbordet.
+:li.:hp5.Tangentkombination:ehp5.
+.br
+Tangentkombinationen som visas i inmatningsf„ltet skickas till programmet.
+:li.:hp5.Ingen funktion:ehp5.
+.br
+Ingenting h„nder n„r knappen trycks ned.
+:eul.
+
+:h2 res=&PANEL_BUTTON3. id=button3.Knapp 3                   
+:p.Inst„llningarna p†verkar funktionen d† knapp 3 trycks ner.
+
+:h2 res=&PANEL_BUTTON4. id=button4.Knapp 4
+:p.Inst„llningarna p† verkar funktionen d† knapp 4 trycks ner.
+
+:h2 res=&PANEL_BUTTON5. id=button5.Knapp 5
+:p.Inst„llningarna p†verkar funktionen d† knapp 5 trycks ner.
+
+:h2 res=&PANEL_BUTTON6. id=button6.Knapp 6
+:p.Inst„llningarna p†verkar funktionen d† knapp 6 trycks ner.
+
+:h2 res=&PANEL_BUTTON7. id=button7.Knapp 7
+:p.Inst„llningarna p†verkar funktionen d† knapp 7 trycks ner.
+
+:h2 res=&PANEL_BUTTON8. id=button8.Knapp 8
+:p.Inst„llningarna p†verkar funktionen d† knapp 8 trycks ner.
+
+:h2 res=&PANEL_BUTTON9. id=button9.Knapp 9
+:p.Inst„llningarna p†verkar funktionen d† knapp 9 trycks ner.
+
+:h2 res=&PANEL_BUTTON10. id=button10.Knapp 10
+:p.Inst„llningarna p†verkar funktionen d† knapp 7 trycks ner.
+
+:h2 res=&PANEL_CBUTTON3. id=cbutton3.Ctrl+Knapp 3                   
+:p.Inst„llningen p†verkar funktionen d† Ctrl-tangenten trycks ned samtidigt som knapp 3 p† musen.
+
+:h2 res=&PANEL_CBUTTON4. id=cbutton4.Ctrl+Knapp 4
+:p.Inst„llningen p†verkar funktionen d† Ctrl-tangenten trycks ned samtidigt som knapp 4 p† musen.
+
+:h2 res=&PANEL_CBUTTON5. id=cbutton5.Ctrl+Knapp 5
+:p.Inst„llningen p†verkar funktionen d† Ctrl-tangenten trycks ned samtidigt som knapp 5 p† musen.
+
+:h2 res=&PANEL_CBUTTON6. id=cbutton6.Ctrl+Knapp 6
+:p.Inst„llningen p†verkar funktionen d† Ctrl-tangenten trycks ned samtidigt som knapp 6 p† musen.
+
+:h2 res=&PANEL_CBUTTON7. id=cbutton7.Ctrl+Knapp 7
+:p.Inst„llningen p†verkar funktionen d† Ctrl-tangenten trycks ned samtidigt som knapp 7 p† musen.
+
+:h2 res=&PANEL_CBUTTON8. id=cbutton8.Ctrl+Knapp 8
+:p.Inst„llningen p†verkar funktionen d† Ctrl-tangenten trycks ned samtidigt som knapp 8 p† musen.
+
+:h2 res=&PANEL_CBUTTON9. id=cbutton9.Ctrl+Knapp 9
+:p.Inst„llningen p†verkar funktionen d† Ctrl-tangenten trycks ned samtidigt som knapp 9 p† musen.
+
+:h2 res=&PANEL_CBUTTON10. id=cbutton10.Ctrl+Knapp 10
+:p.Inst„llningen p†verkar funktionen d† Ctrl-tangenten trycks ned samtidigt som knapp 10 p† musen.
+
+:h2 res=&PANEL_ABUTTON3. id=abutton3.Alt+Knapp 3                   
+:p.Inst„llningen p†verkar funktionen d† Alt-tangenten trycks ned samtidigt som knapp 3 p† musen.
+
+:h2 res=&PANEL_ABUTTON4. id=abutton4.Alt+Knapp 4
+:p.Inst„llningen p†verkar funktionen d† Alt-tangenten trycks ned samtidigt som knapp 4 p† musen.
+
+:h2 res=&PANEL_ABUTTON5. id=abutton5.Alt+Knapp 5
+:p.Inst„llningen p†verkar funktionen d† Alt-tangenten trycks ned samtidigt som knapp 5 p† musen.
+
+:h2 res=&PANEL_ABUTTON6. id=abutton6.Alt+Knapp 6
+:p.Inst„llningen p†verkar funktionen d† Alt-tangenten trycks ned samtidigt som knapp 6 p† musen.
+
+:h2 res=&PANEL_ABUTTON7. id=abutton7.Alt+Knapp 7
+:p.Inst„llningen p†verkar funktionen d† Alt-tangenten trycks ned samtidigt som knapp 7 p† musen.
+
+:h2 res=&PANEL_ABUTTON8. id=abutton8.Alt+Knapp 8
+:p.Inst„llningen p†verkar funktionen d† Alt-tangenten trycks ned samtidigt som knapp 8 p† musen.
+
+:h2 res=&PANEL_ABUTTON9. id=abutton9.Alt+Knapp 9
+:p.Inst„llningen p†verkar funktionen d† Alt-tangenten trycks ned samtidigt som knapp 9 p† musen.
+
+:h2 res=&PANEL_ABUTTON10. id=abutton10.Alt+Knapp 10
+:p.Inst„llningen p†verkar funktionen d† Alt-tangenten trycks ned samtidigt som knapp 10 p† musen.
+
+:h2 res=&PANEL_KEYCOMBSET3. id=keycombset3.Ange tangentkombination 3
+:p.Denna knapp anv„nds f”r att tilldela :link reftype=hd refid=keycomb.tangentkombination:elink.en i inmatningsf„ltet till
+musknappen, om :link reftype=hd refid=button3.alternativet markerats:elink. f”r :hp1.tangentkombination:ehp1.en.
+
+:h2 res=&PANEL_KEYCOMBSET4. id=keycombset4.Ange tangentkombination 4
+:p.Denna knapp anv„nds f”r att tilldela :link reftype=hd refid=keycomb.tangentkombination:elink.en i inmatningsf„ltet till
+musknappen, om :link reftype=hd refid=button4.alternativet markerats:elink. f”r :hp1.tangentkombination:ehp1.en.
+
+:h2 res=&PANEL_KEYCOMBSET5. id=keycombset5.Ange tangentkombination 5
+:p.Denna knapp anv„nds f”r att tilldela :link reftype=hd refid=keycomb.tangentkombination:elink.en i inmatningsf„ltet till
+musknappen, om :link reftype=hd refid=button5.alternativet markerats:elink. f”r :hp1.tangentkombination:ehp1.en.
+
+:h2 res=&PANEL_KEYCOMBSET6. id=keycombset6.Ange tangentkombination 6
+:p.Denna knapp anv„nds f”r att tilldela :link reftype=hd refid=keycomb.tangentkombination:elink.en i inmatningsf„ltet till
+musknappen, om :link reftype=hd refid=button6.alternativet markerats:elink. f”r :hp1.tangentkombination:ehp1.en.
+
+:h2 res=&PANEL_KEYCOMBSET7. id=keycombset7.Ange tangentkombination 7
+:p.Denna knapp anv„nds f”r att tilldela :link reftype=hd refid=keycomb.tangentkombination:elink.en i inmatningsf„ltet till
+musknappen, om :link reftype=hd refid=button7.alternativet markerats:elink. f”r :hp1.tangentkombination:ehp1.en.
+
+:h2 res=&PANEL_KEYCOMBSET8. id=keycombset8.Ange tangentkombination 8
+:p.Denna knapp anv„nds f”r att tilldela :link reftype=hd refid=keycomb.tangentkombination:elink.en i inmatningsf„ltet till
+musknappen, om :link reftype=hd refid=button8.alternativet markerats:elink. f”r :hp1.tangentkombination:ehp1.en.
+
+:h2 res=&PANEL_KEYCOMBSET9. id=keycombset9.Ange tangentkombination 9
+:p.Denna knapp anv„nds f”r att tilldela :link reftype=hd refid=keycomb.tangentkombination:elink.en i inmatningsf„ltet till
+musknappen, om :link reftype=hd refid=button9.alternativet markerats:elink. f”r :hp1.tangentkombination:ehp1.en.
+
+:h2 res=&PANEL_KEYCOMBSET10. id=keycombset10.Ange tangentkombination 10
+:p.Denna knapp anv„nds f”r att tilldela :link reftype=hd refid=keycomb.tangentkombination:elink.en i inmatningsf„ltet till
+musknappen, om :link reftype=hd refid=button10.alternativet markerats:elink. f”r :hp1.tangentkombination:ehp1.en.
+
+:h2 res=&PANEL_KEYCOMB. id=keycomb.Ange tangentkombination
+:p.Detta inmatningsf„lt anv„nds f”r att ange tangentkombinationer som senare kopplas samman med en musknapp.
+:p.D† en tangentkombination tilldelats en musknapp skickas den angivna koden till applikationen n„r den angivna musknappen trycks in.
+
+:p.Genom att klicka p† inmatningsf„ltet f†r det fokus och en tangentkombination kan anges, d„refter kan en tangentkombination anges (t.ex. :hp2.Alt-F4:ehp2.) varp†
+inmatningsf„ltet †terger tangetkombinationen. Genom att klicka p† :hp2.inst„llnings:ehp2.-knapparna tilldelas kombinationen till respektive musknapp.
+
+
+:h1 res=&PANEL_KEYSETTINGS2. id=keys2.Tangenter 2
+:i1 id=keys2.Tangenter 2
+:p.Denna sida anv„nds f”r att styra vad som h„nder n„r musen anv„nds p† olika kontroller s†som knappar, kombinationsrutor m.m.
+:p.V„lj funktionalitet f”r respektive kontroll f”r att st„lla in funktionen f”r varje typ av kontroll.
+:p.En mer detaljerad beskrivning visas om du klickar i listan nertill&colon.
+:ul compact.
+:li.:link reftype=hd refid=dblclick_entry.Dubbelklicka p† inmatningsf„lt:elink.
+:li.:link reftype=hd refid=click_combo.Klicka p† kombinationsruta:elink.
+:li.:link reftype=hd refid=smartcruise.SmartCruise:elink.
+:li.:link reftype=hd refid=cancel.ngra:elink.
+:li.:link reftype=hd refid=standard.Standard:elink.
+:eul.
+
+:h2 res=&PANEL_PMCTLS_ENTRY. id=dblclick_entry.Dubbelklicka p† Inmatningsf„lt
+:p.Om denna funktion „r vald, markeras hela ord i inmatningsf„lt vid dubbelklickning.
+
+:h2 res=&PANEL_PMCTLS_COMBO. id=click_combo.Klicka p† Kombinationsrutor
+:p.Om denna funktion „r vald, rullas listan p† kombinationsrutan ned vid klickning.
+
+:h2 res=&PANEL_SMARTCRUISE. id=smartcruise.SmartCruise
+:p.Alternativet aktiverar egenskapen SmartCruise hos m”ss av typen Logitech MX500, MX700 och MX1000. Om alternativet
+anges ignoreras inst„llningarna f”r muskapparna 7, 8, 9 och 10. Funktionen p† knapparna 7 och 8 
+motsvarar d† vertikal scrollning, medan knapparna 9 och 10 (d„r de finns) hanterar scrollning i horizontell ledd. 
+
+:h1 res=&PANEL_DEVICEINFO. id=devinfo.Information om enheten
+:i1 id=devinfo.Information om enheten
+:p.Sidan visar typ och version av AMouse.
+:p.Sidan visar typ och version p† mjukvaran p† PCn som „r relaterad till produkten.
+:p.Dessutom anges information f”r den mus som hittats inkopplad i datorn.
+:note text='Notera&colon.'.
+Det kan vara sv†rt, om inte om”jligt, att hitta alla knappar p† ett tillf”rlitligt
+s„tt eftersom Programhanteraren (PM) maximalt st”djer 3 knappar. I s†dana fall kan
+antalet knappar som uppt„cks vara mindre „n det verkliga antalet, t.ex. om pekdonet
+har fler „n tre knappar.
+
+:h1 res=&PANEL_WLDEVICEINFO. id=wldevinfo.Information om enheten 2
+:i1 id=wldevinfo.Information om enheten 2
+:p.Denna sida visar information specifik f”r tr†dl”sa m”ss, s†vida enheten st”der detta.
+:p.:hp5.Enhetens nummer:ehp5. „r endast intressant f”r USB-m”ss och visar enhetens ordningsnummer.
+:p.:hp5.Kanal nummer:ehp5. visar anv„nd kanal f”r m”ss som st”der flera kanaler.
+:p.:hp5.Batteristatus:ehp5. visar hur mycket batteriet „r uppladdat.
+:p.En mer detaljerad f”rklaring visas f”r varje del om du klickar p† n†gon av alternativen nedan&colon.
+:ul compact.
+:li.:link reftype=hd refid=battery_warning.Batterivarning:elink.
+:eul.
+
+:h2 res=&PANEL_BATTERYWARNING. id=battery_warning.BatteriVarning
+:p.Om detta alternativ markeras visas ett meddelande n„r batteriet i musen h†ller p† att ta slut.
+
+:h1 res=&PANEL_TIMINGSETTINGS. id=timing.Tidsintervall
+:i1 id=timing.Tidsintervall
+:p.Denna sida anv„nds f”r att st„lla in tidsintervaller f”r musen: antal avl„sningar per tidsenhet s†v„l som 
+v„rdet f”r acceleration.
+ 
+:p.:hp5.Beskrivning av acceleration:ehp5.&colon. F”r varje mush„ndelse j„mf”rs r”relsen med f”rsta och andra tr”skelv„rdet.
+Om r”relsen „r st”rre „n andra tr”skelv„rdet justeras v„rdet enligt angivelsen f”r andra tr”skelv„rdet. Om r”relsen „r st”rre „n f”rsta tr”skelv„rdet 
+men mindre „n det andra tr”skelv„rdet justeras v„rdet enligt angivelsen f”r f”rsta tr”skelv„rdet. Om r”relsen „r mindre „n f”rsta tr”kelv„rdet
+justeras v„rdet p† f”rflyttningen. Ber„kningarna utf”rs oberoende av varandra f”r X- and Y-axeln. 
+R”relserna sker utifr†n f”ljande kriterier&colon.
+
+:table cols='20 20' rules=both frame=box.
+:row.
+:c.F”rsta niv†, tr”skelv„rde
+:c.Dragreglagets r”relse
+:row.
+:c.Andra niv†, tr”skelv„rde
+:c.Dragreglagets r”relse  7
+:row.
+:c.F”rsta niv†, justering
+:c.Dragreglagets r”relse
+:row.
+:c.Andra niv†, justering
+:c.Dragreglagets r”relse  2
+:etable.
+
+:ul compact.
+:li.:link reftype=hd refid=pollrate.Antal avl„sningar per tidsenhet:elink.
+:li.:link reftype=hd refid=mouaccel_value.K„nslighet:elink.
+:li.:link reftype=hd refid=mouaccel_threshold.Tr”skelv„rde:elink.
+:li.:link reftype=hd refid=cancel.Avbryt:elink.
+:li.:link reftype=hd refid=standard.Standard:elink.
+:eul.
+
+:h2 res=&PANEL_MOU_POLLRATE. id=pollrate.Antal avl„sningar per tidsenhet
+:p.Dragreglaget styr hur ofta musen skall avl„sas per tidsenhet.
+
+:h2 res=&PANEL_MOU_ACCEL_VALUE. id=mouaccel_value.K„nslighet
+:p.Dragreglaget styr accelerationen.
+
+:h2 res=&PANEL_MOU_ACCEL_TH. id=mouaccel_threshold.Tr”skelv„rde
+:p.Dragreglaget styr tr”skelv„rdet f”r acceleration.
+
+:euserdoc.
+
+

@@ -1,0 +1,68 @@
+.\amouse.res: \
+    ..\amouse.rc \
+    {$(INCLUDE)}amouse.h \
+    {$(INCLUDE);..;..\..;}dlg.h \
+    {$(INCLUDE);..;..\..;}panel.h \
+    {$(INCLUDE);..;..\..;}res.h
+
+.\AMOUSE.obj: \
+    .\AMOUSE.c \
+    {$(INCLUDE);}AMouse.ih \
+    {$(INCLUDE);}AMouse.h \
+    {$(INCLUDE);}AMouseData.h \
+    {$(INCLUDE);}dialogs.h \
+    {$(INCLUDE);}debug.h \
+    {$(INCLUDE);..;}common.h \
+    {$(INCLUDE);..;..\..;}dlg.h \
+    {$(INCLUDE);..;..\..;}res.h \
+    {$(INCLUDE);..;..\..;}AMouseGlobal.h
+
+.\Dialogs.obj: \
+    .\dialogs.c \
+    {$(INCLUDE);}AMouse.ih \
+    {$(INCLUDE);}Dialogs.h \
+    {$(INCLUDE);}AMouse.h \
+    {$(INCLUDE);}AMouseData.h \
+    {$(INCLUDE);}debug.h \
+    {$(INCLUDE);..;}common.h \
+    {$(INCLUDE);..;}commonDlg.h \
+    {$(INCLUDE);..;..\..;}dlg.h \
+    {$(INCLUDE);..;..\..;}res.h \
+    {$(INCLUDE);..;..\..;}AMouseGlobal.h
+
+.\Common.obj: \
+    ..\common.c \
+    {$(INCLUDE);..;}common.h
+
+.\CommonDlg.obj: \
+    {$(INCLUDE);}AMouse.h \
+    {$(INCLUDE);}AMouseData.h \
+    {$(INCLUDE);..;}common.h \
+    {$(INCLUDE);..;}commonDlg.h \
+    {$(INCLUDE);..;}Vendor.h \
+    {$(INCLUDE);..;..\..;}dlg.h \
+    {$(INCLUDE);..;..\..;}res.h \
+    {$(INCLUDE);..;..\..;}AMouseGlobal.h
+
+.\Vendor.obj: \
+    ..\Vendor.c \
+    {$(INCLUDE);}AMouseData.h \
+    {$(INCLUDE);..}Vendor.h \
+    {$(INCLUDE);..;..\..;}AMouseGlobal.h
+
+.\AMouseData.obj: \
+    .\AMouseData.c
+
+.\amouse.ih: \
+    .\amouse.IDL
+
+.\PRINTF.obj: \
+    .\PRINTF.C
+
+.\DEBUG.obj: \
+    .\DEBUG.C \
+    {$(INCLUDE);}amouse.ih \
+    {$(INCLUDE);}debug.h \
+    {$(INCLUDE);..;..\..;}dlg.h
+
+

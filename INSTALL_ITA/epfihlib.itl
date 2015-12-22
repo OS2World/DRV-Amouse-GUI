@@ -1,0 +1,4579 @@
+.************************************************************************
+.*                        SOFTWARE INSTALLER
+.* 5621-434 (C) COPYRIGHT IBM CORP. 1991, 1995. ALL RIGHTS RESERVED.
+.*               LICENSED MATERIALS - PROPERTY OF IBM
+.*
+.* Note to U.S. Government Users - Documentation related to restricted
+.* rights - Use, duplication or disclosure is subject to restrictions set
+.* forth in GSA ADP Schedule Contract with IBM Corp.
+.*
+.* Refer to your Licensing Agreement with IBM for the terms and
+.* conditions affecting the use of this source material.
+.*
+.* File name:    EPFIHLIB.ITL
+.* Contents:     Help panels for Software Installer for OS/2 (Italian)
+.************************************************************************
+:userdoc.
+:prolog.
+:title.Software Installer Helps EPFIHLIB.ITL
+:tline.5621-434 (C) COPYRIGHT IBM CORP.
+:tline.1991, 1995. ALL RIGHTS RESERVED.
+:tline.LICENSED MATERIALS - PROPERTY OF IBM.
+:tline.Software Installer Help Panels
+:etitle.
+:eprolog.
+:body.
+.**********************************************************************
+.* The following symbols are used to define the various names used
+.* throughout the help panels that referred to documents and product
+.* names that we were unsure of at the time of this writing.
+.**********************************************************************
+.nameit symbol=online text='documentazione in linea
+.**********************************************************************
+.* The following two symbols are used together to form the phrase:
+.* "OS/2" (trademark of IBM) Communications Interface panel
+.* They appear as "&os2. &comm." in the text and if replaced, should
+.* be replaced as such.
+.**********************************************************************
+.nameit symbol=os2 text='&odq.OS&slash.2&cdq. (marchio della IBM)
+.nameit symbol=comm text='Pannello di interfaccia per le comunicazioni
+.****************************************************************************
+.*  Installation and Maintenance - (General help)
+.****************************************************************************
+:h1 name=INSTALL res=5028.Programma di utilitÖ per l'installazione e la gestione
+:isyn root=ins.installazione&gestione prodotto installazione gestione
+:isyn root=ins.installazione gestione
+:i1 roots='ins'.Installazione e gestione
+:p.
+Usare la
+finestra
+:hp2.Installazione e Gestione:ehp2.
+per installare,
+aggiornare, ripristinare o cancellare un
+prodotto.
+:p.
+Selezionare :hp2.Apertura catalogo:ehp2. dallo sviluppo azione di File
+per
+ottenere l'elenco dei prodotti con cui ä possibile lavorare su un particolare
+sistema. Dopo aver visualizzato l'elenco, selezionare un prodotto per
+effettuare una delle seguenti operazioni&colon.
+:ul compact.
+:li.:link reftype=hd res=5009.Installazione:elink.
+:li.:link reftype=hd res=5010.Aggiornamento:elink.
+:li.:link reftype=hd res=5011.Ripristino:elink.
+:li.:link reftype=hd res=5012.Cancellazione:elink.
+:eul.
+:eh1.
+
+.**********************************************************************
+.*  "File" pull-down (contextual help) -
+.**********************************************************************
+:h2 name=IL0 res=5100.File
+:isyn root=list.selezione prodotto apertura elenco
+:i1 id=Il0.File
+:p.
+Selezionare il menu :hp2.File:ehp2. per&colon.
+:ul compact.
+:li.Aprire o aggiornare l'elenco dei prodotti
+:li.Uscire dal programma di utilitÖ per l'installazione e la gestione
+:eul.
+
+.**********************************************************************
+.*  "Open catalog..." on "File" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IL1 res=5101.Apertura catalogo
+:isyn root=open.inizio apertura file applicazione richiamo
+:i1 id=IL1.Apertura
+:i2 refid=IL1.Sistema centrale
+:i2 refid=IL1.UnitÖ
+:p.
+Selezionare :hp2.Apertura catalogo:ehp2. dallo sviluppo azione di File per aprire il catalogo
+dei prodotti che ä possibile installare. E' necessario aprire l'elenco dei
+prodotti prima di poter installare o aggiornare un prodotto.
+:p.
+Selezionando :hp2.Apertura catalogo:ehp2. ä possibile scegliere se aprire il
+catalogo di un'unitÖ del sistema operativo di un sistema centrale.
+
+.**********************************************************************
+.*  "Open catalog / Host..." on "File" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IL2 res=5102.Apertura del catalogo di un sistema centrale
+:p.
+Selezionare :hp2.Sistema centrale:ehp2. per aprire l'elenco dei prodotti
+di un sistema MVS, VM o VSE.
+:p.
+Selezionando :hp2.Sistema centrale:ehp2., viene
+visualizzata una finestra che richiede di scegliere&colon.
+:ul compact.
+:li.Una sessione del sistema centrale
+:li.Il sistema operativo del sistema centrale da cui richiamare il catalogo
+:li.Il nome del file del catalogo da scaricare dal sistema centrale
+:eul.
+
+.**********************************************************************
+.*  "Open catalog / Drive..." on "File" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IL3 res=5103.Apertura del catalogo di un'unitÖ
+:p.
+Selezionare :hp2.UnitÖ:ehp2. per aprire il catalogo dei prodotti che ä possibile installare
+da un'unitÖ minidisco, da un'unitÖ CD ROM, da un'unitÖ della LAN o da una cartella del
+PC Support AS/400.
+:p.
+Selezionando :hp2.UnitÖ:ehp2., viene visualizzata una finestra che richiede di scegliere&colon.
+:ul compact.
+:li.L'unitÖ da cui installare il prodotto
+:li.L'indirizzario ed il nome del file del catalogo da aprire
+:eul.
+
+.****************************************************************
+.*  "Exit..." on "List" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IL4 res=5104.Uscita
+:isyn root=exit.uscita scollegamento uscire
+:i1 roots='exit'.Uscita dal programma di utilitÖ per l'installazione e la gestione
+:i1.Uscita
+:p.
+Selezionare :hp2.Uscita:ehp2. dallo sviluppo azione di File per uscire dal
+programma di utilitÖ per l'installazione e la gestione.
+
+.**********************************************************************
+.*  "Details" pull-down (contextual help) -
+.**********************************************************************
+:h2 name=ID0 res=5004.Dettagli
+:isyn root=info.informazioni dettagli
+:i1 roots='info'.Dettagli
+:p.
+Selezionare :hp2.Dettagli:ehp2. per visualizzare&colon.
+:ul compact.
+:li.La descrizione del prodotto selezionato
+:li.Lo stato ed il livello di aggiornamento del prodotto selezionato sulla stazione di lavoro
+:li.Lo spazio su disco necessario per installare il prodotto selezionato
+:eul.
+.****************************************************************
+.*  "Product Description..." on "Details" pull-down (contextual help) -
+.****************************************************************
+:h3 name=ID1 res=5005.Descrizione del prodotto
+:i1 id='info'.Descrizione del prodotto
+:p.
+Selezionare :hp2.Descrizione del prodotto:ehp2. dallo sviluppo azione di Dettagli per visualizzare
+le informazioni generali relative al prodotto selezionato.
+:p.
+Selezionando questa opzione, la descrizione del prodotto viene richiamata dall'origine e
+visualizzata in un'apposita finestra.
+
+.****************************************************************
+.*  "PWS Status..." on "Details" pull-down (contextual help) -
+.****************************************************************
+:h3 name=ID2 res=5006.Stato del prodotto
+:i1.Stato del prodotto
+:p.
+Selezionare :hp2.Stato del prodotto:ehp2. dallo sviluppo azione di Dettagli per visualizzare le
+seguenti informazioni relative al prodotto selezionato&colon.
+:ul compact.
+:li.Nome del prodotto
+:li.Codice del prodotto
+:li.Versione, rilascio e livello di modifica del prodotto attualmente
+installato nella stazione di lavoro
+:li.Dispositivo attualmente installato nella stazione di lavoro
+:li.Eventuali componenti installati nella stazione di lavoro
+:li.Livelli di aggiornamento installati nella stazione di lavoro
+:li.UnitÖ ed indirizzari in cui ä installato il prodotto
+:eul.
+:p.
+La selezione dello stato del prodotto puï essere effettuata solamente se il
+prodotto ä giÖ stato installato.
+
+.**************************************************************
+.*  "Disk Space..." on "Details" pull-down (contextual help) -
+.****************************************************************
+:h3 name=ID3 res=5007.Spazio su disco
+:i1.Spazio su disco
+:p.
+Selezionare :hp2.Spazio su disco:ehp2. dallo sviluppo azione di Dettagli per visualizzare&colon.
+:ul compact.
+:li.La quantitÖ di spazio necessaria per installare il prodotto selezionato
+:li.La quantitÖ totale di spazio su disco disponibile sulle unitÖ della propria stazione di lavoro
+:li.Se ä possibile eseguire l'installazione sull'unitÖ della stazione di lavoro selezionata
+:eul.
+:nt.
+Se si intende aggiornare un prodotto, ä possibile che sia necessaria una quantitÖ di spazio su
+disco minore di quella indicata, in quanto alcuni file potrebbero andare a sovrapporsi alle
+versioni esistenti.
+:ent.
+
+.**********************************************************************
+.*  "Action" pull-down (contextual help) -
+.**********************************************************************
+:h2 name=IA0 res=5008.Azione
+:p.
+Selezionare :hp2.Azione:ehp2. per&colon.
+:ul compact.
+:li.Installare il prodotto selezionato
+:li.Portare il prodotto selezionato ad un nuovo livello di aggiornamento
+:li.Ripristinare un livello di aggiornamento
+precedentemente salvato
+del prodotto selezionato
+:li.Cancellare il prodotto selezionato dalla stazione di lavoro
+:eul.
+
+.**********************************************************************
+.*  "Install..." on "Action" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IA1 res=5009.Installazione
+:isyn root=inst.informazioni installazione
+:i1 roots='inst'.Installazione
+:i1.Informazioni sul prodotto
+:p.
+Selezionare :hp2.Installazione:ehp2. nello sviluppo di Azione per installare il prodotto
+selezionato.
+:p.
+Selezionando :hp2.Installazione:ehp2., avviene quanto segue:
+:ol.
+:li.Viene visualizzata una finestra con le informazioni relative al prodotto
+selezionato per l'installazione che richiede la conferma per
+l'esecuzione dell'operazione selezionata
+:li.Viene visualizzata un'altra finestra in cui occorre specificare i nomi degli indirizzari
+in cui si intende installare il prodotto ed i componenti desiderati (se il prodotto ne prevede).
+:li.Viene visualizzata la finestra dello stato di avanzamento ed il prodotto
+viene installato negli indirizzari specificati.
+:li.Vengono quindi rese disponibili le opzioni
+:link reftype=hd res=5010.Aggiornamento:elink. e :link reftype=hd res=5012.Cancellazione:elink. per il prodotto
+selezionato.
+:eol.
+:p.
+L'opzione Installazione ä disponibile qualora qualche componente del prodotto selezionato non sia
+stato ancora installato.
+
+.**********************************************************************
+.*  "Update..." on "Action" pull-down (contextual help)
+.**********************************************************************
+:h3 name=IA2 res=5010.Aggiornamento
+:i1.Aggiornamento
+:p.
+Selezionare :hp2.Aggiornamento:ehp2. nello sviluppo di Azione per portare un prodotto installato
+ad un livello di aggiornamento pió recente.
+:p.
+Selezionando :hp2.Aggiornamento:ehp2., avviene quanto segue:
+:ol.
+:li.Viene visualizzata una finestra di conferma operazione con le informazioni relative
+al prodotto selezionato per l'aggiornamento.
+:li.Viene visualizzata la finestra dello stato di avanzamento ed il prodotto viene aggiornato
+negli indirizzari specificati per l'installazione iniziale.
+:li.Viene quindi resa disponibile l'opzione
+:link reftype=hd res=5011.Ripristino:elink. per
+il prodotto aggiornato, qualora sia stata salvata una copia di riserva.
+:eol.
+:p.
+L'opzione Aggiornamento ä disponibile solamente per i prodotti che sono giÖ stati installati
+o dei quali ä stato installato almeno un componente.
+
+.**********************************************************************
+.*  "Restore..." on "Action" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IA3 res=5011.Ripristino
+:i1.Ripristino
+:p.
+Selezionare :hp2.Ripristino:ehp2. dallo sviluppo di Azione per riportare il prodotto selezionato al
+precedente livello di aggiornamento.
+:p.
+Selezionando :hp2.Ripristino:ehp2., avviene quanto segue:
+:ol.
+:li.Viene visualizzata una finestra di conferma operazione con le informazioni relative
+al prodotto selezionato per il ripristino.
+:li.Viene visualizzata la finestra dello stato di avanzamento ed i file del precedente livello di
+aggiornamento sostituiscono i file del livello di aggiornamento attualmente installato.
+:li.Viene quindi disabilitato l'uso dell'opzione Ripristino per il prodotto selezionato.
+:eol.
+:p.
+L'opzione Ripristino ä disponibile solo nel caso in cui il prodotto selezionato ä stato
+installato ed aggiornato con l'opzione
+:hp2.Salvataggio copia di riserva:ehp2. selezionata.
+
+.**********************************************************************
+.*  "Delete..." on "Action" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IA4 res=5012.Cancellazione
+:isyn root=delete.eliminazione cancellazione
+:i1 roots='delete'.Cancellazione
+:p.
+Selezionare :hp2.Cancellazione:ehp2. nello sviluppo di Azione per cancellare il prodotto
+selezionato
+dalla stazione di lavoro. Se il prodotto prevede componenti, ä possibile effettuare la selezione
+dei componenti specifici da cancellare.
+:p.
+Tale azione consente inoltre di cancellare le eventuali copie di riserva
+senza cancellare la versione attuale.
+:p.
+Selezionando :hp2.Cancellazione:ehp2.&colon.
+:ol.
+:li.Viene visualizzata una finestra di conferma operazione con le informazioni relative
+al prodotto selezionato per la cancellazione. Se il prodotto prevede dei componenti,
+ä possibile effettuare la selezione dei componenti da cancellare.
+:li.Viene visualizzata la finestra dello stato di avanzamento e tutti i file associati al prodotto
+selezionato (o ai componenti del prodotto) vengono cancellati. Selezionando
+la casella di spunta :hp2.Cancellare solo le copie di riserva:ehp2.,
+viene cancellata solo la copia di riserva del prodotto.
+:li.Le opzioni:link reftype=hd res=5010.Aggiornamento:elink., Cancellazione
+e :link reftype=hd res=5011.Ripristino:elink. per il prodotto
+selezionato vengono disabilitate
+se viene cancellato l'intero prodotto.
+:li.Viene invece abilitata l'opzione
+:link reftype=hd res=5009.Installazione:elink. per il prodotto selezionato.
+:eol.
+:p.
+L'opzione Cancellazione ä disponibile se rimane installato qualche componente
+del prodotto selezionato.
+
+.**********************************************************************
+.*  "View" pull-down (contextual help) -
+.**********************************************************************
+:h2 name=IV0 res=5016.Visualizzazione
+:p.
+Selezionare :hp2.Visualizzazione:ehp2. per cambiare l'elenco di prodotti
+riportato nella finestra principale. E' possibile&colon.
+:ul.
+:li.Visualizzare l'elenco di tutti i prodotti presenti nel catalogo attualmente aperto
+:li.Visualizzare l'elenco di tutti i prodotti dei quali ä installato almeno un componente
+:li.Visualizzare l'elenco solo dei prodotti installati che sono stati aggiornati
+:li.Visualizzare l'elenco dei prodotti nell'ordine in cui esso appare nel file del catalogo
+:li.Visualizzare l'elenco dei prodotti in ordine alfabetico ascendente (dalla A alla Z)
+:li.Visualizzare l'elenco dei prodotti in ordine alfabetico discendente (dalla Z alla A)
+:eul.
+
+.**********************************************************************
+.*  "Current Catalog" on "View" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IV1 res=5017.Catalogo attuale
+:i1.Visualizzazione del catalogo attuale
+:p.
+Selezionare :hp2.Catalogo attuale:ehp2. dallo sviluppo azione di Visualizzazione per visualizzare
+tutti i prodotti inseriti nel catalogo attualmente aperto. I
+prodotti inseriti in questo catalogo che sono giÖ stati installati o
+aggiornati vengono visualizzati in questo elenco. I prodotti installati o
+aggiornati che non sono nel catalogo attuale non vengono visualizzati in questo elenco.
+
+.**********************************************************************
+.*  "Installed" on "View" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IV2 res=5018.Prodotti installati
+:i1.Visualizzazione dei prodotti installati
+:p.
+Selezionare :hp2.Prodotti installati:ehp2. dallo sviluppo azione di Visualizzazione per
+visualizzare i prodotti dei quali ä installato almeno un componente. Tutti i prodotti installati
+vengono visualizzati in questo elenco a prescindere dall'ubicazione origine
+o dal sistema operativo da cui sono stati installati. Una
+volta installato, un prodotto ä riportato nella vista Prodotti installati,
+anche se tale prodotto non ä pió presente nell'elenco del catalogo attualmente aperto. Ciï
+consente di cancellare o ripristinare il prodotto
+(se ä stata salvata una copia di riserva durante l'aggiornamento).
+
+.**********************************************************************
+.*  "Updated" on "View" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IV3 res=5019.Prodotti aggiornati
+:i1.Visualizzazione dei prodotti aggiornati
+:p.
+Selezionare :hp2.Prodotti aggiornati:ehp2. dallo sviluppo azione di Visualizzazione per
+visualizzare solamente i prodotti che hanno almeno un componente installato ed aggiornato. Vengono
+visualizzati in questo elenco tutti
+i prodotti installati che sono giÖ stati aggiornati, a prescindere
+dall'ubicazione origine o dal sistema operativo da cui sono stati installati.
+
+.**********************************************************************
+.*  "Catalog order" on "View" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IV6 res=5059.Ordine del catalogo
+:i1.Visualizzazione dei prodotti secondo l'ordine del catalogo
+:p.
+Selezionare :hp2.Ordine del catalogo:ehp2. dallo sviluppo azione di Visualizzazione per
+visualizzare
+i prodotti nell'elenco, nello stesso ordine in cui questi sono disposti
+nel file del catalogo.
+:p.
+Se l'elenco ä riportato nella vista Prodotti installati o
+Prodotti aggiornati, i prodotti non presenti nel catalogo attualmente
+aperto verrano visualizzati per primi nell'elenco, seguiti dai prodotti
+inseriti nel catalogo, secondo l'ordine in cui sono riportati in quest'ultimo.
+
+.**********************************************************************
+.*  "Ascending order" on "View" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IV4 res=5020.Ordine ascendente
+:i1.Visualizzazione dei prodotti in ordine ascendente
+:p.
+Selezionare :hp2.Ordine ascendente:ehp2. dallo sviluppo azione di Visualizzazione per visualizzare
+l'elenco dei prodotti in ordine alfabetico ascendente (dalla A alla Z).
+
+.**********************************************************************
+.*  "Descending order" on "View" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IV5 res=5021.Ordine discendente
+:i1.Visualizzazione dei prodotti in ordine discendente
+:p.
+Selezionare :hp2.Ordine discendente:ehp2. dallo sviluppo azione di Visualizzazione per visualizzare
+l'elenco dei prodotti in ordine alfabetico discendente (dalla Z alla A).
+
+.**********************************************************************
+.*  "Help" pull-down (contextual help) -
+.**********************************************************************
+:h2 name=IH0 res=5022.Aiuto
+:i1 roots='help'.Aiuto
+:p.
+Selezionare questa azione per visualizzare le seguenti opzioni&colon.
+:p.
+:dl tsize=2 break=all compact.
+:dt.:link reftype=hd res=5023.Uso dell'aiuto:elink.
+:dd.Fornisce un aiuto per l'utilizzo della funzione di aiuto in linea
+:dt.:link reftype=hd res=5024.Aiuto generico:elink.
+:dd.Fornisce l'aiuto relativo alle finestre delle applicazioni
+:dt.:link reftype=hd res=5025.Aiuto per i tasti:elink.
+:dd.Fornisce l'aiuto relativo ai tasti validi
+:dt.:link reftype=hd res=5026.Indice dell'aiuto:elink.
+:dd.Visualizza l'indice relativo agli argomenti di aiuto
+:edl.
+
+.**********************************************************************
+.*  "Using help" on "Help" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IH1 res=5023.Uso dell'aiuto
+:i1 roots='hlphlp'.Uso dell'aiuto
+:p.
+Selezionare questa opzione dello sviluppo azione per visualizzare la
+descrizione dei tipi di aiuto forniti per questa applicazione e per
+apprendere il modo in cui ä possibile ottenere l'aiuto.
+
+.**********************************************************************
+.*  "General help..." on "Help" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IH2 res=5024.Aiuto generico
+:i1 roots='exthlp'.Aiuto generico
+:p.
+Selezionare questa opzione dello sviluppo azione per visualizzare informazioni generali sulla
+finestra attualmente visualizzata.
+
+.**********************************************************************
+.*  "Keys help..." on "Help" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IH3 res=5025.Aiuto per i tasti
+:p.
+Selezionare questa opzione dello sviluppo azione per visualizzare
+l'aiuto relativo alle definizioni dei tasti.
+
+.**********************************************************************
+.*  "Help index..." on "Help" pull-down (contextual help) -
+.**********************************************************************
+:h3 name=IH4 res=5026.Indice dell'aiuto
+:i1 roots='hlpindx'.Indice dell'aiuto
+:p.
+Selezionare questa opzione dello sviluppo azione per visualizzare l'indice dell'aiuto. E'
+possibile usare l'indice in due modi&colon.
+:ul compact.
+:li.Selezionando un argomento dall'elenco di tutti gli argomenti dell'aiuto
+:li.Cercando un argomento selezionando :hp2.Ricercare:ehp2. nello sviluppo azione di Servizi
+:eul.
+
+.**********************************************************************
+.*  Keys Help - (General help)
+.**********************************************************************
+:h3 name=KEYSHELP res=5029.Aiuto per i tasti
+:i1 roots='keyhlp'.Aiuto per i tasti
+:p.
+Selezionare questa opzione dello sviluppo azione per visualizzare l'aiuto relativo
+alle definizioni dei tasti.
+:p.
+Selezionare un argomento per visualizzare l'aiuto per i tasti su&colon.
+:ul compact.
+:li.:link reftype=hd res=2060.Tasti dell'aiuto:elink.
+:li.:link reftype=hd res=2070.Tasti di sistema:elink.
+:li.:link reftype=hd res=2080.Tasti della finestra:elink.
+:li.:link reftype=hd res=2090.Tasti per l'editazione:elink.
+:li.:link reftype=hd res=2095.Tasti dell'applicazione:elink.
+:eul.
+
+.**********************************************************************
+.*  Help keys - (General help)
+.**********************************************************************
+:h3 name=helpkeys res=2060.Tasti dell'aiuto
+:i2 refid=helpkeys.Tasti dell'aiuto
+:p.
+Le seguenti definizioni sono relative ai tasti delle finestre di aiuto&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.F1:ehp2.
+:dd.Visualizza l'aiuto
+:dt.:hp2.F2:ehp2.
+:dd.Visualizza l'aiuto generico (dall'interno di una qualsiasi finestra di aiuto)
+:dt.:hp2.F9:ehp2.
+:dd.Visualizza l'elenco dei tasti (dall'interno di una qualsiasi finestra di aiuto)
+:dt.:hp2.F11:ehp2. o :hp2.Maius&plus.F1:ehp2.
+:dd.Visualizza l'indice dell'aiuto (dall'interno di una qualsiasi finestra di aiuto)
+:dt.:hp2.Esc:ehp2.
+:dd.Visualizza la finestra precedente
+:dt.:hp2.Maius&plus.F10:ehp2.
+:dd.Visualizza le informazioni sull'uso dell'aiuto
+:dt.:hp2.Alt&plus.F6:ehp2.
+:dd.Consente di passare dall'aiuto alla finestra dell'applicazione (e viceversa)
+:dt.:hp2.Alt&plus.F4:ehp2.
+:dd.Esce dall'aiuto
+:edl.
+
+.**********************************************************************
+.*  System Keys- (General help)
+.**********************************************************************
+:h3 name=syskeys res=2070.Tasti di sistema
+:i2 refid=syskeys.Tasti di sistema
+:p.
+Le seguenti definizioni sono relative ai tasti di sistema&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.F1:ehp2.
+:dd.Visualizza l'aiuto
+:dt.:hp2.F3:ehp2.
+:dd.Chiude una finestra di programma
+:dt.:hp2.F10:ehp2.
+:dd.Passa alla/esce dalla barra azioni
+:dt.:hp2.Tasti con le frecce:ehp2.
+:dd.Servono per muoversi tra le opzioni della barra azioni e degli sviluppi azione
+:dt.:hp2.Fine:ehp2.
+:dd.Passa all'ultima opzione dello sviluppo azione
+:dt.:hp2.Esc:ehp2.
+:dd.Annulla lo sviluppo azione o il menu di sistema
+:dt.:hp2.RitCr:ehp2.
+:dd.Passa alla prima opzione dello sviluppo azione
+:dt.:hp2.Pag&uarrow.:ehp2.
+:dd.Fa scorrere il contenuto della finestra di uno schermo verso l'alto
+:dt.:hp2.Pag&darrow.:ehp2.
+:dd.Fa scorrere il contenuto della finestra di uno schermo verso il basso
+:dt.:hp2.Lettera sottolineata (mnemonico):ehp2.
+:dd.Richiama l'azione associata
+:dt.:hp2.Alt:ehp2.
+:dd.Passa alla/esce dalla barra azioni
+:dt.:hp2.Alt&plus.Esc:ehp2.
+:dd.Passa al programma successivo, compresi programmi a schermo intero
+:dt.:hp2.Alt&plus.Tasto di tabulazione:ehp2.
+:dd.Passa al programma successivo che viene eseguito in una finestra
+:dt.:hp2.Alt&plus.F4:ehp2.
+:dd.Chiude la finestra
+:dt.:hp2.Alt&plus.F5:ehp2.
+:dd.Ripristina la finestra
+:dt.:hp2.Alt&plus.F6:ehp2.
+:dd.Cambia la finestra attiva in un'applicazione
+:dt.:hp2.Alt&plus.F7:ehp2.
+:dd.Sposta la finestra
+:dt.:hp2.Alt&plus.F8:ehp2.
+:dd.Modifica le dimensioni della finestra
+:dt.:hp2.Alt&plus.F9:ehp2.
+:dd.Riduce la finestra ad icona
+:dt.:hp2.Alt&plus.F10:ehp2.
+:dd.Ingrandisce la finestra a schermo
+:dt.:hp2.Ctrl&plus.Esc:ehp2.
+:dd.Passa all'elenco delle attivitÖ
+:dt.:hp2.Ctrl&plus.F6:ehp2.
+:dd.Cambia la finestra secondaria attiva in un'applicazione
+:dt.:hp2.Maius&plus.Esc:ehp2. o :hp2.Alt&plus.Barra spaziatrice:ehp2.
+:dd.Passa al/esce dal menu di sistema
+:dt.:hp2.Maius&plus.Esc:ehp2. o :hp2.Alt:ehp2.
+:dd.Passa al/esce dal menu di sistema di una finestra di testo
+:edl.
+
+.**********************************************************************
+.*  Pop-Up window keys (General help)
+.**********************************************************************
+:h3 name=popupkeys res=2080.Tasti della finestra
+:i2 refid=windkeys.Tasti della finestra
+:p.
+Le seguenti definizioni sono relative ai tasti delle finestre&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Invio:ehp2.
+:dd.Completa l'azione indicata nella finestra
+:dt.:hp2.Esc:ehp2.
+:dd.Annulla la finestra
+:dt.:hp2.Barra spaziatrice:ehp2.
+:dd.Attiva/disattiva la casella di spunta o esegue l'attivitÖ associata al pulsante selezionato
+:dt.:hp2.Tasto di tabulazione:ehp2.
+:dd.Passa al successivo campo di immissione, campo di selezione o frase in ipertesto
+:edl.
+
+.**********************************************************************
+.*  Editing Keys Help - (General help)
+.**********************************************************************
+:h3 name=editkeys res=2090.Tasti per l'editazione
+:i2 refid=editkeys.Tasti per l'editazione
+:p.
+Le seguenti definizioni sono relative ai tasti per l'editazione&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Ritorno unitario:ehp2. (Ritorno con cancellazione)
+:dd.Cancella il carattere alla sinistra del cursore
+:dt.:hp2.Canc:ehp2.
+:dd.Cancella il carattere alla destra del cursore
+:dt.:hp2.Fine:ehp2. o :hp2.Ctrl&plus.Tasto freccia a destra:ehp2.
+:dd.Posiziona il cursore alla fine del campo
+:dt.:hp2.RitCr:ehp2. o :hp2.Ctrl&plus.Tasto freccia a sinistra:ehp2.
+:dd.Posiziona il cursore all'inizio del campo
+:dt.:hp2.Ctrl&plus.Ins:ehp2.
+:dd.Copia il testo selezionato nel Notes
+:dt.:hp2.Maius&plus.Stamp:ehp2.
+:dd.Stampa le informazioni attualmente visualizzate
+:edl.
+
+.**********************************************************************
+.*  Application Keys Help - (General help)
+.**********************************************************************
+:h3 name=Appkeys res=2095.Tasti dell'applicazione
+:i2 refid=appkeys.Tasti dell'applicazione
+:p.
+Le seguenti definizioni sono relative ai tasti dell'applicazione&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.F1:ehp2.
+:dd.Visualizza l'aiuto
+:dt.:hp2.F3:ehp2.
+:dd.Interrompe l'installazione
+:dt.:hp2.Ctrl&plus.D:ehp2.
+:dd.Visualizza la descrizione del prodotto selezionato
+:dt.:hp2.Ctrl&plus.H:ehp2.
+:dd.Apre il catalogo dei prodotti di un sistema centrale
+:dt.:hp2.Ctrl&plus.I:ehp2.
+:dd.Installa il prodotto selezionato
+:dt.:hp2.Ctrl&plus.K:ehp2.
+:dd.Visualizza lo spazio su disco necessario per il prodotto selezionato
+:dt.:hp2.Ctrl&plus.O:ehp2.
+:dd.Apre il catalogo dei prodotti di un'unitÖ
+:dt.:hp2.Ctrl&plus.R:ehp2.
+:dd.Ripristina un precedente livello di aggiornamento del prodotto selezionato
+:dt.:hp2.Ctrl&plus.S:ehp2.
+:dd.Visualizza lo stato del prodotto selezionato sulla stazione di lavoro
+:dt.:hp2.Ctrl&plus.U:ehp2.
+:dd.Aggiorna il prodotto selezionato
+:dt.:hp2.Canc:ehp2.
+:dd.Cancella il prodotto selezionato
+:edl.
+
+.**********************************************************************
+.*  Text selection Keys Help - (General help)
+.**********************************************************************
+:h3 name=textkeys res=2100.Tasti per la selezione del testo
+:i2 refid=textkeys.Tasti per la selezione del testo
+:p.
+Le seguenti definizioni sono relative ai tasti per la selezione del testo&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Maius&plus.freccia:ehp2.
+:dd.Seleziona il testo o estende la selezione nella direzione della freccia
+:dt.:hp2.Maius&plus.RitCr:ehp2.
+:dd.Seleziona il testo o estende la selezione fino all'inizio della riga corrente
+:dt.:hp2.Maius&plus.Fine:ehp2.
+:dd.Seleziona il testo o estende la selezione fino alla fine della riga corrente
+:dt.:hp2.Maius&plus.Ctrl&plus.Freccia destra:ehp2.
+:dd.Seleziona il testo o estende la selezione fino all'inizio della parola successiva
+:dt.:hp2.Maius&plus.Ctrl&plus.Freccia sinistra:ehp2.
+:dd.Seleziona il testo o estende la selezione fino all'inizio della parola precedente
+:edl.
+
+.**********************************************************************
+.* Help push button, FIELD HELP PANEL - This panel appears for a help
+.*request when the cursor focus is on the "Help" push button.
+.**********************************************************************
+:h2 name=IHLPB res=5065.Aiuto
+:p.
+Selezionare questo pulsante per visualizzare le informazioni di aiuto relative al campo in cui ä
+posizionato il cursore.
+
+.**********************************************************************
+.*  "Cancel" push button on all dialogs (contextual help) -
+.**********************************************************************
+:h1 name=ICNPB res=5030.Annullo
+:isyn root=cancel.uscita annullo
+:i1 roots='stop'.Pulsante Annullo
+:p.
+Selezionare questo pulsante per uscire dalla finestra senza effettuare alcuna modifica.
+:p.
+Se c'ä un'operazione in corso e viene selezionato il pulsante
+:hp2.Annullo:ehp2., l'operazione viene immediatamente arrestata e la finestra viene chiusa.
+:eh1.
+
+.**********************************************************************
+.*  "Open host catalog" dialog (General help) -
+.**********************************************************************
+:h1 name=IL100 res=5080.Apertura del catalogo di un sistema centrale
+:p.
+Usare la finestra Apertura del catalogo di un sistema centrale per
+richiedere l'elenco dei prodotti disponibili da un sistema MVS, VM o VSE.
+:p.
+Per aprire l'elenco dei prodotti:
+:ol.
+:li.Selezionare l'ID della sessione del sistema centrale con la quale si
+desidera entrare in comunicazione nel riquadro per elenchi Sessione del
+sistema centrale.
+:li.Selezionare il pallino :hp2.Sistema operativo del sistema centrale:ehp2. corrispondente al
+sistema operativo in esecuzione nel sistema centrale.
+:li.Digitare il nome del file del catalogo da aprire nel riquadro
+Nome file. Se il file del catalogo da aprire ä stato giÖ aperto in
+precedenza, ä possibile selezionarlo nell'elenco di selezione del riquadro
+combinato.
+:li.Selezionare il pulsante :hp2.Apertura:ehp2. per iniziare il processo di
+apertura. Il file del catalogo viene richiamato dal sistema centrale. Se
+l'apertura ha esito positivo, viene annullata la visualizzazione di questa
+finestra e l'elenco dei prodotti viene visualizzato nella finestra principale.
+:eol.
+:eh1.
+
+.**********************************************************************
+.*  "Host Session:" list box of Open host catalog dialog (contextual help)
+.**********************************************************************
+:h2 name=IL101 res=5081.Sessione del sistema centrale
+:p.
+Usare l'elenco Sessione del sistema centrale nella finestra Apertura del
+catalogo di un sistema centrale
+per selezionare l'identificativo della sessione del sistema centrale del Communications
+Manager da usare per lo scaricamento (per esempio, A, B o C). La prima voce nel riquadro
+per elenchi ä il valore assunto.
+
+.**********************************************************************
+.*  "MVS" or "VM" radio buttons of Open host catalog dialog (contextual help)
+.**********************************************************************
+:h2 name=IL102 res=5082.Sistema operativo del sistema centrale
+:p.
+Selezionare il pallino :hp2.MVS:ehp2., :hp2.VM:ehp2. o :hp2.VSE:ehp2., nella finestra
+Apertura del catalogo di un sistema centrale, corrispondente al sistema
+operativo in esecuzione nel sistema centrale
+specificato nel riquadro per elenchi Sessione del sistema centrale. MVS ä il valore assunto.
+
+.**********************************************************************
+.*  "Catalog filename" combination box of Open host catalog dialog (contextual help)
+.**********************************************************************
+:h2 name=IL103 res=5083.Nome file del catalogo
+:p.
+Usare il campo Nome file per specificare il nome del file del catalogo da
+aprire o selezionare il nome del file del catalogo dall'elenco di
+selezione. Solamente i file del catalogo aperti in
+precedenza vengono visualizzati nell'elenco di selezione.
+:p.
+Quando il nome di un file del catalogo viene selezionato dall'elenco di selezione,
+il campo statico posizionato sopra al riquadro combinato viene aggiornato per
+visualizzare una breve descrizione del file del catalogo.
+:p.
+Il nome del file del catalogo immesso in questo campo deve essere un nome file valido per
+l'MVS, il VM o il VSE, a seconda del pallino selezionato relativo al sistema operativo del sistema
+centrale.
+:ul.
+:li.Nomi esemplificativi dei file di catalogo MVS:
+:sl compact.
+:li.PROJ.GROUP.TYPE(CATALOG)
+:li.EPF.V1R2M0.SEPFBENU(EPFICAT)
+:esl.
+:li.Nomi esemplificativi dei file di catalogo VM:
+:sl compact.
+:li.CATALOG ICF A
+:li.EPFICAT ENUEPF12 *
+:esl.
+:li.Nomi esemplificativi dei file di catalogo VSE:
+:sl compact.
+:Li.LIBRARY.SUBLIBRARY.MEMBER NAME.MEMBER TYPE
+:LI.EPF.VIR2M0.SEPFBENU.CATALOG
+
+:esl.
+:eul.
+
+.**********************************************************************
+.*  "Description" push button of the Open host catalog dialog
+.*(contextual help)
+.**********************************************************************
+:h2 name=IL104 res=5084.Descrizione
+:p.
+Selezionare il pallino :hp2.Descrizione:ehp2. nella finestra Apertura del
+catalogo di un sistema centrale
+per visualizzare una breve descrizione del file del catalogo attualmente specificato
+nel campo Nome file. La descrizione viene richiamata dalla sessione del sistema centrale selezionata
+nel riquadro per elenchi Sessione del sistema centrale.
+
+.**********************************************************************
+.*  "Open" push button of Open dialog (contextual help) -
+.**********************************************************************
+:h2 name=IL105 res=5085.Apertura
+:p.
+Selezionare il pulsante :hp2.Apertura:ehp2. nella finestra Apertura del
+catalogo di un sistema centrale per aprire il catalogo del prodotto dalla sessione del sistema
+centrale specificata. Assicurarsi&colon.
+:ol compact.
+:li.Di essere collegati alla sessione del sistema centrale selezionata nel
+riquadro per elenchi Sessione del sistema centrale e che la sessione del sistema centrale sia pronta
+ad accettare immissioni.
+:li.Che il pallino Sistema operativo del sistema centrale corrisponda al sistema operativo
+in esecuzione nella sessione del sistema centrale specificata.
+:eol.
+:p.
+Dopo aver selezionato tale pulsante, il file del catalogo viene scaricato dalla
+sessione del sistema centrale specificata, poi viene analizzato, quindi
+viene generato e visualizzato l'elenco dei prodotti.
+
+.**********************************************************************
+.*  "Open drive catalog" dialog (General help)
+.**********************************************************************
+:h1 name=IL400 res=5090.Apertura del catalogo di un'unitÖ
+:p.
+Usare la finestra Apertura del catalogo di un'unitÖ per richiamare l'elenco
+dei prodotti disponibili da
+un'unitÖ minidisco, da un'unitÖ CD ROM, da un'unitÖ LAN o da una cartella del PC
+Support AS/400.
+:p.
+Per aprire l'elenco dei prodotti:
+:ol.
+:li.Selezionare dal riquadro combinato
+UnitÖ, l'unitÖ che contiene il file del catalogo da aprire. Il riquadro Nome file viene
+aggiornato con l'elenco di tutti i file di catalogo precedentemente aperti
+esistenti nell'unitÖ.
+:li.Digitare il nome del file del catalogo da aprire nel
+riquadro Nome file. Se il file del catalogo da aprire ä stato
+aperto precedentemente ed esiste
+ancora, ä possibile selezionarlo dall'elenco di selezione del riquadro
+combinato.
+:li.Selezionare il
+pulsante :hp2.Apertura:ehp2. per iniziare il processo di apertura. Il
+file del catalogo viene richiamato dall'unitÖ. Se l'operazione di apertura ä stata eseguita con
+esito positivo, viene annullata la visualizzazione di questa finestra e l'elenco
+dei prodotti aperti viene visualizzato nella finestra principale.
+:eol.
+:eh1.
+
+.**********************************************************************
+.*  "Drive" list box of Open drive catalog dialog (contextual help)
+.**********************************************************************
+:h2 name=IL401 res=5091.UnitÖ
+:p.
+Selezionare l'unitÖ che contiene il file del catalogo.
+:p.
+Il riquadro combinato visualizza tutte le unitÖ connesse alla stazione di
+lavoro.
+
+.**********************************************************************
+.* "catalog file name" combination box of Open drive catalog dialog (contextual help)
+.**********************************************************************
+:h2 name=IL402 res=5092.Nome file del catalogo
+:p.
+Digitare il nome del file del catalogo da aprire nel campo Nome file o selezionare tale nome
+dall'elenco di selezione. Saranno presenti in elenco
+solamente i file di catalogo precedentemente aperti ed ancora esistenti nell'unitÖ selezionata.
+:p.
+Selezionando il nome del file del catalogo dall'elenco di selezione, il campo statico
+sopra al riquadro combinato viene aggiornato per visualizzare, qualora esista,
+una breve descrizione del file del catalogo.
+:p.
+Il nome del file del catalogo inserito in questo campo deve essere un nome di file valido per
+l'OS&slash.2:link refid=tm1 reftype=fn.*:elink.,
+:fn id=tm1.Marchio della IBM.:efn.
+:hp2.senza specificare l'unitÖ:ehp2..
+:p.
+Nomi esemplificativi di file di catalogo:
+:sl compact.
+:li.\pacchett\epficat.icf
+:li.\catalogo.icf
+:esl.
+
+.**********************************************************************
+.*  "Description"push button of Open drive catalog dialog (contextual
+.*help)
+.**********************************************************************
+:h2 name=IL403 res=5093.Descrizione
+:p.
+Selezionare il pulsante :hp2.Descrizione:ehp2. nella finestra Apertura del
+catalogo di un'unitÖ
+per visualizzare una breve descrizione del file del catalogo presente
+nel campo Nome file. La descrizione viene richiamata dall'unitÖ selezionata nel riquadro per
+elenchi UnitÖ.
+
+.**********************************************************************
+.* "Description"push button of Open drive catalog dialog (contextual
+.*help)
+.**********************************************************************
+:h2 name=IL404 res=5094.Ricerca
+:p.
+Selezionare il pulsante :hp2.Ricerca:ehp2. nella finestra Apertura del catalogo
+di un'unitÖ per ricercare nell'unitÖ selezionata l'elenco dei file di
+catalogo.
+
+.**********************************************************************
+.*  "Open"push button of Open drive catalog dialog (contextual help)
+.**********************************************************************
+:h2 name=IL405 res=5095.Apertura
+:p.
+Selezionare il pulsante :hp2.Apertura:ehp2. nella finestra Apertura del
+catalogo di un'unitÖ per aprire il catalogo dei prodotti dell'unitÖ
+specificata.
+:p.
+Dopo aver selezionato questo pulsante, il file del catalogo viene letto
+dall'unitÖ selezionata ed elaborato. Quindi viene generato e visualizzato l'elenco dei prodotti.
+
+.**********************************************************************
+.*  "PWS Status" dialog - (General help)
+.**********************************************************************
+:h1 name=ID200 res=5035.Stato del prodotto
+:p.
+Usare la finestra Stato del prodotto per esaminare le informazioni relative ad un prodotto
+attualmente installato nella stazione di lavoro. Vengono visualizzate le seguenti informazioni&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Nome del prodotto:ehp2.
+:dd.Il nome del prodotto selezionato attualmente installato nella stazione di lavoro
+:dt.:hp2.Codice del prodotto:ehp2.
+:dd.Il codice ufficiale assegnato al prodotto selezionato
+:dt.:hp2.Versione:ehp2.
+:dd.Il numero di versione e di rilascio ed il livello di modifica del prodotto selezionato
+:dt.:hp2.Dispositivo:ehp2.
+:dd.Il codice di dispositivo del prodotto selezionato
+:dt.:hp2.Indirizzari in cui il prodotto ä installato:ehp2.
+:dd.Gli indirizzari di installazione del prodotto
+:edl.
+:p.Il livello di aggiornamento del prodotto puï essere determinato selezionando il pulsante
+:hp2.Livello di aggiornamento:ehp2.. Viene quindi visualizzata la finestra Livello di aggiornamento.
+:eh1.
+
+.**********************************************************************
+.*  "Cancel" button on "PWS Status" dialog - (contextual help)
+.**********************************************************************
+:h2 name=ID201 res=5060.Annullo
+:p.
+Selezionare il pulsante :hp2.Annullo:ehp2. nella finestra Stato del prodotto
+per chiudere tale finestra e visualizzare nuovamente la finestra principale.
+
+.**********************************************************************
+.*  "Disk Space" dialog (General help)
+.**********************************************************************
+:h1 name=ID300 res=5036.Spazio su disco
+:p.
+Usare la finestra Spazio su disco per controllare lo spazio su disco necessario per installare il
+prodotto selezionato.
+:p.
+Questa finestra consente inoltre di controllare la quantitÖ di spazio su disco
+disponibile su ciascun disco fisso della stazione di lavoro, quindi riporta l'informazione relativa
+alla possibilitÖ o meno di effettuare l'installazione sull'unitÖ specificata.
+:p.
+Per verificare la possibilitÖ di installare il prodotto sul disco fisso occorre&colon.
+:ol compact.
+:li.Selezionare il :hp2.disco fisso:ehp2. nel riquadro per elenchi Byte disponibili sull'unitÖ.
+:li.Leggere il messaggio accanto al riquadro per elenchi Byte disponibili sull'unitÖ per stabilire se c'ä sufficiente
+spazio su disco disponibile per installare il prodotto sul disco fisso selezionato
+:eol.
+:nt.L'aggiornamento del prodotto puï richiedere una minor quantitÖ di spazio su disco rispetto a
+quanto
+indicato, qualora il programma di utilitÖ per l'installazione e la gestione sovrapponga i file
+del prodotto a dei file esistenti (aggiornamento). Quindi, anche nel caso in cui la
+finestra indichi che
+non c'ä sufficiente spazio su disco disponibile nella stazione di lavoro per installare il prodotto
+selezionato, ä comunque possibile tentare di aggiornare il prodotto.
+:ent.
+:p.
+I campi presenti nella finestra Spazio su disco sono&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Nome del prodotto:ehp2.
+:dd.Il nome del prodotto selezionato
+:dt.:hp2.Byte necessari:ehp2.
+:dd.La quantitÖ di spazio necessaria per installare il prodotto selezionato
+:dt.:hp2.Byte disponibili sull'unitÖ:ehp2.
+:dd.La quantitÖ di spazio disponibile sull'unitÖ specificata della stazione di lavoro
+:dt.:hp2.Installazione: possibile:ehp2.
+:dd.Il messaggio che indica la possibilitÖ di installare il prodotto selezionato
+nell'unitÖ specificata
+:dt.:hp2.Installazione: impossibile:ehp2.
+:dd.Il messaggio che indica l'impossibilitÖ di installare il prodotto selezionato
+nell'unitÖ specificata
+:edl.
+:eh1.
+
+.**********************************************************************
+.*  Available bytes list box of Disk Space dialog (contextual help)
+.**********************************************************************
+:h2 name=ID301 res=5037.Byte disponibili sull'unitÖ
+:p.
+Usare il riquadro per elenchi Byte disponibili sull'unitÖ nella finestra Spazio su disco
+per visualizzare la quantitÖ di spazio inutilizzato su ciascun disco fisso della stazione di lavoro.
+Usare questo elenco per stabilire l'unitÖ in cui installare il prodotto.
+:p.
+Quando viene selezionata un'unitÖ, viene aggiornato lo stato del messaggio visualizzato vicino al
+riquadro per elenchi. Questo messaggio indica se lo spazio disponibile sull'unitÖ
+selezionata ä sufficiente per consentire l'installazione del prodotto.
+
+.**********************************************************************
+.*  "Cancel"push button of Disk Space dialog (contextual help) -
+.**********************************************************************
+:h2 name=ID302 res=5038.Annullo
+:p.
+Selezionare il pulsante :hp2.Annullo:ehp2. nella finestra Spazio su disco per
+chiudere tale finestra.
+
+.**********************************************************************
+.*  "Change directories to selected drive" check box of Disk Space dialog
+.*  (contextual help)
+.**********************************************************************
+:h2 name=ID303 res=5033.Sostituzione dell'unitÖ degli indirizzari con quella selezionata
+:p.
+Selezionare questa casella di spunta per sostituire tutte le lettere identificative di unitÖ
+degli indirizzari riportati nella finestra
+Indirizzari per l'installazione con la lettera selezionata nel riquadro per elenchi
+relativo ai byte disponibili.
+
+.**********************************************************************
+.*  "OK"push button of Disk Space dialog (contextual help)
+.**********************************************************************
+:h2 name=ID304 res=5034.OK
+:p.
+Selezionare il pulsante :hp2.OK:ehp2. per ritornare alla finestra Indirizzari per l'installazione
+con l'azione indicata dalla casella di spunta :hp2.Sostituzione dell'unitÖ degli indirizzari con
+quella selezionata:ehp2..
+:p.
+Prima di selezionare :hp2.OK:ehp2.&colon.
+:ol.
+:li.selezionare un'unitÖ che contenga spazio sufficiente per i componenti che si
+desidera installare;
+:li.selezionare la casella di spunta :hp2.Sostituzione dell'unitÖ degli indirizzari
+con quella selezionata:ehp2. per aggiornare i campi relativi agli indirizzari nella
+finestra Indirizzari per l'installazione.
+:eol.
+
+.**********************************************************************
+.*  "Install" dialog (General help) -
+.**********************************************************************
+:h1 name=IA100 res=5039.Installazione
+:p.
+Usare la finestra Installazione per visualizzare le seguenti informazioni relative al prodotto
+selezionato per l'installazione&colon.
+:p.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Nome del prodotto:ehp2.
+:dd.Il nome del prodotto
+:dt.:hp2.Codice del prodotto:ehp2.
+:dd.Il codice ufficiale assegnato al prodotto
+:dt.:hp2.Versione:ehp2.
+:dd.Il numero di versione e di rilascio ed il livello di modifica del prodotto
+:dt.:hp2.Dispositivo:ehp2.
+:dd.Il codice di dispositivo del prodotto
+:edl.
+:p.
+Questa finestra consente inoltre di impostare le opzioni
+che permettono all'installazione del prodotto di aggiornare
+automaticamente il file CONFIG.SYS, se necessario, e di
+ricoprire
+automaticamente i file giÖ esistenti che hanno lo
+stesso nome dei file del prodotto, senza visualizzare alcuna richiesta di conferma.
+:p.
+Selezionare :hp2.OK:ehp2. per installare il prodotto o selezionare
+:hp2.Annullo:ehp2. per uscire dalla finestra e visualizzare nuovamente il menu principale.
+:eh1.
+
+.**********************************************************************
+.*  "Update CONFIG.SYS" checkbox on the "Install" dialog (contextual help)
+.**********************************************************************
+:h2 name=IO1 res=5014.Aggiornamento CONFIG.SYS
+:i1.Aggiornamento CONFIG.SYS
+:p.
+Selezionare la casella di spunta :hp2.Aggiornamento CONFIG.SYS:ehp2. per aggiungere
+o modificare le variabili necessarie nel file CONFIG.SYS affinchä includa gli indirizzari in cui
+ä installato il prodotto.
+:nt.Viene salvata una copia di riserva del file CONFIG.SYS originale nel file
+CONFIG.BAK, nell'unitÖ e percorso del CONFIG.SYS che viene modificato.
+:ent.
+:p.Se non viene effettuata tale scelta, ä necessario aggiornare manualmente il file
+CONFIG.SYS. Consultare le istruzioni relative all'installazione del prodotto per
+ulteriori informazioni su come aggiornare il file CONFIG.SYS.
+
+.**********************************************************************
+.*  "Overwrite Files" checkbox on "Install" dialog (contextual help)
+.**********************************************************************
+:h2 name=IO2 res=5015.Sovrapposizione file
+:i1.Sovrapposizione file
+:p.
+Selezionare la casella di spunta :hp2.Sovrapposizione file:ehp2. nella finestra Installazione
+per sostituire automaticamente tutti i file della stazione di lavoro che hanno lo stesso nome
+ed ubicazione dei file del prodotto da installare.
+:p.
+Non selezionando questa scelta, il programma di utilitÖ per l'installazione e la gestione richiede
+conferma prima di ricoprire un file esistente sulla stazione di lavoro.
+
+.**********************************************************************
+.*  "OK..."push button of Install dialog (contextual help) -
+.**********************************************************************
+:h2 name=IA101 res=5040.OK
+:p.
+Selezionare il pulsante :hp2.OK:ehp2. nella finestra Installazione per installare il prodotto
+selezionato.
+:p.
+Selezionando :hp2.OK:ehp2., il programma di utilitÖ per l'installazione e la gestione
+compie le seguenti operazioni&colon.
+:ol.
+:li.Trasferisce ed analizza il file di pacchetto del prodotto, che fornisce le
+informazioni al programma di utilitÖ per l'installazione e la gestione relative
+all'installazione del prodotto.
+:li.Richiede di specificare gli indirizzari in cui si desidera inserire i file del prodotto.
+:eol.
+
+.**********************************************************************
+.*  "Install - File Errors" dialog (General help) -
+.**********************************************************************
+:h1 name=IA110 res=5041.Errori nel file
+:isyn root=errors.errori_prodotto errori_file
+:i1 roots='errors'.Errori nel file
+:p.
+Usare la finestra Errori nel file per visualizzare gli errori
+riscontrati nel file di pacchetto o nel file del catalogo trasferito.
+:p.
+:hp5.Responsabili del sistema&colon.:ehp5.
+:ol compact.
+:li.Passare all'ubicazione origine.
+:li.Editare il file del catalogo o il file di pacchetto per correggere gli errori.
+:li.Selezionare :hp2.Riprova.:ehp2.
+:eol.
+:p.
+:hp5.Utenti&colon.:ehp5.
+:p.
+Stampare gli errori selezionando il pulsante :hp2.Stampa:ehp2., quindi contattare il proprio
+responsabile del sistema o il distributore del prodotto.
+:eh1.
+
+.**********************************************************************
+.*  "Retry"push button on Install - File Errors dialog
+.*  (contextual help) -
+.**********************************************************************
+:h2 name=IA111 res=5042.Riprova
+:p.
+Selezionare il pulsante :hp2.Riprova:ehp2. nella finestra Errori nel file
+per trasferire ed analizzare nuovamente il file del catalogo o il file di pacchetto.
+:p.
+Selezionare :hp2.Riprova:ehp2. dopo aver editato il file del catalogo o il file di pacchetto
+nell'ubicazione origine per assicurarsi che le correzioni apportate abbiano risolto il problema.
+
+.**********************************************************************
+.*  "Print"push button of Setup Package File Errors dialog (contextual help)
+.**********************************************************************
+:h2 name=IA112 res=5043.Stampa
+:p.
+Selezionare il pulsante :hp2.Stampa:ehp2. nella finestra Errori nel file per stampare
+gli errori visualizzati sulla stampante della stazione di lavoro.
+:p.
+Assicurarsi che la stampante della stazione di lavoro sia accesa.
+
+.**********************************************************************
+.*  "Install - Directories" dialog (General help) -  no components
+.**********************************************************************
+:h1 name=IA120 res=5044.Indirizzari per l'installazione
+:isyn root=dirsnc.impostazione_indirizzari
+:i1 roots='dirsnc'.Indirizzari per l'installazione (senza componenti)
+:p.
+Usare la finestra Indirizzari per l'installazione per specificare gli indirizzari in cui
+si desidera installare il prodotto.
+:p.
+E' possibile cambiare gli indirizzari dei file per personalizzare la
+nuova destinazione dei file all'interno della stazione di lavoro. Ricordare che
+il disco fisso indicato nella specifica degli indirizzari deve disporre dello
+spazio sufficiente per memorizzare i file trasferiti.
+:p.
+Dopo aver specificato gli indirizzari, selezionare il pulsante :hp2.Installazione:ehp2. per dare
+inizio all'installazione.
+:p.
+E' possibile determinare la quantitÖ di spazio su disco di cui un prodotto ha bisogno
+e la quantitÖ di spazio su disco disponibile su ciascuna unitÖ disco fisso selezionando il pulsante
+:hp2.Spazio su disco:ehp2..
+:eh1.
+
+.**********************************************************************
+.*  "Install - Directories" dialog (General help) -  components & Dirs
+.**********************************************************************
+:h2 name=IA130 res=5061.Indirizzari per l'installazione
+:isyn root=dirscd.impostazione_indirizzari
+:i1 roots='dirscd'.Indirizzari per l'installazione (componenti e specifica indirizzari)
+:p.
+Usare la finestra Indirizzari per l'installazione per specificare gli indirizzari in cui si
+desidera installare il prodotto.
+:p.
+E' possibile cambiare gli indirizzari per personalizzare la nuova destinazione dei file
+all'interno della stazione di lavoro. Ricordare che il disco fisso
+indicato nella specifica degli indirizzari
+deve avere a disposizione lo spazio sufficiente per memorizzare i file trasferiti.
+:p.
+Usare il riquadro per elenchi per selezionare i componenti del prodotto da
+installare. E' necessario selezionare almeno un componente per continuare.
+:p.
+Dopo aver selezionato i componenti, ä possibile installarli selezionando il pulsante
+:hp2.Installazione:ehp2.. E' inoltre possibile visualizzare lo spazio su disco necessario
+per installare i componenti prescelti, selezionando il pulsante :hp2.Spazio su disco:ehp2..
+
+.**********************************************************************
+.*  "Install - Directories" dialog (General help) -  components
+.**********************************************************************
+:h2 name=IA140 res=5062.Indirizzari per l'installazione
+:isyn root=dirscnd.impostazione_indirizzari
+:i1 roots='dirscnd'.Indirizzari per l'installazione (componenti, senza specifica indirizzari)
+:p.
+Uno o pió componenti del prodotto ä giÖ stato installato negli
+indirizzari specificati. Usare questa
+finestra per installare ulteriori componenti di un prodotto in questi stessi indirizzari.
+:p.
+Usare il riquadro per elenchi per selezionare gli altri componenti del
+prodotto
+da installare. E' necessario selezionare almeno un componente per continuare.
+:p.
+Selezionare il pulsante :hp2.Installazione:ehp2. per installare i componenti selezionati. Per
+visualizzare quanto spazio su disco ä necessario per installare tali componenti,
+selezionare il pulsante :hp2.Spazio su disco:ehp2..
+
+.**********************************************************************
+.*  "File Dir:" entry field of Setup Directories dialog (contextual help) -
+.**********************************************************************
+:h2 name=IA121 res=5045.Indirizzari
+:p.
+Usare i campi degli indirizzari nella finestra Indirizzari per l'installazione
+per specificare gli indirizzari in cui installare i file del prodotto.
+:p.
+La lunghezza massima consentita per la specifica di un indirizzario ä di 128 caratteri.
+:ul.
+:li.Indirizzari esemplificativi validi&colon.
+:sl compact.
+:li.C&colon.&bslash.IBMRM
+:li.D&colon.&bslash.
+:li.D&colon.\UTILITA\KEDIT
+:esl.
+:li.Indirizzari esemplificativi non validi&colon.
+:sl compact.
+:li.&bslash.IBMRM
+:li.C&colon.&bslash.PERCORSOTROPPOLUNGO
+:li.C&colon.&bslash.IBMRM&bslash.
+:esl.
+:eul.
+
+.**********************************************************************
+.*  "Disk Space" entry field of Setup Directories dialog
+.*  (contextual help) -
+.**********************************************************************
+:h2 name=IA124 res=5048.Spazio su disco
+:p.
+Selezionare il pulsante :hp2.Spazio su disco:ehp2. nella finestra
+Indirizzari per l'installazione per visualizzare la quantitÖ di spazio su disco
+necessaria per installare il prodotto e la quantitÖ di spazio disponibile su ogni disco fisso della
+stazione di lavoro.
+
+.**********************************************************************
+.*  "Install"push button of Setup-Directories dialog (contextual help)
+.**********************************************************************
+:h2 name=IA125 res=5049.Installazione
+:p.
+Selezionare il pulsante :hp2.Installazione:ehp2. nella finestra Indirizzari per l'installazione
+per iniziare l'installazione del prodotto negli indirizzari specificati.
+
+.**********************************************************************
+.*  "Component List box" of Setup-Directories dialog (contextual help) -
+.**********************************************************************
+:h2 name=IA126 res=5063.Componenti
+:p.
+Usare il riquadro per elenchi con i componenti nella finestra
+Indirizzari per l'installazione per visualizzare l'elenco dei componenti installabili
+per il prodotto selezionato, qualora il prodotto preveda dei componenti.
+:p.
+Selezionare i componenti da installare, quindi selezionare il pulsante
+:hp2.Installazione:ehp2. per iniziare l'installazione o selezionare il pulsante
+:hp2.Spazio su disco:ehp2. per visualizzare la quantitÖ di spazio su disco
+necessaria per l'installazione dei componenti selezionati.
+
+.**********************************************************************
+.*  "Update" dialog (General help)
+.**********************************************************************
+:h1 name=IA200 res=5050.Aggiornamento
+:p.
+Usare la finestra Aggiornamento per visualizzare le seguenti informazioni sul prodotto da aggiornare
+selezionato&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Nome del prodotto:ehp2.
+:dd.Il nome del prodotto
+:dt.:hp2.Codice del prodotto:ehp2.
+:dd.Il codice ufficiale assegnato al prodotto
+:dt.:hp2.Versione:ehp2.
+:dd.Il numero di versione e di rilascio ed il livello di modifica del prodotto
+:dt.:hp2.Dispositivo:ehp2.
+:dd.Il codice di dispositivo del prodotto
+:edl.
+:p.
+Selezionare :hp2.Aggiornamento CONFIG.SYS:ehp2. per aggiornare automaticamente
+il file CONFIG.SYS.
+:p.
+Selezionare :hp2.Salvataggio copia di riserva:ehp2. per salvare
+una copia di riserva dei file da aggiornare in un apposito indirizzario. Questa opzione abilita l'azione
+Ripristino, in modo che l'attuale
+livello di aggiornamento possa essere ripristinato successivamente. E'
+possibile eseguire una operazione di ripristino se il nuovo livello di
+aggiornamento del prodotto dovesse creare problemi. :hp1.Non:ehp1. selezionare
+tale opzione se lo spazio su disco non ä sufficiente per memorizzare le copie di
+riserva dei file.
+:nt.
+La copia di riserva dei file del prodotto puï essere cancellata successivamente
+usando l'opzione :hp2.Cancellazione:ehp2. nello sviluppo di Azione.
+:ent.
+:p.
+Selezionare :hp2.Aggiornamento:ehp2. per aggiornare il prodotto o selezionare
+:hp2.Annullo:ehp2. per uscire dalla finestra. Se il prodotto prevede
+componenti, l'aggiornamento
+coinvolge tutti i componenti installati per i quali ä previsto un aggiornamento. E' possibile
+visualizzare l'elenco dei componenti installati nella finestra Stato del prodotto.
+:eh1.
+
+.**********************************************************************
+.*  "Save files in backup subdirectory" checkbox of update dialog
+.*  (contextual help) -
+.**********************************************************************
+:h2 name=IA201 res=5051.Salvataggio copia di riserva
+:p.
+Selezionare la casella di spunta :hp2.Salvataggio copia di riserva:ehp2. nella
+finestra Aggiornamento per salvare una copia di riserva dei file sostituiti durante
+l'aggiornamento.
+:p.
+La selezione di questa opzione permette l'eventuale ripristino dell'attuale versione del prodotto
+dopo che ä stato effettuato l'aggiornamento. :hp1.Non:ehp1. selezionare tale opzione
+se il disco non dispone di spazio sufficiente per memorizzare le copie di
+riserva dei file.
+:nt.
+Se ä stata selezionata questa opzione, la copia di riserva salvata puï essere
+cancellata successivamente usando l'opzione
+Cancellazione.
+:ent.
+
+.**********************************************************************
+.*  "OK..."push button of update dialog (contextual help) -
+.**********************************************************************
+:h2 name=IA202 res=5052.Aggiornamento
+:p.
+Selezionare il pulsante :hp2.Aggiornamento:ehp2. nella relativa finestra
+per aggiornare il prodotto selezionato.
+:p.
+Selezionando :hp2.Aggiornamento:ehp2., il programma di utilitÖ per l'installazione e
+la gestione compie le seguenti operazioni&colon.
+:ol compact.
+:li.Trasferisce ed analizza il file di pacchetto del prodotto
+:li.Inizia ad aggiornare il prodotto sostituendo i file del prodotto con i file
+aggiornati
+:eol.
+
+.**********************************************************************
+.*  Progress Indicator of "Install" dialog or "update" dialog (General help)
+.**********************************************************************
+:h2 name=IPI00 res=5053.Stato di avanzamento (Installazione o Aggiornamento)
+:i1.Indicatore dello stato di avanzamento, installazione o aggiornamento
+:p.
+La finestra Stato di avanzamento consente di visualizzare lo
+stato di avanzamento del trasferimento file durante l'installazione o
+l'aggiornamento. Questa finestra contiene&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Riga di intestazione:ehp2.
+:dd.Il nome ed il componente del prodotto che si sta installando o aggiornando
+:dt.:hp2.Riquadro dello stato di avanzamento:ehp2.
+:dd.Informazioni relative allo stato di avanzamento dell'installazione o dell'aggiornamento
+:dt.:hp2.Stato:ehp2.
+:dd.Lo stato attuale dell'installazione o dell'aggiornamento. I valori possibili per questo campo
+sono:
+:dl tsize=2 break=all compact.
+:dt.:hp2.Elaborazione in corso:ehp2.
+:dd.Il programma di utilitÖ per l'installazione e la gestione sta eseguendo un'attivitÖ che
+potrebbe richiedere un certo tempo
+:dt.:hp2.Errore:ehp2.
+:dd.Si ä verificato un errore. Premere il pulsante :hp2.Arresto:ehp2. per annullare
+l'installazione o l'aggiornamento
+:dt.:hp2.Trasferimento in corso:ehp2.
+:dd.Il programma sta trasferendo alcuni file
+:dt.:hp2.Scompattamento in corso:ehp2.
+:dd.Il programma sta scompattando alcuni file
+:dt.:hp2.Cancellazione file in corso:ehp2.
+:dd.Il programma sta cancellando alcuni file, dopo che ä stato selezionato il comando
+:hp2.Arresto:ehp2. durante l'installazione o l'aggiornamento
+:dt.:hp2.Ripristino file in corso:ehp2.
+:dd.Il programma sta riportando i file al precedente livello di
+aggiornamento, dopo che ä stato selezionato il comando :hp2.Arresto:ehp2.
+:edl.
+:p.
+:dt.:hp2.Tempo trascorso:ehp2.
+:dd.Il tempo trascorso dall'inizio del trasferimento dei file
+:dt.:hp2.Indicatore:ehp2.
+:dd.La rappresentazione grafica del numero dei file giÖ trasferiti
+:dt.:hp2.Riquadro per i file:ehp2.
+:dd.Informazioni sul file attualmente in trasferimento
+:dt.:hp2.Origine:ehp2.
+:dd.Il nome del file origine
+:dt.:hp2.Destinazione:ehp2.
+:dd.Il nome del file di destinazione sulla stazione di lavoro
+:edl.
+
+.**********************************************************************
+.*  "Stop"push button on "Install" and "update" progress indicator dialogs
+.*  (contextual help) -
+.**********************************************************************
+:h2 name=IPI01 res=5058.Arresto
+:p.
+Selezionare il pulsante :hp2.Arresto:ehp2. nella finestra Stato di
+avanzamento per arrestare l'installazione o l'aggiornamento.
+
+.**********************************************************************
+.*  "Restore" dialog (General help)
+.**********************************************************************
+:h1 name=IA300 res=5054.Ripristino
+:p.
+Usare la finestra Ripristino per visualizzare le seguenti informazioni relative
+al prodotto selezionato da riportare al precedente livello
+di aggiornamento&colon.
+:p.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Nome del prodotto:ehp2.
+:dd.Il nome del prodotto
+:dt.:hp2.Codice del prodotto:ehp2.
+:dd.Il codice ufficiale assegnato al prodotto
+:dt.:hp2.Versione:ehp2.
+:dd.Il numero di versione e di rilascio ed il livello di modifica del prodotto
+:dt.:hp2.Dispositivo:ehp2.
+:dd.Il codice di dispositivo del prodotto
+:edl.
+:p.
+Il ripristino cancella l'ultimo livello di aggiornamento applicato e riporta il prodotto al
+livello precedente. Se il prodotto prevede componenti, il
+ripristino cancella l'ultimo livello di aggiornamento per quei componenti che hanno le copie di riserva
+e li riporta al livello precedente. I componenti senza copie di riserva vengono lasciati al
+livello attuale.
+:p.
+E' possibile visualizzare i livelli di aggiornamento applicati per questo prodotto o
+per i suoi componenti selezionando il pulsante :hp2.Livello di aggiornamento:ehp2. nella
+finestra Stato del prodotto.
+:p.
+Selezionare :hp2.Ripristino:ehp2. per riportare il prodotto al precedente
+livello di aggiornamento o selezionare :hp2.Annullo:ehp2. per uscire dalla finestra.
+:eh1.
+
+.**********************************************************************
+.*  "OK"push button of Restore dialog (contextual help)
+.**********************************************************************
+:h2 name=IA301 res=5055.Ripristino
+:p.
+Selezionare il pulsante :hp2.Ripristino:ehp2. nell'omonima finestra per
+riportare il prodotto al precedente livello di aggiornamento.
+:p.
+Selezionando :hp2.Ripristino:ehp2., il programma di utilitÖ per l'installazione e la gestione
+ricopre i file del livello di aggiornamento attuale
+con quelli delle copie di riserva del precedente livello di aggiornamento.
+:p.
+:warning. Selezionando :hp2.Ripristino:ehp2. si vanno a sovrapporre altri file sull'attuale livello di
+aggiornamento.
+:ewarning.
+
+.**********************************************************************
+.*  "Delete" dialog (General help)
+.**********************************************************************
+:h1 name=IA400 res=5056.Cancellazione
+:p.
+Usare la finestra Cancellazione per visualizzare le seguenti informazioni relative al prodotto
+da cancellare selezionato&colon.
+:p.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Nome del prodotto:ehp2.
+:dd.Il nome del prodotto
+:dt.:hp2.Codice del prodotto:ehp2.
+:dd.Il codice ufficiale assegnato al prodotto
+:dt.:hp2.Versione:ehp2.
+:dd.Il numero di versione e di rilascio ed il livello di modifica del prodotto
+:dt.:hp2.Dispositivo:ehp2.
+:dd.Il codice di dispositivo del prodotto
+:edl.
+:p.Selezionare il pulsante :hp2.Cancellazione:ehp2. per cancellare il prodotto e ogni
+sua copia di riserva.
+:p.Selezionando la casella di spunta :hp2.Cancellare solo le copie di riserva:ehp2., solo
+la copia di riserva del prodotto verrÖ cancellata. L'attuale versione, in questo caso,
+non verrÖ cancellata.
+:eh1.
+
+.**********************************************************************
+.*  "OK"push button of Delete window (General help) -
+.**********************************************************************
+:h2 name=IA401 res=5057.Cancellazione
+:p.
+Selezionare il pulsante :hp2.Cancellazione:ehp2. nell'omonima finestra
+per cancellare il prodotto o i componenti selezionati.
+:p.
+:warning. Selezionando :hp2.Cancellazione:ehp2. vengono distrutte sia la
+versione attuale che i precedenti livelli di aggiornamento del prodotto
+selezionato, a meno che non venga selezionata anche la casella di spunta
+:hp2.Cancellare solo le copie di riserva:ehp2..
+:ewarning.
+
+.**********************************************************************
+.*  "Description" window General help
+.**********************************************************************
+:h1 name=IT101 res=5064.Descrizione
+:i1 id='info1'.Descrizione
+:p.
+Usare tale finestra per visualizzare la descrizione di un file del catalogo o di un prodotto. E'
+possibile scorrere verticalmente la finestra usando la barra di scorrimento o i tasti con le
+frecce. E' inoltre possibile modificare le dimensioni della finestra, nel qual caso il testo al suo
+interno viene automaticamente adattato alle nuove dimensioni della finestra.
+:eh1.
+
+.**********************************************************************
+.*  "Directories Installed In" groupbox  (on Product Status dialog)
+.**********************************************************************
+:h2 name=ID202 res=5066.Indirizzari in cui il prodotto ä installato
+:p.
+Questa sezione della finestra elenca gli indirizzari in cui ä stato installato il
+prodotto. Non ä possibile editare i campi, ma ä possibile scorrerli in modo da vedere interamente i
+percorsi troppo lunghi per essere visualizzati nello spazio disponibile.
+
+.**********************************************************************
+.*  "Service level"push button  (on Product Status dialog)
+.**********************************************************************
+:h2 name=ID203 res=5067.Livello di aggiornamento
+:p.
+Questo pulsante visualizza la finestra Livello di aggiornamento, in modo che l'utente possa
+determinare il livello di aggiornamento del prodotto.
+
+.**********************************************************************
+.*  "Service level" push button  (on Product Status dialog with Components)
+.**********************************************************************
+:h2 name=ID252 res=5070.Livello di aggiornamento
+:p.
+Questo pulsante visualizza la finestra Livello di aggiornamento in modo che l'utente possa
+determinare il livello di aggiornamento del componente selezionato.
+:p.
+Questo pulsante ä disattivato finchä non viene selezionato un componente nel riquadro per
+elenchi Componenti attualmente installati.
+
+.**********************************************************************
+.*  "Components" list box         (on Product Status dialog with Components)
+.**********************************************************************
+:h2 name=ID251 res=5069.Componenti attualmente installati
+:p.
+Questo riquadro per elenchi contiene i componenti installati per il prodotto specificato. Selezionare
+un componente nell'elenco, quindi selezionare il pulsante :hp2.Livello di aggiornamento:ehp2. se
+si desidera visualizzare l'attuale livello di aggiornamento di un componente.
+
+.**********************************************************************
+.*  "Product Status" dialog w/Components - (General help)
+.**********************************************************************
+:h1 name=ID250 res=5068.Stato del prodotto
+:p.
+Usare la finestra Stato del prodotto per visualizzare le informazioni relative al
+prodotto attualmente installato nella stazione di lavoro. Vengono visualizzate
+le seguenti informazioni&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Nome del prodotto:ehp2.
+:dd.Il nome del prodotto selezionato attualmente installato nella stazione di lavoro
+:dt.:hp2.Codice del prodotto:ehp2.
+:dd.Il codice ufficiale assegnato al prodotto selezionato
+:dt.:hp2.Versione:ehp2.
+:dd.Il numero di versione e di rilascio ed il livello di modifica del prodotto selezionato
+:dt.:hp2.Dispositivo:ehp2.
+:dd.Il codice di dispositivo del prodotto selezionato
+:dt.:hp2.Componenti attualmente installati:ehp2.
+:dd.I nomi dei componenti del prodotto giÖ installati nella stazione di lavoro
+:dt.:hp2.Indirizzari in cui il prodotto ä installato:ehp2.
+:dd.Gli indirizzari in cui ä stato installato il prodotto
+:edl.
+:p.E' possibile determinare il livello di aggiornamento di un componente selezionando il relativo
+nome nel riquadro per elenchi Componenti attualmente installati, quindi selezionando il pulsante
+:hp2.Livello di aggiornamento:ehp2.. Viene visualizzata la finestra Livello di aggiornamento.
+:eh1.
+
+.**********************************************************************
+.*  "Service level" dialog  - General help
+.**********************************************************************
+:h2 name=ID280 res=5110.Livello di aggiornamento
+:i1.Livello di aggiornamento
+:p.
+Questa finestra visualizza l'elenco dei livelli di aggiornamento applicati
+al prodotto o componente selezionato, insieme alla data ed all'ubicazione da cui ä avvenuta
+l'applicazione dell'aggiornamento.
+:p.
+Le informazioni possono essere stampate selezionando il pulsante :hp2.Stampa:ehp2..
+
+.**********************************************************************
+.*  "Container" on the 'Service level' dialog
+.**********************************************************************
+:h2 name=ID281 res=5111.Elenco dei livelli di aggiornamento
+:p.
+Questo ä un elenco dei livelli di aggiornamento applicati al prodotto o
+componente selezionato. L'elenco visualizza inoltre le relative ubicazioni origine e date
+dell'aggiornamento.
+:p.
+Le ubicazioni origine che possono essere visualizzate sono:
+:dl tsize=7.
+:dt.MVS
+:dd.Il livello di aggiornamento ä stato applicato da un sistema centrale MVS.
+:dt.VM
+:dd.Il livello di aggiornamento ä stato applicato da un sistema centrale VM.
+:dt.VSE
+:dd.Il livello di aggiornamento ä stato applicato da un sistema centrale VSE.
+:dt.UnitÖ
+:dd.Il livello di aggiornamento ä stato applicato da un'unitÖ minidisco, da un'unitÖ CD ROM,
+da un'unitÖ della LAN o da una cartella del PC Support AS/400.
+:edl.
+
+.**********************************************************************
+.*  "Print"push button on the 'Service level' dialog
+.**********************************************************************
+:h2 name=ID282 res=5112.Stampa
+:p.
+Stampa una registrazione delle informazioni relative al livello di
+aggiornamento attualmente visualizzate nella finestra Livello di aggiornamento.
+
+.**********************************************************************
+.*  "Cancel"push button on the 'Service level' dialog
+.**********************************************************************
+:h2 name=ID283 res=5113.Annullo
+:p.
+Selezionare il pulsante :hp2.Annullo:ehp2. per chiudere la finestra Livello di aggiornamento
+e visualizzare nuovamente la finestra Stato del prodotto.
+
+.**********************************************************************
+.*  "Search" dialog
+.**********************************************************************
+:h1 name=IL300 res=5071.Ricerca
+:p.
+Usare la finestra Ricerca per ricercare i file di catalogo nel sistema.
+:p.
+Per ricercare i file di catalogo&colon.
+:ol.
+:li.Selezionare, nel riquadro combinato
+UnitÖ, l'unitÖ in cui effettuare la ricerca. Quando viene
+selezionata un'unitÖ, i riquadri per elenchi Indirizzario e File vengono
+aggiornati e riportano gli indirizzari ed i nomi dei file dell'unitÖ selezionata.
+:li.Per limitare la ricerca dei file, inserire nel campo di immissione Nome file del catalogo un nome file
+contenente caratteri globali. La specificazione assunta ä *.ICF.
+:li.Iniziare la ricerca selezionando l'indirizzario in cui effettuare la ricerca nel riquadro
+per elenchi
+:hp2.Indirizzario:ehp2.. La selezione dell'indirizzario provoca automaticamente l'aggiornamento
+del riquadro per elenchi File che riporta un elenco dei file dell'indirizzario corrispondenti
+ai criteri di limitazione specificati.
+:p.
+Continuare a selezionare indirizzari fino a trovare il
+file del catalogo desiderato nel riquadro per elenchi :hp2.File:ehp2..
+:li.Selezionare il file del catalogo desiderato dal riquadro per elenchi :hp2.File:ehp2..
+:li.Selezionare :hp2.OK:ehp2.. Il
+nome del file del catalogo selezionato viene inserito nella finestra Apertura del
+catalogo di un'unitÖ.
+:eol.
+:eh1.
+
+.**********************************************************************
+.*  "Catalog file name" entry field on the 'Search' dialog
+.**********************************************************************
+:h2 name=IL301 res=5072.Nome file del catalogo
+:p.
+Usare questo campo di immissione per specificare il nome del file del catalogo
+da aprire.
+E' possibile usare dei caratteri globali nel nome del file del catalogo.
+:p.
+E' inoltre possibile specificare il nome del file del catalogo selezionando
+una voce nel riquadro per elenchi File.
+
+.**********************************************************************
+.*  "Drive" combinationbox on the 'Search' dialog
+.**********************************************************************
+:h2 name=IL302 res=5073.UnitÖ
+:p.
+Questo riquadro combinato
+specifica l'unitÖ in cui effettuare la ricerca. Se si seleziona una nuova unitÖ
+nell'elenco delle unitÖ, i riquadri per elenchi
+Indirizzario e File vengono aggiornati e riportano gli indirizzari ed i file esistenti
+nell'unitÖ selezionata.
+
+.**********************************************************************
+.*  "File" list box on the 'Search' dialog
+.**********************************************************************
+:h2 name=IL303 res=5074.File
+:p.
+Questo riquadro per elenchi contiene l'elenco dei file esistenti nell'unitÖ ed indirizzario in cui
+si sta effettuando la ricerca. I nomi dei file contenuti in questo riquadro per elenchi
+corrispondono ai criteri di limitazione specificati con l'aiuto di caratteri globali
+nel campo di immissione Nome file del catalogo. E'
+possibile specificare il file del catalogo da aprire selezionando una voce in questo elenco.
+:p.
+E' possibile scorrere il riquadro per elenchi File sia orizzontalmente che verticalmente.
+
+.**********************************************************************
+.*  "Directory" list box on the 'Search' dialog
+.**********************************************************************
+:h2 name=IL304 res=5075.Indirizzario
+:p.
+Questo riquadro per elenchi contiene l'elenco degli indirizzari presenti nell'unitÖ in cui
+effettuare la
+ricerca. E' possibile scorrere il riquadro per elenchi Indirizzario sia orizzontalmente che
+verticalmente.
+:p.
+Per usare questo riquadro per elenchi, selezionare l'indirizzario in cui effettuare la
+ricerca. I file presenti nell'indirizzario vengono visualizzati nel riquadro
+per elenchi File. Vengono inoltre visualizzati i sottoindirizzari
+dell'indirizzario selezionato nel riquadro per elenchi Indirizzario.
+
+.**********************************************************************
+.*  "OK"push button on the 'Search' dialog
+.**********************************************************************
+:h2 name=IL305 res=5076.OK
+:p.
+Selezionare questo pulsante per visualizzare nuovamente la finestra
+Apertura del catalogo di un'unitÖ. Il nome del file del catalogo selezionato
+viene inserito nel campo del nome del file.
+
+.**********************************************************************
+.*  "Insert disk" dialog General help
+.**********************************************************************
+:h1 name=II100 res=5130.Inserire minidisco
+:p.
+La finestra Inserire minidisco viene usata per prodotti che prevedono pió di un
+minidisco di installazione. Questa finestra viene visualizzata in sovrapposizione
+alla finestra attualmente visualizzata, nel momento in cui bisogna
+
+
+inserire un nuovo minidisco durante l'installazione da un'unitÖ.
+:eh1.
+
+.**********************************************************************
+.*  Help for the "Drive" combination box on the "Insert disk" dialog
+.**********************************************************************
+:h2 name=II101 res=5131.UnitÖ
+:p.
+Usare questo riquadro combinato con elenco di selezione per specificare
+l'unitÖ in cui si
+inserisce il minidisco richiesto. Il riquadro contiene un elenco di tutte le
+unitÖ disponibili. L'unitÖ selezionata per valore assunto ä quella che si sta
+utilizzando attualmente. Se sono presenti due unitÖ minidisco, ä possibile
+inserire due minidischi ed usare questo
+riquadro combinato per passare da un'unitÖ all'altra.
+
+.**********************************************************************
+.*  Help for the "Continue"push button on the "Insert disk" dialog
+.**********************************************************************
+:h2 name=II102 res=5132.Continua
+:p.
+Selezionare questo pulsante per continuare l'installazione o
+l'aggiornamento. L'unitÖ selezionata viene controllata per assicurarsi che
+contenga il minidisco richiesto. Qualora non lo contenga, viene nuovamente
+visualizzata la finestra Inserire minidisco.
+
+.***************************************************************
+.*  "Delete only backups" checkbox on "Delete" dialog (contextual help) -
+.**********************************************************************
+:h2 name=IA402 res=5160.Cancellare solo le copie di riserva
+:i1.Cancellare solo le copie di riserva
+:p.
+Selezionare la casella di spunta :hp2.Cancellare solo le copie di
+riserva:ehp2. nella finestra Cancellazione
+per cancellare solo le copie di riserva del prodotto o dei componenti
+selezionati. I file della versione attuale non verranno cancellati.
+:p.
+Questa casella di spunta ä disattivata se non sono presenti copie di
+riserva da cancellare.
+
+.**********************************************************************
+.*  "Delete" dialog (with Components)  (General help) -
+.**********************************************************************
+:h1 name=IA450 res=5170.Cancellazione
+:p.
+Usare la finestra Cancellazione per visualizzare le seguenti
+informazioni relative al prodotto selezionato per la cancellazione&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Nome del prodotto:ehp2.
+:dd.Il nome del prodotto
+:dt.:hp2.Codice del prodotto:ehp2.
+:dd.Il codice ufficiale assegnato al prodotto
+:dt.:hp2.Versione:ehp2.
+:dd.Il numero di versione e di rilascio ed il livello di modifica del prodotto
+:dt.:hp2.Dispositivo:ehp2.
+:dd.Il codice di dispositivo del prodotto
+:dt.:hp2.Componenti:ehp2.
+:dd.L'elenco dei componenti installati del prodotto selezionato
+:edl.
+:p.Usare l'elenco per selezionare i componenti da cancellare, quindi selezionare
+il pulsante :hp2.Cancellazione:ehp2. per cancellare i componenti selezionati. VerrÖ inoltre
+cancellata ogni copia di riserva dei componenti selezionati.
+:p.Selezionando la casella di spunta :hp2.Cancellare solo le copie di riserva:ehp2., verrÖ
+cancellata solo la copia di riserva delle versioni precedenti dei componenti selezionati. La
+versione attuale, in questo caso, non verrÖ cancellata.
+:eh1.
+
+.**********************************************************************
+.*  "Component List box" on Delete dialog (contextual help) -
+.**********************************************************************
+:h2 name=IA451 res=5171.Componenti
+:p.
+Usare il riquadro per elenchi dei componenti nella finestra
+Cancellazione per selezionare i componenti installati del prodotto selezionato
+che si desidera cancellare.
+:p.
+Vengono cancellati tutti i componenti selezionati nell'elenco, comprese le copie
+di riserva delle versioni precedenti, a meno che non sia
+selezionata la casella di spunta
+:hp2.Cancellare solo le copie di riserva:ehp2.. Selezionare i componenti
+dall'elenco, quindi selezionare il pulsante
+:hp2.Cancellazione:ehp2. per iniziare la cancellazione dei componenti.
+
+.**********************************************************************
+.*  "Select All"push button  (General help) -
+.**********************************************************************
+:h2 name=ISAPB res=5031.Selezione globale
+:p.
+Il pulsante :hp2.Selezione globale:ehp2. seleziona tutte le voci visualizzate
+nel riquadro per elenchi. Questo pulsante ä disattivato se tutti i
+componenti sono stati selezionati.
+.* **************************************************************************
+.* Select All push button
+.*************************************************************
+:h2 name=ISAPC res=5032.Deselezione globale
+:p.
+Il pulsante :hp2.Deselezione globale:ehp2. annulla le selezioni di tutte le voci
+selezionate visualizzate nel riquadro per elenchi. Questo pulsante ä disattivato se nessuno dei
+componenti ä stato selezionato.
+.**********************************************************************
+.* "Progress Indicator" (graphical nofiles) - General help
+.**********************************************************************
+:h1 name=IP200 res=5114.Stato di avanzamento (Ripristino o Cancellazione)
+:i1.Indicatore dello stato di avanzamento, ripristino o cancellazione
+:p.
+La finestra Stato di avanzamento consente di visualizzare lo stato di avanzamento
+del ripristino o della cancellazione dei file. Questa finestra contiene&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Riga di intestazione:ehp2.
+:dd.Il nome ed il componente del prodotto che si sta ripristinando o cancellando
+:dt.:hp2.Riquadro dello stato di avanzamento:ehp2.
+:dd.Informazioni relative allo stato di avanzamento dell'operazione
+:dt.:hp2.Stato:ehp2.
+:dd.Lo stato attuale del ripristino o della cancellazione. I valori possibili per
+questo campo sono:
+:dl tsize=2 break=all compact.
+:dt.:hp2.Elaborazione in corso:ehp2.
+:dd.Il programma di utilitÖ per l'installazione e la gestione sta eseguendo
+un'attivitÖ che potrebbe richiedere un certo tempo
+:dt.:hp2.Errore:ehp2.
+:dd.Si ä verificato un errore. Premere il pulsante :hp2.Arresto:ehp2. per annullare
+l'operazione
+:dt.:hp2.Cancellazione file in corso:ehp2.
+:dd.Il programma sta cancellando i file del prodotto
+:dt.:hp2.Ripristino file in corso:ehp2.
+:dd.Il programma sta ripristinando i file al precedente livello di
+aggiornamento
+:edl.
+:p.
+:dt.:hp2.Tempo trascorso:ehp2.
+:dd.Il tempo trascorso dall'inizio dell'operazione
+:dt.:hp2.Indicatore:ehp2.
+:dd.La rappresentazione grafica del numero dei file giÖ ripristinati o cancellati
+:edl.
+:eh1.
+
+.**********************************************************************
+.*  "Descriptions"push button (on Install dialogs)
+.**********************************************************************
+:h2 name=IA131 res=5180.Descrizioni
+:p.
+Il pulsante :hp2.Descrizioni:ehp2. visualizza la finestra che contiene una
+breve descrizione dei componenti selezionati nel riquadro per elenchi. Se non
+ci sono descrizioni disponibili, la finestra riporta un messaggio indicante che
+non esistono descrizioni da visualizzare.
+:p.
+Il pulsante :hp2.Descrizioni:ehp2. ä disponibile se ä stato selezionato almeno un componente.
+
+.**********************************************************************
+.*  "Stop"push button on (No Files) graphical progress indicator
+.*  used by Restore and Delete                (contextual help) -
+.**********************************************************************
+:h2 name=IP201 res=5115.Arresto
+:p.
+Selezionare il pulsante :hp2.Arresto:ehp2. nella finestra Stato di avanzamento
+per arrestare l'operazione di ripristino o cancellazione.
+
+.****************************************************************
+.* Main help for Error messages (General help)
+.****************************************************************
+:h1 name=ERROR res=10000.Messaggi di errore
+:p.&rbl.
+:eh1.
+
+.**********************************************************************
+.*  EPFIE107: The package file 'filename' cannot be found or cannot be
+.*            opened.
+.*         (General help)
+.**********************************************************************
+:h2 name=IHM107 res=107.Aiuto per EPFIE107
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione e
+la gestione non trova il file di pacchetto
+specificato nel file del catalogo o non riesce ad aprire
+il file di pacchetto dopo che ä stato trasferito nella stazione di lavoro.
+:p.
+:hp7.Azione:ehp7.
+:p.
+:hp5.Utenti:ehp5.
+:p.Assicurarsi di avere accesso al
+data set (MVS), di essere collegati al minidisco
+(VM), di avere inserito il minidisco corretto o di avere accesso all'unitÖ
+della LAN che contiene i file del prodotto. Selezionare
+:hp2.Riprova:ehp2. per tentare di eseguire di
+nuovo il trasferimento. Se l'errore persiste,
+comunicarlo al responsabile del sistema.
+:p.
+Selezionare :hp2.Annullo:ehp2. per annullare il messaggio e visualizzare
+la finestra precedente.
+:p.
+:hp5.Responsabili del sistema:ehp5.
+:p.
+Controllare che il file di pacchetto per questo prodotto esista
+nell'ubicazione origine e che la voce relativa al pacchetto nel
+file del catalogo indichi il corretto file di pacchetto. Correggere
+gli errori e riprovare.
+:p.
+Selezionare :hp2.Annullo:ehp2. per annullare il
+messaggio e visualizzare la finestra precedente.
+
+.**********************************************************************
+.*  EPFIE111: Unable to connect to the host session 'x:'. Make sure the
+.*session exists and is not in use.       (General help)
+.**********************************************************************
+:h2 name=IHM111 res=111.Aiuto per EPFIE111
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Si ä verificato un errore mentre
+il programma di utilitÖ per l'installazione e la gestione
+inizializzava le comunicazioni con il sistema centrale.
+:p.
+:hp7.Azione:ehp7.
+:ol.
+:li.Selezionare :hp2.Annullo:ehp2. per annullare il messaggio e visualizzare
+la finestra precedente.
+:li.Controllare che la sessione del sistema centrale
+specificata nella finestra Apertura del catalogo di un sistema centrale
+sia attiva e pronta ad accettare i dati di immissione. Se si sta tentando di
+eseguire un'operazione di installazione o aggiornamento, aprire di nuovo il
+catalogo del sistema centrale selezionando
+:hp2.Apertura del catalogo di un sistema centrale:ehp2. dallo sviluppo azione di File.
+:li.Riprovare ad eseguire l'operazione.
+:eol.
+
+.**********************************************************************
+.*  EPFIE112: Unable to download 'xxxx' - the file is in use or locked.
+.*            (General help)
+.**********************************************************************
+:h2 name=IHM112 res=112.Aiuto per EPFIE112
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione e la gestione non riesce a
+trasferire il file specificato. Il file corrispondente della
+stazione di lavoro ä in uso.
+:p.
+:hp7.Azione:ehp7.
+:p.
+Effettuare una delle seguenti operazioni&colon.
+:ul.
+:li.Chiudere l'applicazione della
+stazione di lavoro che utilizza il file e selezionare
+:hp2.Riprova:ehp2..
+:li.Se il file da trasferire ä un oggetto
+dell'Interfaccia area di lavoro
+o una DLL della classe, ä necessario rilasciare la classe e riavviare la
+stazione di lavoro per sbloccare il file.
+:li.Selezionare :hp2.Annullo:ehp2. per annullare l'installazione
+o l'aggiornamento del prodotto.
+:eul.
+
+.**********************************************************************
+.*  EPFIE113: The host is not responding. Switch to the host session and make
+.*     sure that the host is in a ready state.   - (General help)
+.**********************************************************************
+:h2 name=IHM113 res=113.Aiuto per EPFIE113
+:p.
+:hp7.Spiegazione:ehp7.
+:p.La sessione del
+sistema centrale specificata nella finestra
+Apertura del catalogo di un sistema centrale non risponde ai comandi
+del programma di utilitÖ per
+l'installazione e la gestione.
+:p.
+:hp7.Azione:ehp7.
+:p.
+:ul.
+:li.Passare alla sessione del
+sistema centrale e controllare che sia disponibile e pronta ad accettare
+i comandi.
+:li.Assicurarsi di aver selezionato il corretto sistema operativo del sistema
+centrale nella finestra Apertura del catalogo di un sistema centrale. E'
+possibile selezionare una delle seguenti opzioni&colon.
+:dl tsize=8 break=none compact.
+:dt.:hp2.Annullo:ehp2.
+:dd.Annulla l'intera operazione.
+:dt.:hp2.Riprova:ehp2.
+:dd.Immette di nuovo i comandi RECEIVE.
+:edl.
+:eul.
+
+.**********************************************************************
+.*  EPFIE114: 'file' cannot be found on the host. (General help)
+.**********************************************************************
+:h2 name=IHM114 res=114.Aiuto per EPFIE114
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione e la gestione
+non trova il file specificato nell'ubicazione origine.
+:p.
+:hp7.Azione:ehp7.
+:p.
+:hp5.Utenti:ehp5.
+:p.Assicurarsi che il file esista nell'ubicazione origine
+e selezionare :hp2.Riprova:ehp2.
+oppure selezionare :hp2.Annullo:ehp2..
+:p.
+Se il problema persiste, mettersi in contatto con il responsabile del sistema.
+:p.
+:hp5.Responsabili del sistema:ehp5.
+:p.Assicurarsi che il file esista nell'ubicazione origine
+e che i file del catalogo e di pacchetto per il prodotto indichino i file corretti.
+
+.**********************************************************************
+.*  EPFIE115: The backup package file 'filename' was not found.  Unable to
+.*            restore (or delete) the product. (General help)
+.**********************************************************************
+:h2 name=IHM115 res=115.Aiuto per EPFIE115
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione e la gestione
+non trova le informazioni necessarie per cancellare o ripristinare il
+prodotto selezionato. Probabilmente i file del prodotto sono stati
+cancellati senza utilizzare le azioni Cancellazione o Ripristino del
+programma di utilitÖ per l'installazione e la gestione.
+:p.
+:hp7.Azione:ehp7.
+:ol.
+:li.Selezionare :hp2.Annullo:ehp2. per annullare il ripristino o la cancellazione.
+:li.Se i file del prodotto sono ancora presenti sul disco fisso, ä possibile
+cancellarli utilizzando il comando
+DELETE dell'OS&slash.2:link refid=tm1 reftype=fn.*:elink.. Per ripristinare il
+prodotto, copiare i file dal sottoindirizzario della copia di riserva utilizzando
+il comando COPY dell'OS&slash.2.
+:eol.
+
+.**********************************************************************
+.*  EPFIE116: Cannot restore or delete the last service level. Package file
+.*            errors were found. (General help)
+.**********************************************************************
+:h2 name=IHM116 res=116.Aiuto per EPFIE116
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione e la gestione ha rilevato errori
+durante il tentativo di analizzare il file di pacchetto della copia di riserva.
+:p.Per effettuare il ripritino o cancellare
+il livello di aggiornamento installato ä necessario
+disporre di un file di pacchetto valido.
+:p.
+:hp7.Azione:ehp7.
+:ol.
+:li.Selezionare :hp2.Annullo:ehp2. per annullare la cancellazione o il
+ripristino.
+:li.Per cancellare il prodotto, cancellare manualmente i file usando
+il comando DELETE
+dell'OS&slash.2:link refid=tm1 reftype=fn.*:elink.. Per ripristinare
+il prodotto, copiare manualmente i file dal sottoindirizzario della copia
+di riserva usando il comando COPY
+dell'OS&slash.2.
+:eol.
+
+.**********************************************************************
+.*  EPFIW124: Cannot delete file 'filename'. File not found. (General help)
+.**********************************************************************
+:h2 name=IHM124 res=124.Aiuto per EPFIW124
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione e
+la gestione non trova il file specificato per la cancellazione
+nel file di pacchetto. Il file, pertanto, non ä stato cancellato.
+:p.Questo errore non interferisce nell'esecuzione dell'installazione o
+dell'aggiornamento.
+:p.
+:hp7.Azione:ehp7.
+:p.
+Selezionare :hp2.OK:ehp2. per continuare l'operazione.
+
+.**********************************************************************
+.*  EPFIQ125: You have aborted the installation.  The current version of the
+.*            product is inoperable.  Do you want to delete the files
+.*            already downloaded? (General help)
+.**********************************************************************
+:h2 name=IHM125 res=125.Aiuto per EPFIQ125
+:p.
+:hp7.Spiegazione:ehp7.
+:p.A causa di un'operazione di annullo o di un errore,
+il programma di utilitÖ per l'installazione e la gestione
+ha trasferito solo una parte dei file necessari per l'esecuzione del prodotto.
+:p.
+:hp7.Azione:ehp7.
+:p.
+Selezionare una delle seguenti opzioni&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.SI':ehp2.
+:dd.Cancella i file trasferiti. Selezionare :hp2.SI':ehp2. se non si desidera
+riprovare ad eseguire l'installazione.
+:dt.:hp2.NO:ehp2.
+:dd.Lascia i file sulla stazione di lavoro. I file presenti sulla stazione di
+lavoro non devono essere trasferiti di nuovo quando viene riavviata
+l'installazione. Selezionare :hp2.NO:ehp2. se si desidera riprovare
+l'installazione.
+:p.Il programma di utilitÖ per l'installazione, una volta riavviato,
+continuerÖ a scaricare i restanti file.
+:edl.
+
+.**********************************************************************
+.*  EPFIW127: 'xxxx' cannot be deleted because the disk specified is not
+.*             formatted. (General help)
+.**********************************************************************
+:h2 name=IHM127 res=127.Aiuto per EPFIW127
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione e
+la gestione non riesce ad accedere al file specificato dal momento che si
+trova su un disco il cui formato non ä leggibile.
+:p.
+:hp7.Azione:ehp7.
+:ol compact.
+:li.Selezionare :hp2.Annullo:ehp2. per arrestare l'operazione.
+:li.Controllare che il formato del file specificato sia corretto.
+:li.Avviare di nuovo l'operazione.
+:eol.
+
+.**********************************************************************
+.*  EPFIW128: Cannot delete 'xxxx'.  File is in use.
+.*            (General help)
+.**********************************************************************
+:h2 name=IHM128 res=128.Aiuto per EPFIW128
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione e
+la gestione non riesce a cancellare il file
+specificato della stazione di lavoro
+perchä ä in uso.
+:p.
+:hp7.Azione:ehp7.
+:ol.
+:li.Selezionare :hp2.Annullo:ehp2. per annullare questo messaggio.
+:li.Controllare che il prodotto che si sta tentando di installare, aggiornare,
+cancellare o ripristinare non sia in esecuzione. Se
+il file da trasferire ä un oggetto
+dell'Interfaccia area di lavoro
+o una DLL della classe, ä necessario rilasciare la classe e riavviare la
+stazione di lavoro per sbloccare il file.
+:li.Attendere che il file specificato non sia pió in uso o interrompere il
+programma che utilizza il file.
+:li.Avviare di nuovo l'operazione.
+:eol.
+
+.**********************************************************************
+.*  EPFIE129: Out of hard disk space.              - (General help)
+.**********************************************************************
+:h2 name=IHM129 res=129.Aiuto per EPFIE129
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Lo spazio sul disco fisso non ä sufficiente per
+trasferire altri file.
+:p.
+:hp7.Azione:ehp7.
+:ol.
+:li.Liberare spazio sul disco fisso cancellando i file inutili.
+:li.Selezionare :hp2.Aggiornamento:ehp2. o :hp2.Installazione:ehp2.
+dallo sviluppo di Azione per riavviare il trasferimento.
+:p.Se si sta tentando di effettuare un aggiornamento, ä possibile, volendo,
+annullare la selezione della casella di spunta relativa all'opzione
+:hp2.Salvataggio copia di riserva:ehp2. quando si riprova ad eseguire l'aggiornamento,
+per risparmiare spazio sul disco fisso.
+:eol.
+:p.
+Oppure
+:ol.
+:li.Selezionare :hp2.Annullo:ehp2. per interrompere l'installazione o l'aggiornamento.
+:li.Installare il prodotto su un'altra unitÖ o cancellare i file inutili
+dall'unitÖ attuale.
+:eol.
+
+.**********************************************************************
+.*  EPFIE130: 'filename' cannot be accessed because the disk specified is not
+.*            formatted. (General help)
+.**********************************************************************
+:h2 name=IHM130 res=130.Aiuto per EPFIE130
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione
+e la gestione non riesce a trasferire il
+file specificato perchä il disco di destinazione della
+stazione di lavoro non ä leggibile o non ä formattato con la corretta
+struttura per registrazione. Tale situazione puï verificarsi se un file
+con un nome o un'estensione caratteristico della HPFS (Struttura per registrazione ad alte
+prestazioni) viene trasferito in un'unitÖ formattata
+con la struttura per registrazione FAT.
+:p.
+:hp7.Azione:ehp7.
+:ol compact.
+:li.Selezionare il pulsante :hp2.Riprova:ehp2.
+:li.Se l'errore persiste, riformattare il disco fisso o selezionare un'altra
+unitÖ come ubicazione di destinazione.
+:eol.
+
+.**********************************************************************
+.*  EPFIE131: Cannot access 'filename'.  The workstation file is in use.
+.*            (General help)
+.**********************************************************************
+.*:h2 name=IHM131 res=131.Aiuto per EPFIE131
+.*:p.
+.*:hp7.Spiegazione:ehp7.
+.*:p.Il file di destinazione del trasferimento sulla stazione di lavoro
+.*viene utilizzato da un altro programma. Il
+.*programma di utilitÖ per l'installazione e
+.*la gestione non riesce a ricoprire il file.
+.*:p.
+.*:hp7.Azione:ehp7.
+.*:ol compact.
+.*:li.Controllare che il programma che si sta installando o aggiornando
+.*non sia in esecuzione.
+.*:li.Arrestare tutti i programmi che accedono al file. Se
+.*il file da trasferire ä un oggetto
+.*dell'Interfaccia area di lavoro
+.*o una DLL della classe, ä necessario rilasciare la classe e riavviare la
+.*stazione di lavoro per sbloccare il file.
+.*:li.Selezionare :hp2.Riprova.:ehp2.
+.*:eol.
+:h2 name=IHM131 res=131.Aiuto per EPFIE131
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Un altro programma sta utilizzando il file specificato.
+Il programma di utilitÖ sull'installazione e la manutenzione non puï
+ricoprire o modificare il file.
+:p.
+:hp7.Azione:ehp7.
+:ol compact.
+:li.Assicurarsi che il programma che si sta installando o aggiornando
+non sia in esecuzione.
+:li.Terminare qualsiasi programma che ha accesso al
+file.
+Se il file che si sta trasferendo ä un oggetto
+Workplace Shell:link refid=tm1 reftype=fn.*:elink.
+o di classe DLL, ä necessario annullare la registrazione della classe
+e riavviare la stazione di lavoro per liberare il file.
+:li.Selezionare :hp2.Riprovare.:ehp2.
+:eol.
+
+.**********************************************************************
+.*  EPFIE132: An error occurred while attempting to create the %1 directory.
+.*     - (General help)
+.**********************************************************************
+:h2 name=IHM132 res=132.Aiuto per EPFIE132
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione e
+la gestione non ä riuscito a creare gli indirizzari nel percorso
+specificato. Probabilmente esiste giÖ un file con il nome specificato.
+:li.Controllare che sul disco fisso specificato
+vi sia lo spazio sufficiente per creare gli indirizzari.
+:li.A seconda di quale delle seguenti condizioni ha provocato l'errore,
+applicare l'azione correttiva adeguata&colon.
+:ul.
+:li.Esiste un indirizzario denominato EPFICAT.PKG come sottoindirizzario nel
+percorso <unitÖ_di_avviamento>&colon.\OS2\SYSTEM\$EPFINST oppure nel percorso
+<unitÖ_di_avviamento>&colon.\%EPFINSTDIR% se ä impostata la variabile di
+installazione EPFINSTDIR.
+:ul.
+:li.Cancellare EPFICAT.PKG dall'indirizzario $EPFINST con il comando DEL
+dell'OS/2.
+:li.Cancellare l'indirizzario EPFICAT.PKG con il comando RD dell'OS/2.
+:eul.
+:li.GiÖ esiste un file con lo stesso nome di uno degli indirizzari.
+:ul.
+:li.Assicurarsi che non esista giÖ un file con il nome dell'indirizzario di
+destinazione.
+:eul.
+:li.La variabile di ambiente EPFINSTDIR ä impostata su un nome di indirizzario
+non corretto.
+:ul.
+:li.Assicurarsi che i nomi di indirizzario siano validi per il sistema di file
+dell'unitÖ.
+:eul.
+:eul.
+:li.Riprovare l'operazione.
+:eol.
+
+.**********************************************************************
+.*  EPFIQ133: Cannot recover to a stable service level. (General help)
+.**********************************************************************
+:h2 name=IHM133 res=133.Aiuto per EPFIQ133
+:p.
+:hp7.Spiegazione:ehp7.
+:p.E' stato effettuato un tentativo di annullare l'operazione di cancellazione
+o di ripristino durante l'esecuzione. Cosç facendo lo stato del prodotto
+non sarebbe stabile. Se si
+procede con l'operazione di annullo, non utilizzare il
+prodotto finchä non si effettua una nuova installazione o un nuovo aggiornamento.
+:p.
+:hp7.Azione:ehp7.
+:p.
+Selezionare una delle seguenti opzioni&colon.
+:dl tsize=5 break=none compact.
+:dt.:hp2.SI':ehp2.
+:dd.Annulla l'operazione.
+:dt.:hp2.NO:ehp2.
+:dd.Continua la cancellazione o il ripristino in corso di esecuzione.
+:edl.
+
+.**********************************************************************
+.*  EPFIE134: Cannot access the profile file         (General help)
+.**********************************************************************
+:h2 name=IHM134 res=134.Aiuto per EPFIE134
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione e la gestione non riesce a
+leggere il file del profilo specificato. Le informazioni, fondamentali per
+l'operazione attuale, sono memorizzate in questo file.
+:p.Senza tali informazioni l'operazione non puï essere eseguita.
+:p.
+:hp7.Azione:ehp7.
+:ol.
+:li.Selezionare :hp2.Annullo:ehp2. per annullare l'operazione.
+:li.Assicurarsi che il file specificato non sia bloccato da un altra
+elaborazione e riprovare ad eseguire l'operazione. Se l'errore persiste,
+cancellare il file del profilo e riprovare ad eseguire l'operazione.
+:eol.
+
+.**********************************************************************
+.*  EPFIE137: An error occurred while attempting to back up the file '%1'.
+.*      -  (General help)
+.**********************************************************************
+:h2 name=IHM137 res=137.Aiuto per EPFIE137
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione e
+la gestione non riesce a copiare il file specificato nell'indirizzario
+della copia di riserva. Tale situazione puï verificarsi se&colon.
+:ul compact.
+:li.Non vi ä lo spazio su disco sufficiente per effettuare la copia
+di riserva del file specificato.
+:li.Il file specificato esiste giÖ ed ä in uso.
+:li.L'indirizzario della copia di riserva non ä stato creato.
+:eul.
+:p.
+:hp7.Azione:ehp7.
+:ol.
+:li.Selezionare :hp2.Annullo:ehp2. per annullare l'operazione.
+:li.Controllare che vi sia lo spazio sufficiente sul disco dell'unitÖ che
+contiene l'indirizzario della copia di riserva.
+:li.Riprovare ad eseguire l'aggiornamento.
+:eol.
+
+.**********************************************************************
+.*  EPFIW138: Cannot update the date and time of 'filename'. (General help)
+.**********************************************************************
+:h2 name=IHM138 res=138.Aiuto per EPFIW138
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Si ä verificato un errore mentre
+il programma di utilitÖ per l'installazione e la gestione cercava di impostare
+la data e l'ora del file trasferito sulla base della data
+e dell'ora specificata nel file di pacchetto.
+:p.Non ä necessario impostare la data e l'ora per la
+riuscita dell'installazione. La data e l'ora del file sono state impostate
+secondo la data e l'ora correnti di sistema.
+:p.
+:hp7.Azione:ehp7.
+:p.
+Selezionare :hp2.OK:ehp2. per continuare.
+
+.**********************************************************************
+.*  EPFIQ139: 'filename.ext' already exists on the workstation. Overwrite the file?
+.*   (General help)
+.**********************************************************************
+:h2 name=IHM139 res=139.Aiuto per EPFIQ139
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Per trasferire il file specificato
+il programma di utilitÖ per l'installazione e la gestione
+deve ricoprire un file esistente della stazione di lavoro.
+:p.
+:hp7.Azione:ehp7.
+:p.
+Selezionare una delle seguenti opzioni&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.OK:ehp2.
+:dd.Ricopre il file esistente della stazione di lavoro
+e continua l'installazione o l'aggiornamento.
+:dt.:hp2.Annullo:ehp2.
+:dd.Non sostituisce il file esistente. L'elaborazione continua.
+:dt.:hp2.Sç per tutti:ehp2.
+:dd.Sostituisce il file esistente sulla stazione di lavoro e tutti i
+file duplicati trovati sulla stazione di lavoro.
+Questo messaggio non verrÖ visualizzato nuovamente.
+:P.L'installazione o l'aggiornamento continua.
+:edl.
+
+.**********************************************************************
+.*  EPFIE140: 'xxxx' is not a valid path. (General help)
+.**********************************************************************
+:h2 name=IHM140 res=140.Aiuto per EPFIE140
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Il percorso immesso non ä un nome di percorso valido.
+:p.
+:hp7.Azione:ehp7.
+:ol.
+:li.Selezionare :hp2.Annullo:ehp2. per visualizzare la finestra
+Indirizzari per l'installazione.
+:li.Correggere il percorso. Assicurarsi che&colon.
+:ul compact.
+:li.Il percorso contenga la specifica di un'unitÖ disco fisso valida.
+:li.I nomi degli indirizzari contengano 8 caratteri al massimo
+(a meno che l'unitÖ non sia stata formattata con la struttura per
+registrazione HPFS).
+:li.Il percorso non termini con una barra retroversa &lpar.&bsl.&rpar..
+:eul.
+:li.Selezionare il pulsante :hp2.Installazione:ehp2. per riprovare.
+:eol.
+
+.**********************************************************************
+.*  EPFIW141: Cannot update the file mode of 'filename'. (General help)
+.**********************************************************************
+:h2 name=IHM141 res=141.Aiuto per EPFIW141
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Si ä verificato un errore mentre
+il programma di utilitÖ per l'installazione e la gestione
+effettuava un tentativo di impostare l'attributo di solo lettura o
+di nascosto per il file specificato. Non ä necessario impostare
+l'attributo per la riuscita dell'installazione del prodotto. L'attributo
+non ä stato impostato.
+:p.
+:hp7.Azione:ehp7.
+:p.
+Selezionare :hp2.OK:ehp2. per continuare l'operazione.
+
+.**********************************************************************
+.*  EPFIE142: Error copying the file 'filename' to the 'subdirectory'
+.*            directory. (General help)
+.**********************************************************************
+:h2 name=IHM142 res=142.Aiuto per EPFIE142
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Si ä verificato un errore del sistema operativo durante
+l'installazione, l'aggiornamento o il ripristino dei file specificati. Tale
+situazione puï verificarsi se&colon.
+:ul compact.
+:li.Non vi ä spazio su disco sufficiente per effettuare la copia
+dei file.
+:li.Uno o pió file da copiare esistono giÖ e sono in uso.
+:eul.
+:p.
+:hp7.Azione:ehp7.
+:ol.
+:li.Controllare che ci sia lo spazio sufficiente sul disco fisso su cui
+si sta effettuando l'operazione.
+:li.Controllare che il prodotto non sia al momento in esecuzione.
+:li.Riprovare ad eseguire l'operazione.
+:eol.
+
+.**********************************************************************
+.*  EPFIE144: An error occurred while attempting to load the user exit DLL
+.*            'xxxx'. User exits will not be executed.  (General help)
+.**********************************************************************
+:h2 name=IHM144 res=144.Aiuto per EPFIE144
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione e la gestione non ä riuscito a
+caricare o a trovare la DLL necessaria per continuare.
+:p.
+:hp7.Azione:ehp7.
+:ol.
+:li.Selezionare :hp2.OK:ehp2. per annullare il messaggio.
+:li.Controllare che la DLL specificata esista
+in un indirizzario presente nell'istruzione LIBPATH. Se
+la DLL viene trasferita dall'installazione, potrebbe essere necessario aggiungere un
+punto e un punto e virgola &lparen..;&rparen. all'inizio dell'istruzione
+LIBPATH nel file CONFIG.SYS
+&lparen.ad esempio,
+LIBPATH=:hp2.&period.&semi.:ehp2.C&colon.&bsl.OS2&bsl.DLL&semi.&rparen..
+:li.Riavviare la stazione di lavoro e riprovare ad eseguire l'installazione.
+:p.Se la DLL fa parte del
+programma di utilitÖ per l'installazione e la gestione, assicurarsi che
+si trovi nello stesso indirizzario che contiene gli altri file di installazione.
+:eol.
+
+.**********************************************************************
+.*  EPFIE145: User Exit error.  Function 'xxxx' was not found in the exit DLL
+.*            'xxxx'. (General help)
+.**********************************************************************
+:h2 name=IHM145 res=145.Aiuto per EPFIE145
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione
+e la gestione non trova all'interno della DLL specificata la funzione
+presente nella parola chiave EXIT di una voce FILE.
+:p.
+:hp7.Azione:ehp7.
+:p.
+:hp5.Utenti:ehp5.
+:p.Questo errore ä probabilmente provocato da un problema relativo al prodotto
+che si tenta di installare o aggiornare. Mettersi in contatto con il responsabile del sistema.
+:p.
+:hp5.Responsabili del sistema:ehp5.
+:ol compact.
+:li.Selezionare :hp2.OK:ehp2. per annullare il messaggio.
+:li.Controllare la validitÖ del file di pacchetto.
+:li.Se l'errore persiste, mettersi in contatto con il responsabile dell'assistenza del prodotto.
+:eol.
+
+.**********************************************************************
+.*  EPFIE147: The path 'xxxx' does not specify a hard drive. (General help)
+.**********************************************************************
+:h2 name=IHM147 res=147.Aiuto per EPFIE147
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Il percorso indicato non contiene la specifica di un'unitÖ disco fisso valida.
+:p.
+:hp7.Azione:ehp7.
+:ol compact.
+:li.Selezionare :hp2.Annullo:ehp2. per visualizzare la finestra
+Indirizzari per l'installazione.
+:li.Aggiungere la specifica dell'unitÖ appropriata nel percorso.
+:li.Selezionare il pulsante :hp2.Installazione:ehp2. per riprovare.
+:eol.
+
+.**********************************************************************
+.*  EPFIE148: The path 'xxxx' does not specify a valid hard drive.
+.*            (General help)
+.**********************************************************************
+:h2 name=IHM148 res=148.Aiuto per EPFIE148
+:p.
+:hp7.Spiegazione:ehp7.
+:p.L'unitÖ specificata nel
+percorso non esiste o non ä un'unitÖ disco fisso.
+:p.
+:hp7.Azione:ehp7.
+:ol.
+:li.Selezionare :hp2.Annullo:ehp2. per visualizzare la finestra
+Indirizzari per l'installazione.
+:li.Cambiare la specifica dell'unitÖ nel percorso.
+:li.Selezionare il pulsante :hp2.Installazione:ehp2. per riprovare.
+:eol.
+
+.**********************************************************************
+.*  EPFIE149: The path 'xxxx' cannot contain any global characters (i.e. '*'
+.*            or '?') (General help)
+.**********************************************************************
+:h2 name=IHM149 res=149.Aiuto per EPFIE149
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Non ä possibile usare caratteri globali
+&lparen.? e
+&asterisk.&rparen. nelle specifiche del percorso per questa finestra.
+:p.
+:hp7.Azione:ehp7.
+:ol.
+:li.Selezionare :hp2.Annullo:ehp2. per visualizzare la finestra
+Indirizzari per l'installazione.
+:li.Cancellare i caratteri globali dal percorso.
+:li.Selezionare il pulsante :hp2.Installazione:ehp2. per riprovare.
+:eol.
+
+.**********************************************************************
+.*  EPFIE150: Cannot download 'filename'. Directory overflow occurred.
+.*            (General help)
+.**********************************************************************
+:h2 name=IHM150 res=150.Aiuto per EPFIE150
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione e la gestione non riesce a
+trasferire il file specificato perchä vi sono troppi file nell'indirizzario.
+:p.
+:hp7.Azione:ehp7.
+:ol compact.
+:li.Cancellare i file inutili dall'indirizzario.
+:li.Selezionare :hp2.Riprova.:ehp2.
+:eol.
+:p.
+Oppure
+:ol compact.
+:li.Selezionare :hp2.Annullo.:ehp2.
+:li.Riavviare il programma usando un indirizzario di destinazione diverso.
+:eol.
+
+.**********************************************************************
+.*  EPFIE151: xxxx A communication error %4 occurred. (General help)
+.**********************************************************************
+:h2 name=IHM151 res=151.Aiuto per EPFIE151
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione e la gestione ha rilevato un
+errore nelle comunicazioni con il sistema centrale.
+:p.
+:hp7.Azione:ehp7.
+:ol compact.
+:li.Controllare lo stato della sessione del sistema centrale.
+:li.Selezionare :hp2.Riprova.:ehp2.
+:eol.
+:p.Per ulteriori informazioni sul codice di errore, fare riferimento
+alla guida per l'utente dell'OS/2 ed esaminare il codice di ritorno
+TRANSxxx corrispondente.
+:p.
+Se l'errore persiste, mettersi in contatto con il responsabile dell'assistenza del prodotto.
+
+.**********************************************************************
+.*  EPFIE152: 'x' is not a valid host session. (General help)
+.**********************************************************************
+:h2 name=IHM152 res=152.Aiuto per EPFIE152
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+La sessione del sistema centrale selezionata nel relativo riquadro per elenchi
+della finestra Apertura del catalogo di un sistema centrale non ä valida.
+:p.
+:hp7.Azione:ehp7.
+:ol compact.
+:li.Controllare che la sessione del sistema centrale specificata sia attiva.
+:li.Riprovare ad eseguire l'operazione.
+:eol.
+:p.
+Oppure
+:ol compact.
+:li.Selezionare :hp2.Apertura catalogo-Sistema centrale:ehp2. nello sviluppo azione di File.
+:li.Riaprire il catalogo del prodotto
+usando una differente sessione del sistema centrale.
+:eol.
+
+.**********************************************************************
+.*  EPFIE153: Session 'xxxx' is busy. (General help)
+.**********************************************************************
+:h2 name=IHM153 res=153.Aiuto per EPFIE153
+:p.
+:hp7.Spiegazione:ehp7.
+:p.La
+sessione del sistema centrale che si intende utilizzare per il trasferimento
+file ä giÖ occupata per un trasferimento file o ä utilizzata da un'altra sessione.
+:p.
+:hp7.Azione:ehp7.
+:ol compact.
+:li.Attendere che la sessione del sistema centrale si liberi.
+:li.Selezionare :hp2.Riprova:ehp2. per riprovare ad eseguire l'operazione.
+:eol.
+
+.**********************************************************************
+.*  EPFIE155: An error occurred on the host while accessing the file
+.*            'filename'. (General help)
+.**********************************************************************
+:h2 name=IHM155 res=155.Aiuto per EPFIE155
+:p.
+:hp7.Spiegazione:ehp7.
+:p.L'interfaccia
+EHLLAPI ha rilevato un errore di sistema che puï verificarsi a causa di
+diversi problemi di comunicazioni, ad esempio quando il programma di controllo
+non funziona o il cavo non ä collegato.
+:p.
+:hp7.Azione:ehp7.
+:p.Controllare l'impostazione delle comunicazioni e riprovare ad eseguire
+l'installazione o l'aggiornamento.
+:p.
+Se l'errore persiste, riavviare il sistema e riprovare ad eseguire l'installazione o
+l'aggiornamento.
+
+.**********************************************************************
+.*  EPFIE156: Host session 'x' is disconnected. Check the host window and the
+.*           workstation/host cable connections. (General help)
+.**********************************************************************
+:h2 name=IHM156 res=156.Aiuto per EPFIE156
+:p.
+:hp7.Spiegazione:ehp7.
+:p.La finestra dove ä in esecuzione la sessione del
+sistema centrale ä attiva ma la stazione di lavoro non ä collegata al
+sistema centrale.
+:p.
+:hp7.Azione:ehp7.
+:ol.
+:li.Controllare che siano stabilite le comunicazioni con il sistema centrale
+e che quest'ultimo sia pronto ad accettare i dati di immissione.
+:li.Riprovare ad eseguire l'operazione.
+:eol.
+
+.**********************************************************************
+.*  EPFIE157: Cannot add 'xxxxxxxx' to the CONFIG.SYS file. (General help)
+.**********************************************************************
+:h2 name=IHM157 res=157.Aiuto per EPFIE157
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Si ä verificato un problema mentre
+il programma di utilitÖ per l'installazione e la gestione effettuava
+il tentativo di
+aggiungere il percorso specificato nel file di configurazione (CONFIG.SYS)
+del sistema operativo.
+:p.
+:hp7.Azione:ehp7.
+:ol.
+:li.Selezionare :hp2.OK:ehp2. per continuare l'installazione o l'aggiornamento.
+:li.Aggiungere i percorsi appropriati nel file CONFIG.SYS. Per ulteriori informazioni,
+consultare le istruzioni per l'installazione del prodotto.
+:p.La copia di riserva del file CONFIG.SYS originale si chiama
+CONFIG.BAK e si trova nell'unitÖ e percorso in cui il prodotto
+ä stato installato.
+:eol.
+
+.*******************************************************
+.*  EPFIE158: Cannot add the 'xxxxxxxxxxxxxx' group to the
+.*            Desktop Manager. (General help)
+.*****************************************************
+:h2 name=IHM158 res=158.Aiuto per EPFIE158
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Si ä verificato un errore quando
+il programma di utilitÖ per l'installazione e la gestione ha effettuato il tentativo
+di aggiungere la cartella specificata
+all'Interfaccia area di lavoro.
+:p.
+:hp7.Azione:ehp7.
+:p.
+Selezionare :hp2.OK:ehp2. per continuare il trasferimento file.
+:p.E' possibile aggiungere il gruppo all'Interfaccia area di lavoro
+una volta terminata l'installazione.
+
+.******************************************************
+.*  EPFIE159: Cannot add the 'xxxxxxxxxxxxxxx' program to the Workplace`
+.*            shell. (General help)
+.*********************************************************
+:h2 name=IHM159 res=159.Aiuto per EPFIE159
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Si ä verificato un errore quando
+il programma di utilitÖ per l'installazione e la gestione ha effettuato il tentativo
+di aggiungere il nome di programma specificato
+all'Interfaccia area di lavoro. Tale nome di programma
+potrebbe essere giÖ presente nella cartella specificata.
+:p.
+:hp7.Azione:ehp7.
+:p.
+Selezionare :hp2.OK:ehp2. per continuare ad aggiungere i restanti file.
+:p.E' possibile aggiungere il programma
+all'Interfaccia area di lavoro una volta terminata l'installazione. Fare riferimento alla
+documentazione OS&slash.2:link refid=tm1 reftype=fn.*:elink.
+per informazioni sull'aggiunta dei programmi all'Interfaccia area di lavoro.
+
+.**********************************************************************
+.*  EPFIQ160: The service level you have selected to update is the same as
+.*            the service level already installed on your workstation.  Do you want
+.*            to continue? (General help)
+.**********************************************************************
+:h2 name=IHM160 res=160.Aiuto per EPFIQ160
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Il livello di aggiornamento del prodotto selezionato ä uguale
+a quello del prodotto giÖ installato sulla
+stazione di lavoro.
+:p.Il prodotto ä stato giÖ aggiornato all'ultimo livello. Non ä necessario
+eseguire di nuovo l'aggiornamento.
+:p.
+:hp7.Azione:ehp7.
+:p.
+Selezionare una delle seguenti opzioni&colon.
+:dl tsize=5 break=none compact.
+:dt.:hp2.SI':ehp2.
+:dd.Continua ad aggiornare il prodotto.
+:dt.:hp2.NO:ehp2.
+:dd.Annulla l'aggiornamento.
+:edl.
+
+.**********************************************************************
+.*  EPFIE161: EPFIE161: Incorrect host session or host operating system
+.*            specified. (General help)
+.**********************************************************************
+:h2 name=IHM161 res=161.Aiuto per EPFIE161
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Il sistema operativo della sessione
+del sistema centrale specificata nella finestra Apertura del catalogo di un
+sistema centrale non corrisponde al sistema operativo in uso.
+:p.
+:hp7.Azione:ehp7.
+:p.Nella finestra
+Apertura del catalogo di un sistema centrale assicurarsi che
+la sessione del sistema centrale ed il sistema operativo del sistema centrale
+corrispondano. Quindi riprovare ad eseguire l'operazione.
+
+.*********************************************************************
+.*EPFIE162 You do not have write access to the path you specified.
+.***********************************************************
+:h2 name=IHM162 res=162.Aiuto per EPFIE162
+:P.
+:hp7.Spiegazione:ehp7.
+:p.Non si dispone dell'autorizzazione a scrivere sull'unitÖ specificata.
+:p.
+:hp7.Azione:ehp7.
+:p.Cambiare l'unitÖ e riprovare o
+mettersi in contatto con il responsabile del sistema per ottenere l'autorizzazione.
+
+.**********************************************************************
+.*  EPFIE163: Out of memory. To release memory, end programs or allow memory
+.*            paging to your hard disk. (General help)
+.**********************************************************************
+:h2 name=IHM163 res=163.Aiuto per EPFIE163
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Il sistema richiede ulteriori risorse di sistema o una memoria
+di sistema pió ampia per questo programma di installazione.
+:p.
+:hp7.Azione:ehp7.
+:ol.
+:li.Selezionare :hp2.Annullo:ehp2. per annullare l'intera operazione.
+:li.Interrompere tutte le applicazioni non necessarie e chiudere tutte le sessioni
+non utilizzate.
+:li.Riprovare.
+:eol.
+
+.**********************************************************************
+.*  EPFIE165: Cannot execute 'programname(DOS return code: xxx)
+.*            (General help)
+.**********************************************************************
+:h2 name=IHM165 res=165.Aiuto per EPFIE165
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione e la gestione
+non riesce ad eseguire il programma specificato.
+:p.Se questo file eseguibile fa parte del prodotto di installazione, deve
+trovarsi nello stesso indirizzario che contiene tutti gli altri file del
+programma di utilitÖ per l'installazione e la gestione.
+:p.
+:hp7.Azione:ehp7.
+:ol.
+:li.Selezionare :hp2.Annullo:ehp2. per annullare
+la finestra del messaggio e visualizzare
+la finestra precedente.
+:p.Per ulteriori informazioni sul codice di ritorno DOS restituito fare
+riferimento alla pubblicazione
+:hp1.OS/2 2.0 Toolkit Control Program Reference:ehp1..
+:li.Uscire dal programma di installazione.
+:li.Passare all'indirizzario che contiene i file eseguibili dell'installazione.
+:li.Riavviare il programma di installazione.
+:eol.
+:p.
+Oppure
+:ol.
+:li.Selezionare :hp2.Annullo:ehp2. per annullare
+la finestra del messaggio e visualizzare la finestra precedente.
+:li.Aggiungere l'indirizzario che contiene i file eseguibili dell'installazione
+all'istruzione del percorso (PATH) nel file
+CONFIG.SYS.
+:li.Riavviare il sistema.
+:li.Riavviare il programma di installazione.
+:eol.
+
+.**********************************************************************
+.*  EPFIE166: The catalog file contains too many package entries.
+.*            (General help)
+.**********************************************************************
+:h2 name=IHM166 res=166.Aiuto per EPFIE166
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il file del catalogo nell'ubicazione origine contiene troppi prodotti. Nel file del
+catalogo non possono essere presenti pió di 80 pacchetti di prodotto.
+:p.
+:hp7.Azione:ehp7.
+:p.
+:hp5.Utenti:ehp5.
+:ol compact.
+:li.Selezionare :hp2.Annullo:ehp2. per annullare la finestra del messaggio.
+:li.Mettersi in contatto con il responsabile del sistema.
+:eol.
+:p.
+:hp5.Responsabili del sistema:ehp5.
+:p.
+Effettuare una delle seguenti operazioni&colon.
+:ul.
+:li.Editare il file del catalogo sul sistema centrale e cancellare i
+prodotti non necessari.
+:li.Suddividere il file del catalogo in due o pió file.
+:eul.
+
+.**********************************************************************
+.* EPFIE167: The catalog file 'filename' cannot be found on the host. Contact
+.*           your system administrator. (General help)
+.**********************************************************************
+:h2 name=IHM167 res=167.Aiuto per EPFIE167
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione e la gestione non trova
+il file del catalogo nell'ubicazione origine. Tale situazione puï verificarsi
+se&colon.
+:ul.
+:li.Il file specificato non esiste.
+:li.Non si dispone dell'accesso ai data set MVS, ai minidischi VM,
+alle unitÖ della LAN o ai minidischi corretti che contengono il
+file del catalogo.
+:eul.
+:p.
+:hp7.Azione:ehp7.
+:p.
+Selezionare :hp2.Annullo:ehp2. per annullare la finestra del messaggio e visualizzare
+la finestra precedente.
+:p.
+Effettuare una delle seguenti operazioni&colon.
+:ul.
+:li.Mettersi in contatto con il responsabile del sistema se il file
+specificato non esiste nell'ubicazione origine.
+:li.Accedere ai data set MVS, ai minidischi VM, alle unitÖ della LAN o ai
+minidischi corretti che contengono il catalogo.
+:eul.
+
+.**********************************************************************
+.* EPFIE168: The catalog file ('filename') is not valid.
+.*           Contact your system administrator. (General help)
+.**********************************************************************
+:h2 name=IHM168 res=168.Aiuto per EPFIE168
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione e la
+gestione ha rilevato un errore di sintassi mentre eseguiva l'analisi
+del file del catalogo specificato.
+:p.
+:hp7.Azione:ehp7.
+:p.
+:hp5.Utenti:ehp5.
+:ol.
+:li.Selezionare :hp2.Annullo:ehp2. per annullare la finestra del messaggio e visualizzare
+la finestra Apertura.
+:li.Controllare che il nome file del catalogo specificato nella
+finestra Apertura sia valido.
+:li.Se l'errore persiste, riferire il problema al responsabile del sistema.
+:eol.
+:p.
+:hp5.Responsabili del sistema:ehp5.
+:ol.
+:li.Correggere l'errore di sintassi nella copia origine del file di
+configurazione del sistema centrale.
+:li.Selezionare :hp2.Annullo:ehp2. per annullare la finestra del messaggio e visualizzare
+la finestra Apertura.
+:li.Riprovare ad eseguire l':hp2.Apertura:ehp2..
+:eol.
+
+.**********************************************************************
+.*  EPFIF169: Cannot download 'filename'. There are too many workstation files open.
+.*            (General help)
+.**********************************************************************
+:h2 name=IHM169 res=169.Aiuto per EPFIF169
+:p.
+:hp7.Spiegazione:ehp7.
+:p.E' stato superato il numero massimo di file aperti consentito dal sistema. Il
+trasferimento del file specificato richiede l'apertura di un nuovo file.
+:p.
+:hp7.Azione:ehp7.
+:ol.
+:li.Chiudere tutte le applicazioni che utilizzano un gran numero di file.
+:li.Riprovare ad eseguire l'operazione.
+:eol.
+:p.
+Se l'errore persiste, riavviare il sistema e, quindi, il programma di installazione.
+
+.**********************************************************************
+.*  EPFIE171: A data transfer error occurred while downloading 'filename'.
+.*            (General help)
+.**********************************************************************
+:h2 name=IHM171 res=171.Aiuto per EPFIE171
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Si sono verificati troppi errori di trasmissione durante il
+trasferimento file.
+:p.Tale situazione puï verificarsi se la linea per le comunicazioni ä
+mal funzionante.
+:p.
+:hp7.Azione:ehp7.
+:p.
+Riprovare ad eseguire l'operazione. Se l'errore persiste, mettersi in contatto con
+il personale dell'assistenza per controllare il canale delle comunicazioni.
+
+.**********************************************************************
+.* EPFIE172: The host session is locked. Switch to the host session and issue
+.*           a reset. (General help)
+.**********************************************************************
+:h2 name=IHM172 res=172.Aiuto per EPFIE172
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Il sistema centrale ä in attesa di un ripristino. Le comunicazioni
+non possono continuare a meno che non si effettui un ripristino o
+non si attenda che si verifichi la condizione di supero tempo massimo.
+:p.
+:hp7.Azione:ehp7.
+:ol compact.
+:li.Passare alla sessione del sistema centrale.
+:li.Effettuare il ripristino.
+:li.Riprovare l'operazione.
+:eol.
+
+.**********************************************************************
+.*  EPFIQ173: You have aborted in the middle of an update.  Your current
+.*            version of the product is not operable.  Do you want to restore
+.*            the previous service level? (General help)
+.**********************************************************************
+:h2 name=IHM173 res=173.Aiuto per EPFIQ173
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione e la gestione ha trasferito
+solo una parte dei file specificati nel
+file di pacchetto necessari per aggiornare il prodotto. Non ä possibile
+utilizzare il prodotto nello stato attuale.
+:p.
+:hp7.Azione:ehp7.
+:p.
+Selezionare una delle seguenti opzioni&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.SI':ehp2.
+:dd.Ripristina il prodotto allo stato in cui si trovava prima di iniziare
+l'aggiornamento. Selezionare :hp2.SI':ehp2. se non si
+intende riprovare ad eseguire l'aggiornamento.
+:dt.:hp2.NO:ehp2.
+:dd.Lascia i file nello stato attuale. Selezionare :hp2.NO:ehp2. se si intende
+riprovare ad eseguire l'aggiornamento. In tal modo si risparmierÖ tempo
+quando si eseguirÖ di nuovo l'installazione o l'aggiornamento.
+:edl.
+
+.**********************************************************************
+.*  EPFIQ174:  Do you want to exit the ISPF/PDF Tool Installation Utility?
+.*             (General help)
+.**********************************************************************
+:h2 name=IHM174 res=174.Aiuto per EPFIQ174
+:p.
+:hp7.Spiegazione:ehp7.
+:p.E' stato richiesto di uscire dal
+programma di utilitÖ per l'installazione e la gestione.
+:p.
+:hp7.Azione:ehp7.
+:p.
+Selezionare una delle seguenti opzioni&colon.
+:dl tsize=5 break=none compact.
+:dt.:hp2.SI':ehp2.
+:dd.Esce dal programma di utilitÖ.
+:dt.:hp2.NO:ehp2.
+:dd.Ritorna alla finestra principale senza uscire.
+:edl.
+
+.**********************************************************************
+.*  EPFIF175:  Out of semaphore resources.  to release resources, end
+.*             unneeded programs that use semaphores.
+.* (General help)
+.**********************************************************************
+:h2 name=IHM175 res=175.Aiuto per EPFIF175
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione e la gestione non ä
+riuscito a completare l'operazione perchä le risorse di sistema non sono
+sufficienti.
+:p.
+:hp7.Azione:ehp7.
+:p.Chiudere tutte le applicazioni non necessarie e
+selezionare :hp2.Riprova.:ehp2.
+:p.
+Selezionare :hp2.Annullo:ehp2. se si desidera uscire dall'applicazione.
+
+.**********************************************************************
+.*  EPFIE176:  Not enough Presentation Manager resources to proceed with
+.*             operation. (General help)
+.**********************************************************************
+:h2 name=IHM176 res=176.Aiuto per EPFIE176
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione e la gestione non ä riuscito a
+creare una finestra del
+Presentation Manager:link refid=tm1 reftype=fn.*:elink.. Tale situazione puï verificarsi
+se le risorse di sistema o la memoria disponibile non sono sufficienti.
+:p.
+:hp7.Azione:ehp7.
+:ul compact.
+:li.Selezionare :hp2.Annullo.:ehp2.
+:li.Interrompere tutte le applicazioni non necessarie e chiudere tutte le sessioni
+non utilizzate.
+:li.Riprovare ad eseguire l'operazione.
+:eul.
+
+.**********************************************************************
+.*  EPFII177:  The action you requested has completed.  You
+.*             must restart your operating system.  (General help)
+.**********************************************************************
+:h2 name=IHM177 res=177.Aiuto per EPFII177
+:p.
+:hp7.Spiegazione:ehp7.
+:p.L'azione richiesta ä stata completata. E' necessario riavviare il
+sistema operativo.
+:p.
+:hp7.Azione:ehp7.
+:p.Chiudere e riavviare il sistema.
+
+.**********************************************************************
+.*  EPFII178:  The action you requested has stopped.  You must restart
+.*             your operating system and retry the action. (General help)
+.**********************************************************************
+:h2 name=IHM178 res=178.Aiuto per EPFII178
+:p.
+:hp7.Spiegazione:ehp7.
+:p.L'azione richiesta ä stata interrotta. E' necessario riavviare
+il sistema operativo e riprovare ad eseguire l'azione richiesta.
+:p.
+:hp7.Azione:ehp7.
+:ul.
+:li.Rispondere a tutti gli altri messaggi visualizzati dall'applicazione.
+:li.Chiudere e riavviare il sistema.
+:li.Riprovare ad eseguire l'azione interrotta.
+:eul.
+
+.**********************************************************************
+.*  EPFIE180:An error occurred while downloading the product description file
+.*           '%1' from the host.           (General help)
+.**********************************************************************
+:h2 name=IHM180 res=180.Aiuto per EPFIE180
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Il file di descrizione del prodotto non ä disponibile nell'ubicazione origine
+oppure il nome file specificato dalla parola chiave
+PKGDESCRFILE presente nel file del catalogo non ä corretto.
+:p.
+:hp7.Azione:ehp7.
+:p.
+:hp5.Utenti:ehp5.
+:p.Assicurarsi di disporre dell'accesso ai minidischi VM,
+ai data set MVS, alle unitÖ della LAN o ai minidischi corretti e
+selezionare una delle seguenti opzioni&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.Riprova:ehp2.
+:dd.Riprova a trasferire il file di descrizione del prodotto.
+:dt.:hp2.Annullo:ehp2.
+:dd.Annulla la finestra del messaggio e visualizza la finestra principale.
+:edl.
+:p.
+:hp5.Responsabili del sistema:ehp5.
+:p.Controllare che il nome file specificato dalla parola chiave PKGDESCRFILE
+nel file del catalogo sia corretto e che il file esista nell'ubicazione origine.
+
+.**********************************************************************
+.*  EPFIQ181: You will not be able to restore the product to the previous
+.*            service level since the 'Save a backup version' option was
+.*            not selected.  Do you want to continue?  (General help)
+.**********************************************************************
+:h2 name=IHM181 res=181.Aiuto per EPFIQ181
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Se l'opzione
+:hp2.Salvataggio copia di riserva:ehp2. non ä stata selezionata,
+non ä possibile
+ripristinare il prodotto al livello di aggiornamento precedente una
+volta terminato l'aggiornamento. Inoltre, se non si seleziona questa opzione
+e si verifica un errore non recuperabile durante l'aggiornamento, il prodotto
+non potrÖ essere ripristinato ad un livello di aggiornamento stabile.
+:p.
+Selezionare l'opzione :hp2.Salvataggio copia di riserva:ehp2. a meno
+che lo spazio su disco della
+stazione di lavoro sia limitato. Usando questa opzione si ha la
+sicurezza che il prodotto possa essere ripristinato ad un livello di
+aggiornamento stabile se si verifica un errore.
+:p.
+:hp7.Azione:ehp7.
+:p.Selezionare una delle seguenti opzioni&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.SI':ehp2.
+:dd.Continua l'aggiornamento senza salvare una copia di riserva.
+:dt.:hp2.NO:ehp2.
+:dd.Annulla la finestra del messaggio e visualizza la finestra Aggiornamento
+dove ä possibile
+selezionare l'opzione :hp2.Salvataggio copia di riserva:ehp2..
+:edl.
+
+.**********************************************************************
+.*  EPFII182:   NO HELP FOR THIS MESSAGE
+.*   -       A product description is not available for this package
+.**********************************************************************
+
+.**********************************************************************
+.*  EPFIE183:  An error was found in the parameters of a user exit.
+.*             The exit parameters were: 'xxxxxx'. (General help)
+.**********************************************************************
+:h2 name=IHM183 res=183.Aiuto per EPFIE183
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Uno o pió parametri specificati non sono validi
+per un programma uscita utente. Si ä
+verificato un problema durante l'analisi delle variabili di argomento.
+:p.
+:hp7.Azione:ehp7.
+:p.
+:hp5.Utenti:ehp5.
+:p.Comunicare al
+responsabile del sistema che si ä verificato un problema relativo al
+file di pacchetto del prodotto selezionato.
+:p.
+:hp5.Responsabili del sistema:ehp5.
+:p.Esaminare i parametri di uscita specificati e
+correggere tutti gli errori nel file di pacchetto del prodotto.
+
+.**********************************************************************
+.*  EPFIQ184:  Installation of the 'xxx' component requires that the
+.*             'xxx' component also be installed.  Do you want to install
+.*             the 'yyy' component? (General help)
+.**********************************************************************
+:h2 name=IHM184 res=184.Aiuto per EPFIQ184
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Uno dei componenti selezionati non puï funzionare correttamente
+se non si installa anche un altro componente.
+:p.
+:hp7.Azione:ehp7.
+:p.
+:p.Selezionare una delle seguenti opzioni&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.SI':ehp2.
+:dd.Installa il componente necessario per il corretto funzionamento.
+:dt.:hp2.NO:ehp2.
+:dd.Annulla la finestra del messaggio e visualizza la finestra
+Indirizzari per l'installazione.
+:edl.
+
+.***********************************************************************
+.* EPFIQ185:   Drive '%1' does not contain enough space to install the
+.*             product.  Do you want to continue?
+.***********************************************************************
+:h2 name=IHM185 res=185.Aiuto per EPFIQ185
+:p.
+:hp7.Spiegazione:ehp7.
+:p.L'unitÖ specificata nel campo Indirizzario file non dispone di
+spazio su disco sufficiente per contenere il prodotto da installare.
+:p.
+:hp7.Azione:ehp7.
+:p.
+:p.Selezionare una delle seguenti opzioni&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.SI':ehp2.
+:dd.Ignora il messaggio di avvertenza e continua l'installazione. In tal modo
+perï l'installazione potrebbe non essere eseguita regolarmente proprio a causa
+della mancanza di spazio su disco.
+:dt.:hp2.NO:ehp2.
+:dd.Annulla la finestra del messaggio e visualizza la finestra
+Indirizzari per l'installazione. In questa finestra effettuare
+una delle seguenti operazioni&colon.
+:ol.
+:li.Selezionare una nuova unitÖ su cui installare il prodotto
+cambiando la specifica dell'unitÖ nel campo Indirizzario file. Per
+individuare un disco che abbia lo spazio sufficiente selezionare
+il pulsante
+:hp2.Spazio su disco:ehp2..
+:li.Se il prodotto contiene diversi componenti, selezionare un numero inferiore di
+componenti e
+selezionare di nuovo il pulsante :hp2.Installazione:ehp2..
+:nt.Vengono installati solo i componenti selezionati.
+:ent.
+:eol.
+:edl.
+
+.**********************************************************************
+.* EPFIQ186: Your CONFIG.SYS file will not be automatically updated.
+.*           After the installation or update is complete, you should manually
+.*           update your CONFIG.SYS file with the information found in the
+.*           CONFIG.ADD file.  Do you want to continue?
+.**********************************************************************
+:h2 name=IHM186 res=186.Aiuto per EPFIQ186
+:p.
+:hp7.Spiegazione:ehp7.
+:p.E' stato scelto di non aggiornare automaticamente
+il file CONFIG.SYS. Se il prodotto da installare o aggiornare richiede
+modifiche nel file CONFIG.SYS, il prodotto non verrÖ eseguito correttamente,
+una volta terminati l'installazione o l'aggiornamento, a meno che
+tali modifiche non vengano apportate manualmente e non venga riavviato il sistema.
+:p.
+:hp7.Azione:ehp7.
+:p.
+:p.Selezionare una delle seguenti opzioni&colon.
+:dl tsize=2 break=all compact.
+:dt.:hp2.SI':ehp2.
+:dd.Installa il prodotto senza l'aggiornamento del file CONFIG.SYS. Una volta
+terminati regolarmente l'installazione o l'aggiornamento, ä necessario
+apportare le modifiche manualmente nel file
+CONFIG.SYS, se richiesto dal prodotto,
+prima che quest'ultimo possa essere eseguito.
+:p.Le informazioni da aggiungere al file
+CONFIG.SYS verranno scritte in un file chiamato
+CONFIG.ADD presente nello stesso indirizzario del file CONFIG.SYS attuale. E' necessario
+sostituire il file CONFIG.SYS attuale con il file CONFIG.ADD.
+:dt.:hp2.NO:ehp2.
+:dd.Annulla la finestra del messaggio e visualizza
+la finestra precedente, dove ä possibile selezionare
+l'opzione :hp2.Aggiornamento CONFIG.SYS:ehp2. e quindi
+riavviare l'installazione o l'aggiornamento.
+:edl.
+
+.**********************************************************************
+.* EPFIE187: An product specific installation error has occurred.
+.*           The return code is %1.
+.**********************************************************************
+:h2 name=IHM187 res=187.Aiuto per EPFIE187
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Si ä verificato un errore durante l'esecuzione di una routine fornita dal
+prodotto che si sta installando, aggiornando o ripristinando.
+:p.
+:hp7.Azione:ehp7.
+:p.Annotare il codice di ritorno e
+selezionare :hp2.Annullo:ehp2. per uscire
+dall'installazione o dall'aggiornamento. Fare riferimento alle istruzioni
+per l'installazione del prodotto da
+installare per ulteriori informazioni sul codice di ritorno.
+:p.
+Se l'errore persiste, mettersi in contatto con il responsabile del sistema
+o con il responsabile dell'assistenza del prodotto.
+
+.**********************************************************************
+.* EPFIE188: The host file '%2' is in use or cannot be accessed.
+.**********************************************************************
+:h2 name=IHM188 res=188.Aiuto per EPFIE188
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Si ä verificato un errore durante il tentativo di accedere al file
+nell'ubicazione origine. Tale situazione puï verificarsi a causa di una delle
+seguenti condizioni&colon.
+:ul.
+:li.Un altro programma o utente sta utilizzando il file o il data set che lo contiene.
+:li.Il file o il data set specificato non esiste nell'ubicazione origine.
+:eul.
+:p.
+:hp7.Azione:ehp7.
+:ol.
+:li.Se l'ubicazione origine ä un sistema centrale, passare alla sessione
+di emulazione del sistema centrale e controllare se vengono visualizzati
+messaggi di errore.
+:li.Controllare che il file o il data set specificato esista.
+:li.Ritornare alla sessione della stazione di lavoro e riprovare ad eseguire l'operazione
+selezionando il pulsante :hp2.Riprova:ehp2..
+:eol.
+:p.
+Se l'errore persiste, attendere che il file del sistema centrale non sia pió utilizzato e
+riprovare ad eseguire l'operazione.
+
+.**********************************************************************
+.* EPFIE189: Cancelling the update has left the product in an unstable state.
+.*           After cancelling this message you should either update the
+.*           product again or delete the product.
+.**********************************************************************
+:h2 name=IHM189 res=189.Aiuto per EPFIE189
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Non ä stata selezionata l'opzione
+:hp2.Salvataggio copia di riserva:ehp2. e l'aggiornamento non
+ä riuscito. Di conseguenza il programma di utilitÖ per l'installazione
+e la gestione non puï ripristinare il prodotto ad un livello di
+aggiornamento stabile.
+:p.
+:hp7.Azione:ehp7.
+:p.Non tentare di eseguire il prodotto finchä non viene
+ripristinato ad uno stato stabile.
+:ol.
+:li.Selezionare :hp2.Annullo:ehp2. per annullare questo messaggio di errore.
+:li.Visualizzare la finestra principale e quindi riprovare ad eseguire l'aggiornamento
+del prodotto.
+:li.Se l'errore persiste, cancellare il prodotto e reinstallarlo.
+:eol.
+:eh1.
+
+.**********************************************************************
+.* EPFIE190: An error occurred while attempting to access the workstation printer.
+.**********************************************************************
+:h2 name=IHM190 res=190.Aiuto per EPFIE190
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Il sistema non riesce a completare l'operazione di stampa a causa di
+un errore relativo alla stampante della stazione di lavoro. Tale situazione
+puï verificarsi a causa di
+una delle seguenti condizioni&colon.
+:ul compact.
+:li.Lo spazio su disco ä insufficiente.
+:li.La stampante ä fuori linea.
+:li.La Gestione stampa dell'OS&slash.2:link refid=tm1 reftype=fn.*:elink.
+non ä stata attivata.
+:nt.La Gestione stampa deve essere attivata e la stampante della
+stazione di lavoro deve essere associata a LPT1 perchä l'operazione di
+stampa venga effettuata.
+:ent.
+:eul.
+:p.
+:hp7.Azione:ehp7.
+:ol.
+:li.Selezionare :hp2.Annullo:ehp2. per annullare questo messaggio di errore.
+:li.Controllare che la Gestione stampa dell'OS&slash.2 sia stata impostata correttamente
+e sia stata attivata. Se la Gestione stampa ä disattivata, attivarla e
+riprovare ad eseguire l'operazione.
+:li.Fare riferimento alla Gestione stampa dell'OS&slash.2 per ulteriori
+informazioni su questo errore.
+:eol.
+.**********************************************************************
+.* EPFIE191: Drive '%1' is not ready.
+.**********************************************************************
+:h2 name=IHM191 res=191.Aiuto per EPFIE191
+:p.
+:hp7.Spiegazione:ehp7.
+:p.L'operazione non puï essere completata perchä non ä possibile accedere
+all'unitÖ specificata. Tale situazione puï verificarsi a causa di una delle
+seguenti condizioni&colon.
+:ul compact.
+:li.L'unitÖ specificata ä un'unitÖ minidisco dove ä necessario
+inserire un minidisco.
+:li.L'unitÖ non ä collegata al sistema.
+:eul.
+:p.
+:hp7.Azione:ehp7.
+:p.
+:ol.
+:li.Controllare che sia presente un minidisco nell'unitÖ specificata
+e che l'unitÖ sia collegata.
+:li.Selezionare il pulsante :hp2.Riprova:ehp2. per
+riprovare ad eseguire l'operazione.
+:eol.
+.**********************************************************************
+.* EPFII192: Insert a disk in drive '%1'.  Select OK when ready.
+.**********************************************************************
+:h2 name=IHM192 res=192.Aiuto per EPFII192
+:p.
+:hp7.Spiegazione:ehp7.
+:p.E' necessario accedere ad un'unitÖ diversa dall'unitÖ assunta. E' necessario, dunque,
+sostituire il minidisco.
+:p.
+:hp7.Azione:ehp7.
+:p.Inserire il minidisco richiesto nell'unitÖ e
+selezionare :hp2.OK:ehp2.. Se il minidisco richiesto ä giÖ presente
+nell'unitÖ, ä necessario solo selezionare :hp2.OK:ehp2..
+
+.**********************************************************************
+.* EPFIE193: The filename ('%2') is not valid.
+.**********************************************************************
+:h2 name=IHM193 res=193.Aiuto per EPFIE193
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Il nome file specificato non ä un nome file valido
+dell'OS&slash.2:link refid=tm1 reftype=fn.*:elink. oppure non esiste
+nell'unitÖ origine. Non ä consentito usare i caratteri globali
+nei nomi dei file dell'installazione.
+:p.
+:hp7.Azione:ehp7.
+:p.Se questo errore si verifica durante un'operazione di apertura:
+:ol.
+:li.Selezionare il pulsante :hp2.Annullo:ehp2. nella
+finestra del messaggio di errore.
+:li.Controllare che il nome file immesso nel campo Nome file della finestra
+Apertura del catalogo di un'unitÖ o Apertura del catalogo di un sistema centrale
+sia valido.
+:li.Riprovare ad eseguire l'apertura.
+:eol.
+:p.
+Se questo errore si verifica durante un'altra operazione:
+:ol.
+:li.Riaprire il catalogo attuale selezionando
+:hp2.Apertura catalogo:ehp2. nello sviluppo azione di File.
+:li.Riprovare ad eseguire l'operazione.
+:li.Se l'errore persiste, mettersi in contatto con
+il responsabile del sistema e comunicare il problema. Probabilmente
+l'errore ä relativo ai file del catalogo o di pacchetto che vengono letti
+dal programma di utilitÖ per l'installazione e la gestione.
+:eol.
+:p.
+:hp5.Responsabili del sistema:ehp5.
+:p.Tale situazione puï verificarsi se si utilizza un nome file che
+contiene una specifica di unitÖ nelle parole chiave
+HOSTLOC, PACKAGEFILE o PKGDESCRFILE nel
+file del catalogo o nelle parole chiave
+FILE-SOURCE o INCLUDE-NAME nel file di pacchetto. I nomi file specificati in
+queste parole chiave NON devono contenere lettere identificative
+di unitÖ. Esempi di parole chiave valide sono&colon.
+:xmp.
+PACKAGEFILE  = 'drive&colon. \wsp2\epfipkg.pkg;
+                vm&colon. epfipkg enuepf12 *'
+PKGDESCRFILE = 'drive&colon. \wsp2\epfidesc.dsc;
+                vm&colon. epfidesc enuepf12 *'
+HOSTLOC      = 'drive&colon. \wsp2\; vm&colon. ;'
+SOURCE       = 'drive&colon. file.exe; vm: file exebin *'
+:exmp.
+
+.**********************************************************************
+.* EPFIE195: A cyclic redundancy check (CRC) error occurred while
+.*                    transferring '%2'.
+.**********************************************************************
+:h2 name=IHM195 res=195.Aiuto per EPFIE195
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Si ä verificato un errore che riguarda l'integritÖ dei dati
+del file in trasferimento. I file origine potrebbero essere danneggiati. Non
+ä possibile completare correttamente l'installazione
+o l'aggiornamento se non viene corretto l'errore.
+:p.
+:hp7.Azione:ehp7.
+:p.
+:ol.
+:li.Selezionare il pulsante :hp2.Riprova:ehp2. per riprovare ad eseguire il trasferimento
+file.
+:li.Se l'errore persiste, ä probabile che l'errore sia relativo ai file origine. Mettersi
+in contatto con il responsabile dell'assistenza del prodotto per una nuova serie
+dei file origine.
+:eol.
+
+.**********************************************************************
+.* EPFIE196: An abnormal error occurred while a executing %1.
+.**********************************************************************
+:h2 name=IHM196 res=196.Aiuto per EPFIE196
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Si ä verificato un errore durante lo scompattamento di un file
+compattato. Non
+ä possibile completare correttamente l'installazione
+o l'aggiornamento se non viene corretto l'errore.
+:p.
+:hp7.Azione:ehp7.
+:p.
+:ol.
+:li.Selezionare il pulsante :hp2.Riprova:ehp2. per riprovare ad eseguire l'operazione
+di scompattamento.
+:li.Se l'errore persiste, il prodotto ä probabilmente danneggiato
+o in errore. Mettersi in contatto con
+il responsabile dell'assistenza del prodotto per una nuova serie dei minidischi o dei file
+di installazione.
+:eol.
+
+.**********************************************************************
+.* EPFIE197: An error occurred while unpacking %3 (return code: %2).
+.**********************************************************************
+:h2 name=IHM197 res=197.Aiuto per EPFIE197
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Si ä verificato un errore durante lo scompattamento di un file
+compattato. Non
+ä possibile completare correttamente l'installazione
+o l'aggiornamento se non viene corretto l'errore.
+:p.
+:hp7.Azione:ehp7.
+:p.
+:ol.
+:li.Selezionare il pulsante :hp2.Riprova:ehp2. per riprovare ad eseguire l'operazione
+di scompattamento.
+:li.Se l'errore persiste, il prodotto ä probabilmente danneggiato
+o in errore. Mettersi in contatto con
+il responsabile dell'assistenza del prodotto per una nuova serie dei minidischi o dei file
+di installazione.
+:eol.
+
+.**********************************************************************
+.* EPFIE198: '%1' could not be found within the specified PACK file.
+.**********************************************************************
+:h2 name=IHM198 res=198.Aiuto per EPFIE198
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Un file necessario per
+l'installazione o per l'aggiornamento non ä stato trovato nell'appropriato
+file compattato. Tale situazione puï verificarsi a causa di
+una delle seguenti condizioni:
+:ul.
+:li.Quando ä stato creato il file compattato non ä stato incluso
+il file specificato.
+:li.E' stato rilevato un errore relativo al file di pacchetto del prodotto. Molto
+probabilmente la voce FILE che corrisponde al file specificato
+contiene un valore per la parola chiave PACKID che non corrisponde
+al file PACK corretto.
+:eul.
+:p.
+:hp7.Azione:ehp7.
+:p.
+:hp5.Utenti&colon.:ehp5.
+:p.
+Comunicare l'errore al responsabile del sistema.
+:p.
+:hp5.Responsabili della creazione del file di pacchetto&colon.:ehp5.
+:ol.
+:li.Controllare la voce FILE che corrisponde al file specificato
+e correggere tutti gli errori rilevati.
+:li.Se non vengono rilevati errori nel file di pacchetto, creare di
+nuovo il file compattato. Assicurarsi che il file specificato sia
+incluso nel file compattato.
+:li.Riprovare ad eseguire l'operazione.
+:eol.
+
+.**********************************************************************
+.* EPFIE199: A PACKFILE entry that corresponds to the PACKID ('%1') was
+.*          not found.
+.**********************************************************************
+:h2 name=IHM199 res=199.Aiuto per EPFIE199
+:p.
+:hp7.Spiegazione:ehp7.
+:p.E' stato rilevato un errore relativo al file di pacchetto del prodotto. La voce
+FILE che corrisponde al file specificato contiene un valore non valido per PACKID.
+:p.
+:hp7.Azione:ehp7.
+:p.
+:hp5.Utenti&colon.:ehp5.
+:p.
+Comunicare l'errore al responsabile del sistema.
+:p.
+:hp5.Responsabili della creazione del file di pacchetto&colon.:ehp5.
+:ol.
+:li.Controllare la voce FILE che corrisponde al file specificato e
+correggere tutti gli errori rilevati. Assicurarsi che esista una voce
+PACKFILE che corrisponda al PACKID specificato nella voce FILE.
+:li.Riprovare ad eseguire l'operazione.
+:eol.
+
+.**********************************************************************
+.* EPFIE200: The PACKFILE ('%3') could not be found.
+.**********************************************************************
+:h2 name=IHM200 res=200.Aiuto per EPFIE200
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il programma di utilitÖ per l'installazione e la gestione non trova
+il file PACK specificato nel sistema origine. Tale situazione puï
+verificarsi se il file non ä presente nel sistema origine
+o se il file di pacchetto contiene un errore.
+:p.
+:hp7.Azione:ehp7.
+:p.
+:hp5.Utenti:ehp5.
+:ol.
+:li.Selezionare una delle seguenti opzioni&colon.
+:dl tsize=8 break=none compact.
+:dt.:hp2.Annullo:ehp2.
+:dd.Annulla il trasferimento file.
+:dt.:hp2.Riprova:ehp2.
+:dd.Reimmette il comando di trasferimento.
+:edl.
+:li.Mettersi in contatto con il responsabile del sistema
+se il problema persiste.
+:eol.
+:p.
+:hp5.Responsabili del sistema:ehp5.
+:ol.
+:li.Controllare la parola chiave
+SOURCE del tipo di voce PACKFILE che corrisponde al file specificato per
+assicurarsi che il nome file sia corretto.
+:li.Se il file di pacchetto ä corretto, assicurarsi che il file
+esista nel sistema origine.
+:li.Riprovare ad eseguire l'operazione.
+:eol.
+
+.**********************************************************************
+.* EPFIE201: The opened catalog contains only updates to product(s) that
+.*           are not currently installed.  You must install the product(s)
+.*           before these updates can be applied.
+.**********************************************************************
+:h2 name=IHM201 res=201.Aiuto per EPFIE201
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Il catalogo che ä stato aperto non contiene alcun prodotto nuovo. Contiene
+solo correzioni per programmi di altri prodotti. Prima di poter
+apportare queste correzioni ä necessario installare i prodotti relativi.
+:p.
+:hp7.Azione:ehp7.
+:p.Se si desidera apportare le correzioni, ä necessario installare
+il prodotto relativo. Se il prodotto ä giÖ installato, ä possibile
+che il file del profilo dell'applicazione sia stato cancellato o danneggiato. In
+tal caso ä necessario reinstallare il prodotto. Quando si effettua l'installazione,
+specificare gli stessi indirizzari in cui era originariamente
+installato il prodotto.
+
+.**********************************************************************
+.* EPFIE203: An invalid value was specified for the '%1' command line option.
+.**********************************************************************
+:h2 name=IHM203 res=203.Aiuto per EPFIE203
+:p.
+:hp7.Spiegazione:ehp7.
+:p.L'opzione della riga comandi specificata ä valida ma il valore
+indicato (la parte che si trova a destra del segno di uguale) non ä valido.
+:p.
+:hp7.Azione:ehp7.
+:p.
+Correggere il valore del
+:link reftype=hd res=2041.parametro della riga comandi:elink.
+e riprovare ad eseguire l'operazione.
+
+.**********************************************************************
+.* EPFIE204: An invalid command line option (%1) was specified.
+.**********************************************************************
+:h2 name=IHM204 res=204.Aiuto per EPFIE204
+:p.
+:hp7.Spiegazione:ehp7.
+:p.E' stata specificata un'opzione della riga comandi non valida.
+:p.
+:hp7.Azione:ehp7.
+:p.Immettere il corretto
+:link reftype=hd res=2041.parametro della riga comandi:elink.
+e riprovare ad eseguire l'operazione.
+
+.**********************************************************************
+.* Help for command line parameters.
+.**********************************************************************
+:h2 res=2041.Parametri della riga comandi
+:p.Usare il comando
+EPFINSTS seguito da uno o pió dei seguenti parametri in corrispondenza
+della richiesta comandi dell'OS/2.
+:p.Se il valore di un parametro contiene spazi, allora il valore
+deve essere racchiuso tra virgolette.
+:p.I parametri possono essere specificati in qualsiasi ordine.
+:dl tsize=10 break=all.
+:dthd.Parametro
+:ddhd.Descrizione
+.*
+:dt.&slash.A=:hp1.azione:ehp1.
+:dd.Specifica l'azione da eseguire.
+:p.Se questo parametro viene specificato con un valore valido, la finestra principale
+del programma di utilitÖ per l'installazione non viene visualizzata. In tal
+caso le finestre vengono direttamente visualizzate dall'Interfaccia area di lavoro
+dell'OS&slash.2:link refid=tm1 reftype=fn.*:elink..
+:p.Se non si utilizza questo parametro, il
+programma di utilitÖ per l'installazione e la gestione viene avviato
+normalmente con tutte le finestre visualizzate. I valori possono essere
+specificati in lettere maiuscole o minuscole. I valori validi per
+questo parametro sono:
+:dl.
+:dt.:hp2.d:ehp2. :dd.per la cancellazione
+:dt.:hp2.i:ehp2. :dd.per l'installazione
+:dt.:hp2.r:ehp2. :dd.per il ripristino
+:dt.:hp2.u:ehp2. :dd.per l'aggiornamento
+:edl.
+:p.L'uso di questo parametro comporta la specifica del parametro /P.
+.*
+:dt.&slash.C=:hp1.nome_file_del_catalogo:ehp1.
+:dd.Specifica il nome e l'ubicazione del file del catalogo.
+:p.
+Se il file del catalogo si trova nel sistema centrale, l'ID della sessione
+del sistema centrale deve precedere il nome file del catalogo.
+:p.
+Se il file del catalogo si trova su un minidisco, sulla LAN o in
+una cartella condivisa dell'AS/400, si devono specificare un'unitÖ e
+un indirizzario prima del nome file del catalogo.
+:p.Di seguito sono riportati esempi del parametro
+&slash.C per ogni ubicazione origine&colon.
+:dl tsize=5 break=all.
+:dt.UnitÖ
+:dd.&slash.C=Z&colon.\EPFICAT.CAT
+:dt.MVS
+:dd.&slash.C=B&colon.EPF.V1R1M0.SEPFBENU(EPFICAT)
+:dt.VM
+:dd.&slash.C="B&colon.EPFICAT ENUEPF11 *"
+:dt.VSE
+:dd.&slash.C=B&colon.LIB.SUBLIB.MEMBERNAME.MEMBERTYPE
+:edl.
+:p.Se questo parametro viene specificato, il file
+del catalogo viene automaticamente aperto.
+.*
+:dt.&slash.G&colon.:hp1.percorso_file_da_includere:ehp1.
+:dd.Specifica l'unitÖ e il percorso dei
+file delle risposte generali che vengono inclusi dal
+file delle risposte specifico.
+:p.Il programma di utilitÖ per l'installazione e la gestione imposta
+la variabile di installazione EPFIGENRESPDIR
+sul percorso dei file da includere.
+:p.Esempio&colon.
+:xmp.
+   /G&colon.L&colon.\XYZ
+:exmp.
+.*
+:dt.&slash.L=:hp1.posx:ehp1.,:hp1.posy:ehp1.
+:dd.Specifica le coordinate iniziali x e y della finestra Installazione e
+gestione sulla Scrivania relativamente
+all'angolo inferiore sinistro dello schermo.
+:p.Se questo parametro viene specificato, tutte le posizioni assunte
+salvate in precedenza vengono sostituite.
+.*
+:dt.&slash.L1&colon.:hp1.registrazione_degli_errori:ehp1.
+:dd.Specifica l'unitÖ, il percorso e il nome del file di destinazione
+della registrazione degli errori.
+:p.Il programma di utilitÖ per l'installazione e la gestione imposta la
+variabile di installazione
+EPFIERRORLOG sulla registrazione degli errori.
+:p.Se l'unitÖ e il percorso non vengono specificati,
+sono utilizzati l'unitÖ e il percorso dove ä in esecuzione
+EPFINSTS.EXE. Se il nome file non viene specificato,
+gli errori vengono registrati in EPFINSTS.OUT.
+:p.Esempio&colon.
+:xmp.
+   /L1&colon.C&colon.\ABC\ERROR.LOG
+:exmp.
+.*
+:dt.&slash.L2&colon.:hp1.file_cronologico:ehp1.
+:dd.Specifica l'unitÖ, il percorso e il nome del file di destinazione della
+registrazione cronologica.
+:p.Il programma di utilitÖ per l'installazione e la gestione imposta
+la variabile di installazione
+EPFIHISTORYLOG sul file cronologico.
+:p.Se l'unitÖ e il percorso non vengono specificati,
+sono utilizzati l'unitÖ e il percorso dove ä in esecuzione
+EPFINSTS.EXE.
+:p.Se questo parametro non viene specificato, non viene memorizzato alcun
+file cronologico.
+:p.Esempio&colon.
+:xmp.
+   /L2&colon.C&colon.\ABC\HISTORY.LOG
+:exmp.
+.*
+:dt.&slash.L3&colon.  &slash.L4&colon.  &slash.L5&colon.:hp1.file_di_registrazione:ehp1.
+:dd.
+Ognuno di questi parametri puï contenere l'unitÖ, il percorso e il nome
+di un file di registrazione. Questi sono specificati nelle
+variabili di installazione
+EPFIL3LOG, EPFIL4LOG e EPFIL5LOG allo scopo di riservarli all'uso dell'utente.
+.*
+:dt.&slash.P=:hp1.nome_prodotto:ehp1.
+:dd.Specifica il nome del prodotto oggetto dell'azione da eseguire.
+:p.Se il nome del prodotto contiene spazi, deve essere racchiuso tra
+virgolette (").
+:p.Esempi di specifiche di nomi di prodotto valide:
+:sl compact.
+:li.&slash.P="Nome di prodotto con spazi"
+:li.&slash.P=nomeprodotto
+:esl.
+.*
+:dt.&slash.R&colon.:hp1.file_delle_risposte:ehp1.
+:dd.Specifica l'unitÖ, il percorso e il nome del
+file delle risposte specifico.
+:p.Il programma di utilitÖ per l'installazione e la gestione imposta la
+variabile di installazione
+EPFIRESPFILE sul file delle risposte.
+:p.Esempio&colon.
+:xmp.
+   /R&colon.L&colon.\XYZ\RESPONSE.DAT
+:exmp.
+.*
+:dt.&slash.O=:hp1.ambiente_origine:ehp1.
+:dd.Specifica l'ambiente origine
+dell'installazione o dell'aggiornamento. I valori validi per questo
+parametro sono&colon.
+:ul compact.
+:li.UNITA'
+:li.MVS
+:li.VM
+:li.VSE
+:eul.
+:p.Questo parametro viene ignorato per le azioni di cancellazione o ripristino.
+.*
+:dt.&slash.S&colon.:hp1.ubicazione_origine:ehp1.
+:dd.Specifica l'unitÖ e il percorso che contengono i file origine da
+installare.
+:p.Il programma di utilitÖ per l'installazione e la gestione imposta
+la variabile di installazione
+EPFISOURCEDIR sull'ubicazione origine.
+:p.Specificando questo parametro, il parametro
+&slash.S viene impostato su UNITA' e il valore della parola chiave
+HOSTLOC presente nel file del catalogo del prodotto viene ignorato.
+:p.Se questo parametro non viene specificato il valore della parola chiave
+HOSTLOC non viene ignorato.
+:p.Esempio&colon.
+:xmp.
+   /S&colon.L&colon.\XYZ
+:exmp.
+.*
+:dt.&slash.T&colon.:hp1.indirizzario_di_destinazione_per_l'installazione:ehp1.
+:dd.Specifica l'unitÖ e il percorso dove vengono installati i file del
+prodotto.
+:p.Questo parametro riguarda esclusivamente il valore dell'indirizzario
+FILE (indirizzario corrispondente alla parola chiave
+FILELABEL).
+:p.Il programma di utilitÖ per l'installazione e la gestione imposta
+la variabile di installazione
+EPFITARGETDIR sull'indirizzario di destinazione per l'installazione.
+:p.Esempio&colon.
+:xmp.
+   /T&colon.C&colon.\IBB
+:exmp.
+.*
+:dt.&slash.TU&colon.:hp1.indirizzario_del_CONFIG.SYS_di_destinazione_da_aggiornare:ehp1.
+:dd.Specifica l'unitÖ e il percorso del file CONFIG.SYS di destinazione da
+aggiornare.
+:p.Il programma di utilitÖ per l'installazione e la gestione imposta la
+variabile di installazione EPFITARGETCNF sull'indirizzario
+del CONFIG.SYS di destinazione da aggiornare.
+:p.Se questo parametro non viene specificato i file
+CONFIG.SYS vengono aggiornati secondo le specifiche contenute nel
+file di pacchetto del prodotto.
+:p.Esempio&colon.
+:xmp.
+   /TU&colon.C&colon.\
+:exmp.
+.*
+:dt./X
+:dd.Specifica che l'azione non viene presidiata.
+:p.Quando si specifica questo parametro non vengono visualizzate
+le indicazioni sullo stato di avanzamento.
+:p.Se non vengono specificate
+le informazioni aggiuntive necessarie per il completamento dell'azione,
+si verifica un errore. Se si specifica
+/L1&colon., tutti i messaggi di errore vengono registrati nel
+file di registrazione degli errori specificato. Se /L1&colon. non viene specificato,
+i messaggi di errore vengono registrati nel file EPFINSTS.OUT.
+:p.Se questo parametro non viene specificato, verranno richieste
+all'utente tutte le informazioni necessarie per il completamento
+dell'azione. In questo modo di operazione presidiato vengono visualizzate
+le indicazioni sullo stato di avanzamento
+e i messaggi di errore vengono presentati all'utente nelle
+relative finestre.
+:edl.
+
+.**********************************************************************
+.* Help for response file parameters
+.**********************************************************************
+:h2 res=2042.Parametri del file delle risposte
+:p.In generale, il formato dei parametri in un file delle risposte
+ä :hp1.parametro = valore:ehp1..
+:p.E' possibile specificare solo un parametro per riga, senza dover osservare
+un ordine specifico.
+:p.In un file delle risposte per l'installazione sono validi i seguenti
+parametri.
+:dl tsize=11 break=all.
+:dthd.Parametro
+:ddhd.Descrizione
+:dt.aux:hp1.n:ehp1.
+:dd.Specifica il nuovo percorso assunto per l'indirizzario ausiliario, dove
+:hp1.n:ehp1. ä un numero compreso tra 1 e 18 (dunque vi sono 18 indirizzari
+ausiliari possibili: AUX1, AUX2,...AUX18). Usare questo parametro solo per
+l'azione di installazione.
+:dt.comp
+:dd.Specifica un componente del prodotto oggetto dell'operazione
+da eseguire. Usare un parametro comp per ogni componente da specificare. I
+componenti non validi vengono ignorati.
+:dt.cfgupdate
+:dd.Specifica se il file CONFIG.SYS viene aggiornato automaticamente. I valori
+validi per questo parametro sono
+AUTO (aggiornamento automatico del CONFIG.SYS) o MANUAL
+(nessun aggiornamento del CONFIG.SYS). Questo parametro viene usato solo
+per le azioni di installazione o aggiornamento e viene ignorato se
+viene specificata un'azione diversa.
+:dt.copy
+:dd.Specifica i file origine e di destinazione per l'elaborazione di
+una copia. Il formato di questo parametro ä&colon.
+:xmp.
+  COPY = specfile_orig specfile_dest
+:exmp.
+:p.
+Dove :hp1.specfile_orig:ehp1. ä il file origine e
+:hp1.specfile_dest:ehp1. ä il file di destinazione. Se specfile_dest
+esiste giÖ, viene ricoperto. Se una delle due specifiche non ä valida,
+la copia non viene eseguita.
+:dt.deletebackup
+:dd.Specifica se cancellare solo le copie di riserva del
+prodotto o cancellare il prodotto per intero. I valori validi per
+questo parametro sono YES o NO. Questo parametro viene usato solo
+per l'azione di cancellazione e viene ignorato per tutte le altre
+azioni.
+:dt.file
+:dd.Specifica l'indirizzario FILE dove deve essere installato il prodotto. Questo
+parametro viene usato solo per l'azione di installazione e viene
+ignorato per tutte le altre azioni.
+:dt.include
+:dd.Specifica quali file delle risposte generali includere con
+un file delle risposte specifico. Il formato di questo parametro ä&colon.
+:xmp.
+  INCLUDE = specfile
+:exmp.
+:p.Dove
+:hp1.specfile:ehp1. ä il file delle risposte generale da includere. Se la specifica del file
+contiene caratteri globali
+(&asterisk. o ?), viene incluso il primo file che corrisponde alla specifica. Se
+la specifica non ä valida, non viene incluso
+alcun file delle risposte generale.
+:p.Per trovare i file delle risposte generali specificati viene rispettato
+il seguente ordine di ricerca.
+:ol compact.
+:li.La specifica del file completamente qualificata, se specificata con :hp1.specfile:ehp1..
+:li.L'indirizzario attuale.
+:li.Il nome file insieme al parametro di richiamo /G&colon..
+:li.Ogni indirizzario presente nella variabile del segmento di ambiente PATH.
+:li.Ogni indirizzario presente nella variabile del segmento di ambiente DPATH.
+:eol.
+:dt.overwrite
+:dd.Specifica se i file devono essere ricoperti automaticamente durante
+l'installazione. I valori validi per questo parametro sono YES o NO. Questo
+parametro viene usato solo per l'azione di installazione e viene
+ignorato per tutte le altre azioni.
+:dt.savebackup
+:dd.Specifica se deve essere salvata una copia di riserva del
+prodotto quando viene aggiornato. I valori validi per questo parametro sono
+YES o NO. Questo parametro viene usato solo per l'azione di aggiornamento e viene
+ignorato per tutte le altre azioni.
+:dt.userexit
+:dd.Specifica il nome di un programma uscita utente che si intende avviare. Il
+formato di questo parametro ä&colon.
+:xmp.
+  USEREXIT = specfile
+:exmp.
+:p.
+Dove :hp1.specfile:ehp1. ä il nome di un programma uscita utente. Se la specifica
+del file contiene caratteri globali
+(&asterisk. o ?), viene avviato il primo file eseguibile
+che corrisponde alla specifica. Se la specifica non ä valida, non
+viene avviato alcun programma uscita utente.
+:p.Per trovare il programma uscita utente specificato viene rispettato
+il seguente ordine di ricerca.
+:ol compact.
+:li.La specifica del file completamente qualificata, se specificata con :hp1.specfile:ehp1..
+:li.L'indirizzario attuale.
+:li.Ogni indirizzario presente nella variabile del segmento di ambiente PATH.
+:li.Ogni indirizzario presente nella variabile del segmento di ambiente DPATH.
+:eol.
+:dt.work
+:dd.Specifica l'indirizzario di lavoro WORK che viene usato durante
+l'installazione del prodotto. Questo parametro viene usato solo per l'azione di
+installazione e viene ignorato per tutte le altre azioni.
+:edl.
+
+.**********************************************************************
+.* EPFIE205: %1 has already been installed.  You cannot install a
+.*           product twice.
+.**********************************************************************
+:h2 name=IHM205 res=205.Aiuto per EPFIE205
+:p.
+:hp7.Spiegazione:ehp7.
+:p.L'installazione richiesta non puï essere eseguita perchä il prodotto
+specificato ä giÖ stato installato. Un prodotto non puï essere
+installato pió di una volta su uno stesso sistema.
+:p.
+:hp7.Azione:ehp7.
+:p.Per installare una nuova versione del prodotto ä necessario
+prima cancellare la versione installata. Fare riferimento alla
+documentazione relativa al prodotto per ulteriori informazioni.
+:p.Se invece si sta tentando di apportare una correzione al programma,
+usare l'azione di aggiornamento.
+
+.**********************************************************************
+.* EPFIE206: An invalid response file parameter was found on line %3 of %2.
+.**********************************************************************
+:h2 name=IHM206 res=206.Aiuto per EPFIE206
+:p.
+:hp7.Spiegazione:ehp7.
+:p.E' stato trovato un parametro non valido nel
+file delle risposte specificato.
+:p.
+:hp7.Azione:ehp7.
+:p.Immettere i
+:link reftype=hd res=2042.parametri del file delle risposte:elink. corretti
+e riprovare ad eseguire l'operazione.
+
+.**********************************************************************
+.* EPFIE207: An invalid value for a response file parameter was found
+.*           on line %3 of %2.
+.**********************************************************************
+:h2 name=IHM207 res=207.Aiuto per EPFIE207
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Il parametro specificato nel
+file delle risposte ä valido ma il valore
+indicato (la parte che si trova a destra del segno di uguale) non ä valido.
+:p.
+:hp7.Azione:ehp7.
+:p.
+Correggere i
+:link reftype=hd res=2042.parametri del file delle risposte:elink.
+e riprovare ad eseguire l'operazione.
+
+.**********************************************************************
+.* EPFIE208: The file delle risposte contains
+.*           more than 100 component specifications.
+.**********************************************************************
+:h2 name=IHM208 res=208.Aiuto per EPFIE208
+:p.
+:hp7.Spiegazione:ehp7.
+:p.All'interno del file delle risposte sono stati specificati
+pió di 100 parametri di componente. Possono essere specificati
+un massimo di 100 parametri di componente.
+:p.
+:hp7.Azione:ehp7.
+:p.Cancellare i parametri di componente non necessari dal
+file delle risposte e riprovare ad eseguire l'operazione.
+
+.**********************************************************************
+.* EPFIE209: Currently unused
+.**********************************************************************
+
+.**********************************************************************
+.* EPFIE210: The product name specified with the /p parameter ('%1') could
+.*           not be found within the product catalog list.
+.**********************************************************************
+:h2 name=IHM210 res=210.Aiuto per EPFIE210
+:p.
+:hp7.Spiegazione:ehp7.
+:p.L'operazione richiesta non puï essere eseguita perchä il nome di prodotto
+specificato non ä valido. Il nome di prodotto specificato come valore del
+parametro &slash.p deve corrispondere esattamente al nome di prodotto
+presente nell'elenco dei prodotti. Se il nome di prodotto contiene
+spazi deve essere racchiuso tra virgolette (").
+:p.
+Esempi di specifiche di nomi di prodotto valide:
+:sl compact.
+:li.&slash.P="Nome di prodotto con spazi"
+:li.&slash.P=nomeprodotto
+:esl.
+:p.
+:hp7.Azione:ehp7.
+:p.
+Correggere il parametro &slash.p e riprovare ad eseguire l'operazione.
+
+.**********************************************************************
+.* EPFIE211: A product name is required to perform the requested action,
+.*           but one was not specified.
+.**********************************************************************
+:h2 name=IHM211 res=211.Aiuto per EPFIE211
+:p.
+:hp7.Spiegazione:ehp7.
+:p.L'operazione richiesta dalle opzioni
+della riga comandi non puï essere eseguita senza il parametro
+&slash.p. Quando si esegue un'installazione, un aggiornamento, un ripristino o
+una cancellazione si deve specificare un nome di prodotto.
+:p.
+:hp7.Azione:ehp7.
+:p.Aggiungere il parametro
+&slash.p per specificare un nome di prodotto e riprovare ad eseguire l'operazione.
+
+.**********************************************************************
+.* EPFIE212: The requested action could not be performed noninteractively.
+.*           Additional command line options or response file information
+.*           must be specified.
+.**********************************************************************
+:h2 name=IHM212 res=212.Aiuto per EPFIE212
+:p.
+:hp7.Spiegazione:ehp7.
+:p.L'opzione &slash.x della riga comandi specifica che l'installazione
+deve essere eseguita completamente in modo non presidiato, ma non
+sono state fornite sufficienti informazioni. Tutte le informazioni
+necessarie per completare l'operazione devono essere specificate sulla
+riga comandi o nel file delle risposte perchä l'operazione venga
+portata a termine regolarmente.
+:p.
+:hp7.Azione:ehp7.
+:p.
+:ol.
+:li.Immettere di nuovo il comando omettendo il parametro &slash.x. In tal modo
+si consente al programma di utilitÖ per l'installazione e la gestione di
+richiedere le informazioni mancanti.
+:li.Dopo aver visto quali sono le informazioni mancanti, specificarle
+usando le
+:link reftype=hd res=2041.opzioni della riga comandi:elink.
+e i :link reftype=hd res=2042.parametri del file delle risposte:elink..
+:li.Immettere di nuovo il comando specificando il parametro &slash.x.
+:li.Se l'operazione non termina regolarmente, ripetere questa procedura iniziando
+dal passo 1.
+:eol.
+
+.**********************************************************************
+.* EPFIE213: %1 cannot be updated because it is not installed.
+.**********************************************************************
+:h2 name=IHM213 res=213.Aiuto per EPFIE213
+:p.
+:hp7.Spiegazione:ehp7.
+:p.L'operazione di aggiornamento richiesta dalle opzioni della
+riga comandi non puï essere eseguita perchä il prodotto
+specificato non ä installato. Un prodotto non puï essere
+aggiornato se non ä stato prima installato.
+:p.
+:hp7.Azione:ehp7.
+:p.Se si desidera aggiornare il prodotto, ä necessario prima
+installarlo. Fare riferimento alla documentazione relativa al
+prodotto per ulteriori informazioni sull'installazione.
+
+.**********************************************************************
+.* EPFIE214: %1 cannot be deleted because it is not installed.
+.**********************************************************************
+:h2 name=IHM214 res=214.Aiuto per EPFIE214
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+:p.L'operazione di cancellazione richiesta dalle opzioni della
+riga comandi non puï essere eseguita perchä il prodotto
+specificato non ä installato. Un prodotto non puï essere
+cancellato se non ä stato prima installato.
+:p.
+:hp7.Azione:ehp7.
+:p.Se il prodotto ä stato installato ä possibile che il file del profilo
+dell'applicazione sia danneggiato o sia stato cancellato. In tal caso ä necessario
+installare di nuovo il prodotto e quindi cancellarlo. Quando si effettua
+questa seconda installazione, specificare gli stessi indirizzari in cui
+era installato il prodotto originariamente. L'installazione impiegherÖ
+poco tempo dal momento che non vi sono file da trasferire.
+
+.**********************************************************************
+.* EPFIE215: %1 cannot be restored.  This may be because the product has
+.*           not yet been installed and updated.
+.**********************************************************************
+:h2 name=IHM215 res=215.Aiuto per EPFIE215
+:p.
+:hp7.Spiegazione:ehp7.
+:p.L'operazione di ripristino richiesta dalle opzioni
+della riga comandi non puï essere eseguita perchä il
+prodotto specificato non ä stato installato e aggiornato. Un prodotto
+non puï essere ripristinato se non ä stato prima installato e quindi
+aggiornato almeno una volta (con l'opzione
+:hp2.Salvataggio copia di riserva:ehp2. selezionata).
+
+.**********************************************************************
+.* EPFIQ216: Deletion of the '%1' component requires that the '%2' component
+.*           also be deleted.  Do you want to delete the '%2'?
+.**********************************************************************
+:h2 name=IHM216 res=216.Aiuto per EPFIQ216
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Il componente (o la copia di riserva di un componente) selezionato
+non puï essere cancellato perchä un altro componente dipende da esso.
+:p.
+:hp7.Azione:ehp7.
+:p.
+Selezionare una delle seguenti opzioni&colon.
+:dl tsize=5 break=all compact.
+:dt.:hp2.SI':ehp2.
+:dd.Cancella il componente dipendente.
+:dt.:hp2.NO:ehp2.
+:dd.Esce dalla finestra del messaggio di errore e visualizza la finestra
+Cancellazione. E' possibile annullare la selezione del componente specificato
+e riprovare ad eseguire la cancellazione.
+:edl.
+
+.**********************************************************************
+.* EPFIE218: The requested action cannot be performed because a
+.*           Communications Manager DLL cannot be found.
+.**********************************************************************
+:h2 name=IHM218 res=218.Aiuto per EPFIE218
+:p.
+:hp7.Spiegazione:ehp7.
+:p.L'azione specificata richiede l'interfaccia
+HLLAPI per il
+Communications Manager, ma la DLL dell'interfaccia HLLAPI (ACS3EHAP.DLL) non puï essere
+caricata.
+
+:p.
+:hp7.Azione:ehp7.
+:p.
+:ol.
+:li.Controllare che il Communications Manager sia installato, comprese
+le interfacce di programmazione HLLAPI.
+:li.Se HLLAPI ä installata, assicurarsi che nel file CONFIG.SYS l'istruzione
+LIBPATH sia impostata in modo da contenere il percorso in cui si trova la
+HLLAPI DLL. Se vi sono modifiche da apportare al file CONFIG.SYS, ä
+necessario riavviare la
+stazione di lavoro per attivarle.
+:li.Riprovare ad eseguire l'operazione.
+:eol.
+
+.**********************************************************************
+.* EPFIE219: A catalog or package file '%3' has been included by
+.*           another catalog or package file more than once.
+.**********************************************************************
+:h2 name=IHM219 res=219.Aiuto per EPFIE219
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Un file del catalogo o di pacchetto ä stato ciclicamente incluso
+da un altro file del catalogo o di pacchetto, provocando una
+iterazione continua ed infinita.
+:p.L'esempio pió semplice di questo problema ä un prodotto che
+contiene due file di pacchetto, A e B. Se il file di pacchetto A
+include il file di pacchetto B e il file di pacchetto B include
+il file di pacchetto A, si verifica una iterazione continua ed infinita.
+:p.
+:hp7.Azione:ehp7.
+:p.Rimuovere la voce
+INCLUDE che provoca questo problema dal file del catalogo o di pacchetto e
+riprovare ad eseguire l'operazione.
+
+
+.**********************************************************************
+.* EPFIE220: A /O command line option must be specified.
+.**********************************************************************
+:h2 name=IHM220 res=220.Aiuto per EPFIE220
+:p.
+:hp7.Spiegazione:ehp7.
+:p.L'opzione
+&slash.o della riga comandi deve essere specificata se viene usata
+l'opzione
+&slash.c della riga comandi. L'opzione
+&slash.o specifica l'ubicazione origine (VM, MVS, VSE o UNITA')
+dell'operazione di apertura ed ä necessaria per eseguire correttamente
+l'operazione di apertura.
+:p.
+:hp7.Azione:ehp7.
+:p.Specificare
+l'ubicazione origine dell'operazione usando
+l':link reftype=hd res=2041.opzione della riga comandi:elink. /o
+e riprovare ad eseguire l'operazione.
+
+.**********************************************************************
+.* EPFIE223: The requested operation could not be performed because
+.*           Installation and Maintenance is missing information about the
+.*           selected product.
+.**********************************************************************
+:h2 name=IHM223 res=223.Aiuto per EPFIE223
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Molto probabilmente il prodotto selezionato ä stato installato usando
+una versione precedente del
+programma di utilitÖ per l'installazione e la gestione. La versione attuale
+del programma di utilitÖ per l'installazione e la gestione richiede
+altre informazioni per completare l'operazione richiesta.
+:p.
+:hp7.Azione:ehp7.
+:p.Per ottenere le informazioni necessarie, aprire il
+catalogo che contiene il prodotto selezionato. Una volta terminata
+l'apertura, selezionare il prodotto e riprovare ad eseguire l'operazione.
+.****************************************************************
+.* EPFIE224: Only a drive may be entered for the '%1' entry.
+.****************************************************************
+:h2 name=IHM224 res=224.Aiuto per EPFIE224
+:p.
+:hp7.Spiegazione:ehp7.
+:p.E' possibile immettere solo una lettera identificativa di unitÖ seguita
+dai due punti (ad esempio, C&colon.).
+:p.
+:hp7.Azione:ehp7.
+:ul.
+:li.Correggere l'immissione.
+:li.Riprovare ad eseguire l'operazione.
+:eul.
+:eh1.
+
+.**********************************************************************
+.* EPFIE225: The temporary directory for deferred installation files could
+.*           not be created. (%1)
+.**********************************************************************
+:h2 name=IHM225 res=225.Aiuto per EPFIE225
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Non ä possibile creare un indirizzario temporaneo per contenere
+i file dell'installazione differita. Tale situazione puï verificarsi a causa
+di una delle seguenti condizioni:
+:ul.
+:li.L'unitÖ non ä riconosciuta. Ad esempio se un file
+con un nome o un'estensione caratteristici della Struttura per registrazione ad alte
+prestazioni &lparen.HPFS&rparen. viene trasferito in un'unitÖ formattata
+con la struttura per registrazione FAT.
+:li.Un'altra applicazione utilizza l'unitÖ.
+:eul.
+:p.
+:hp7.Azione:ehp7.
+:ol.
+:li.Effettuare una delle seguenti operazioni:
+:ul.
+:li.Selezionare un'altra unitÖ.
+:li.Formattare l'unitÖ.
+:li.Attendere che l'applicazione non utilizzi pió l'unitÖ.
+:eul.
+:li.Riprovare ad eseguire l'operazione.
+:eol.
+:eh1.
+
+.**********************************************************************
+.* EPFIE226: An error occurred writing information to the deferred
+.*           installation command file. (%1)
+.**********************************************************************
+:h2 name=IHM226 res=226.Aiuto per EPFIE226
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Non ä possibile scrivere nel file dei comandi
+dell'installazione differita. Tale file potrebbe essere usato da un
+altro programma oppure non vi ä spazio sul disco dell'unitÖ
+di inizializzazione.
+:p.
+:hp7.Azione:ehp7.
+:ol compact.
+:li.Controllare lo spazio su disco.
+:li.Chiudere tutti i programmi che utilizzano il file.
+:li.Riprovare ad eseguire l'operazione.
+:eol.
+:eh1.
+
+.**********************************************************************
+.* EPFIE227: An error occurred completing the deferred installation
+.*           preparation.
+.**********************************************************************
+:h2 name=IHM227 res=227.Aiuto per EPFIE227
+:p.
+:hp7.Spiegazione:ehp7.
+:p.La preparazione all'installazione differita non ä riuscita perchä
+per il file CONFIG.SYS ä stato specificato l'attributo per solo lettura oppure perchä non vi ä
+spazio sul disco dell'unitÖ di inizializzazione.
+:p.
+:hp7.Azione:ehp7.
+:ol compact.
+:li.Controllare che il file CONFIG.SYS non preveda l'attributo per solo lettura.
+:li.Cancellare alcuni file dall'unitÖ di inizializzazione.
+:li.Riprovare ad eseguire l'operazione.
+:eol.
+
+.**********************************************************************
+.* EPFIE232: The syntax of an expression within the package file is invalid.
+.*           The expression in error is: '%1'.
+.**********************************************************************
+:h2 name=IHM232 res=232.Aiuto per EPFIE232
+:p.
+:hp7.Spiegazione:ehp7.
+:p.L'espressione specificata non ä valida per una delle seguenti ragioni:
+:ul compact.
+:li.Le parentesi non sono corrispondenti. E' stata specificata
+una parentesi sinistra senza la parentesi destra corrispondente o viceversa.
+:li.La sintassi dell'espressione non ä corretta. E' stato specificato un operatore
+senza definire il relativo operando oppure potrebbe esser stato definito un operando
+senza specificare l'operatore.
+:li.La valutazione dell'espressione provoca una divisione per zero.
+:eul.
+:p.
+:hp7.Azione:ehp7.
+:ol compact.
+:li.Correggere l'espressione nel file di pacchetto.
+:li.Riprovare ad eseguire l'operazione.
+:eol.
+
+.**********************************************************************
+.* EPFIE233: An expression within the package file contains an operand
+.*           type conflict.  One or more of the operands within the
+.*           following expression do not have the same type: '%1'.
+.**********************************************************************
+:h2 name=IHM233 res=233.Aiuto per EPFIE233
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Per uno degli operatori nell'espressione sono stati definiti operandi di
+tipo differente. Gli operandi di un operatore devono essere tutti
+dello stesso tipo. Esempi di espressioni che contengono tipi di operandi
+in conflitto sono:
+:xmp.
+ "stringa" == 123
+ "stringa" / "stringa"
+ ("stringa" == "stringa") &amp.&amp. "stringa2"
+:exmp.
+:p.
+:hp7.Azione:ehp7.
+:ol compact.
+:li.Correggere l'espressione nel file di pacchetto.
+:li.Riprovare ad eseguire l'operazione.
+:eol.
+
+.**********************************************************************
+.* EPFIE234: Cannot create the '%1' object on the Workplace Shell.  The
+.*           setup string parameter was '%2'
+.**********************************************************************
+:h2 name=IHM234 res=234.Aiuto per EPFIE234
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Il parametro di installazione per l'uscita
+CREATEWPSOBJECT non ha potuto creare l'oggetto specificato. L'oggetto
+potrebbe essere giÖ presente nella Scrivania.
+:p.
+:hp7.Azione:ehp7.
+:ol compact.
+:li.Specificare 'R' per il parametro di sostituzione nel file di pacchetto.
+:li.Verificare che i parametri nella stringa di impostazione siano validi per
+la classe dell'oggetto da creare.
+:li.Riprovare ad eseguire l'operazione.
+:eol.
+
+.**********************************************************************
+.* EPFIW235: A back-level version of the operating system has been
+.*           found.
+.**********************************************************************
+:h2 name=IHM235 res=235.Aiuto per EPFIW235
+:p.
+:hp7.Spiegazione:ehp7.
+:p.Se non ä installato il livello attuale
+dell'OS/2 2.0, l'installazione del prodotto potrebbe
+provocare una condizione di stallo della stazione di lavoro.
+:p.
+:hp7.Azione:ehp7.
+:p.Installare la versione attuale
+dell'OS/2 (CSD XRI6055 o superiore).
+
+.**********************************************************************
+.*EPFIE236: Drive %1 does not contain enough disk space to
+.*          save a backup.
+.**********************************************************************
+:h2 name=IHM236 res=236.Aiuto per EPFIE236
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+L'unitÖ specificata non ha sufficiente spazio per salvare una copia
+di riserva.
+:p.
+:hp7.Azione:ehp7.
+:ol compact.
+:li.Liberare spazio sull'unitÖ.
+:li.Selezionare :hp2.Riprovare:ehp2..
+:eol.
+oppure
+:p.Selezionare :hp2.Annulla:ehp2..
+
+.**********************************************************************
+.* EPFIW237: The drive, directory, or file specified for the '%1' log parameter
+.*           cannot be written to.  Select OK to continue without writing to
+.*           the log or select Cancel to exit.
+.**********************************************************************
+:h2 name=IHM237 res=237.Aiuto per EPFIW237
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il valore specificato per il parametro di registrazione
+indicato non puï essere
+usato. Il valore non ä valido se il file di registrazione non puï
+essere creato sull'unitÖ e sul percorso specificati oppure se
+il file di registrazione non puï essere aggiunto.
+Le cause possibili sono&colon.
+:ul.
+:li.L'unitÖ specificata non esiste.
+:li.L'unitÖ, la directory o il file specificato ä di sola lettura.
+:eul.
+:p.
+:hp7.Azione:ehp7.
+:p.
+Eseguire una delle seguenti operazioni&colon.
+:ul.
+:li.Selezionare :hp2.OK:ehp2. per continuare senza scrivere nella
+registrazione indicata.
+:li.Selezionare :hp2.Annulla:ehp2. per annullare l'azione e, quindi,
+riprovare utilizzando un valore valido per la registrazione
+indicata.
+:eul.
+
+.**********************************************************************
+.* EPFIW238: The drive, directory, or file specified for the '%1' log parameter
+.*           cannot be written to.  Select OK to continue with a log value
+.*           of '%2' or select Cancel to exit.
+.**********************************************************************
+:h2 name=IHM238 res=238.Aiuto per EPFIW238
+:p.
+:hp7.Spiegazione:ehp7.
+:p.
+Il valore specificato per il parametro di registrazione
+indicato non puï essere usato ma, se si continua, verrÖ usato il
+valore alternativo visualizzato.
+Il valore fornito non ä valido se il file di registrazione non puï
+essere creato sull'unitÖ o sul percorso specificati oppure se il
+file di registrazione specificato non puï essere
+aggiunto. Le cause possibili sono&colon.
+:ul.
+:li.L'unitÖ specificata non esiste.
+:li.L'unitÖ, la directory o il file specificato ä di sola lettura.
+:eul.
+:p.
+:hp7.Azione:ehp7.
+:p.
+Eseguire una delle seguenti operazioni&colon.
+:ul.
+:li.Selezionare :hp2.OK:ehp2. per continuare l'elaborazione
+utilizzando il valore alternativo visualizzato.
+:li.Selezionare :hp2.Annulla:ehp2. per annullare l'azione e, quindi,
+riprovare utilizzando un valore valido per la registrazione indicata.
+:eul.
+
+:euserdoc.
+

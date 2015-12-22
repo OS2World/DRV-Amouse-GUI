@@ -1,0 +1,146 @@
+hswitch:      00000028
+hwnd:         8000000e
+hwndIcon:     00000000
+hprog:        00000000
+idSession:    00000001
+szSwtitle:    Umschalten
+pid:          00000000
+bProgType:    PROG_DEFAULT
+-----------------
+hswitch:      00000990
+hwnd:         800001de
+hwndIcon:     00000000
+hprog:        00000000
+idSession:    0000001d
+szSwtitle:    Presentation Manager Programming Guide and Ref
+pid:          000000b9
+bProgType:    32 = 0x20
+-----------------
+hswitch:      0000088c
+hwnd:         800001d7
+hwndIcon:     00000000
+hprog:        00000000
+idSession:    00000018
+szSwtitle:    Editor - K:\work\c\amouse\AMouHook\AMouHook.c: 1
+pid:          000000b6
+bProgType:    184 = 0xb8
+-----------------
+hswitch:      00000910
+hwnd:         8000015b
+hwndIcon:     00000000
+hprog:        00000000
+idSession:    0000001b
+szSwtitle:    PMTREE 3.0
+pid:          0000008b
+bProgType:    PROG_PM
+-----------------
+hswitch:      0000080c
+hwnd:         8000017b
+hwndIcon:     00000000
+hprog:        00000000
+idSession:    00000019
+szSwtitle:    OS/2-Formatierprogramm fÅr Ablaufverfolgung 2.4
+pid:          0000006b
+bProgType:    PROG_PM
+-----------------
+hswitch:      00000708
+hwnd:         8000021f
+hwndIcon:     1c6fcdf8
+hprog:        00000000
+idSession:    00000011
+szSwtitle:    4OS/2
+pid:          00000042
+bProgType:    PROG_WINDOWABLEVIO
+-----------------
+hswitch:      00000604
+hwnd:         800002d4
+hwndIcon:     00000000
+hprog:        00000000
+idSession:    00000016
+szSwtitle:    AMouse Test
+pid:          0000003f
+bProgType:    176 = 0xb0
+-----------------
+hswitch:      00000128
+hwnd:         80000115
+hwndIcon:     1c705528
+hprog:        00000000
+idSession:    00000017
+szSwtitle:    test.exe
+pid:          0000003a
+bProgType:    PROG_WINDOWABLEVIO
+-----------------
+hswitch:      00000504
+hwnd:         8000010a
+hwndIcon:     1c705e08
+hprog:        00000000
+idSession:    00000016
+szSwtitle:    AMTEST.CMD
+pid:          00000037
+bProgType:    PROG_WINDOWABLEVIO
+-----------------
+hswitch:      00000484
+hwnd:         800000d3
+hwndIcon:     00000000
+hprog:        00000000
+idSession:    00000012
+szSwtitle:    XCenter
+pid:          0000002b
+bProgType:    PROG_PM
+-----------------
+hswitch:      00000404
+hwnd:         800000b4
+hwndIcon:     00000000
+hprog:        00000000
+idSession:    00000015
+szSwtitle:    RSJ CD-Writer Error Log
+pid:          00000035
+bProgType:    126 = 0x7e
+-----------------
+hswitch:      00000384
+hwnd:         00000000
+hwndIcon:     00000000
+hprog:        00000000
+idSession:    00000014
+szSwtitle:    CometCursor
+pid:          00000033
+bProgType:    PROG_PM
+-----------------
+hswitch:      00000300
+hwnd:         80000095
+hwndIcon:     00000000
+hprog:        00000000
+idSession:    00000012
+szSwtitle:    ArbeitsoberflÑche
+pid:          0000002b
+bProgType:    PROG_PM
+-----------------
+hswitch:      00000280
+hwnd:         00000000
+hwndIcon:     00000000
+hprog:        00000000
+idSession:    00000013
+szSwtitle:    XWorkplace Daemon
+pid:          0000002f
+bProgType:    PROG_PM
+-----------------
+hswitch:      00000200
+hwnd:         8000008a
+hwndIcon:     00000000
+hprog:        00000000
+idSession:    00000012
+szSwtitle:    ArbeitsoberflÑche
+pid:          0000002b
+bProgType:    PROG_PM
+-----------------
+hswitch:      000000a8
+hwnd:         00000000
+hwndIcon:     00000000
+hprog:        00000000
+idSession:    00000010
+szSwtitle:    PMSPOOL.EXE
+pid:          00000029
+bProgType:    PROG_PM
+-----------------
+
+

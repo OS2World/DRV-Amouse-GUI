@@ -1,0 +1,2 @@
+Language is GERMAN 
+Debug is YES 

@@ -1,0 +1,144 @@
+#include <os2.h>
+#include "res.h"
+#include "dlg.h"
+
+ICON IDI_ICON AMOUSE_ICON
+
+BITMAP (IDB_LOGI_BATT_BASE + 0) "batt0.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 1) "batt1.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 2) "batt2.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 3) "batt3.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 4) "batt4.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 5) "batt5.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 6) "batt6.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 7) "batt7.bmp"
+
+RCINCLUDE AMou046.dlg
+
+STRINGTABLE
+    {
+    // gemensamma texter AMouse.dll, AMouse.exe
+    IDS_ABOUT,              "Om"
+    IDS_PAGENAME_DEVINFO,   "~Information om enheten"
+    IDS_PAGENAME_WHEEL,     "~Hjul"
+    IDS_PAGENAME_BUTTONS,   "~Knappar"
+    IDS_PAGENAME_TIMING,    "~Tidtagning"
+
+    IDS_BATT_EMPTY,         "Mus: Batteri tomt"
+
+    IDS_PORT_UNKNOWN,       ""
+    IDS_PORT_SERIAL,        "COM0:"
+    IDS_PORT_PS2,           "PS/2"
+    IDS_PORT_USB,           "USB"
+
+    IDS_WHEEL_0,            ""
+    IDS_WHEEL_1,            "tillgÑnglig"
+    IDS_WHEEL_2,            "2 tillgÑngliga"
+
+    IDS_ACCEL_VAL_OFF,      "av"
+    IDS_ACCEL_VAL_FAST,     "max"
+
+    IDS_PAGE_WHEEL,         "PM + FullskÑrm"
+    IDS_PAGE_WHEEL_C,       "Ctrl + Hjul"
+    IDS_PAGE_WHEEL_A,       "Alt + Hjul"
+
+    IDS_PAGENUMBER          "Sida %1 av %2"
+
+    IDS_TYPE_AMBIGUOUS,     "\n\t(eller motsvarande)"
+
+    IDS_UNKNOWN,            "okÑnd"
+    IDS_UNKNOWN_DEVICE,     "okÑnd enhet"
+    IDS_UNKNOWN_RECEIVER,   "okÑnd mottagare"
+
+    IDS_PAGE_BUTTON,        "Knapp"
+    IDS_PAGE_BUTTON_C,      "Ctrl+Knapp"
+    IDS_PAGE_BUTTON_A,      "Alt+Knapp"
+
+    // texter endast fîr AMouse.exe
+    IDS_SWENTRY,            "AMouse InstÑllningar"
+    IDS_NOMOUSE,            "Ingen hjulmus finns tillgÑnglig"
+    IDS_ERR_SEM,            "Kan inte îppna semafor"
+
+    IDS_HELPWINDOWTITLE,    "HjÑlp fîr AMouse"
+
+    // hotkey descriptions
+    IDS_KEY_CTRL            "Ctrl+"             // ???
+    IDS_KEY_ALT             "Alt+"              // ???
+    IDS_KEY_SHIFT           "Shift+"            // ???
+    IDS_KEY_BACKSPACE       "Backspace"         // ???
+    IDS_KEY_TAB             "Tab"               // ???
+    IDS_KEY_BACKTABTAB      "Backtab"           // ???
+    IDS_KEY_ENTER           "Enter"             // ???
+    IDS_KEY_ESC             "Esc"               // ???
+    IDS_KEY_SPACE           "Space"             // ???
+    IDS_KEY_PAGEUP          "Page Up"           // ???
+    IDS_KEY_PAGEDOWN        "Page Down"         // ???
+    IDS_KEY_END             "End"               // ???
+    IDS_KEY_HOME            "Home"              // ???
+    IDS_KEY_LEFT            "Left"              // ???
+    IDS_KEY_UP              "Up"                // ???
+    IDS_KEY_RIGHT           "Right"             // ???
+    IDS_KEY_DOWN            "Down"              // ???
+    IDS_KEY_PRINTSCRN       "Print"             // ???
+    IDS_KEY_INSERT          "Insert"            // ???
+    IDS_KEY_DELETE          "Delete"            // ???
+    IDS_KEY_SCRLLOCK        "Scroll"            // ???
+    IDS_KEY_NUMLOCK         "NumLock"           // ???
+    IDS_KEY_WINLEFT         "Win95 left"        // ???
+    IDS_KEY_WINRIGHT        "Win95 right"       // ???
+    IDS_KEY_WINMENU         "Win95 Menu"        // ???
+    IDS_KEY_SYSRQ           "SysReq"            // ???
+    }
+
+// gemensamma texter AMouse.dll, AMouse.exe
+RCDATA IDRC_MOUSETYPE
+    {
+    PORT_UNKNOWN,   WHEEL_0, TYPE_UNAMBIG, "OkÑnd"
+    PORT_UNKNOWN,   WHEEL_0, TYPE_UNAMBIG, "Buss-Mus"
+    PORT_SERIAL,    WHEEL_0, TYPE_AMBIG,   "Seriell MS-Mus"
+    PORT_UNKNOWN,   WHEEL_0, TYPE_UNAMBIG, "Inport-Mus"
+    PORT_PS2,       WHEEL_0, TYPE_UNAMBIG, "PS/2-Mus"
+    PORT_UNKNOWN,   WHEEL_0, TYPE_AMBIG,   "IBM 8516 PekskÑrm"
+    PORT_SERIAL,    WHEEL_0, TYPE_AMBIG,   "Logitech-Mus"
+    PORT_UNKNOWN,   WHEEL_0, TYPE_AMBIG,   "Screen Reader Keypad"
+    PORT_UNKNOWN,   WHEEL_0, TYPE_UNAMBIG, "Ingen Mus"
+    PORT_SERIAL,    WHEEL_1, TYPE_AMBIG,   "MS-IntelliMouse"
+    PORT_PS2,       WHEEL_1, TYPE_AMBIG,   "MS-IntelliMouse"
+    PORT_PS2,       WHEEL_1, TYPE_AMBIG,   "Typhoon 40159 / Trust 250S"
+    PORT_USB,       WHEEL_1, TYPE_UNAMBIG, "USB-mus"
+    PORT_PS2,       WHEEL_1, TYPE_AMBIG,   "PS/2+"
+    PORT_PS2,       WHEEL_1, TYPE_UNAMBIG, "Typ 14"
+    }
+
+// gemensamma texter AMouse.dll, AMouse.exe
+RCDATA IDRC_BUTTONSETTINGS
+    {
+    IDR_NONE,               "Ingen funktion"
+    IDR_CLIPBOARD_CUT,      "Klipp ut"
+    IDR_CLIPBOARD_COPY,     "Kopiera"
+    IDR_CLIPBOARD_INSERT,   "Klistra in"
+    IDR_BUTTON3,            "Mittenknapp"
+    IDR_MINIMIZE_ALL,       "Minimera/Gîm alla fînster"
+    IDR_RESTORE_ALL,        "èterstÑll alla fînster"
+    IDR_WINDOW_LIST,        "Fînsterlista"
+    IDR_CLOSE_APPLICATION,  "StÑng programmet"
+    IDR_DOUBLECLICK,        "Dubbelklicka"
+    IDR_MAXIMIZE_WND,       "Maximera fînster"
+    IDR_MINIMIZE_WND,       "Minimera/Gîm fînster"
+    IDR_RESTORE_WND,        "èterstÑll fînster"
+    IDR_TOGGLE_SCROLL,      "éndra scrollriktning"
+    IDR_PUSH_TO_BACK,       "LÑgg fînstret i bakgrunden"
+    IDR_KEY,                "Key combination"               // ???
+    IDR_END,                ""
+    }
+
+// meny som anvÑnds i AMouse.dll
+MENU IDM_MAINMENU LOADONCALL MOVEABLE DISCARDABLE
+    {
+    MENUITEM "Om",                  IDM_ABOUT,          MIS_TEXT
+    #ifdef DEBUG
+    MENUITEM "DEBUG (AMOUSE)",      IDM_OPENDEBUG,      MIS_TEXT
+    #endif
+    }
+
+

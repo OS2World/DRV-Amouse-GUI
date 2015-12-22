@@ -1,0 +1,16 @@
+This package contains a widget for the XCenter of XWorkplace. It belongs
+to the AMouse package and displays some of the current settings of the
+AMouse driver.
+The package contains of the following files:
+
+XWPMouse.dll - XWorkplace Widget;
+XMouNNN.hlp  - help files for widget; NNN is the language id
+
+Just copy all files into the widget directory of XWorkplace and restart the XCenter
+
+To change settings of AMouse with the help of this widget, try the following:
+- click button 1 on mouse:  change scroll direction
+- turn wheel:               change number of scroll lines
+- open "properties":        displays settings page of AMouse
+
+

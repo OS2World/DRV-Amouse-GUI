@@ -1,0 +1,144 @@
+#include <os2.h>
+#include "res.h"
+#include "dlg.h"
+
+ICON IDI_ICON AMOUSE_ICON
+
+BITMAP (IDB_LOGI_BATT_BASE + 0) "batt0.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 1) "batt1.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 2) "batt2.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 3) "batt3.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 4) "batt4.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 5) "batt5.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 6) "batt6.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 7) "batt7.bmp"
+
+RCINCLUDE AMou049.dlg
+
+STRINGTABLE
+    {
+    // common strings AMouse.dll, AMouse.exe
+    IDS_ABOUT,              "Produktinformation"
+    IDS_PAGENAME_DEVINFO,   "GerÑte-~Information"
+    IDS_PAGENAME_WHEEL,     "~RÑdchen"
+    IDS_PAGENAME_BUTTONS,   "~Tasten"
+    IDS_PAGENAME_TIMING,    "~Zeitangaben"
+
+    IDS_BATT_EMPTY,         "Maus: Batterie leer"
+
+    IDS_PORT_UNKNOWN,       ""
+    IDS_PORT_SERIAL,        "COM0:"
+    IDS_PORT_PS2,           "PS/2"
+    IDS_PORT_USB,           "USB"
+
+    IDS_WHEEL_0,            ""
+    IDS_WHEEL_1,            "vorhanden"
+    IDS_WHEEL_2,            "2 vorhanden"
+
+    IDS_ACCEL_VAL_OFF,      "aus"
+    IDS_ACCEL_VAL_FAST,     "max"
+
+    IDS_PAGE_WHEEL,         "PM + Gesamtbildschirm"
+    IDS_PAGE_WHEEL_C,       "Ctrl + RÑdchen"
+    IDS_PAGE_WHEEL_A,       "Alt + RÑdchen"
+
+    IDS_PAGENUMBER,         "Seite %1 von %2"
+
+    IDS_TYPE_AMBIGUOUS,     "\n\t(oder Ñhnliche)"
+
+    IDS_UNKNOWN,            "unbekannt"
+    IDS_UNKNOWN_DEVICE,     "unbekanntes GerÑt"
+    IDS_UNKNOWN_RECEIVER,   "unbekannter EmpfÑnger"
+
+    IDS_PAGE_BUTTON,        "Taste"
+    IDS_PAGE_BUTTON_C,      "Strg+Taste"
+    IDS_PAGE_BUTTON_A,      "Alt+Taste"
+
+    // strings for AMouse.exe only
+    IDS_SWENTRY,            "AMouse Konfiguration"
+    IDS_NOMOUSE,            "keine RÑdchen-Maus vorhanden"
+    IDS_ERR_SEM,            "Semaphore konnte nicht angelegt werden"
+
+    IDS_HELPWINDOWTITLE,    "Hilfe fÅr AMouse"
+
+    // hotkey descriptions
+    IDS_KEY_CTRL            "Strg+"
+    IDS_KEY_ALT             "Alt+"
+    IDS_KEY_SHIFT           "Umsch+"
+    IDS_KEY_BACKSPACE       "RÅcktaste"
+    IDS_KEY_TAB             "Tab"
+    IDS_KEY_BACKTABTAB      "Backtab"
+    IDS_KEY_ENTER           "Enter"
+    IDS_KEY_ESC             "Esc"
+    IDS_KEY_SPACE           "Leertaste"
+    IDS_KEY_PAGEUP          "Bild auf"
+    IDS_KEY_PAGEDOWN        "Bild ab"
+    IDS_KEY_END             "Ende"
+    IDS_KEY_HOME            "Pos1"
+    IDS_KEY_LEFT            "Links"
+    IDS_KEY_UP              "Auf"
+    IDS_KEY_RIGHT           "Rechts"
+    IDS_KEY_DOWN            "Ab"
+    IDS_KEY_PRINTSCRN       "Druck"
+    IDS_KEY_INSERT          "Einf"
+    IDS_KEY_DELETE          "Entf"
+    IDS_KEY_SCRLLOCK        "Rollen"
+    IDS_KEY_NUMLOCK         "NumLock"
+    IDS_KEY_WINLEFT         "Win95 links"
+    IDS_KEY_WINRIGHT        "Win95 rechts"
+    IDS_KEY_WINMENU         "Win95 MenÅ"
+    IDS_KEY_SYSRQ           "SysReq"
+    }
+
+// common strings AMouse.dll, AMouse.exe
+RCDATA IDRC_MOUSETYPE
+    {
+    PORT_UNKNOWN,   WHEEL_0, TYPE_UNAMBIG, "Unbekannt"
+    PORT_UNKNOWN,   WHEEL_0, TYPE_UNAMBIG, "Bus-Maus"
+    PORT_SERIAL,    WHEEL_0, TYPE_AMBIG,   "Serielle MS-Maus"
+    PORT_UNKNOWN,   WHEEL_0, TYPE_UNAMBIG, "Inport-Maus"
+    PORT_PS2,       WHEEL_0, TYPE_UNAMBIG, "PS/2-Maus"
+    PORT_UNKNOWN,   WHEEL_0, TYPE_AMBIG,   "IBM 8516 Touch Display"
+    PORT_SERIAL,    WHEEL_0, TYPE_AMBIG,   "Logitech-Maus"
+    PORT_UNKNOWN,   WHEEL_0, TYPE_AMBIG,   "Screen Reader Keypad"
+    PORT_UNKNOWN,   WHEEL_0, TYPE_UNAMBIG, "Keine Maus"
+    PORT_SERIAL,    WHEEL_1, TYPE_AMBIG,   "MS-IntelliMouse"
+    PORT_PS2,       WHEEL_1, TYPE_AMBIG,   "MS-IntelliMouse"
+    PORT_PS2,       WHEEL_1, TYPE_AMBIG,   "Typhoon 40159 / Trust 250S"
+    PORT_USB,       WHEEL_1, TYPE_UNAMBIG, "USB mouse"
+    PORT_PS2,       WHEEL_1, TYPE_AMBIG,   "PS/2+"
+    PORT_PS2,       WHEEL_1, TYPE_UNAMBIG, "Typ 14"
+    }
+
+// common strings AMouse.dll, AMouse.exe
+RCDATA IDRC_BUTTONSETTINGS
+    {
+    IDR_NONE,               "keine Aktion"
+    IDR_CLIPBOARD_CUT,      "Ausschneiden"
+    IDR_CLIPBOARD_COPY,     "Kopieren"
+    IDR_CLIPBOARD_INSERT,   "EinfÅgen"
+    IDR_BUTTON3,            "Mitteltaste"
+    IDR_MINIMIZE_ALL,       "Alle Fenster verkleinern/verdecken"
+    IDR_RESTORE_ALL,        "Alle Fenster wiederherstellen"
+    IDR_WINDOW_LIST,        "Fensterliste"
+    IDR_CLOSE_APPLICATION,  "Anwendung schlie·en"
+    IDR_DOUBLECLICK,        "Doppelklick"
+    IDR_MAXIMIZE_WND,       "Fenster vergrî·ern"
+    IDR_MINIMIZE_WND,       "Fenster verkleinern/verdecken"
+    IDR_RESTORE_WND,        "Fenster wiederherstellen"
+    IDR_TOGGLE_SCROLL,      "Scroll Richtung umschalten"
+    IDR_PUSH_TO_BACK,       "Fenster nach hinten schieben"
+    IDR_KEY,                "Tastenkombination"
+    IDR_END,                ""
+    }
+
+// menu used in AMouse.dll
+MENU IDM_MAINMENU LOADONCALL MOVEABLE DISCARDABLE
+    {
+    MENUITEM "Produktinformation",  IDM_ABOUT,          MIS_TEXT
+    #ifdef DEBUG
+    MENUITEM "DEBUG (AMOUSE)",      IDM_OPENDEBUG,      MIS_TEXT
+    #endif
+    }
+
+

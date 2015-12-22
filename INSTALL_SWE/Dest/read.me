@@ -1,0 +1,115 @@
+
+                            AMouse - READ.ME
+                            -----------------
+
+V„lkommen till AMouse. Denna drivrutin fungerar tillsammans med samtliga p†
+marknaden k„nda pekardon, „ven de som har hjul, t.ex.:
+- Logitech Pilot Mouse+ med seriell port eller PS/2-port
+- Logitech Mouse Man+
+- Logitech MX700/MX1000
+- Microsoft Intellimouse
+- IBM Scrollpoint Mouse
+- Typhoon 40159
+- Trust 250S
+- USB-m”ss
+
+Denna fil inneh†ller information om intallationen av AMouse.
+
+Denna fil inneh†ller f”ljande rubriker:
+   -  F”rkrav inf”r installation
+       - Mjukvarukrav
+       - H†rdvarukrav
+   -  Notera
+   -  Support
+   -  Installation av AMouse
+
+
+F”rkrav inf”r installation
+-----------------------
+   Mjukvarukrav
+   -------------
+   - OS/2 fr†n och med version 3.0.
+
+   H†rdvarukrav
+   -------------
+   - Mus med seriell port, PS/2 port eller USB port.
+
+Notera
+-----
+   - Fr†n och med version 2.1 av AMouse finns grundl„ggande st”d f”r multimedia.
+     Det betyder att du kan „ndra volym genom att rulla p† hjulet p† musen.
+     dll-filen som m”jligg”r denna funktion, "nbaudio.dll" anv„nds dessutom i v†r
+     drivrutin f”r DCF77-enheter. Om du anv„nder en „ldre version kan det bli
+     n”dv„ndigt att ta bort eller ers„tta dll-filen med samma namn med den som
+     medf”ljer h„r. Det r„cker att en (den nyaste) finns i LIBPATH (s”kv„g).
+   - Vissa „ldre versioner av som.dll som tillh”r operativsystemet „r inte
+     kompatibla (passar inte ihop med) skrivbordsklassen "AMouse.dll". Om du
+     r†kar ut f”r att t.ex. skrivbordet l†ser sig vid start, kan du antingen byta
+     ut "som*.dll" med nyare eller anv„nda programmet ("AMouse.exe") f”r att
+     „ndra inst„llningar - se nedan.
+
+Support
+-------
+   Onlinehj„lp
+   Service och teknisk support fr†n nb software
+
+        noller & breining software
+        Eichhalde 3
+        71554 Weissach im Tal
+        Germany
+
+        Tel.: (+49)7191/960345
+        e-mail: info@nbsoftware.de
+        http://www.nbsoftware.de
+
+
+Installation av AMouse
+----------------------
+F”r att installera AMouse kan du antingen skriva "INSTALL" i en kommandoprompt
+fr†n katalogen som inneh†ller installationpaketet f”r AMouse eller klicka p†
+ikonen INSTALL.EXE.
+
+Installation av USB-m”ss
+------------------------
+F”r att installera en USB-mus s† m†ste de allm„nna drivrutinerna f”r USB vara
+installerade i OS/2. St”det best†r av flera drivrutiner som m†ste finnas med
+i filen CONFIG.SYS, s†som:
+    BASEDEV=USBOHCD.SYS /V
+eller
+    BASEDEV=USBUHCD.SYS /V
+eller
+    BASEDEV=USBEHCD.SYS /V
+(eller flera, om flera typer av h†rdvara f”r USB finns i datorn)
+
+    BASEDEV=USBD.SYS /V /REQ:USBxHCD$  (x beror p† typ av drivrutin f”r
+                                        h†rdvara OHCD, UHCD eller EHCD)
+    BASEDEV=USBHID.SYS
+    DEVICE=D:\OS2\BOOT\USBMOUSE.SYS
+
+Installationsprogrammet ers„tter orginalversionen av drivrutinen OS/2
+USBMOUSE.SYS f”r USB-m”ss med en modifierad version, som st”der 5 knappar
+ist„llet f”r 3. Orginalversionen av drivrutinen sparas som USBMOUSE.ORG.
+
+Om drivrutinen laddas in vid start utan parametrar kommer systemet att s”ka
+efter m”ss i ordningen Seriell -> PS/2 -> USB. Žven om det g†r bra att koppla
+fler m”ss till USB-portar parallellt med m”ss av andra typer kommer funktionerna
+(antal knappar och hjul) att f”lja utf”randet hos den mustyp som hittas f”rst.
+Detta m†ste tas i s„rskilt beaktande f”r t.ex. b„rbara datorer med inbyggt
+pekdon eller liknande, d† denna alltid fungerar som en PS/2-mus.
+L”sningen „r d† att ange parametern
+/DEVICE:1 i config.sys:
+    DEVICE=D:\OS2\BOOT\USBMOUSE.SYS /DEVICE:1
+I detta fall kommer funktionerna hos pekdonet att f”lja utf”randet p† den
+f”rsta USB-mus som hittas, varp† andra m”ss av typerna Seriell och PS/2
+avaktiveras.
+
+Inst„llning av Musen
+--------------------------
+Beroende p† vilket val du g”r vid installationen av programmet s† finns det
+tv† m”jliga metoder f”r att „ndra p† inst„llningarna:
+1.) WPS klass: I mappen f”r AMOUSE finns det en kopia av objektet f”r musen.
+    Det inneh†ller en sida d„r det g†r att „ndra p† inst„llningarna f”r hjulet.
+    Efter ytterligare en omstart finns sidan ocks† tillg„nglig i
+    originalobjektet i mappen Systemkonfiguration.
+2.) EXE program: I mappen f”r AMOUSE finns ett programobjekt med inst„llningar
+    f”r hjulet.

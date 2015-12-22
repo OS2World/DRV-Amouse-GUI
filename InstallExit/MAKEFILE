@@ -1,0 +1,49 @@
+# The actions included in this makefile are:
+#   BIND::Resource Bind
+#   COMPILE::CLC C
+#   COMPILE::Resource Compile
+#   COMPILE::SOM
+#   LINK::CLC Link
+
+.SUFFIXES:
+
+.SUFFIXES: .c .idl .rc .res .dlg
+
+.all: \
+  .\iexit$(PLANG).res \
+  .\iexit.dll
+
+.rc.res:
+      @echo " Compile::Resource Compiler "
+      rc.exe -r -i . $(RDB) %s %|fF.RES
+
+.c.obj:
+      @echo " Compile::C++ Compiler "
+      icc.exe /I. /I.. /I$(IBMINST) /Ss $(CDB) /Q /Wcnveffparprorearetuse /Gm /Ge- /G5 /Gf /Fo"%|fF.obj" /Ms /C %s
+
+.\iexit.dll: \
+    .\iexit.obj \
+    .\iexit$(PLANG).res \
+    {$(LIB)}iexit.def
+      @echo "Link::Linker "
+      icc.exe @<<
+ /B" $(LDB) /dbgpack /pmtype:pm /nologo /m /noi /exep /packc /packd /al:16"
+ /Feiexit.dll
+ $(IBMINST)\vars.obj
+ .\iexit.def
+ .\iexit.obj
+<<
+      @echo "Bind::Resource Bind "
+      rc.exe -p -x .\iexit$(PLANG).res iexit.dll
+
+!include MAKEFILE.Dep
+
+clean:
+      @if exist *.obj del *.obj
+      @if exist *.dll del *.dll
+
+cleanall:
+      @if exist *.res del *.res
+      @if exist *.obj del *.obj
+      @if exist *.dll del *.dll
+

@@ -1,0 +1,60 @@
+
+                  Prozesse und Threads - Informationen
+
+          Eltern-
+Prozeá-   Prozeá    Sitzungs- Prozeá-   Thread-
+  ID        ID        ID       name       ID    Priorit„t  Block-ID   Status
+
+ 009F      0000       17      D:\IBMCPP\BIN\DDE4LOAD.EXE    01      0200     07F80172   Block
+                                          02      0200     FDF0E060   Block
+00A9    009F    17       D:\IBMCPP\BIN\ILINK.EXE        01   0200
+00A4    009F    17       D:\IBMCPP\BIN\ICC.EXE        01   0200
+00A3    009F    17       D:\IBMCPP\BIN\DDE4BE.EXE        01   0200
+00A1    009F    17       D:\IBMCPP\BIN\DDE4FE.EXE        01   0200
+ 0035      0000       11      D:\MUGLIB\MUGLRQST.EXE    01      0200     0B005CF9   Block
+ 0034      0000       11      D:\IBMLAN\SERVICES\MSRV.EXE    01      0200     0B005CED   Block
+ 0030      0000       00      D:\OS2\EPWMUX.EXE    01      0200     FFFE121C   Block
+ 002E      0000       11      D:\IBMLAN\SERVICES\WKSTAHLP.EXE    01      031E     2AC0D052   Block
+ 002D      0000       11      D:\IBMLAN\SERVICES\WKSTA.EXE    01      0300     FFFE1949   Block
+ 0028      0000       00      D:\OS2\EPWMUX.EXE    01      0200     FFFE0EF8   Block
+ 0027      0000       00      D:\OS2\EPWPSI.EXE    01      0200     07F800C2   Block
+ 0026      0000       00      D:\OS2\EPWMP.EXE    01      0200     FDEB4F5C   Block
+ 0021      0000       01      D:\OS2\DRIVERS\SNAP\SDDDAEMN.EXE    01      0300     FA0A6E5C   Block
+ 001F      0000       00      D:\CDWFS\CDWFSD.EXE    01      0400     FFFE069C   Block
+ 001D      0000       00      D:\OS2\ECSCLOCK\CLKBASIC.EXE    01      0200     FFF408E4   Block
+ 001C      0000       00      D:\OS2\EPWROUT.EXE    01      0200     FFFE0F14   Block
+ 001B      0000       00      D:\OS2\SYSTEM\LOGDAEM.EXE    01      021F     04C003B2   Block
+ 001A      0000       00      D:\IBMLAN\NETPROG\LSDAEMON.EXE    01      0200     FFF408E4   Block
+ 0019      0000       00      D:\MPTN\BIN\VDOSCTL.EXE    01      0300     FDE3DFB0   Block
+ 0018      0000       00      D:\IBMCOM\PROTOCOL\NBTCP.EXE    01      0401     00010018   Block
+ 0012      0000       00      D:\MPTN\BIN\DHCPCD.EXE    01      0200     FDCDBC5C   Block
+ 000B      0000       00      D:\MPTN\BIN\CNTRL.EXE    01      0304     FFF408E4   Block
+ 000A      0000       00      D:\IBMCOM\LANMSGEX.EXE    01      0200     FFFEF636   Block
+ 0008      0000       00      D:\MMOS2\MIDIDMON.EXE    01      031F     13A8171D   Block
+ 0007      0000       00      D:\OS2\SMSTART.EXE    01      0200     FFCA0007   Block
+ 0010      0007       00      D:\OS2\FFST.EXE    01      0200     07F8003E   Block
+ 000F      0007       00      D:\OS2\ERLOGGER.EXE    01      021F     07F80012   Block
+ 000E      0007       00      D:\OS2\DMISL.EXE    01      0200     FFFE034F   Block
+ 0006      0000       00      D:\OS2\APMDAEMN.EXE    01      0200     0C380410   Block
+ 0004      0000       00      D:\OS2\SYSTEM\LVMALERT.EXE    01      0200     FFF408E4   Block
+ 0002      0000       00      D:\OS2\BOOT\GSVDAEMN.EXE    01      041F     BEEFBEEF   Block
+ 0001      0000       00      (kernel)    01      0100     FFED74D4   Block
+ 0020      0001       01      D:\OS2\PMSHELL.EXE    01      0200     FDE95A10   Block
+ 00E9      0020       05      D:\ECS\CMD.EXE    01      0200     052806A7   Block
+ 00E6      0020       1B      D:\PROGRAMME\4OS2302\4OS2.EXE    01      0200     FFFE4E77   Block
+ 00CC      0020       04      D:\ECS\CMD.EXE    01      0200     05280632   Block
+ 008E      0020       11      D:\OS2\APPS\PMSEEK.EXE    01      0200     FDF0C740   Block
+ 008A      0020       1A      D:\PROGRAMME\4OS2302\4OS2.EXE    01      0200     FFFE323B   Block
+ 0089      0020       19      D:\OS2\VIEWDOC.EXE    01      0200     FDEA6E14   Block
+ 003F      0020       18      D:\IBMCPP\BIN\EVFXLXPM.EXE    01      0200     FDEF86A8   Block
+ 003B      0020       17      D:\PROGRAMME\4OS2302\4OS2.EXE    01      0200     FFCA003B   Block
+ 00EA      003B       17      D:\OS2\PSTAT.EXE    01      0200     00000000  Running
+ 0038      0020       16      D:\PROGRAMME\4OS2302\4OS2.EXE    01      0200     FFCA0038   Block
+ 0079      0038       16      K:\WORK\C\AMOUSE\AMOUSEDLL\AMTEST\AMOUSETEST.EXE    01      0200     FDEF9B28   Block
+ 0033      0020       15      D:\CDWFS\CDWPOPUP.EXE    01      0200     FDED8FF0   Block
+ 0032      0020       14      D:\OS2\COMETRUN.EXE    01      0200     FDED9F68   Block
+ 002F      0020       13      D:\PROGRAMME\WPS\XWORKPLACE\BIN\XWPDAEMN.EXE    01      0200     FDEB3908   Ready
+ 002B      0020       12      D:\OS2\PMSHELL.EXE    01      0200     FDBA8E40   Block
+ 0029      0020       10      D:\OS2\PMSPOOL.EXE    01      0200     FFF408E4   Block
+ 0023      0020       00      D:\OS2\SYSTEM\HARDERR.EXE    01      0300     0B000F46   Block
+ 0022      0020       FF0      VDM         01      0300     FDBCEF18   Block

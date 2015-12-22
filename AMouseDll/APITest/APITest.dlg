@@ -1,0 +1,19 @@
+#ifndef OS2_INCLUDED
+   #include <os2.h>
+#endif
+DLGINCLUDE 1 "dlg.h"
+
+DLGTEMPLATE ID_MAIN LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "API Test", ID_MAIN, 46, 71, 148, 99, WS_VISIBLE, FCF_SYSMENU |
+            FCF_TITLEBAR
+    BEGIN
+        PUSHBUTTON      "Inc. Volume", DID_VOL, 5, 4, 65, 14
+        PUSHBUTTON      "~OK", DID_OK, 80, 4, 60, 14
+        LTEXT           "Edit 2", -1, 3, 69, 55, 8
+        ENTRYFIELD      "", DID_EDIT1, 62, 84, 76, 8, ES_MARGIN
+        ENTRYFIELD      "", DID_EDIT2, 62, 71, 76, 8, ES_MARGIN
+        LTEXT           "Edit 1", -1, 3, 82, 55, 8
+        LISTBOX         DID_LIST, 5, 21, 134, 44
+    END
+END

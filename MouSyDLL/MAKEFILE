@@ -1,0 +1,38 @@
+# Created by IBM WorkFrame/2 MakeMake at 19:16:46 on 12/28/94
+#
+# The actions included in this makefile are:
+#   COMPILE::CLC C
+#   LINK::ILINK: LINK
+
+.all: \
+  .\MOUSYDLL.EXE
+
+.SUFFIXES:
+
+.SUFFIXES: .C
+
+.C.obj:
+      @echo WF::COMPILE::CLC C
+      icc.exe /Ss /Wextparproretuse $(CDB) /G4 /C %s
+
+.\MOUSYDLL.EXE: \
+    .\MOUSYDLL.obj \
+    .\MOUSYDLL.def \
+    makefile
+    @echo "Link::Linker "
+    icc.exe @<<
+      /B" $(LDB) /noi /exep /packc /packd"
+      /FeMOUSYDLL.exe
+      .\MOUSYDLL.obj
+      os2386.lib
+      .\MOUSYDLL.def
+<<
+
+cleanall:
+      @if exist *.obj del *.obj
+
+copyall:
+      @if exist MouSyDll.exe copy MouSyDll.exe ..\Install_Source
+
+!include makefile.Dep
+

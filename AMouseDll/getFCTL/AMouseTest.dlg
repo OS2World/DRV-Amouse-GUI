@@ -1,0 +1,24 @@
+#ifndef OS2_INCLUDED
+   #include <os2.h>
+#endif
+DLGINCLUDE 1 "E:\work\c\amouse\AMouseDll\aaa\dlg.h"
+
+DLGTEMPLATE ID_MAIN LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "AMouse Test", ID_MAIN, 16, 24, 148, 99, WS_VISIBLE, FCF_SYSMENU |
+            FCF_TITLEBAR | FCF_MINBUTTON | FCF_MAXBUTTON | FCF_HIDEBUTTON
+    BEGIN
+        LTEXT           "hwnd", -1, 3, 82, 20, 8, NOT WS_GROUP
+        LTEXT           "P1", -1, 3, 69, 20, 8, NOT WS_GROUP
+        LTEXT           "P2", -1, 3, 56, 20, 8, NOT WS_GROUP
+        LTEXT           "P3", -1, 3, 43, 20, 8, NOT WS_GROUP
+        LTEXT           "P4", -1, 3, 30, 20, 8, NOT WS_GROUP
+        ENTRYFIELD      "", DID_HWND, 42, 84, 96, 8, ES_MARGIN
+        ENTRYFIELD      "", DID_P1, 42, 71, 96, 8, ES_MARGIN
+        ENTRYFIELD      "", DID_P2, 42, 58, 96, 8, ES_MARGIN
+        ENTRYFIELD      "", DID_P3, 42, 45, 96, 8, ES_MARGIN
+        ENTRYFIELD      "", DID_P4, 42, 32, 96, 8, ES_MARGIN
+        DEFPUSHBUTTON   "test", DID_TEST, 5, 4, 27, 14, WS_GROUP
+    END
+END
+

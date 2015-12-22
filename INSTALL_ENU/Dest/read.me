@@ -1,0 +1,115 @@
+
+                            NMouse - READ.ME
+                            -----------------
+
+Welcome at AMouse. This driver works with all wellknown standard mice
+as well as with mice with a wheel, e.g.:
+- Logitech Pilot Mouse+ with serial or PS/2-port
+- Logitech Mouse Man+
+- Logitech MX700/MX1000
+- Microsoft Intellimouse
+- IBM Scrollpoint Mouse
+- Typhoon 40159
+- Trust 250S
+- USB mice
+
+This file contains information concerning the installation of AMouse.
+
+This file contains the following categories:
+   -  Prerequisites for installation
+       - Software prerequisites
+       - Hardware prerequisites
+   -  Notes
+   -  Support
+   -  Installation of AMouse
+
+
+Prerequisites for installation
+------------------------------
+   Software prerequisites
+   ----------------------
+   - OS/2 starting from version 3.0.
+
+   Hardware prerequisites
+   ----------------------
+   - Mouse with serial, PS/2 or USB port.
+
+Notes
+-----
+   - Starting from AMouse version 2.1 a simple multimedia support has been
+     implemented. This enables you to change the volume by turning the mouse
+     wheel. The dll file belonging to this feature, "nbaudio.dll" is also used
+     in our DCF77-device driver. If you are using an older version of this
+     package, it might be necessary to delete or replace the dll file of the
+     same name by the corresponding one of this package. It is sufficient to
+     keep just a single one (the newest) in the LIBPATH.
+   - Some older versions of the som.dll of the operating system are not
+     compatible with the wps class "AMouse.dll". If you experience some
+     difficulties like a hanging workplace shell during startup, you either
+     have to replace the "som*.dll" files by newer ones or you have to use
+     the executable version of the configuration program ("AMouse.exe") - see
+     below.
+
+Support
+-------
+   Online help
+   Service and technical support of nb software
+
+        noller & breining software
+        Eichhalde 3
+        71554 Weissach im Tal
+        Germany
+
+        Tel.: (+49)7191/960345
+        e-mail: info@nbsoftware.de
+        http://www.nbsoftware.de
+
+
+Installation of AMouse
+----------------------
+For installation please call the installation procedure by typing
+"INSTALL" from the directory containing the AMouse package.
+
+Installation of USB mice
+------------------------
+The installation of USB mice requires the installation of the USB
+driver package of OS/2, which consists of several drivers, that
+have to be added to the file CONFIG.SYS, like:
+    BASEDEV=USBOHCD.SYS /V
+or
+    BASEDEV=USBUHCD.SYS /V
+or
+    BASEDEV=USBEHCD.SYS /V
+(or multiple, if multiple USB hardware types are present)
+
+    BASEDEV=USBD.SYS /V /REQ:USBxHCD$  (x depends on hardware driver OHCD, UHCD or EHCD)
+    BASEDEV=USBHID.SYS
+    DEVICE=D:\OS2\BOOT\USBMOUSE.SYS
+
+The installation program replaces the original USB mouse driver of OS/2 USBMOUSE.SYS
+by a modified version, that supports 5 instead of 3 buttons. The original driver
+will be saved as USBMOUSE.ORG.
+
+If the drivers are loaded without parameters, as shown above, the system will search for mice
+in the order Serial -> PS/2 -> USB. Although the system allows additional USB mice in parallel
+to a serial or PS/2 mouse, the hardware parameters (number of buttons and wheels) are always
+taken from the serial / PS/2 device. This has to be considered when using a wheel mouse on a
+notebook, because the built-in notepad or similar device is always attached to the system as
+PS/2 mouse.
+A remedy is taken by using the parameter /DEVICE:1:
+    DEVICE=D:\OS2\BOOT\USBMOUSE.SYS /DEVICE:1
+In this case the hardware parameters are taken from the first detected USB mouse and the
+serial or PS/2 mouse is deactivated.
+
+Configuration of the Mouse
+--------------------------
+Depending on the selected configuration option there is one of
+the two following methods available for configuration of the driver
+after setup and reboot:
+1.) WPS class: In the AMOUSE folder there is a copy of the mouse
+    configuration object. It contains a setup page for the mouse and
+    the configuration of the wheel. After an additional reboot this
+    page also exists in the original object of OS/2 in the system
+    configuration folder.
+2.) EXE program: In the AMOUSE folder there is a configuration program
+    to configure the wheel.

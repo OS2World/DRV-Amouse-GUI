@@ -1,0 +1,588 @@
+.************************************************
+.*
+.*   Copyright 2002-2006 nb software
+.*
+.*   Help for AMouse
+.************************************************
+
+.imd panel.h
+:userdoc.
+
+:h1 res=&PANEL_MAIN. id=aboutMain.AMouse - Улучшенная настройка мыши
+:i1 id=aboutMain.AMouse - Улучшенная настройка мыши
+:p.:artwork name='amouse.bmp' runin align=left.
+Эта программа может быть использована для настройки действия колеса мыши у
+мышей с колесом прокрутки (например Intelli-Mouse). Она может&colon.
+
+:ul compact.
+:li.контролировать действия колеса
+:li.устанавливать скорость прокрутки (строк/страниц за раз)
+:li.задавать действия 3й - 5й кнопок мыши
+:eul.
+
+:h1 res=&PANEL_WHEELSETTINGS1. id=wheel1.Колесо 1/2/3
+:i1 id=wheel1.Колесо 1/2/3
+:p.Эта страница используется для настройки действий, вызванных поворотом колеса
+прокрутки. Для настройки действий, вызываемых поворотом колеса прокрутки, при нажатой
+клавише, есть своя подстраница.
+:p.Для получения детального описания каждого элемента управления, выберите один из
+пунктов следующего списка&colon.
+
+:ul compact.
+:li.:link reftype=hd refid=no_func.Не функционирует:elink.
+:li.:link reftype=hd refid=msgscroll.Сообщения прокрутки:elink.
+:li.:link reftype=hd refid=msgline.Сообщения клавиатуры:elink.
+:li.:link reftype=hd refid=msgpage.Прокрутка целой страницы за раз:elink.
+:li.:link reftype=hd refid=msgvol.Установка громкости звука:elink.
+:li.:link reftype=hd refid=keyboard.Действует на активное окно:elink.
+:li.:link reftype=hd refid=pointer.Действует на окно под указателем мыши:elink.
+:li.:link reftype=hd refid=scrollitem.Скорость колеса:elink.
+:li.:link reftype=hd refid=cancel.Отмена:elink.
+:li.:link reftype=hd refid=standard.По умолчанию:elink.
+:eul.
+:note.
+Эта страница доступна только в случае, когда обнаружена мышь с колесом.
+
+:h2 res=&PANEL_NOFUNCTION. id=no_func.Действия колеса - Не функционирует
+:p.Если выбрана эта радиокнопка, все повороты колеса системой будут игнорироваться.
+
+:h2 res=&PANEL_MSG_STD. id=msgscroll.Действия колеса - Сообщения прокрутки
+:p.Если выбрана эта радиокнопка, окну будут отправляться сообщения прокрутки
+(WM_VSCROLL/WM_HSCROLL). Это эмулирует действия полосы прокрутки окна.
+
+:h2 res=&PANEL_MSG_LINE. id=msgline.Действия колеса - Сообщения клавиатуры (клавиши курсора)
+:p.Если выбрана эта радиокнопка, окну будут отправляться сообщения WM_CHAR,
+эмулируя нажатие клавиш управления курсором на клавиатуре.
+
+:h2 res=&PANEL_MSG_PAGE. id=msgpage.Действия колеса - Прокрутка целой страницы за раз
+:p.Если выбрана эта радиокнопка, окну будут отправляться сообщения WM_CHAR,
+эмулируя нажатие клавиш PageUp или PageDown на клавиатуре.
+
+:h2 res=&PANEL_MSG_VOLUME. id=msgvol.Действия колеса - Установка громкости звука
+:p.Если выбрана эта радиокнопка, поворот колеса изменяет громкость звука
+мультимедиа подсистемы.
+
+:h2 res=&PANEL_KBD_FOCUS. id=keyboard.Активное окно
+:p.Если выбрана эта радиокнопка, действия, вызванные поворотом колеса, будут
+затрагивать только текущее активное окно.
+
+:p.С некоторыми мышами, окно под указателем мыши может быть активизировано нажатием
+на колесо прокрутки.
+:note.
+В некоторых окнах, дочерние окна также могут содержать полосы прокрутки (например
+в Netscape Communicator). В этом случае, действия будут затрагивать то дочернее окно,
+которое в данный момент активно.
+
+:h2 res=&PANEL_POINTER_FOCUS. id=pointer.Окно под указателем мыши
+:p.Если выбрана эта радиокнопка, действия, вызванные поворотом колеса, будут
+затрагивать окно над которым, в данный момент, находится указатель мыши.
+:note.
+Не имеет значения, активно ли окно в текущий момент. Оно может даже быть частично
+скрыто под другими окнами. Данное действие аналогично перемещению полосы прокрутки в этом
+окне при нажатой клавише Control.
+
+:h2 res=&PANEL_SCROLLITEMS. id=scrollitem.Скорость колеса
+:p.При помощи :hp2.кнопки прокрутки:ehp2. можно выбрать число строк, на которое будет
+прокручено содержимое окна, за минимальный поворот колеса мыши.
+
+:h2 id=cancel.Отмена
+:p.Значения всех параметров будут восстановлены на те, что были сохранены в прошлый раз.
+
+:h2 id=standard.По умолчанию
+:p.Значения всех параметров будут восстановлены на значения по умолчанию.
+
+:h1 res=&PANEL_WHEELSETTINGS2. id=wheel2.Колесо 4
+:i1 id=wheel2.Колесо 4
+:p.Эта страница используется для настройки параметров драйвера, действующих
+после загрузки системы.
+:p.Для получения детального описания каждого элемента управления, выберите один из
+пунктов следующего списка&colon.
+:ul compact.
+:li.:link reftype=hd refid=scroll_vert.Вертикальная прокрутка:elink.
+:li.:link reftype=hd refid=scroll_horz.Горизонтальная прокрутка:elink.
+:li.:link reftype=hd refid=accel_value.Значение ускорения:elink.
+:li.:link reftype=hd refid=accel_delay.Задержка в миллисекундах:elink.
+:li.:link reftype=hd refid=trackball.Число колёс:elink.
+:li.:link reftype=hd refid=cancel.Отмена:elink.
+:li.:link reftype=hd refid=standard.По умолчанию:elink.
+:eul.
+:note.
+Эта страница доступна только в случае, когда обнаружена мышь с колесом.
+
+:h2 res=&PANEL_SCROLL_VERT. id=scroll_vert.Начальные значения - Вертикальная прокрутка
+:p.Если выбрана эта радиокнопка, поворот колеса у мыши с одним колесом вызовет
+прокрутку содержимого окна по вертикали.
+
+:h2 res=&PANEL_SCROLL_HORZ. id=scroll_horz.Начальные значения - Горизонтальная прокрутка
+:p.Если выбрана эта радиокнопка, поворот колеса у мыши с одним колесом вызовет
+прокрутку содержимого окна по горизонтали.
+
+:h2 res=&PANEL_ACCEL_VALUE. id=accel_value.Значение ускорения прокрутки
+:p.Этот ползунок устанавливает число, на которое увеличивается скорость прокрутки, если
+колесо мыши вращается быстро.
+
+:h2 res=&PANEL_ACCEL_DELAY. id=accel_delay.Задержка ускорения (в миллисекундах)
+:p.Если колесо вращается быстро дольше, чем время задержки, скорость прокрутки (число строк за раз)
+постоянно увеличивается. Время задержки может быть установлено от 100 до 2000 мс.
+
+:h2 res=&PANEL_TRACKBALL. id=trackball.Число колёс
+:p.Некоторые мыши не могут сообщить о числе имеющихся колёс или наличии трекбола драйверу мыши.
+В таком случае нужные значения можно установить с помощью этой кнопки.
+
+:h1 res=&PANEL_WHEELSETTINGS3. id=wheel3.Колесо 5
+:i1 id=wheel3.Колесо 5
+:p.Страница :hp2.Колесо 5:ehp2. позволяет задать исключения в поведении колеса мыши для некоторых приложений.
+Если вы повернёте колесо мыши, подходящее исключение для окна / элемента управления будет найдено  в списке на этой странице.
+Список :hp2.Исключения:ehp2. будет просматриваться, пока не найдётся совпадения с приложением под курсором мыши.
+Если совпадения найдено не будет, будет использован список :hp2.AMouse:ehp2. по умолчанию (определён в :font facename=Courier size=14x14.AMouRes.rc:font facename=default.)
+Название исключения в списке используется только для удобства пользователя, поэтому могут присутствовать даже одинаковые имена.
+:p.Настроить можно так же с помощью соответствующих кнопок на странице настроек.
+:p.Для более детального описания выберите одну из следующих тем&colon.
+:ul compact.
+:li.:link reftype=hd refid=wheel_up.&uarrow.:elink.
+:li.:link reftype=hd refid=wheel_down.&darrow.:elink.
+:li.:link reftype=hd refid=wheel_delete.Удалить:elink.
+:li.:link reftype=hd refid=wheel_insert.Добавить:elink.
+:li.:link reftype=hd refid=cancel.Отмена:elink.
+:eul.
+:note.
+Эта страница доступна только в случае, когда обнаружена мышь с колесом.
+
+:p.:hp7.Описание полей:ehp7.
+:p.Действие отображается внизу страницы. Левая колонка определяет окно / элемент управления,
+который будет реагировать на поворот колеса. Значения следующие&colon.
+:ul compact.
+:li.:hp2.Приложение:ehp2.
+.br
+Название приложения (например :font facename=Courier size=14x14.PROGRAMM.EXE:font facename=default.).
+Если это поле пустое, результат сравнения всегда будет ИСТИНА. Для классов WPS это поле всегда должно быть пустым.
+:li.:hp2.Класс:ehp2.
+.br
+Класс окна / элемента управления. Здесть должно быть имя класса (регистр различается!) или идентификатор, с символом
+&osq.&numsign.&csq. в начале. Если это поле пустое, результат сравнения всегда будет ИСТИНА.
+:li.:hp2.Родитель:ehp2.
+.br
+Родительский класс окна / элемента упрвления. Здесть должно быть имя класса (регистр различается!) или идентификатор, с символом
+&osq.&numsign.&csq. в начале. Если это поле пустое, результат сравнения всегда будет ИСТИНА.
+:li.:hp2.Параметр:ehp2.
+.br
+Если требуется для некоторых значений &osq.вОтношение&csq. или &osq.гОтношение&csq., здесь будет выведен параметр (см. его описание).
+В других случаях это поле пустое.
+:eul.
+:p.Правая колонка определяет действия производимые колесом. Значения следующие&colon.
+:ul compact.
+:li.:hp2.Действие:ehp2.
+.br
+Определяет тип сообщения, посылаемое окну / элементу управления.
+:hp2.Scroll:ehp2. - будет использоваться прокрутка, как если на странице
+:link reftype=hd refid=wheel1.Колесо 1:elink. выбрать
+:link reftype=hd refid=msgscroll.сообщения прокрутки:elink..
+:hp2.Cursor:ehp2. - будут отправляться
+:link reftype=hd refid=msgline.сообщения клавиатуры:elink.,
+:hp2.Page:ehp2. - аналогично выбору
+:link reftype=hd refid=msgpage.прокрутка целой страницы за раз:elink..
+:hp2.Scroll or Cursor:ehp2. - как если бы были выбраны
+:link reftype=hd refid=msgscroll.сообщения прокрутки:elink. или
+:link reftype=hd refid=msgline.сообщения клавиатуры:elink..
+:hp2.All:ehp2. - разрешает все действия.
+:li.:hp2.вОтношение и гОтношение:ehp2.
+.br
+Определяет, что сообщение должно быть отправлено напрямую окну / элементу управления, или нужно продолжать поиск в иерархии окон.
+Значения следующие&colon.
+:ul compact.
+:li.:hp2.None:ehp2.&colon. Сообщение будет отправлено напрямую найденному элементу управления.
+:li.:hp2.Parent:ehp2.&colon. В списке исключений будет найден подходящий родитель.
+:li.:hp2.Owner:ehp2.&colon. В списке исключений будет найден подходящий владелец.
+:li.:hp2.Next:ehp2.&colon. Поиск элементов управления будет продолжен вглубину под курсором мыши.
+:li.:hp2.CB Next:ehp2.&colon. Используется только для выпадающих списков. Действует в общем так же как :hp2.Next:ehp2.,
+но поиск будет производится в свёрнутом списке.
+:li.:hp2.Sibling[Option]:ehp2.&colon. В списке исключений будет искаться родственное окно с именем класса заданном в поле :hp2.Параметр:ehp2..
+:eul.
+:li.:hp2.вПараметр / гПараметр:ehp2.
+.br
+Содержит параметр, зависящий от типа посылаемого сообщения. См. там.
+:li.:hp2.Вверх/Вниз и. Влево/Вправо:ehp2.
+.br
+Определяет сообщение отправляемое окну / элементу управления. Возможны следующие варианты&colon.
+:ul compact.
+:li.:hp2.WM_NULL:ehp2.&colon. Ничего посылаться не будет. Используется, если в
+:hp2.вОтношение:ehp2./:hp2.гОтношение:ehp2. установлено значение :hp2.None:ehp2..
+:li.:hp2.WM_CONTROL:ehp2.&colon. Код клавиши отправляется напрямую драйверу клавиатуры.
+Возможны следующие значения&colon.
+:ul compact.
+:li.:hp2.page:ehp2.&colon. Посылаются коды клавиш PgUp/PgDn.
+:li.:hp2.cursor up/down:ehp2.&colon. Посылаются коды клавиш вверх/вниз.
+:li.:hp2.cursor left/right:ehp2.&colon. Посылаются коды клавиш влево/вправо.
+:li.:hp2.mult cursor up/down:ehp2.&colon. Посылаются коды клавиш вверх/вниз.
+Число отправляемых сообщений задаётся элементом :link reftype=hd refid=scrollitem.Скорость колеса:elink..
+:li.:hp2.mult cursor left/right:ehp2.&colon. Посылаются коды клавиш влево/вправо.
+Число отправляемых сообщений задаётся элементом :link reftype=hd refid=scrollitem.Скорость колеса:elink..
+:eul.
+:li.:hp2.WM_VSCROLL:ehp2.&colon. Сообщение вертикальной прокрутки посылается вертикальной полосе прокрутки.
+:li.:hp2.WM_HSCROLL:ehp2.&colon. Сообщение вертикальной прокрутки посылается горизонтальной полосе прокрутки.
+:li.:hp2.N x WM_VSCROLL:ehp2.&colon. Как :hp2.WM_VSCROLL:ehp2., только число посылаемых сообщений задаётся
+элементом :link reftype=hd refid=scrollitem.Скорость колеса:elink..
+:li.:hp2.N x WM_HSCROLL:ehp2.&colon. Как :hp2.WM_HSCROLL:ehp2., только число посылаемых сообщений задаётся
+элементом :link reftype=hd refid=scrollitem.Скорость колеса:elink..
+:li.:hp2.WM_CHAR:ehp2.&colon. Посылается символьное сообщение. Парамтры такие же как и у
+:hp2.WM_CONTROL:ehp2..
+:eul.
+:eul.
+
+:p.:hp7.Примеры:ehp7.
+:p.Из-за ошибки в старых версиях Mozilla (версия 1.3 и более старые) горизонтальная прокрутка посредством нормальных сообщений WM_SCROLL
+не работала. Обойти эту проблему можно следующим образом.
+:p.:artwork name='Mozilla_Line_001.bmp' align=left.
+:p.Этот пример работает, как если на странице :link reftype=hd refid=wheel1.Колесо 1:elink. выбрать действие колеса
+:hp2.сообщения прокрутки:ehp2. или :hp2.сообщения клавиатуры:ehp2..
+В этом случае родителю посылаются сообщения о нажатии клавиш курсора.
+(&odq.mult cursor&cdq.). Mozilla идентифицируется, если :hp2.Класс:ehp2. и
+:hp2.Родитель:ehp2. имеют значение :hp2.MozillaWindowClass:ehp2..
+:p.:artwork name='Mozilla_Page_001.bmp' align=left.
+:p.Для прокрутки страниц (:hp2.Действие = Page:ehp2.) сообщения о нажатии PgUp/PgDown посылаются в случае вертикальной прокрутки.
+:p.:artwork name='Command_Line_001.bmp' align=left.
+:p.Если вы повернёте колесо над окном командного режима, действие по умолчанию - прокручивать его содержимое (если присутствуют полосы прокрутки).
+А эти настройки позволяют просматривать историю команд.
+
+:h2 res=&PANEL_W3_UP. id=wheel_up.&uarrow. (Переместить вверх)
+:p.Перемещает выбранное исключение на одну позицию вверх.
+
+:h2 res=&PANEL_W3_DOWN. id=wheel_down.&darrow. (Переместить вниз)
+:p.Перемещает выбранное исключение на одну позицию вниз.
+
+:h2 res=&PANEL_W3_DELETE. id=wheel_delete.Удалить
+:p.Удалить выбранное исключение.
+
+:h2 res=&PANEL_W3_INSERT. id=wheel_insert.Добавить
+:p.Добавить новое исключение.
+
+:h1 res=&PANEL_INSERTAPPL. id=insertappl.Добавить приложение
+:i1 id=insertappl.Добавить приложение
+:p.Этот диалог используется для добавления нового исключения в действии колеса мыши, для выбранного приложения.
+Значения элементов управления те же, что и на странице :link reftype=hd refid=wheel3.Колесо 5:elink.
+:hp2.Название:ehp2. может содержать любой текст, определяющий элемент списка исключений на странице :link reftype=hd refid=wheel3.Колесо 5:elink..
+
+:h1 res=&PANEL_KEYSETTINGS1. id=keys1.Клавиши 1
+:i1 id=keys.Клавиши 1
+:p.Эта страница используется для настройки действий 3й, 4й и 5й кнопок мыши.
+:p.Для получения детального описания каждого элемента управления, выберите один из
+пунктов следующего списка&colon.             
+:ul compact.
+:li.:link reftype=hd refid=button3.Кнопка 3:elink.
+:li.:link reftype=hd refid=button4.Кнопка 4:elink.
+:li.:link reftype=hd refid=button5.Кнопка 5:elink.
+:li.:link reftype=hd refid=button6.Кнопка 6:elink.
+:li.:link reftype=hd refid=button7.Кнопка 7:elink.
+:li.:link reftype=hd refid=button8.Кнопка 8:elink.
+:li.:link reftype=hd refid=button9.Кнопка 9:elink.
+:li.:link reftype=hd refid=button10.Кнопка 10:elink.
+:li.:link reftype=hd refid=cbutton3.Ctrl+Кнопка 3:elink.
+:li.:link reftype=hd refid=cbutton4.Ctrl+Кнопка 4:elink.
+:li.:link reftype=hd refid=cbutton5.Ctrl+Кнопка 5:elink.
+:li.:link reftype=hd refid=cbutton6.Ctrl+Кнопка 6:elink.
+:li.:link reftype=hd refid=cbutton7.Ctrl+Кнопка 7:elink.
+:li.:link reftype=hd refid=cbutton8.Ctrl+Кнопка 8:elink.
+:li.:link reftype=hd refid=cbutton9.Ctrl+Кнопка 9:elink.
+:li.:link reftype=hd refid=cbutton10.Ctrl+Кнопка 10:elink.
+:li.:link reftype=hd refid=abutton3.Alt+Кнопка 3:elink.
+:li.:link reftype=hd refid=abutton4.Alt+Кнопка 4:elink.
+:li.:link reftype=hd refid=abutton5.Alt+Кнопка 5:elink.
+:li.:link reftype=hd refid=abutton6.Alt+Кнопка 6:elink.
+:li.:link reftype=hd refid=abutton7.Alt+Кнопка 7:elink.
+:li.:link reftype=hd refid=abutton8.Alt+Кнопка 8:elink.
+:li.:link reftype=hd refid=abutton9.Alt+Кнопка 9:elink.
+:li.:link reftype=hd refid=abutton10.Alt+Кнопка 10:elink.
+:li.:link reftype=hd refid=keycombset3.Set 3:elink.
+:li.:link reftype=hd refid=keycombset4.Set 4:elink.
+:li.:link reftype=hd refid=keycombset5.Set 5:elink.
+:li.:link reftype=hd refid=keycombset6.Set 6:elink.
+:li.:link reftype=hd refid=keycombset7.Set 7:elink.
+:li.:link reftype=hd refid=keycombset8.Set 8:elink.
+:li.:link reftype=hd refid=keycombset9.Set 9:elink.
+:li.:link reftype=hd refid=keycombset10.Set 10:elink.
+:li.:link reftype=hd refid=keycomb.Key combination:elink.
+:li.:link reftype=hd refid=cancel.Отмена:elink.
+:li.:link reftype=hd refid=standard.По умолчанию:elink.
+:eul.
+:note.
+Эта страница доступна только в случае, когда у мыши обнаружено больше 2х кнопок.
+
+:p.:hp2.Функции кнопок:ehp2.
+:p.Доступны следующие функции&colon.
+
+:ul.
+:li.:hp5.Вырезать:ehp5.
+.br
+Будет выполнена функция буфера обмена "Вырезать" (Shift-Del)
+:li.:hp5.Скопировать:ehp5.
+.br
+Будет выполнена функция буфера обмена "Скопировать" (Ctrl-Ins)
+:li.:hp5.Вставить:ehp5.
+.br
+Будет выполнена функция буфера обмена "Вставить" (Shift-Ins)
+:li.:hp5.Средняя кнопка:ehp5.
+.br
+Кнопка будет действовать как стандартная 3я кнопка мыши.
+Состояния специальных клавиш клавиатуры сохраняется и обрабатывается стандартно.
+:li.:hp5.Минимизировать/Скрыть все окна:ehp5.
+.br
+Все окна будут минимизированы или скрыты, в зависимости от особенностей каждого окна.
+:li.:hp5.Восстановить все окна:ehp5.
+.br
+Размеры и положения всех окон на экране будут восстановлены, как до выполнения функций
+Минимизировать/Максимизировать/Скрыть.
+:li.:hp5.Список окон:ehp5.
+.br
+Нажатие вызовет Список окон.
+:li.:hp5.Закрыть приложение:ehp5.
+.br
+Приложение будет закрыто.
+:li.:hp5.Двойной щелчок:ehp5.
+.br
+Сообщение о двойном нажатии на левую клавишу мыши будет отправлено приложению.
+:li.:hp5.Максимизировать окно:ehp5.
+.br
+Окно приложения будет максимизировано.
+:li.:hp5.Минимизировать/Скрыть окно:ehp5.
+.br
+Окно будет минимизировано или скрыто, в зависимости от его особенностей.
+:li.:hp5.Восстановить окно:ehp5.
+.br
+Размеры и положение окна на экране будут восстановлены, как до выполнения функций
+Минимизировать/Максимизировать/Скрыть.
+:li.:hp5.Изменить напрвление прокрутки:ehp5.
+.br
+Направление прокрутки будет сменено на горизонтальное либо вертикальное.
+:li.:hp5.Переместить окно вглубь:ehp5.
+.br
+Окно под указателем мыши будет перемещено за остальные окна на рабочем столе.
+:li.:hp5.Key combination:ehp5.
+.br
+The key code of the key combination shown in the entry field will be sent to the application.
+:li.:hp5.Нет действия:ehp5.
+.br
+Нажатие кнопки не вызовет никаких действий.
+:eul.
+
+:h2 res=&PANEL_BUTTON3. id=button3.Кнопка 3
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 3й кнопки мыши.
+
+:h2 res=&PANEL_BUTTON4. id=button4.Кнопка 4
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 4й кнопки мыши.
+
+:h2 res=&PANEL_BUTTON5. id=button5.Кнопка 5
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 5й кнопки мыши.
+
+:h2 res=&PANEL_BUTTON6. id=button6.Кнопка 6
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 6й кнопки мыши.
+
+:h2 res=&PANEL_BUTTON7. id=button7.Кнопка 7
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 7й кнопки мыши.
+
+:h2 res=&PANEL_BUTTON8. id=button8.Кнопка 8
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 8й кнопки мыши.
+
+:h2 res=&PANEL_BUTTON9. id=button9.Кнопка 9
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 9й кнопки мыши.
+
+:h2 res=&PANEL_BUTTON10. id=button10.Кнопка 10
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 10й кнопки мыши.
+
+:h2 res=&PANEL_CBUTTON3. id=cbutton3.Ctrl+Кнопка 3
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 3й кнопки мыши при
+нажатой клавише Ctrl на клавиатуре.
+
+:h2 res=&PANEL_CBUTTON4. id=cbutton4.Ctrl+Кнопка 4
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 4й кнопки мыши при
+нажатой клавише Ctrl на клавиатуре.
+
+:h2 res=&PANEL_CBUTTON5. id=cbutton5.Ctrl+Кнопка 5
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 5й кнопки мыши при
+нажатой клавише Ctrl на клавиатуре.
+
+:h2 res=&PANEL_CBUTTON6. id=cbutton6.Ctrl+Кнопка 6
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 6й кнопки мыши при
+нажатой клавише Ctrl на клавиатуре.
+
+:h2 res=&PANEL_CBUTTON7. id=cbutton7.Ctrl+Кнопка 7
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 7й кнопки мыши при
+нажатой клавише Ctrl на клавиатуре.
+
+:h2 res=&PANEL_CBUTTON8. id=cbutton8.Ctrl+Кнопка 8
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 8й кнопки мыши при
+нажатой клавише Ctrl на клавиатуре.
+
+:h2 res=&PANEL_CBUTTON9. id=cbutton9.Ctrl+Кнопка 9
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 9й кнопки мыши при
+нажатой клавише Ctrl на клавиатуре.
+
+:h2 res=&PANEL_CBUTTON10. id=cbutton10.Ctrl+Кнопка 10
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 10й кнопки мыши при
+нажатой клавише Ctrl на клавиатуре.
+
+:h2 res=&PANEL_ABUTTON3. id=abutton3.Alt+Кнопка 3
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 3й кнопки мыши при
+нажатой клавише Alt на клавиатуре.
+
+:h2 res=&PANEL_ABUTTON4. id=abutton4.Alt+Кнопка 4
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 4й кнопки мыши при
+нажатой клавише Alt на клавиатуре.
+
+:h2 res=&PANEL_ABUTTON5. id=abutton5.Alt+Кнопка 5
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 5й кнопки мыши при
+нажатой клавише Alt на клавиатуре.
+
+:h2 res=&PANEL_ABUTTON6. id=abutton6.Alt+Кнопка 6
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 6й кнопки мыши при
+нажатой клавише Alt на клавиатуре.
+
+:h2 res=&PANEL_ABUTTON7. id=abutton7.Alt+Кнопка 7
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 7й кнопки мыши при
+нажатой клавише Alt на клавиатуре.
+
+:h2 res=&PANEL_ABUTTON8. id=abutton8.Alt+Кнопка 8
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 8й кнопки мыши при
+нажатой клавише Alt на клавиатуре.
+
+:h2 res=&PANEL_ABUTTON9. id=abutton9.Alt+Кнопка 9
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 9й кнопки мыши при
+нажатой клавише Alt на клавиатуре.
+
+:h2 res=&PANEL_ABUTTON10. id=abutton10.Alt+Кнопка 10
+:p.Этот выпадающий список позволяет выбрать действие при нажатии 10й кнопки мыши при
+нажатой клавише Alt на клавиатуре.
+
+:h2 res=&PANEL_KEYCOMBSET3. id=keycombset3.Set key combination 3
+:p.This button is used to assign the :link reftype=hd refid=keycomb.key combination:elink. in the entry field to 
+the mouse button, if the :link reftype=hd refid=button3.combo box:elink. has been set to :hp1.Key combination:ehp1..
+
+:h2 res=&PANEL_KEYCOMBSET4. id=keycombset4.Set key combination 4
+:p.This button is used to assign the :link reftype=hd refid=keycomb.key combination:elink. in the entry field to 
+the mouse button, if the :link reftype=hd refid=button4.combo box:elink. has been set to :hp1.Key combination:ehp1..
+
+:h2 res=&PANEL_KEYCOMBSET5. id=keycombset5.Set key combination 5
+:p.This button is used to assign the :link reftype=hd refid=keycomb.key combination:elink. in the entry field to 
+the mouse button, if the :link reftype=hd refid=button5.combo box:elink. has been set to :hp1.Key combination:ehp1..
+
+:h2 res=&PANEL_KEYCOMBSET6. id=keycombset6.Set key combination 6
+:p.This button is used to assign the :link reftype=hd refid=keycomb.key combination:elink. in the entry field to 
+the mouse button, if the :link reftype=hd refid=button6.combo box:elink. has been set to :hp1.Key combination:ehp1..
+
+:h2 res=&PANEL_KEYCOMBSET7. id=keycombset7.Set key combination 7
+:p.This button is used to assign the :link reftype=hd refid=keycomb.key combination:elink. in the entry field to 
+the mouse button, if the :link reftype=hd refid=button7.combo box:elink. has been set to :hp1.Key combination:ehp1..
+
+:h2 res=&PANEL_KEYCOMBSET8. id=keycombset8.Set key combination 8
+:p.This button is used to assign the :link reftype=hd refid=keycomb.key combination:elink. in the entry field to 
+the mouse button, if the :link reftype=hd refid=button8.combo box:elink. has been set to :hp1.Key combination:ehp1..
+
+:h2 res=&PANEL_KEYCOMBSET9. id=keycombset9.Set key combination 9
+:p.This button is used to assign the :link reftype=hd refid=keycomb.key combination:elink. in the entry field to 
+the mouse button, if the :link reftype=hd refid=button9.combo box:elink. has been set to :hp1.Key combination:ehp1..
+
+:h2 res=&PANEL_KEYCOMBSET10. id=keycombset10.Set key combination 10
+:p.This button is used to assign the :link reftype=hd refid=keycomb.key combination:elink. in the entry field to 
+the mouse button, if the :link reftype=hd refid=button10.combo box:elink. has been set to :hp1.Key combination:ehp1..
+
+:h2 res=&PANEL_KEYCOMB. id=keycomb.Define key combination
+:p.This entry field allows to define key combinations, that may be assigned to an arbitrary mouse button.
+:p.After a key combination has been defined and assigned to a mouse button, this key combination will be sent to 
+the applicaton, if the responding mouse button has been pressed.
+:p.To define a key combination, the entry field must be clicked. Afterwards, the key combination has to be pressed (e.g. :hp2.Alt-F4:ehp2.).
+The entry field then shows this key combination. By pressing one of the :hp2.Set:ehp2.-buttons, this key combination is
+assiged to the corresponding mouse button.
+
+:h1 res=&PANEL_KEYSETTINGS2. id=keys2.Клавиши 2
+:i1 id=keys2.Клавиши 2
+:p.Эта страница используется для определения реакций некоторых элементов управления на действия мыши.
+:p.Для более детального описания выберите одну из тем&colon.
+:ul compact.
+:li.:link reftype=hd refid=dblclick_entry.Двойной щелчок на полях ввода:elink.
+:li.:link reftype=hd refid=click_combo.Щелчок на выпадающих списках:elink.
+:li.:link reftype=hd refid=smartcruise.SmartCruise:elink.
+:li.:link reftype=hd refid=cancel.Отмена:elink.
+:li.:link reftype=hd refid=standard.По умолчанию:elink.
+:eul.
+
+:h2 res=&PANEL_PMCTLS_ENTRY. id=dblclick_entry.Двойной щелчок на полях ввода
+:p.Если выбрана эта опция, двойной щелчок на поле ввода позволяет выбрать слово.
+
+:h2 res=&PANEL_PMCTLS_COMBO. id=click_combo.Щелчок на выпадающих списках
+:p.Если выбрана эта опция, щелчок на свёрнутом выпадающем списке разворачивает его.
+
+:h2 res=&PANEL_SMARTCRUISE. id=smartcruise.SmartCruise
+:p.Задействует функцию SmartCruise мышей Logitech MX500, MX700 и MX1000. Если эта функция
+включена, настройки для кнопок 7, 8, 9 и 10 игнорируются, кнопки 7 и 8 
+выполняют вертикальную прокрутку, а кнопки 9 и 10 (если есть) - горизонтальную. 
+
+:h1 res=&PANEL_DEVICEINFO. id=devinfo.Информация об устройстве
+:i1 id=devinfo.Информация об устройстве
+:p.На этой странице показывается тип и версии программного обеспечения относящегося
+к данному продукту.
+:p.Более того, на ней выводится информация об установленной мыши.
+:note.
+Для множества мышей невозможно точно определить количество кнопок. Кроме того,
+Presentation Manager поддерживает не более 3х кнопок. Это причина, по которой,
+возможно, число кнопок определяется некорректно, если у мыши больше чем 3 кнопки.
+
+:h1 res=&PANEL_WLDEVICEINFO. id=wldevinfo.Информация об устройстве 2
+:i1 id=wldevinfo.Информация об устройстве 2
+:p.На этой странице отображается информация специфичная для беспроводных мышей, в случае, если мышь поддерживает возможность получения этих данных.
+:p.:hp5.Номер устройства:ehp5. имеет смысл только для USB мышей и отображает индекс устройства.
+:p.:hp5.Номер канала:ehp5. отображает используемый канал у мыши, которая поддерживает несколько каналов.
+:p.:hp5.Состояние батарей:ehp5. отображает текущее состояние батарей мыши.
+:p.Чтобы посмотреть более детальное описание каждого элемента, выберите тему из списка&colon.
+:ul compact.
+:li.:link reftype=hd refid=battery_warning.Предупреждение о разряде:elink.
+:eul.
+
+:h2 res=&PANEL_BATTERYWARNING. id=battery_warning.Предупреждение о разряде
+:p.Если включена эта опция, будет показан диалог предупреждающий о том, что батарейка мыши близка к полному разряду.
+
+:h1 res=&PANEL_TIMINGSETTINGS. id=timing.Тонкая настройка
+:i1 id=timing.Тонкая настройка
+:p.Эта страница используется для тонкой настройки частоты опроса порта, а также
+значения ускорения указателя.
+
+:p.:hp5.Описание ускорения:ehp5.&colon. Для каждого перемещения мыши, число физических единиц,
+на которые сместилась мышь, считается и сравнивается с 1м и 2м порогами. Если число больше второго порога,
+используется 2й множитель; если число находится между 2м и 1м порогами, используется 1й множитель.
+Если число меньше первого порога, множитель не используется.
+Эти вычисления производятся отдельно для осей X и Y.
+:p.Значения вычисляются следующим образом&colon.
+
+:table cols='15 25' rules=both frame=box.
+:row.
+:c.1й порог
+:c.значение ползунка
+:row.
+:c.2й порог
+:c.значение ползунка * 7
+:row.
+:c.1й множитель
+:c.значение ползунка
+:row.
+:c.2й множитель
+:c.значение ползунка * 2
+:etable.
+
+:ul compact.
+:li.:link reftype=hd refid=pollrate.Частота опроса порта:elink.
+:li.:link reftype=hd refid=mouaccel_value.Значение ускорения:elink.
+:li.:link reftype=hd refid=mouaccel_threshold.Порог ускорения:elink.
+:li.:link reftype=hd refid=cancel.Отмена:elink.
+:li.:link reftype=hd refid=standard.По умолчанию.:elink.
+:eul.
+
+:h2 res=&PANEL_MOU_POLLRATE. id=pollrate.Частота опроса порта
+:p.Этот ползунок задаёт частоту, с которой будет опрашиваться порт PS/2.
+Большее значение позволяет получить более плавное перемещение указателя,
+но увеличивает загрузку процессора.
+
+:h2 res=&PANEL_MOU_ACCEL_VALUE. id=mouaccel_value.Значение ускорения
+:p.Этот ползунок задаёт значение ускорения указателя мыши.
+
+:h2 res=&PANEL_MOU_ACCEL_TH. id=mouaccel_threshold.Порог ускорения
+:p.Этот ползунок задаёт значение порога ускорения указателя мыши.
+
+:euserdoc.

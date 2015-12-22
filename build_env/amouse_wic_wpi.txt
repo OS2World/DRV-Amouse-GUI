@@ -1,0 +1,1 @@
+-a amouse_v2802 1 -ccore -r * 2 -clang\en -r * 3 -clang\fr -r * 4 -clang\it -r * 5 -clang\se -r * 6 -clang\de -r * 7 -clang\ru -r * 8 -clang\es -r * -s amouse.wis

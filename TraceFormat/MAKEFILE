@@ -1,0 +1,8 @@
+.\TRC00B2.TFF: \
+    .\AMOUHOOK.TSF
+    trcust %s
+
+cleanall:
+      @if exist *.tff del *.tff
+
+

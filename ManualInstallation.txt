@@ -1,0 +1,42 @@
+1. Alles auspacken in ein Verzeichnis
+2. Verzeichnis aufnehmen in config.sys:
+	- LIBPATH
+	- HELP
+3. in config.sys erg„nzen:
+	DEVICE=<path>\AMOUSE.SYS
+4. in config.sys auskommentieren:
+	DEVICE=<path>\mouse.sys
+	(der Original-Treiber von IBM)
+5. Ersetzen des Original usbmouse.sys durch unseren
+
+6. Rechner neu booten
+
+7. System-DLL registrieren mit
+	MOUSYDLL.EXE REGISTER
+8. WPS-Klasse registrieren mit
+	MOUCLASS.EXE REPLACE
+9. WPS-Objekt anlegen mit folgender REXX-Datei:
+
+----------------------------------------------------------------------------------
+/* REXX */
+
+Call RxFuncAdd 'SysLoadFuncs', 'REXXUTIL', 'SysLoadFuncs';
+Call SysLoadFuncs;
+
+     /* Create standard mouse object in config folder */
+     /* rc=SysCreateObject('WPMouse', 'Mouse', '<WP_CONFIG>',,'replace'); */
+
+     /* Create AMouse object in config folder */
+     rc=SysCreateObject('AMouse', 'Mouse', '<WP_CONFIG>',,'replace');
+
+     If rc <> 1                 /* If there were create errors */
+        Then Do;
+          Say  "AMouse: could not create object on the Desktop, rc="rc".";
+          End;
+
+----------------------------------------------------------------------------------
+
+10. Rechner neu booten
+	fertig!
+
+

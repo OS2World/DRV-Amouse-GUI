@@ -1,0 +1,27 @@
+.\PMCtlsData.obj: \
+    .\PMCtlsData.c \
+    .\PMCtlsData.h \
+    ..\AMouseGlobal.h
+
+.\PMCtlsIni.obj: \
+    .\PMCtlsIni.c \
+    .\PMCtlsIni.h \
+    .\PMCtlsData.h \
+    ..\AMouseGlobal.h
+
+.\PMCtlsPP.obj: \
+    .\PMCtlsPP.c \
+    .\PMCtlsPP.h \
+    .\PMCtlsData.h \
+    .\PMCtlsIni.h \
+    ..\AMouseGlobal.h
+
+.\ComboDlgProc.obj: \
+    .\ComboDlgProc.c \
+    .\PMCtlsPP.h
+
+.\EntryDlgProc.obj: \
+    .\EntryDlgProc.c \
+    .\PMCtlsPP.h
+
+

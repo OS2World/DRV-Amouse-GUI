@@ -1,0 +1,618 @@
+*---------------------------------------------------------------------
+*  Service level
+*---------------------------------------------------------------------
+SERVICELEVEL
+   LEVEL = '020500'
+
+**********************************************************************
+
+
+*---------------------------------------------------------------------
+*  Success message
+*---------------------------------------------------------------------
+OPTIONS
+   SUCCESSINSMSG = 'Мышь успешно установлена. Пожалуйста прочтите инструкции по настройке в файле Read.me. %EPFICONFIGMSG%'
+
+**********************************************************************
+
+
+*---------------------------------------------------------------------
+*  Product is released on 1 diskette
+*---------------------------------------------------------------------
+*DISK
+*   NAME   = 'AMOUSE - Дискета 1',
+
+**********************************************************************
+
+
+*---------------------------------------------------------------------
+*  Default installation directory
+*---------------------------------------------------------------------
+PATH
+   FILE = 'C:/AMOUSE',
+   FILELABEL = 'Installation directory'
+
+
+**********************************************************************
+
+
+*---------------------------------------------------------------------
+*  define product folder's object ID
+*---------------------------------------------------------------------
+FILE
+   EXITWHEN = 'ALWAYS',
+   EXITIGNOREERR = 'NO',
+   EXIT = 'SETVAR FOLDERID=NBMSFLDR'
+
+
+**********************************************************************
+
+
+*---------------------------------------------------------------------
+*  Package-file description
+*---------------------------------------------------------------------
+PACKFILE
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOUSE.PAK',
+   ID = 'DRIVER'
+
+**********************************************************************
+
+
+*---------------------------------------------------------------------
+*  This component creates a folder on the desktop.
+*---------------------------------------------------------------------
+COMPONENT
+   NAME = 'INSFIRST',
+   ID = 'INSFIRST',
+   DISPLAY = 'NO',
+   SIZE = '1160000',
+   SHARED = 'NO',
+   DELETE = 'YES'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   SOURCE = 'DRIVE:AMOUSE.ICF',
+   PWS = 'AMOUSE.ICF',
+   DATE = '1030524',
+   SIZE = '815'
+
+*  variable CATALOG contains name of catalog file
+*  (used in EPFISINC.PKG)
+FILE
+   EXITWHEN = 'INSTALL || UPDATE || RESTORE',
+   EXITIGNOREERR = 'NO',
+   EXIT = 'SETVAR CATALOG=AMOUSE.ICF'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   SOURCE = 'DRIVE:AMOUSE.DSC',
+   PWS = 'AMOUSE.DSC',
+   DATE = '1021124',
+   SIZE = '550'
+
+*  Create product's folder on the desktop.
+FILE
+   EXITWHEN = 'INSTALL',
+   EXITIGNOREERR = 'NO',
+   EXIT = 'CREATEWPSOBJECT WPFolder "Мышь"                   <WP_DESKTOP> R                   "OBJECTID=<%FOLDERID%>;"'
+
+FILE
+   EXITWHEN = 'UPDATE || RESTORE',
+   EXITIGNOREERR = 'YES',
+   EXIT = 'CREATEWPSOBJECT WPFolder "Мышь"                   <WP_DESKTOP> R                   "OBJECTID=<%FOLDERID%>;"'
+
+*  install and register the Installation Utility.
+INCLUDE
+   NAME = 'DRIVE:EPFISINC.PKG'
+
+
+**********************************************************************
+
+
+*---------------------------------------------------------------------
+*  Component for driver and system dll
+*
+*  Special considerations:
+*    The system mouse driver will be replaced by amouse.sys
+*---------------------------------------------------------------------
+COMPONENT
+   NAME = 'Драйвер',
+   ID = 'DRIVER',
+   REQUIRES = 'INSFIRST DELLAST',
+   DISPLAY = 'YES',
+   DESCRIPTION = 'Драйвер устройства, системная библиотека и файл справки',
+   SIZE = '220000',
+   SHARED = 'NO',
+   DELETE = 'YES'
+
+*  On deinstallation first deregister system dll before deleting
+FILE
+   EXITWHEN = 'DELETE',
+   EXITIGNOREERR = 'YES',
+   EXIT = 'EXEC bg tw MOUSYDLL.EXE DEREGISTER NOSOUND'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOUDLL.DLL',
+   PACKID = 'DRIVER',
+   PWS = 'AMOUDLL.DLL',
+   DATE = '1060521',
+   SIZE = '32764'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOUDLL.LIB',
+   PACKID = 'DRIVER',
+   PWS = 'AMOUDLL.LIB',
+   DATE = '1060521',
+   SIZE = '1536'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:PMWINMOU.H',
+   PACKID = 'DRIVER',
+   PWS = 'PMWINMOU.H',
+   DATE = '1060414',
+   SIZE = '3283'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOUHOOK.DLL',
+   PACKID = 'DRIVER',
+   PWS = 'AMOUHOOK.DLL',
+   DATE = '1060521',
+   SIZE = '21806'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:NBAUDIO.DLL',
+   PACKID = 'DRIVER',
+   PWS = 'NBAUDIO.DLL',
+   DATE = '1020602',
+   SIZE = '46324'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:PMCTLSPP.DLL',
+   PACKID = 'DRIVER',
+   PWS = 'PMCTLSPP.DLL',
+   DATE = '1060521',
+   SIZE = '11345'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOUSE.SYS',
+   PACKID = 'DRIVER',
+   PWS = 'AMOUSE.SYS',
+   DATE = '1050306',
+   SIZE = '22965'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:USBMOUSE.SYS',
+   PACKID = 'DRIVER',
+   PWS = 'USBMOUSE.SYS',
+   DATE = '1050326',
+   SIZE = '15298'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:MOUSYDLL.EXE',
+   PACKID = 'DRIVER',
+   PWS = 'MOUSYDLL.EXE',
+   DATE = '1060521',
+   SIZE = '34396'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOURES.RC',
+   PACKID = 'DRIVER',
+   PWS = 'AMOURES.RC',
+   DATE = '1051015',
+   SIZE = '17861'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOURES.H',
+   PACKID = 'DRIVER',
+   PWS = 'AMOURES.H',
+   DATE = '1041023',
+   SIZE = '2880'
+
+ADDCONFIG
+   VAR = 'DEVICE',
+   ADDSTR = '%EPFIFILEDIR%\AMOUSE.SYS',
+   ADDWHEN = 'INSTALL || UPDATE || RESTORE',
+   DELETEWHEN = 'DELETE',
+   FILESEARCHPOS = 'AFTER',
+   FILESEARCHSTR = '\MOUSE.SYS',
+   UNIQUE = 'YES',
+   PARTIALSTRING = 'YES'
+
+ADDCONFIG
+   VAR = 'DEVICE',
+   ADDSTR = '%EPFIBOOTDRIVE%:\OS2\BOOT\MOUSE.SYS',
+   ADDWHEN = 'DELETE',
+   DELETEWHEN = 'INSTALL || UPDATE || RESTORE',
+   FILESEARCHPOS = 'AFTER',
+   FILESEARCHSTR = '\AMOUSE.SYS',
+   UNIQUE = 'YES',
+   PARTIALSTRING = 'YES'
+
+ADDCONFIG
+   VAR = 'DEVICE',
+   ADDSTR = '\AMOUSE.SYS',
+   ADDWHEN = 'NEVER',
+   DELETEWHEN = 'DELETE',
+   FILESEARCHSTR = '\AMOUSE.SYS',
+   DELETELINE = 'YES',
+   PARTIALSTRING = 'YES'
+
+UPDATECONFIG
+   VAR = 'LIBPATH',
+   ADDSTR = '%EPFIFILEDIR%',
+   ADDWHEN = 'INSTALL || UPDATE || RESTORE',
+   DELETEWHEN = 'DELETE',
+   LINELOCATION = 'BEFORELAN'
+
+*  save original USB mouse driver
+FILE
+   EXITWHEN = 'INSTALL || UPDATE || RESTORE',
+   EXITIGNOREERR = 'YES',
+   EXIT = 'EXEC BG TW CMD.EXE /C IF EXIST %EPFIBOOTDRIVE%://OS2//BOOT//USBMOUSE.SYS (REN %EPFIBOOTDRIVE%://OS2//BOOT//USBMOUSE.SYS USBMOUSE.ORG & COPY USBMOUSE.SYS %EPFIBOOTDRIVE%://OS2//BOOT)'
+
+*  restore original USB mouse driver
+FILE
+   EXITWHEN = 'DELETE',
+   EXITIGNOREERR = 'YES',
+   EXIT = 'EXEC BG TW CMD.EXE /C COPY %EPFIBOOTDRIVE%://OS2//BOOT//USBMOUSE.ORG %EPFIBOOTDRIVE%://OS2//BOOT//USBMOUSE.SYS & DEL %EPFIBOOTDRIVE%://OS2//BOOT//USBMOUSE.ORG'
+
+*  On installation register system dll
+FILE
+   EXITWHEN = 'INSTALL || UPDATE || RESTORE',
+   EXITIGNOREERR = 'NO',
+   EXIT = 'EXEC bg tw MOUSYDLL.EXE REGISTER NOSOUND'
+
+
+**********************************************************************
+*---------------------------------------------------------------------
+*  Component Setup
+*
+*  Special considerations:
+*    Either the WPS class or the exe-program will be installed
+*---------------------------------------------------------------------
+COMPONENT
+   NAME = 'Программа настройки',
+   ID = 'WPSCLASS',
+   REQUIRES = 'DRIVER',
+   DISPLAY = 'YES',
+   DESCRIPTION = 'Программа настройки (AMOUSE.DLL или AMOUSE.EXE и файл справки (AMOUSEWP.HLP/AMOUSEEX.HLP)',
+   SIZE = '1120000',
+   SHARED = 'NO',
+   DELETE = 'YES'
+
+*  On deinstallation first deregister class before deleting (if present)
+FILE
+   EXITWHEN = 'DELETE',
+   EXITIGNOREERR = 'YES',
+   EXIT = 'EXEC bg tw MOUCLASS.EXE DEREGISTER'
+
+*  USB identifier file
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:USB.IDS',
+   PACKID = 'DRIVER',
+   PWS = 'USB.IDS',
+   DATE = '1050108',
+   SIZE = '138717'
+
+*  Install language support files
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOU001.DLL',
+   PACKID = 'DRIVER',
+   PWS = 'AMOU001.DLL',
+   DATE = '1060521',
+   SIZE = '33886'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOU007.DLL',
+   PACKID = 'DRIVER',
+   PWS = 'AMOU007.DLL',
+   DATE = '1060521',
+   SIZE = '34396'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOU033.DLL',
+   PACKID = 'DRIVER',
+   PWS = 'AMOU033.DLL',
+   DATE = '1060521',
+   SIZE = '34426'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOU034.DLL',
+   PACKID = 'DRIVER',
+   PWS = 'AMOU034.DLL',
+   DATE = '1060521',
+   SIZE = '34398'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOU039.DLL',
+   PACKID = 'DRIVER',
+   PWS = 'AMOU039.DLL',
+   DATE = '1060521',
+   SIZE = '34399'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOU046.DLL',
+   PACKID = 'DRIVER',
+   PWS = 'AMOU046.DLL',
+   DATE = '1060521',
+   SIZE = '33887'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOU049.DLL',
+   PACKID = 'DRIVER',
+   PWS = 'AMOU049.DLL',
+   DATE = '1060521',
+   SIZE = '34397'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOU001.HLP',
+   PACKID = 'DRIVER',
+   PWS = 'AMOU001.HLP',
+   DATE = '1060521',
+   SIZE = '52863'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOU007.HLP',
+   PACKID = 'DRIVER',
+   PWS = 'AMOU007.HLP',
+   DATE = '1060521',
+   SIZE = '60633'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOU033.HLP',
+   PACKID = 'DRIVER',
+   PWS = 'AMOU033.HLP',
+   DATE = '1060521',
+   SIZE = '57664'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOU034.HLP',
+   PACKID = 'DRIVER',
+   PWS = 'AMOU034.HLP',
+   DATE = '1060521',
+   SIZE = '56156'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOU039.HLP',
+   PACKID = 'DRIVER',
+   PWS = 'AMOU039.HLP',
+   DATE = '1060521',
+   SIZE = '55216'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOU046.HLP',
+   PACKID = 'DRIVER',
+   PWS = 'AMOU046.HLP',
+   DATE = '1060521',
+   SIZE = '56546'
+
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOU049.HLP',
+   PACKID = 'DRIVER',
+   PWS = 'AMOU049.HLP',
+   DATE = '1060521',
+   SIZE = '53930'
+
+*  Ask for which configuration program has to be installed (exclusive installation)
+FILE
+   WHEN = 'OUTOFDATE',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:IEXIT.DLL',
+   PACKID = 'DRIVER',
+   PWS = 'IEXIT.DLL',
+   DATE = '1060521',
+   SIZE = '45200'
+
+EXIT
+   DLL = 'IEXIT.DLL'
+
+FILE
+   EXITWHEN = 'INSTALL || UPDATE || RESTORE',
+   EXITIGNOREERR = 'NO',
+   EXIT = 'SELECTCOMPONENT'
+
+EXIT
+   DLL = 'EPFIEXTS.DLL'
+
+*  Starting from here, SELECTCOMPONENT is set to WPS or PROG
+*----- Part 1: Installation of WPS-class
+FILE
+   WHEN = 'OUTOFDATE && "%SELCOMPONENT%"=="WPS"',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOUSE.DLL',
+   PACKID = 'DRIVER',
+   PWS = 'AMOUSE.DLL',
+   DATE = '1060521',
+   SIZE = '146534'
+
+FILE
+   WHEN = 'OUTOFDATE && "%SELCOMPONENT%"=="WPS"',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:MOUCLASS.EXE',
+   PACKID = 'DRIVER',
+   PWS = 'MOUCLASS.EXE',
+   DATE = '1060521',
+   SIZE = '33360'
+
+FILE
+   WHEN = 'OUTOFDATE && "%SELCOMPONENT%"=="WPS"',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:PHASE2.CMD',
+   PACKID = 'DRIVER',
+   PWS = 'PHASE2.CMD',
+   DATE = '1030503',
+   SIZE = '496'
+
+UPDATECONFIG
+   VAR = 'LIBPATH',
+   ADDSTR = '%EPFIFILEDIR%',
+   ADDWHEN = '(INSTALL || UPDATE || RESTORE) && "%SELCOMPONENT%"=="WPS"',
+   DELETEWHEN = 'DELETE',
+   LINELOCATION = 'BEFORELAN'
+
+UPDATECONFIG
+   VAR = 'SET HELP',
+   ADDSTR = '%EPFIFILEDIR%',
+   ADDWHEN = 'INSTALL || UPDATE || RESTORE',
+   DELETEWHEN = 'DELETE',
+   LINELOCATION = 'BEFORELAN'
+
+*  Installation of phase 2 (only if config.sys was changed)
+FILE
+   EXITWHEN = '(INSTALL || UPDATE || RESTORE) && "%EPFIUPDATECNF%"==YES && "%SELCOMPONENT%"=="WPS"',
+   EXITIGNOREERR = 'YES',
+   EXIT = 'CREATEWPSOBJECT WPProgram "AMouse^Вторая стадия установки" <WP_START> R   "PROGTYPE=WINDOWABLEVIO;EXENAME=CMD.EXE;OBJECTID=<MOUPHASE2>;PARAMETERS=/C PHASE2.CMD;STARTUPDIR=%EPFIFILEDIR%"'
+
+FILE
+   EXITWHEN = 'DELETE',
+   EXITIGNOREERR = 'YES',
+   EXIT = 'DELETEWPSOBJECT <MOUPHASE2>'
+
+*----- Part 2: Installation of EXE-program
+FILE
+   WHEN = 'OUTOFDATE && "%SELCOMPONENT%"=="PROG"',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOUSE.EXE',
+   PACKID = 'DRIVER',
+   PWS = 'AMOUSE.EXE',
+   DATE = '1060521',
+   SIZE = '114533'
+
+FILE
+   WHEN = 'OUTOFDATE && "%SELCOMPONENT%"=="PROG"',
+   REPLACEINUSE = 'I U D R',
+   UNPACK = 'YES',
+   SOURCE = 'DRIVE:AMOUSE.ICO',
+   PACKID = 'DRIVER',
+   PWS = 'AMOUSE.ICO',
+   DATE = '1021005',
+   SIZE = '4026'
+
+*  Create program object in the product folder.
+FILE
+   EXITWHEN = '(INSTALL || UPDATE || RESTORE) && "%SELCOMPONENT%"=="PROG"',
+   EXITIGNOREERR = 'NO',
+   EXIT = 'CREATEWPSOBJECT WPProgram "Настройка AMouse"                   <%FOLDERID%> R                   "EXENAME=%EPFIFILEDIR%//AMOUSE.EXE;STARTUPDIR=%EPFIFILEDIR%;OBJECTID=PROGAMOUSE;ICONFILE=%EPFIFILEDIR%//AMOUSE.ICO;"'
+
+*  Delete the program object on deinstallation
+FILE
+   EXITWHEN = 'DELETE',
+   EXITIGNOREERR = 'YES',
+   EXIT = 'DELETEWPSOBJECT PROGAMOUSE'
+
+
+**********************************************************************
+
+
+*---------------------------------------------------------------------
+*  Component for deleting product folder during deinstallation
+*---------------------------------------------------------------------
+COMPONENT
+   NAME = 'DELLAST',
+   ID = 'DELLAST',
+   DISPLAY = 'NO',
+   SIZE = '10000',
+   SHARED = 'NO',
+   DELETE = 'YES'
+
+FILE
+   EXITWHEN = 'DELETE',
+   EXITIGNOREERR = 'YES',
+   EXIT = 'DELETEWPSOBJECT <AMOUSE>'
+
+FILE
+   EXITWHEN = 'DELETE',
+   EXITIGNOREERR = 'YES',
+   EXIT = 'DELETEWPSOBJECT <%FOLDERID%>'
+
+FILE
+   EXITWHEN = 'DELETE',
+   EXITIGNOREERR = 'YES',
+   EXIT = 'DELETEINI AMouse'
+

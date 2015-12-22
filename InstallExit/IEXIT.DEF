@@ -1,0 +1,10 @@
+LIBRARY       IEXIT
+
+DESCRIPTION   '@#NB:2.80.00#@ AMouse configuration program (c) nb-software 2001...2004'
+
+PROTMODE
+
+DATA MULTIPLE NONSHARED LOADONCALL
+
+EXPORTS
+       SELECTCOMPONENT

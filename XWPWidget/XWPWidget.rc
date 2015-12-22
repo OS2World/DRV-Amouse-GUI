@@ -1,0 +1,32 @@
+/***************************************************************************\
+ *
+ * PROGRAMMNAME: XWPWidget
+ * -------------
+ *
+ * VERSION: 2.1
+ * --------
+ *
+ * MODULNAME: XWPWidget.RC
+ * ----------
+ *
+ * BESCHREIBUNG:
+ * -------------
+ *
+ *  Ver.    Date      Comment
+ *  ----    --------  -------
+ *  1.00    xx-xx-xx  First release
+ *  2.10    05-12-02  Handling of shift-keys
+ *
+ *  Copyright (C) noller & breining software 2001...2002
+ *
+\******************************************************************************/
+#include <os2.h>
+#include "res.h"
+
+BITMAP  ID_NOBMP    "No.bmp"
+BITMAP  ID_STBMP    "St.bmp"
+BITMAP  ID_LNBMP    "Ln.bmp"
+BITMAP  ID_PGBMP    "Pg.bmp"
+BITMAP  ID_VOLBMP   "Vol.bmp"
+
+

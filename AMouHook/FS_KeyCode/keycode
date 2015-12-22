@@ -1,0 +1,32 @@
+                      WM_CHAR IOCTL   Scan
+
+IDR_KEY_F1:           0x3B00  0x003B  0x3B  VK_F1            Scancode
+IDR_KEY_F2:           0x3C00  0x003C  0x3C  VK_F2            Scancode
+IDR_KEY_F3:           0x3D00  0x003D  0x3D  VK_F3            Scancode
+IDR_KEY_F4:           0x3E00  0x003E  0x3E  VK_F4            Scancode
+IDR_KEY_F5:           0x3F00  0x003F  0x3F  VK_F5            Scancode
+IDR_KEY_F6:           0x4000  0x0040  0x40  VK_F6            Scancode
+IDR_KEY_F7:           0x4100  0x0041  0x41  VK_F7            Scancode
+IDR_KEY_F8:           0x4200  0x0042  0x42  VK_F8            Scancode
+IDR_KEY_F9:           0x4300  0x0043  0x43  VK_F9            Scancode
+IDR_KEY_F10:          0x4400  0x0044  0x44  VK_F10           Scancode
+IDR_KEY_ESC:          0x011B  0x0001  0x01  VK_ESC           Scancode
+IDR_KEY_BACKSPACE:    0x0008  0x000E  0x0E  VK_BACKSPACE     Scancode
+IDR_KEY_ENTER:        0x000D  0x001c  0x1C  VK_ENTER         Scancode
+IDR_KEY_SPACE:        0x0020  0x0039  0x39  VK_SPACE         Scancode
+IDR_KEY_DELETE:       0x53E0  0x53E0  0x69  VK_DELETE        Charcode
+IDR_KEY_PAGEUP:       0x49E0  0x49E0  0x62  VK_PAGEUP        Charcode
+IDR_KEY_PAGEDOWN:     0x51E0  0x51E0  0x67  VK_PAGEDOWN      Charcode
+IDR_KEY_TAB:          0x0009  0x000F  0x0F  VK_TAB           Scancode
+IDR_KEY_POS1:         0x47E0  0x47E0  0x60  VK_HOME          Charcode
+IDR_KEY_END:          0x4FE0  0x4FE0  0x65  VK_END           Charcode
+IDR_KEY_CSR_UP:       0x48E0  0x48E0  0x61  VK_UP            Charcode
+IDR_KEY_CSR_DOWN:     0x50E0  0x50E0  0x66  VK_DOWN          Charcode
+IDR_KEY_CSR_LEFT:     0x4BE0  0x4BE0  0x63  VK_LEFT          Charcode
+IDR_KEY_CSR_RIGHT:    0x4DE0  0x4DE0  0x64  VK_RIGHT         Charcode
+
+IDR_CLIPBOARD_CUT:    0x53E0  0x53E0  0x69  VK_DELETE
+IDR_CLIPBOARD_COPY:   0x92E0  0x92E0  0x68  VK_INSERT
+IDR_CLIPBOARD_INSERT: 0x52E0  0x52E0  0x68  VK_INSERT
+
+

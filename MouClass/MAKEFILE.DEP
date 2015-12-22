@@ -1,0 +1,5 @@
+.\MOUCLASS.obj: \
+    MOUCLASS.C \
+    makefile
+
+

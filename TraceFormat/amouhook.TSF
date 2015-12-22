@@ -1,0 +1,48 @@
+; Trace Source file for AMouHook-DLL
+MODNAME=AMOUHOOK.DLL
+MAJOR=178
+MAXDATALEN=32
+
+TYPELIST       NAME = PM,ID=0x01,
+               NAME = KBD,ID=0x02,
+               NAME = SHFT,ID=0x04,
+               NAME = HOOK,ID=0x08,
+               NAME = CLASS,ID=0x10,
+               NAME = EVENT,ID=0x20,
+	       NAME = CHECK,ID=0x40
+
+GROUPLIST      NAME = CHAR,ID=1
+
+TRACE          MINOR = 1,
+               TP    = @STATIC,
+               TYPE  = (PM),
+               GROUP = CHAR,
+               DESC  = "Insert character via WM_CHAR",
+               FMT   = "  detected program type = %D",
+               FMT   = "  character code        = %D"
+
+TRACE          MINOR = 2,
+               TP    = @STATIC,
+               TYPE  = (KBD),
+               GROUP = CHAR,
+               DESC  = "Insert character via KBD$",
+               FMT   = "  detected program type = %D",
+               FMT   = "  mp1 (flags,rept,scan) = %W | %B | %B",
+               FMT   = "  mp2 (char,vchar)      = %W | %W",
+               FMT   = "  character code        = %W"
+
+TRACE          MINOR = 3,
+               TP    = @STATIC,
+               TYPE  = (SHFT),
+               GROUP = CHAR,
+               DESC  = "Shift key state handling",
+               FMT   = "  old shift key state = %W",
+               FMT   = "  new shift key state = %W",
+               FMT   = "  requested key state = %W"
+
+TRACE          MINOR = 4,
+               TP    = @STATIC,
+               TYPE  = (HOOK),
+               GROUP = CHAR,
+               DESC  = "input hook entered",
+               FMT   = "  message code = %D"

@@ -1,0 +1,164 @@
+#include <os2.h>
+#include "res.h"
+#include "dlg.h"
+#include "panel.h"
+
+ICON IDI_ICON    AMOUSE_ICON
+ICON IDI_BATTERY BATTERY_ICON
+
+STRINGTABLE
+    {
+    IDS_ERR_MOD,            "Language module %1.DLL not found"
+
+    IDS_LOGI_SUBT_BASE + 0  ""
+    IDS_LOGI_SUBT_BASE + 1  "Cordless MouseMan"
+    IDS_LOGI_SUBT_BASE + 2  "SurfMan/TrackMan Life!"
+    IDS_LOGI_SUBT_BASE + 3  "Cordless MouseMan Pro"
+    IDS_LOGI_SUBT_BASE + 4  "Cordless MouseMan Pro"
+    IDS_LOGI_SUBT_BASE + 5  "Cordless Wheel Mouse"
+    IDS_LOGI_SUBT_BASE + 6  "Cordless MouseMan Wheel"
+    IDS_LOGI_SUBT_BASE + 7  "Cordless Wheel Mouse"
+    IDS_LOGI_SUBT_BASE + 8  "Cordless MouseMan Wheel"
+    IDS_LOGI_SUBT_BASE + 9  "Cordless TrackMan Wheel"
+    IDS_LOGI_SUBT_BASE + 10 "Cordless TrackMan Live"
+    IDS_LOGI_SUBT_BASE + 12 "Cordless TrackMan"
+    IDS_LOGI_SUBT_BASE + 13 "Cordless MouseMan Optical"
+    IDS_LOGI_SUBT_BASE + 14 "Cordless Optical Mouse"
+    IDS_LOGI_SUBT_BASE + 15 "Cordless Mouse"
+    IDS_LOGI_SUBT_BASE + 18 "Cordless MouseMan Optical (2ch)"
+    IDS_LOGI_SUBT_BASE + 19 "Cordless Optical Mouse (2ch)"
+    IDS_LOGI_SUBT_BASE + 20 "Cordless Mouse (2ch)"
+    IDS_LOGI_SUBT_BASE + 21 "MX1000 Cordless Optical Mouse"
+    IDS_LOGI_SUBT_BASE + 24 "Cordless Keyboard"
+    IDS_LOGI_SUBT_BASE + 25 "Cordless iTouch Keyboard"
+    IDS_LOGI_SUBT_BASE + 26 "Cordless Freedom Pro Keyboard"
+    IDS_LOGI_SUBT_BASE + 27 "Cordless Freedom Keyboard"
+    IDS_LOGI_SUBT_BASE + 34 "Cordless Optical TrackMan"
+    IDS_LOGI_SUBT_BASE + 42 "MX700 Cordless Optical Mouse"
+    IDS_LOGI_SUBT_BASE + 43 "MX700 Cordless Optical Mouse (2ch)"
+    /* last entry is MAX_LOGI_SUBT */
+
+    IDS_LOGI_FREQ_BASE + 0  "26.995 MHz"
+    IDS_LOGI_FREQ_BASE + 1  "27.045 MHz"
+    IDS_LOGI_FREQ_BASE + 2  "27.095 MHz"
+    IDS_LOGI_FREQ_BASE + 3  "27.145 MHz"
+    IDS_LOGI_FREQ_BASE + 4  "27.195 MHz"
+    /* last entry is MAX_LOGI_FREQ */
+
+    IDS_USB_FREQ_BASE + 0   "27.045 MHz"
+    IDS_USB_FREQ_BASE + 1   "27.195 MHz"
+    /* last entry is MAX_USB_FREQ */
+    }
+
+RCDATA IDRC_LOGI_TYPE
+    {
+    0x09    "Track Man Marble"
+    0x0A    "MouseMan Wheel"
+    0x15    "Logitech MX1000"
+    0x19    "Track Man Marble FX"
+    0x1A    "Wheel Mouse"
+    0x29    "Marble Mouse"
+    0x39    "Track Man Marble+"
+    0x3A    "WingMan Gaming Mouse"
+    0x56    "Wheel Mouse Optical"
+    0x5A    "Wheel Mouse"
+    0x5F    "MouseMan Dual Optical"
+    0x6A    "Wheel Mouse"
+    0x7A    "MouseMan Wheel"
+    0xC1    "MouseMan"
+    0xC9    "Track Man Marble Wheel"
+    0xD1    "WingMan Gaming Mouse"
+    0xD9    "Marble Mouse"
+    0xF9    "Track Man Wheel"
+    0x51    "WheelMouse"
+    0x00    ""
+    }
+
+RCDATA IDRC_LOGI_RCV
+    {
+    0x07, 0x0A,   "Receiver C-BA3-MSE"
+    0x0F, 0x00,   "Receiver C-BN34"
+    0x26, 0x1B,   "Receiver C-RA2-DUAL"
+    0x36, 0x12,   "Receiver C-RA1"
+    0x38, 0x02,   "Receiver C-BA4-MSE"
+    0x3D, 0x0A,   "Receiver C-BF16-MSE"
+    0x3E, 0x0A,   "Receiver C-BG17-DUAL"
+    0x46, 0x0A,   "Receiver C-RD3-DUAL"
+    0x56, 0x02,   "Receiver C-RC3-MSE"
+    0x82, 0x1B,   "Receiver M-RE33"
+    0x92, 0x1B,   "Receiver M-RC33"
+    0xA2, 0x1B,   "Receiver M-RD37"
+    0xB2, 0x1B,   "Receiver M-RC44"
+    0x00, 0x00,   ""
+    }
+
+HELPTABLE IDH_AMOUSE_DEFAULT
+    {
+    HELPITEM IDD_DEVICEINFO,            IDD_DEVICEINFO,     PANEL_DEVICEINFO
+    HELPITEM IDD_WLDEVICEINFO,          IDD_WLDEVICEINFO,   PANEL_WLDEVICEINFO
+    HELPITEM IDD_KEYSETTINGS1,          IDD_KEYSETTINGS1,   PANEL_KEYSETTINGS1
+    HELPITEM IDD_KEYSETTINGS2,          IDD_KEYSETTINGS2,   PANEL_KEYSETTINGS2
+    HELPITEM IDD_WHEELSETTINGS1,        IDD_WHEELSETTINGS1, PANEL_WHEELSETTINGS1
+    HELPITEM IDD_WHEELSETTINGS2,        IDD_WHEELSETTINGS2, PANEL_WHEELSETTINGS2
+    HELPITEM IDD_TIMINGSETTINGS,        IDD_TIMINGSETTINGS, PANEL_TIMINGSETTINGS
+    }
+
+HELPSUBTABLE IDD_DEVICEINFO
+    {
+    HELPSUBITEM  DID_OSVERSION,         PANEL_OSVERSION
+    HELPSUBITEM  DID_DRIVERVERSION,     PANEL_DRIVERVERSION
+    HELPSUBITEM  DID_DEVICETYPE,        PANEL_DEVICETYPE
+    HELPSUBITEM  DID_IOPORT,            PANEL_IOPORT
+    HELPSUBITEM  DID_BUTTONS,           PANEL_BUTTONS
+    HELPSUBITEM  DID_WHEEL,             PANEL_WHEEL
+    }
+
+HELPSUBTABLE IDD_WLDEVICEINFO
+    {
+    }
+
+HELPSUBTABLE IDD_KEYSETTINGS1
+    {
+    HELPSUBITEM  DID_BUTTON3,           PANEL_BUTTON3
+    HELPSUBITEM  DID_BUTTON4,           PANEL_BUTTON4
+    HELPSUBITEM  DID_BUTTON5,           PANEL_BUTTON5
+    HELPSUBITEM  DID_BUTTON6,           PANEL_BUTTON6
+    HELPSUBITEM  DID_BUTTON7,           PANEL_BUTTON7
+    HELPSUBITEM  DID_BUTTON8,           PANEL_BUTTON8
+    HELPSUBITEM  DID_BUTTON9,           PANEL_BUTTON9
+    HELPSUBITEM  DID_BUTTON10,          PANEL_BUTTON10
+    }
+
+HELPSUBTABLE IDD_KEYSETTINGS2
+    {
+    HELPSUBITEM  DID_PMCTLS_ENTRY,      PANEL_PMCTLS_ENTRY
+    HELPSUBITEM  DID_PMCTLS_COMBO,      PANEL_PMCTLS_COMBO
+    }
+
+HELPSUBTABLE IDD_WHEELSETTINGS1
+    {
+    HELPSUBITEM  DID_NOFUNCTION,        PANEL_NOFUNCTION
+    HELPSUBITEM  DID_KBD_FOCUS,         PANEL_KBD_FOCUS
+    HELPSUBITEM  DID_POINTER_FOCUS,     PANEL_POINTER_FOCUS
+    HELPSUBITEM  DID_MSG_STD,           PANEL_MSG_STD
+    HELPSUBITEM  DID_MSG_LINE,          PANEL_MSG_LINE
+    HELPSUBITEM  DID_MSG_PAGE,          PANEL_MSG_PAGE
+    HELPSUBITEM  DID_SCROLLITEMS,       PANEL_SCROLLITEMS
+    }
+
+HELPSUBTABLE IDD_WHEELSETTINGS2
+    {
+    HELPSUBITEM  DID_SCROLL_VERT,       PANEL_SCROLL_VERT
+    HELPSUBITEM  DID_SCROLL_HORZ,       PANEL_SCROLL_HORZ
+    HELPSUBITEM  DID_ACCEL_DELAY,       PANEL_ACCEL_DELAY
+    HELPSUBITEM  DID_ACCEL_VALUE,       PANEL_ACCEL_VALUE
+    }
+
+HELPSUBTABLE IDD_TIMINGSETTINGS
+    {
+    HELPSUBITEM  DID_MOU_POLLRATE,      PANEL_MOU_POLLRATE
+    HELPSUBITEM  DID_MOU_ACCEL_VALUE,   PANEL_MOU_ACCEL_VALUE
+    HELPSUBITEM  DID_MOU_ACCEL_TH,      PANEL_MOU_ACCEL_TH
+    }
+
+

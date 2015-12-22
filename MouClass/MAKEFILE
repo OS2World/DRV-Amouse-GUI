@@ -1,0 +1,38 @@
+# Created by IBM WorkFrame/2 MakeMake at 19:16:46 on 12/28/94
+#
+# The actions included in this makefile are:
+#   COMPILE::CLC C
+#   LINK::ILINK: LINK
+
+.all: \
+  .\MOUCLASS.EXE
+
+.SUFFIXES:
+
+.SUFFIXES: .C
+
+.C.obj:
+      @echo WF::COMPILE::CLC C
+      icc.exe /Ss /Q /Wextparproretuse $(CDB) /G4 /C %s
+
+.\MOUCLASS.EXE: \
+    .\MOUCLASS.obj \
+    .\MOUCLASS.def \
+    makefile
+    @echo "Link::Linker "
+    icc.exe @<<
+      /B" $(LDB) /nologo /noi /exep /packc /packd"
+      /Femouclass.exe
+      .\mouclass.obj
+      os2386.lib
+      .\MOUCLASS.def
+<<
+
+cleanall:
+      @if exist *.obj del *.obj
+
+copyall:
+      @if exist MouClass.exe copy MouClass.exe ..\Install_Source
+
+!include makefile.Dep
+

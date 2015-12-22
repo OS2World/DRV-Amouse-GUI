@@ -1,0 +1,11 @@
+;-------------------------------------
+; MOUCLASS module definition file
+;-------------------------------------
+
+NAME MOUSYDLL WINDOWCOMPAT
+
+DESCRIPTION '@#NB:2.80.04#@ MouSyDLL: AMouDll system-DLL register utility (c) nb-software 2001...2004'
+
+PROTMODE
+STACKSIZE      65536
+

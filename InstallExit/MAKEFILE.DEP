@@ -1,0 +1,8 @@
+.\iexit$(PLANG).res: \
+    .\iexit$(PLANG).rc \
+    .\iexit$(PLANG).dlg
+
+.\iexit.obj: \
+    .\iexit.c
+
+

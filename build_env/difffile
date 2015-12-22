@@ -1,0 +1,74 @@
+11,12c11,13
+<       parse upper value VALUE( "PATH",, "OS2ENVIRONMENT" ) with "\OS2\SYSTEM" -2 BootDrive +2
+<       rc = "DEVICE="||BootDrive||"\OS2\BOOT\MOUSE.SYS"
+---
+>       irc=SysIni('BOTH','FolderWorkareaRunningObjects','ALL:','Objects')
+>       BootDrive=left(Objects.1,1)
+>       rc = "DEVICE="BootDrive":\OS2\BOOT\MOUSE.SYS"
+21,22c22,24
+<       parse upper value VALUE( "PATH",, "OS2ENVIRONMENT" ) with "\OS2\SYSTEM" -2 BootDrive +2
+<       rc = "DEVICE="||BootDrive||"\OS2\BOOT\USBMOUSE.SYS"
+---
+>       irc=SysIni('BOTH','FolderWorkareaRunningObjects','ALL:','Objects')
+>       BootDrive=left(Objects.1,1)
+>       rc = "DEVICE="BootDrive":\OS2\BOOT\USBMOUSE.SYS"
+26,38d27
+<     <REXX NAME="ReplaceUSBMouseDriver">
+<       /* This will search for the availability of the USBMOUSE driver in the config.sys */
+<       rc=rxFuncAdd('SysLoadFuncs','REXXUTIL','SysLoadFuncs')
+<       rc=SysLoadFuncs()
+< 
+<       parse arg installpath
+<       parse upper value VALUE( "PATH",, "OS2ENVIRONMENT" ) with "\OS2\SYSTEM" -2 BootDrive +2
+<       returnstring = ''
+<       irc = SysFileSearch('USBMOUSE.SYS', BootDrive||'\CONFIG.SYS', 'stem.')
+<       if stem.0 > 0 then returnstring = "DEVICE="||installpath||"\USBMOUSE.SYS"
+<       return returnstring
+<     </REXX>
+< 
+101,103c90,92
+<          EXECUTE="REGISTERCLASS | $(1)\MOUCLASS.EXE REPLACE"
+<          EXECUTE="$(1)\MOUSYDLL.EXE REGISTER NOSOUND"
+<          CONFIGSYS="=("ReplaceUSBMouseDriver $(1)") | UNIQUE(\USBMOUSE.SYS) ADDAFTER(\USBMOUSE.SYS)"
+---
+>          EXECUTE="REGISTERCLASS | $(1)\MOUCLASS REPLACE"
+>          EXECUTE="MOUSYDLL.EXE REGISTER NOSOUND"
+>          CONFIGSYS="DEVICE=$(1)\USBMOUSE.SYS | UNIQUE(\USBMOUSE.SYS) ADDAFTER(\USBMOUSE.SYS)"
+109d97
+<          WRITEPROFILE="USER\PM_InstallObject\AMouse;AMouse;<WP_CONFIG>;UPDATE|OBJECTID=<AMOUSE>"
+111c99
+<          DEEXECUTE="$(1)\MOUCLASS.EXE DEREGISTER"
+---
+>          DEEXECUTE="$(1)\mouclass.exe DEREGISTER"
+115c103
+<          PACKAGEID="nb software\AMouse\AMouse English Language Support\X\X\X"
+---
+>          PACKAGEID="nb software\AMouse\AMouse English Language Support\2\80\03"
+123c111
+<          PACKAGEID="nb software\AMouse\AMouse French Language Support\X\X\X"
+---
+>          PACKAGEID="nb software\AMouse\AMouse French Language Support\2\80\03"
+131c119
+<          PACKAGEID="nb software\AMouse\AMouse Italian Language Support\X\X\X"
+---
+>          PACKAGEID="nb software\AMouse\AMouse Italian Language Support\2\80\03"
+139c127
+<          PACKAGEID="nb software\AMouse\AMouse Swedish Language Support\X\X\X"
+---
+>          PACKAGEID="nb software\AMouse\AMouse Swedish Language Support\2\80\03"
+147c135
+<          PACKAGEID="nb software\AMouse\AMouse German Language Support\X\X\X"
+---
+>          PACKAGEID="nb software\AMouse\AMouse German Language Support\2\80\03"
+155c143
+<          PACKAGEID="nb software\AMouse\AMouse Russian Language Support\X\X\X"
+---
+>          PACKAGEID="nb software\AMouse\AMouse Russian Language Support\2\80\03"
+163c151
+<          PACKAGEID="nb software\AMouse\AMouse Spanish Language Support\X\X\X"
+---
+>          PACKAGEID="nb software\AMouse\AMouse Spanish Language Support\2\80\03"
+171c159
+<          PACKAGEID="nb software\AMouse\AMouse Dutch Language Support\X\X\X"
+---
+>          PACKAGEID="nb software\AMouse\AMouse Dutch Language Support\2\80\03"

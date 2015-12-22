@@ -1,0 +1,259 @@
+/***************************************************************************\
+ *
+ * PROGRAMMNAME: AMOUDLL
+ * -------------
+ *
+ * VERSION: 2.70
+ * --------
+ *
+ * MODULNAME: AMOUHWND
+ * ----------
+ *
+ * BESCHREIBUNG:
+ * -------------
+ *   This DLL is registered at the OS/2 Presentation Manager. It starts
+ *   the WheelThread after establishing the semaphores and shared memory
+ *   necessary for communication with the WPS class
+ *
+ * FUNKTIONEN:
+ * -----------
+ *
+ *
+ *
+ *
+ *  Ver.    Date      Comment
+ *  ----    --------  -------
+ *  1.00    20-02-00  First release
+ *  2.00    06-16-01  WheelThread in separate process
+ *  2.10    05-12-02  Handling of shift-keys
+ *  2.20    10-03-02  USB support added
+ *  2.40    02-01-03  support for 2 wheels; wildcards for process name
+ *  2.50    04-20-03  application behaviour support added; memory leak removed
+ *  2.60    06-13-04  remove unused settings pages from mouse object
+ *  2.70    10-23-04  support for 7 buttons added
+ *
+ *  Copyright (C) noller & breining software 2001...2004
+ *
+\******************************************************************************/
+#define INCL_DOSSEMAPHORES
+#define INCL_DOSPROCESS
+#define INCL_DOSERRORS
+#include <os2.h>
+
+#include <memory.h>
+
+#include "AMouHwnd.h"
+#include "AMouHData.h"
+
+/*******************************************************************\
+  local data segment (process specific)
+\*******************************************************************/
+PARHWND parHwndShared = NULL;
+
+/*******************************************************************\
+  global data segment
+\*******************************************************************/
+#pragma data_seg(GLOBAL_SEG)
+
+PARHWND parHwnd = NULL;
+
+BOOL allocateAndZeroOut (PARHWND *ppHwndArray)
+    {
+    LONG l;
+
+    if (NO_ERROR != DosAllocMem ((PVOID *)ppHwndArray, 0x1000, PAG_COMMIT | PAG_READ | PAG_WRITE))
+        return FALSE;
+
+    memset (*ppHwndArray, 0, 0x1000);
+
+    return TRUE;
+    }
+
+VOID garbageCollection (VOID)
+    {
+    PARHWND pHwndArray1, pHwndArray2;
+    PHWND   pHwnd;
+    LONG    l1, l2;
+    BOOL    bRC = FALSE;
+
+    // see if any page is allocated
+    if (parHwnd == NULL)
+        return;
+
+    pHwndArray1 = parHwnd;
+
+    // search for first empty entry
+    do
+        {
+        for (l1 = 0; l1 < CULMAXWND; l1++)
+            {
+            if (pHwndArray1->strWindow[l1].hwnd == NULLHANDLE)
+                break;
+            }
+        if (l1 < CULMAXWND)
+            break;
+
+        pHwndArray1 = pHwndArray1->parHwndNext;
+        } while (pHwndArray1);
+
+    // search for last busy entry
+    // NOTE: Last page must be used; there is no need to search backward to previous pages
+    pHwndArray2 = pHwndArray1;
+    while (pHwndArray2->parHwndNext)            // search for last used page
+        pHwndArray2 = pHwndArray2->parHwndNext;
+
+    for (l2 = CULMAXWND-1; l2 >= 0; l2--)       // search for last used entry in page
+        {
+        if (pHwndArray2->strWindow[l2].hwnd != NULLHANDLE)
+            break;
+        }
+
+    // check, if first empty entry is past last busy entry
+    if ((pHwndArray1 != pHwndArray2) || (l2 > l1))
+        {
+        pHwndArray1->strWindow[l1]      = pHwndArray2->strWindow[l2];
+        pHwndArray2->strWindow[l2].hwnd = NULLHANDLE;
+        }
+
+    // remove last page, if empty
+    if ((pHwndArray1 != pHwndArray2) && (l2 == 0))
+        {
+        pHwndArray1->parHwndNext = NULL;
+        DosFreeMem (pHwndArray2);
+        }
+    else if ((pHwndArray1 == pHwndArray2) && (l2 == -1))
+        {
+        parHwnd = NULL;
+        DosFreeMem (pHwndArray2);
+        }
+
+    return;
+    }
+
+PWINDOWDATA findWindowPtr (HWND hwnd)
+    {
+    PARHWND pHwndArray;
+    PHWND   pHwnd;
+    LONG    l;
+    BOOL    bRC = FALSE;
+
+    // is hwnd valid?
+    if (hwnd == NULLHANDLE)
+        return NULL;
+
+    // any page allocated?
+    if (parHwnd == NULL)
+        return NULL;
+
+    pHwndArray = parHwnd;
+
+    // search for empty entry and insert new window handle
+    do
+        {
+        for (l = 0; l < CULMAXWND; l++)
+            {
+            if (pHwndArray->strWindow[l].hwnd == hwnd)
+                return &(pHwndArray->strWindow[l]);
+            }
+
+        pHwndArray = pHwndArray->parHwndNext;
+        } while (pHwndArray);
+
+    return NULL;
+    }
+
+BOOL EXPENTRY findWindowHandle (HWND hwnd, PULONG pflWindow)
+    {
+    PWINDOWDATA pWindow = findWindowPtr (hwnd);
+
+    if (pWindow)
+        *pflWindow = pWindow->flWindow;
+
+    return (pWindow == NULL ? FALSE : TRUE);
+    }
+
+BOOL EXPENTRY removeWindowHandle (HWND hwnd)
+    {
+    PWINDOWDATA pWindow = findWindowPtr (hwnd);
+
+    if (pWindow)
+        {
+        pWindow->hwnd = NULLHANDLE;
+        garbageCollection ();
+        return TRUE;
+        }
+
+    return FALSE;
+    }
+
+/*******************************************************************\
+    addWindowHandle: adds a window handle to a registration list
+                     of windows, that will receive WM_MOUSEWHEEL-
+                     messages. The list is a linked list of
+                     4k-pages, that contain the window handles.
+                     empty entries contain NULLHANDLE
+                     (HWND_DESKTOP never registers for this messages).
+    Input:  hwnd:     window to be registered
+            flWindow: operation modifier
+    Return: TRUE, if successful
+\*******************************************************************/
+BOOL EXPENTRY addWindowHandle (HWND hwnd, ULONG flWindow)
+    {
+    PARHWND pHwndArray;
+    PHWND   pHwnd;
+    LONG    l;
+    PID     pid;
+    TID     tid;
+    PPIB    ppib = NULL;
+    BOOL    bRC  = FALSE;
+
+    // is hwnd valid window handle? Window must have been created by current process
+    if (hwnd == NULLHANDLE)
+        return FALSE;
+
+    if (WinIsWindow (habDLL, hwnd) == FALSE)
+        return FALSE;
+
+    if (WinQueryWindowProcess (hwnd, &pid, &tid) == FALSE)
+        return FALSE;
+
+    DosGetInfoBlocks (NULL, &ppib);
+    if (ppib->pib_ulpid != pid)
+        return FALSE;
+
+    // see if array is allocated; allocate, if not
+    if (parHwnd == NULL)
+        {
+        if (allocateAndZeroOut (&parHwnd) == FALSE)
+            return FALSE;
+        }
+
+    pHwndArray = parHwnd;
+
+    // search for empty entry and insert new window handle
+    do
+        {
+        for (l = 0; l < CULMAXWND; l++)
+            {
+            if (pHwndArray->strWindow[l].hwnd == NULLHANDLE)
+                {
+                pHwndArray->strWindow[l].hwnd     = hwnd;
+                pHwndArray->strWindow[l].flWindow = flWindow;
+                bRC = TRUE;
+                break;
+                }
+            }
+        if (bRC == TRUE)
+            break;
+
+        if (pHwndArray->parHwndNext == NULL)
+            {
+            allocateAndZeroOut (&(pHwndArray->parHwndNext));
+            pHwndArray = pHwndArray->parHwndNext;
+            }
+        } while (pHwndArray);
+
+    return bRC;
+    }
+
+

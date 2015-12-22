@@ -1,0 +1,184 @@
+
+ PMCTLSPP
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000021D9H CODE32                 CODE 32-bit
+	at offset 00000000 001E0H bytes from C:\work\c\amouse\PMCtlsPP\PMCtlsPP.obj (.\PMCtlsPP.c)
+	at offset 000001e0 00072H bytes from C:\work\c\amouse\PMCtlsPP\PMCtlsIni.obj (.\PMCtlsIni.c)
+	at offset 00000260 00209H bytes from C:\work\c\amouse\PMCtlsPP\ComboDlgProc.obj (.\ComboDlgProc.c)
+	at offset 00000470 00172H bytes from C:\work\c\amouse\PMCtlsPP\EntryDlgProc.obj (.\EntryDlgProc.c)
+	at offset 000005e4 000BBH bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\atoi.c)
+	at offset 000006a0 000F1H bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\rinit.c)
+	at offset 00000794 00014H bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\isdigit.c)
+	at offset 000007a8 00019H bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\isspace.c)
+	at offset 000007c4 002BFH bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\rcreate.c)
+	at offset 00000a84 00003H bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\wk_walk.c)
+	at offset 00000a88 0174CH bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\rmalloc.c)
+	at offset 000021d4 00005H bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\wk_rmem.c)
+
+ 0002:00000000 000000054H GLOBAL_SEG             DATA 32-bit
+	at offset 00000000 00038H bytes from C:\work\c\amouse\PMCtlsPP\PMCtlsPP.obj (.\PMCtlsPP.c)
+	at offset 00000038 00018H bytes from C:\work\c\amouse\PMCtlsPP\PMCtlsData.obj (.\PMCtlsData.c)
+	at offset 00000050 00004H bytes from C:\work\c\amouse\PMCtlsPP\ComboDlgProc.obj (.\ComboDlgProc.c)
+
+ 0003:00000000 000000004H DDE4_DATA32            DATA 32-bit
+	at offset 00000000 00004H bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\dllstub.asm)
+
+ 0004:00000000 000000000H CONST32_RO             CONST 32-bit
+
+ 0004:00000000 00000005CH DATA32                 DATA 32-bit
+	at offset 00000000 00048H bytes from C:\work\c\amouse\PMCtlsPP\PMCtlsIni.obj (.\PMCtlsIni.c)
+	at offset 00000048 00004H bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\rinit.c)
+	at offset 0000004c 00010H bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\rmalloc.c)
+
+ 0004:0000005C 000000000H CTOR_DTOR1             DATA 32-bit
+
+ 0004:0000005C 000000000H CTOR_DTOR2             DATA 32-bit
+
+ 0004:0000005C 000000000H CTOR_DTOR3             DATA 32-bit
+
+ 0004:0000005C 000000004H BSS32                  BSS 32-bit
+	at offset 00000000 00004H bytes from D:\IBMCPP\LIB\cppon30.lib (D:\SwordCSD\crt\rinit.c)
+
+ 0004:00000060 00000000CH c_common               BSS 32-bit
+
+
+ Origin   Group
+ 0000:0   FLAT
+ 0004:0   DGROUP
+
+ Address       Export                  Alias
+
+ 0001:00000060 _PM_Init                _PM_Init
+
+  Address         Publics by Name
+
+ 0002:00000004       arClasses
+ 0001:000005E4       atoi
+ 0002:00000000       bIsRegistered
+ 0001:00000202       clsInitData
+ 0001:0000036C       ComboBoxAdjustWindow
+ 0001:00000410       ComboBoxDialogProc
+ 0001:00000260       ComboBoxRegisterClass
+ 0000:00000000  Imp  DosAllocMem          (DOSCALLS.299)
+ 0000:00000000  Imp  DosCreateEventSem    (DOSCALLS.324)
+ 0000:00000000  Imp  DosCreateThread      (DOSCALLS.311)
+ 0000:00000000  Imp  DosFreeMem           (DOSCALLS.304)
+ 0000:00000000  Imp  DosOpenEventSem      (DOSCALLS.325)
+ 0000:00000000  Imp  DosResetEventSem     (DOSCALLS.327)
+ 0000:00000000  Imp  DosWaitEventSem      (DOSCALLS.329)
+ 0001:00000470       EntryFieldButton1DblClk
+ 0001:000005A0       EntryFieldDialogProc
+ 0001:0000028C       EntryFieldInComboBoxButton1Click
+ 0001:00000308       EntryFieldInComboBoxDialogProc
+ 0002:0000003C       hab
+ 0002:00000048       hevWheelThreadUpdate
+ 0002:00000038       hModule
+ 0001:0000017A       InitUpdateThread
+ 0002:00000044       pfnwpOldComboBoxWndProc
+ 0002:00000040       pfnwpOldEntryFieldWndProc
+ 0000:00000000  Imp  PrfQueryProfileInt   (PMSHAPI.114)
+ 0001:000001E0       queryData
+ 0001:00000090       registerPublicWindowClasses
+ 0002:00000050       ulcWindowData
+ 0002:0000004C       ulFlgPmCtls
+ 0001:000001B0       UpdateThread
+ 0000:00000000  Imp  WinQueryAnchorBlock  (PMWIN.800)
+ 0000:00000000  Imp  WinQueryClassInfo    (PMWIN.925)
+ 0000:00000000  Imp  WinQueryClassName    (PMWIN.805)
+ 0000:00000000  Imp  WinQueryWindow       (PMWIN.834)
+ 0000:00000000  Imp  WinQueryWindowText   (PMWIN.841)
+ 0000:00000000  Imp  WinQueryWindowTextLength (PMWIN.842)
+ 0000:00000000  Imp  WinQueryWindowULong  (PMWIN.843)
+ 0000:00000000  Imp  WinRegisterClass     (PMWIN.926)
+ 0000:00000000  Imp  WinSendMsg           (PMWIN.920)
+ 0000:00000000  Imp  WinSetWindowULong    (PMWIN.878)
+ 0000:00000000  Imp  WinSubclassWindow    (PMWIN.929)
+ 0004:00000048       _default_heap
+ 0003:00000000       _dllentry
+ 0001:00000000       _DLL_InitTerm
+ 0004:0000005C       _edata
+ 0004:0000006C       _end
+ 0004:00000060       _matherr_ptr
+ 0001:00000060       _PM_Init
+ 0004:00000064       _reg_heap
+ 0001:000006C4       _rmem_init
+ 0001:000006A0       _rmem_term
+ 0001:00000E80       _rnode_delete
+ 0001:00000924       _uaddmem
+ 0001:000007C4       _ucreate
+ 0001:00000ECC       _ufree
+ 0001:00001E50       _umalloc
+ 0004:00000068       _walk_used
+ 0001:000021D8       _w_int_unlink_item
+ 0001:000021D4       _w_uheap_verify
+ 0001:00000A84       _w_walking
+ 0001:00000794       __isdigit
+ 0001:000007A8       __isspace
+
+  Address         Publics by Value
+
+ 0000:00000000  Imp  WinQueryClassInfo    (PMWIN.925)
+ 0000:00000000  Imp  DosOpenEventSem      (DOSCALLS.325)
+ 0000:00000000  Imp  WinSendMsg           (PMWIN.920)
+ 0000:00000000  Imp  DosCreateThread      (DOSCALLS.311)
+ 0000:00000000  Imp  WinQueryWindow       (PMWIN.834)
+ 0000:00000000  Imp  WinQueryAnchorBlock  (PMWIN.800)
+ 0000:00000000  Imp  WinQueryWindowText   (PMWIN.841)
+ 0000:00000000  Imp  DosCreateEventSem    (DOSCALLS.324)
+ 0000:00000000  Imp  WinQueryWindowTextLength (PMWIN.842)
+ 0000:00000000  Imp  WinSetWindowULong    (PMWIN.878)
+ 0000:00000000  Imp  WinQueryWindowULong  (PMWIN.843)
+ 0000:00000000  Imp  PrfQueryProfileInt   (PMSHAPI.114)
+ 0000:00000000  Imp  WinSubclassWindow    (PMWIN.929)
+ 0000:00000000  Imp  WinQueryClassName    (PMWIN.805)
+ 0000:00000000  Imp  DosAllocMem          (DOSCALLS.299)
+ 0000:00000000  Imp  DosWaitEventSem      (DOSCALLS.329)
+ 0000:00000000  Imp  WinRegisterClass     (PMWIN.926)
+ 0000:00000000  Imp  DosResetEventSem     (DOSCALLS.327)
+ 0000:00000000  Imp  DosFreeMem           (DOSCALLS.304)
+ 0001:00000000       _DLL_InitTerm
+ 0001:00000060       _PM_Init
+ 0001:00000090       registerPublicWindowClasses
+ 0001:0000017A       InitUpdateThread
+ 0001:000001B0       UpdateThread
+ 0001:000001E0       queryData
+ 0001:00000202       clsInitData
+ 0001:00000260       ComboBoxRegisterClass
+ 0001:0000028C       EntryFieldInComboBoxButton1Click
+ 0001:00000308       EntryFieldInComboBoxDialogProc
+ 0001:0000036C       ComboBoxAdjustWindow
+ 0001:00000410       ComboBoxDialogProc
+ 0001:00000470       EntryFieldButton1DblClk
+ 0001:000005A0       EntryFieldDialogProc
+ 0001:000005E4       atoi
+ 0001:000006A0       _rmem_term
+ 0001:000006C4       _rmem_init
+ 0001:00000794       __isdigit
+ 0001:000007A8       __isspace
+ 0001:000007C4       _ucreate
+ 0001:00000924       _uaddmem
+ 0001:00000A84       _w_walking
+ 0001:00000E80       _rnode_delete
+ 0001:00000ECC       _ufree
+ 0001:00001E50       _umalloc
+ 0001:000021D4       _w_uheap_verify
+ 0001:000021D8       _w_int_unlink_item
+ 0002:00000000       bIsRegistered
+ 0002:00000004       arClasses
+ 0002:00000038       hModule
+ 0002:0000003C       hab
+ 0002:00000040       pfnwpOldEntryFieldWndProc
+ 0002:00000044       pfnwpOldComboBoxWndProc
+ 0002:00000048       hevWheelThreadUpdate
+ 0002:0000004C       ulFlgPmCtls
+ 0002:00000050       ulcWindowData
+ 0003:00000000       _dllentry
+ 0004:00000048       _default_heap
+ 0004:0000005C       _edata
+ 0004:00000060       _matherr_ptr
+ 0004:00000064       _reg_heap
+ 0004:00000068       _walk_used
+ 0004:0000006C       _end
+
+Program entry point at 0001:00000000

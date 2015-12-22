@@ -1,0 +1,692 @@
+#ifndef OS2_INCLUDED
+   #include <os2.h>
+#endif
+DLGINCLUDE 1 "dlg.h"
+
+// Dialog for AMouse.dll, AMouse.exe
+DLGTEMPLATE IDD_ABOUTBOX LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Informazioni", IDD_ABOUTBOX, 0, 0, 200, 130, FS_NOBYTEALIGN |
+            FS_MOUSEALIGN | WS_VISIBLE, FCF_SYSMENU | FCF_TITLEBAR
+    BEGIN
+        CONTROL         "", -1, 38, 36, 130, 50, WC_STATIC, SS_FGNDRECT |
+                        WS_VISIBLE
+        CONTROL         "", -1, 35, 39, 130, 50, WC_STATIC, SS_FGNDRECT |
+                        WS_VISIBLE
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00E3E396L
+        CONTROL         "", -1, 35, 39, 130, 50, WC_STATIC, SS_FGNDFRAME |
+                        WS_VISIBLE
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00800000L
+                        PRESPARAMS PP_BORDERCOLOR, 0x00800000L
+        ICON            IDI_ICON, -1, 90, 100, 20, 16
+        CTEXT           "AMouse", -1, 36, 74, 128, 8, DT_VCENTER | NOT
+                        WS_GROUP
+                        PRESPARAMS PP_BACKGROUNDCOLOR, 0x00E3E396L
+        CTEXT           "per il controllo dei", -1, 36, 64, 128, 8, DT_VCENTER |
+                        NOT WS_GROUP
+                        PRESPARAMS PP_BACKGROUNDCOLOR, 0x00E3E396L
+        CTEXT           "mouse con rotella", -1, 36, 54, 128, 8, DT_VCENTER | NOT
+                        WS_GROUP
+                        PRESPARAMS PP_BACKGROUNDCOLOR, 0x00E3E396L
+        CTEXT           "Versione 2.8", -1, 36, 42, 128, 8, DT_VCENTER
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00646464L
+                        PRESPARAMS PP_BACKGROUNDCOLOR, 0x00E3E396L
+        CTEXT           "Copyright (C) noller & breining software, 2001...2006", -1,
+                        3, 29, 194, 8, DT_VCENTER | NOT WS_GROUP
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00808080L
+                        PRESPARAMS PP_FONTNAMESIZE, "8.Helv"
+        DEFPUSHBUTTON   "Ok", DID_OK, 80, 10, 40, 13
+    END
+END
+
+// Dialog for AMouse.dll
+DLGTEMPLATE IDD_DEBUG LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Debug", IDD_DEBUG, 12, 37, 266, 166, WS_VISIBLE, FCF_SYSMENU |
+            FCF_TITLEBAR
+    BEGIN
+        GROUPBOX        "SOM_TraceLevel", -1, 5, 105, 83, 57
+        AUTORADIOBUTTON "0", DID_TL_0, 27, 141, 39, 10, WS_GROUP |
+                        WS_TABSTOP
+        AUTORADIOBUTTON "1", DID_TL_1, 27, 126, 39, 10
+        AUTORADIOBUTTON "2", DID_TL_2, 27, 111, 39, 10
+        GROUPBOX        "SOM_WarnLevel", -1, 92, 105, 83, 57
+        AUTORADIOBUTTON "0", DID_WL_0, 114, 141, 39, 10, WS_GROUP |
+                        WS_TABSTOP
+        AUTORADIOBUTTON "1", DID_WL_1, 114, 126, 39, 10
+        AUTORADIOBUTTON "2", DID_WL_2, 114, 111, 39, 10
+        GROUPBOX        "SOM_AssertLevel", -1, 179, 105, 83, 57
+        AUTORADIOBUTTON "0", DID_AL_0, 201, 141, 39, 10, WS_GROUP |
+                        WS_TABSTOP
+        AUTORADIOBUTTON "1", DID_AL_1, 201, 126, 39, 10
+        AUTORADIOBUTTON "2", DID_AL_2, 201, 111, 39, 10
+        ENTRYFIELD      "FFFFFFFF", DID_DM, 68, 7, 44, 8, ES_MARGIN |
+                        WS_GROUP
+        LTEXT           "Maschera debug", -1, 5, 7, 60, 8
+        MLE             "", DID_DT, 5, 22, 257, 77, MLS_READONLY |
+                        MLS_VSCROLL | MLS_IGNORETAB | NOT WS_TABSTOP
+                        PRESPARAMS PP_FONTNAMESIZE, "10.System VIO"
+        AUTOCHECKBOX    "Emissione su file", DID_FILEOUTPUT, 170, 7, 92, 10
+    END
+END
+
+// Dialog for AMouse.exe
+DLGTEMPLATE IDD_MAIN LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Impostazioni AMouse", IDD_MAIN, 12, 5, 210, 221, WS_VISIBLE |
+            NOT FS_DLGBORDER | FS_SIZEBORDER,
+            FCF_SYSMENU | FCF_TITLEBAR | FCF_MINBUTTON | FCF_MAXBUTTON
+    BEGIN
+        NOTEBOOK        DID_NOTEBOOK, 0, 12, 210, 209, WS_GROUP |
+                        BKS_POLYGONTABS | BKS_TABBEDDIALOG | BKS_STATUSTEXTRIGHT
+                        PRESPARAMS PP_FONTNAMESIZE, "9.WarpSans"
+        LTEXT           "", DID_TEXT, 5, 0, 180, 8
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00FF0000L
+    END
+END
+
+// Dialog for AMouse.dll (Warp 3)
+DLGTEMPLATE IDD_DEVICEINFO LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Informazioni dispositivo", IDD_DEVICEINFO, 12, 5, 200, 170, NOT
+            FS_DLGBORDER | WS_VISIBLE
+            PRESPARAMS PP_FONTNAMESIZE, "9.WarpSans"
+    BEGIN
+        GROUPBOX        "Software", -1, 5, 121, 190, 47
+        LTEXT           "Sistema operativo:", -1, 10, 150, 70, 8, NOT WS_GROUP
+        LTEXT           "OS/2 ???", DID_OSVERSION, 85, 150, 105, 8, NOT
+                        WS_GROUP
+        LTEXT           "Driver mouse:", -1, 10, 137, 70, 8, NOT WS_GROUP
+        LTEXT           "IBM standard", DID_DRIVERVERSION, 85, 137, 105, 8,
+                        NOT WS_GROUP
+        LTEXT           "Estensioni WPS:", -1, 10, 124, 70, 8, NOT WS_GROUP
+        LTEXT           "versione 2.8", -1, 85, 124, 105, 8, NOT WS_GROUP
+        GROUPBOX        "Dispositivo", -1, 5, 30, 190, 87
+        LTEXT           "Fornitore:", -1, 10, 99, 70, 8, NOT WS_GROUP
+        LTEXT           "sconosciuto", DID_VENDOR, 85, 99, 105, 8, NOT
+                        WS_GROUP
+        LTEXT           "Tipo mouse:", -1, 10, 86, 70, 8, NOT WS_GROUP
+        LTEXT           "sconosciuto", DID_DEVICETYPE, 85, 81, 105, 13,
+                        DT_WORDBREAK | NOT WS_GROUP
+        LTEXT           "Porta:", -1, 10, 73, 70, 8, NOT WS_GROUP
+        LTEXT           "specifica", DID_IOPORT, 85, 73, 105, 8, NOT
+                        WS_GROUP
+        LTEXT           "Tasti:", -1, 10, 60, 70, 8, NOT WS_GROUP
+        LTEXT           "0", DID_BUTTONS, 85, 60, 105, 8, NOT WS_GROUP
+        LTEXT           "Rotelle:", -1, 10, 47, 70, 8, NOT WS_GROUP
+        LTEXT           "nessuna", DID_WHEEL, 85, 47, 105, 8, NOT WS_GROUP
+        LTEXT           "Forma:", -1, 10, 34, 70, 8, NOT WS_GROUP
+        LTEXT           "sconosciuta", DID_SHAPE, 85, 34, 105, 8, NOT WS_GROUP
+        PUSHBUTTON      "A~iuto", DID_HELP, 80, 3, 40, 14, BS_HELP |
+                        BS_NOPOINTERFOCUS
+        PUSHBUTTON      "~Debug", DID_DEBUG, 40, 3, 40, 14,
+                        BS_NOPOINTERFOCUS
+    END
+END
+
+// Dialog for AMouse.dll (Warp 4)
+DLGTEMPLATE IDD_DEVICEINFO_40 LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Informazioni dispositivo", IDD_DEVICEINFO_40, 12, 5, 200, 145, NOT
+            FS_DLGBORDER | WS_VISIBLE
+            PRESPARAMS PP_FONTNAMESIZE, "9.WarpSans"
+    BEGIN
+        PUSHBUTTON      "~Debug", DID_DEBUG, 5, 145, 40, 14,
+                        BS_NOPOINTERFOCUS
+        GROUPBOX        "Software", -1, 5, 96, 190, 47
+        LTEXT           "Sistema operativo:", -1, 10, 125, 70, 8, NOT WS_GROUP
+        LTEXT           "OS/2 ???", DID_OSVERSION, 85, 125, 105, 8, NOT
+                        WS_GROUP
+        LTEXT           "Driver mouse:", -1, 10, 112, 70, 8, NOT WS_GROUP
+        LTEXT           "IBM standard", DID_DRIVERVERSION, 85, 112, 105, 8,
+                        NOT WS_GROUP
+        LTEXT           "Estensioni WPS:", -1, 10, 99, 70, 8, NOT WS_GROUP
+        LTEXT           "versione 2.8", -1, 85, 99, 105, 8, NOT WS_GROUP
+        GROUPBOX        "Dispositivo", -1, 5, 5, 190, 87
+        LTEXT           "Fornitore:", -1, 10, 74, 70, 8, NOT WS_GROUP
+        LTEXT           "sconosciuto", DID_VENDOR, 85, 74, 105, 8, NOT
+                        WS_GROUP
+        LTEXT           "Tipo mouse:", -1, 10, 61, 70, 8, NOT WS_GROUP
+        LTEXT           "sconosciuto", DID_DEVICETYPE, 85, 56, 105, 13,
+                        DT_WORDBREAK | NOT WS_GROUP
+        LTEXT           "Porta:", -1, 10, 48, 70, 8, NOT WS_GROUP
+        LTEXT           "specifica", DID_IOPORT, 85, 48, 105, 8, NOT
+                        WS_GROUP
+        LTEXT           "Tasti:", -1, 10, 35, 70, 8, NOT WS_GROUP
+        LTEXT           "0", DID_BUTTONS, 85, 35, 105, 8, NOT WS_GROUP
+        LTEXT           "Rotelle:", -1, 10, 22, 70, 8, NOT WS_GROUP
+        LTEXT           "nessuna", DID_WHEEL, 85, 22, 105, 8, NOT WS_GROUP
+        LTEXT           "Forma:", -1, 10, 9, 70, 8, NOT WS_GROUP
+        LTEXT           "sconosciuta", DID_SHAPE, 85, 9, 105, 8, NOT WS_GROUP
+        PUSHBUTTON      "A~iuto", DID_HELP, 0, 0, 40, 14, BS_HELP |
+                        BS_NOPOINTERFOCUS | BS_NOTEBOOKBUTTON
+    END
+END
+
+// Dialog for AMouse.dll (Warp 3)
+DLGTEMPLATE IDD_WLDEVICEINFO LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Informazioni dispositivo, 2", IDD_WLDEVICEINFO, 12, 5, 200, 170, NOT
+            FS_DLGBORDER | WS_VISIBLE
+            PRESPARAMS PP_FONTNAMESIZE, "9.WarpSans"
+    BEGIN
+        GROUPBOX        "Informazioni mouse senza filo", -1, 5, 30, 190, 70
+        LTEXT           "Numero dispositivo:", -1, 10, 76, 85, 8, NOT WS_GROUP
+        LTEXT           "sconosciuto", DID_DEVICENO, 105, 76, 85, 8, NOT WS_GROUP
+        LTEXT           "Numero canale:", -1, 10, 63, 85, 8, NOT WS_GROUP
+        LTEXT           "sconosciuto", DID_CHANNEL, 105, 63, 85, 8, NOT WS_GROUP
+        LTEXT           "Stato batteria:", -1, 10, 50, 85, 8, NOT WS_GROUP
+        CONTROL         "", DID_BATTERYSTATE, 105, 50, 30, 8, WC_STATIC,
+                        SS_FGNDFRAME | WS_GROUP | WS_VISIBLE
+        AUTOCHECKBOX    "Avviso ~batteria", DID_BATTERYWARNING, 105, 35, 85, 10
+        PUSHBUTTON      "A~iuto", DID_HELP, 80, 3, 40, 14, BS_HELP |
+                        BS_NOPOINTERFOCUS
+    END
+END
+
+// Dialog for AMouse.dll (Warp 4)
+DLGTEMPLATE IDD_WLDEVICEINFO_40 LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Informazioni dispositivo, 2", IDD_WLDEVICEINFO_40, 12, 5, 200, 145, NOT
+            FS_DLGBORDER | WS_VISIBLE
+            PRESPARAMS PP_FONTNAMESIZE, "9.WarpSans"
+    BEGIN
+        GROUPBOX        "Informazioni mouse senza filo", -1, 5, 30, 190, 70
+        LTEXT           "Numero dispositivo:", -1, 10, 76, 85, 8, NOT WS_GROUP
+        LTEXT           "sconosciuto", DID_DEVICENO, 105, 76, 85, 8, NOT WS_GROUP
+        LTEXT           "Numero canale:", -1, 10, 63, 85, 8, NOT WS_GROUP
+        LTEXT           "sconosciuto", DID_CHANNEL, 105, 63, 85, 8, NOT WS_GROUP
+        LTEXT           "Stato batteria:", -1, 10, 50, 85, 8, NOT WS_GROUP
+        CONTROL         "", DID_BATTERYSTATE, 105, 50, 30, 8, WC_STATIC,
+                        SS_FGNDFRAME | WS_GROUP | WS_VISIBLE
+        AUTOCHECKBOX    "Avviso ~batteria", DID_BATTERYWARNING, 105, 35, 85, 10
+        PUSHBUTTON      "A~iuto", DID_HELP, 0, 0, 40, 14, BS_HELP |
+                        BS_NOPOINTERFOCUS | BS_NOTEBOOKBUTTON
+    END
+END
+
+// Dialog for AMouse.dll, AMouse.exe (Warp 3)
+DLGTEMPLATE IDD_KEYSETTINGS1 LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Tasti", IDD_KEYSETTINGS1, 12, 5, 200, 170, NOT
+            FS_DLGBORDER | WS_VISIBLE
+            PRESPARAMS PP_FONTNAMESIZE, "9.WarpSans"
+    BEGIN
+        LTEXT           "", DID_BTN_PAGE_TYPE, 5, 172, 190, 8
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00C00000L
+        GROUPBOX        "Funzione tasti", -1, 5, 42, 190, 125
+        LTEXT           "Tasto 3", -1, 10, 148, 40, 8, NOT WS_GROUP
+        LTEXT           "Tasto 4", -1, 10, 136, 40, 8, NOT WS_GROUP
+        LTEXT           "Tasto 5", -1, 10, 124, 40, 8, NOT WS_GROUP
+        LTEXT           "Tasto 6", -1, 10, 112, 40, 8, NOT WS_GROUP
+        LTEXT           "Tasto 7", -1, 10, 100, 40, 8, NOT WS_GROUP
+        LTEXT           "Tasto 8", -1, 10, 88, 40, 8, NOT WS_GROUP
+        LTEXT           "Tasto 9", -1, 10, 76, 40, 8, NOT WS_GROUP
+        LTEXT           "Tasto 10", -1, 10, 64, 40, 8, NOT WS_GROUP
+        CONTROL         "", DID_BUTTON3, 50, 108, 110, 50, WC_COMBOBOX,
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        PUSHBUTTON      "Set", DID_KC_SET3, 162, 149, 30, 10                    // ???
+        CONTROL         "", DID_BUTTON4, 50, 96, 110, 50, WC_COMBOBOX,
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        PUSHBUTTON      "Set", DID_KC_SET4, 162, 137, 30, 10                    // ???
+        CONTROL         "", DID_BUTTON5, 50, 84, 110, 50, WC_COMBOBOX,
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        PUSHBUTTON      "Set", DID_KC_SET5, 162, 125, 30, 10                    // ???
+        CONTROL         "", DID_BUTTON6, 50, 72, 110, 50, WC_COMBOBOX,
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        PUSHBUTTON      "Set", DID_KC_SET6, 162, 113, 30, 10                    // ???
+        CONTROL         "", DID_BUTTON7, 50, 60, 110, 50, WC_COMBOBOX,
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        PUSHBUTTON      "Set", DID_KC_SET7, 162, 101, 30, 10                    // ???
+        CONTROL         "", DID_BUTTON8, 50, 48, 110, 50, WC_COMBOBOX,
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        PUSHBUTTON      "Set", DID_KC_SET8, 162, 89, 30, 10                     // ???
+        CONTROL         "", DID_BUTTON9, 50, 36, 110, 50, WC_COMBOBOX,
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        PUSHBUTTON      "Set", DID_KC_SET9, 162, 77, 30, 10                     // ???
+        CONTROL         "", DID_BUTTON10, 50, 24, 110, 50, WC_COMBOBOX,
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        PUSHBUTTON      "Set", DID_KC_SET10, 162, 65, 30, 10                    // ???
+        LTEXT           "Key combination:", DID_KEYCOMBTEXT, 10, 45, 41, 15,    // ???
+                        DT_WORDBREAK
+        ENTRYFIELD      "", DID_KEYCOMB, 52, 50, 106, 6, ES_MARGIN
+        PUSHBUTTON      "~Regredire", DID_UNDO, 25, 3, 55, 14, WS_GROUP
+        PUSHBUTTON      "~Valore assunto", DID_DEFAULT, 85, 3, 45, 14
+        PUSHBUTTON      "A~iuto", DID_HELP, 135, 3, 40, 14, BS_HELP |
+                        BS_NOPOINTERFOCUS
+    END
+END
+
+// Dialog for AMouse.dll, AMouse.exe (Warp 4)
+DLGTEMPLATE IDD_KEYSETTINGS1_40 LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Tasti", IDD_KEYSETTINGS1_40, 12, 5, 200, 145, NOT
+            FS_DLGBORDER | WS_VISIBLE
+            PRESPARAMS PP_FONTNAMESIZE, "9.WarpSans"
+    BEGIN
+        LTEXT           "", DID_BTN_PAGE_TYPE, 5, 142, 190, 8
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00C00000L
+        GROUPBOX        "Funzione tasti", -1, 5, 12, 190, 125
+        LTEXT           "Tasto 3", -1, 10, 119, 40, 8, NOT WS_GROUP
+        LTEXT           "Tasto 4", -1, 10, 107, 40, 8, NOT WS_GROUP
+        LTEXT           "Tasto 5", -1, 10, 95, 40, 8, NOT WS_GROUP
+        LTEXT           "Tasto 6", -1, 10, 83, 40, 8, NOT WS_GROUP
+        LTEXT           "Tasto 7", -1, 10, 71, 40, 8, NOT WS_GROUP
+        LTEXT           "Tasto 8", -1, 10, 59, 40, 8, NOT WS_GROUP
+        LTEXT           "Tasto 9", -1, 10, 47, 40, 8, NOT WS_GROUP
+        LTEXT           "Tasto 10", -1, 10, 35, 40, 8, NOT WS_GROUP
+        CONTROL         "", DID_BUTTON3, 50, 79, 110, 50, WC_COMBOBOX,
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        PUSHBUTTON      "Set", DID_KC_SET3, 162, 120, 30, 10                    // ???
+        CONTROL         "", DID_BUTTON4, 50, 67, 110, 50, WC_COMBOBOX,
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        PUSHBUTTON      "Set", DID_KC_SET4, 162, 108, 30, 10                    // ???
+        CONTROL         "", DID_BUTTON5, 50, 55, 110, 50, WC_COMBOBOX,
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        PUSHBUTTON      "Set", DID_KC_SET5, 162, 96, 30, 10                     // ???
+        CONTROL         "", DID_BUTTON6, 50, 43, 110, 50, WC_COMBOBOX,
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        PUSHBUTTON      "Set", DID_KC_SET6, 162, 84, 30, 10                     // ???
+        CONTROL         "", DID_BUTTON7, 50, 31, 110, 50, WC_COMBOBOX,
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        PUSHBUTTON      "Set", DID_KC_SET7, 162, 72, 30, 10                     // ???
+        CONTROL         "", DID_BUTTON8, 50, 19, 110, 50, WC_COMBOBOX,
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        PUSHBUTTON      "Set", DID_KC_SET8, 162, 60, 30, 10                     // ???
+        CONTROL         "", DID_BUTTON9, 50, 7, 110, 50, WC_COMBOBOX,
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        PUSHBUTTON      "Set", DID_KC_SET9, 162, 48, 30, 10                     // ???
+        CONTROL         "", DID_BUTTON10, 50, 5, 110, 40, WC_COMBOBOX,
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        PUSHBUTTON      "Set", DID_KC_SET10, 162, 36, 30, 10                    // ???
+        LTEXT           "Key combination:", DID_KEYCOMBTEXT, 10, 15, 41, 15,    // ???
+                        DT_WORDBREAK
+        ENTRYFIELD      "", DID_KEYCOMB, 52, 20, 106, 6, ES_MARGIN
+        PUSHBUTTON      "~Regredire", DID_UNDO, 25, 3, 55, 14, WS_GROUP | BS_NOTEBOOKBUTTON
+        PUSHBUTTON      "~Valore assunto", DID_DEFAULT, 85, 3, 45, 14, BS_NOTEBOOKBUTTON
+        PUSHBUTTON      "A~iuto", DID_HELP, 135, 3, 40, 14, BS_HELP |
+                        BS_NOPOINTERFOCUS | BS_NOTEBOOKBUTTON
+    END
+END
+
+// Dialog f”r AMouse.dll, AMouse.exe (Warp 3)
+DLGTEMPLATE IDD_KEYSETTINGS2 LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Tasti", IDD_KEYSETTINGS2, 12, 5, 200, 170, NOT FS_DLGBORDER |
+            WS_VISIBLE
+            PRESPARAMS PP_FONTNAMESIZE, "9.WarpSans"
+    BEGIN
+        GROUPBOX        "Funzioni avanzate", -1, 5, 42, 190, 125
+        AUTOCHECKBOX    "Doppio clic su campi immissione", DID_PMCTLS_ENTRY,
+                        10, 140, 175, 10
+        AUTOCHECKBOX    "Clic su Combo Box", DID_PMCTLS_COMBO, 10, 120,
+                        175, 10
+        AUTOCHECKBOX    "S~martCruise", DID_SMARTCRUISE, 10, 100, 175, 10
+        PUSHBUTTON      "~Regredire", DID_UNDO, 25, 3, 55, 14, WS_GROUP
+        PUSHBUTTON      "~Valore assunto", DID_DEFAULT, 85, 3, 45, 14
+        PUSHBUTTON      "A~iuto", DID_HELP, 135, 3, 40, 14, BS_HELP |
+                        BS_NOPOINTERFOCUS
+    END
+END
+
+// Dialog f”r AMouse.dll, AMouse.exe (Warp 4)
+DLGTEMPLATE IDD_KEYSETTINGS2_40 LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Tasti", IDD_KEYSETTINGS2_40, 12, 5, 200, 145, NOT FS_DLGBORDER |
+            WS_VISIBLE
+            PRESPARAMS PP_FONTNAMESIZE, "9.WarpSans"
+    BEGIN
+        GROUPBOX        "Funzioni avanzate", -1, 5, 15, 190, 125
+        AUTOCHECKBOX    "Doppio clic su campi immissione", DID_PMCTLS_ENTRY,
+                        10, 110, 175, 10
+        AUTOCHECKBOX    "Clic su Combo Box", DID_PMCTLS_COMBO, 10, 90,
+                        175, 10
+        AUTOCHECKBOX    "S~martCruise", DID_SMARTCRUISE, 10, 70, 175, 10
+        PUSHBUTTON      "~Regredire", DID_UNDO, 25, 0, 55, 14, WS_GROUP | BS_NOTEBOOKBUTTON
+        PUSHBUTTON      "~Valore assunto", DID_DEFAULT, 85, 0, 45, 14, BS_NOTEBOOKBUTTON
+        PUSHBUTTON      "A~iuto", DID_HELP, 135, 0, 40, 14, BS_HELP |
+                        BS_NOPOINTERFOCUS | BS_NOTEBOOKBUTTON
+    END
+END
+
+// Dialog for AMouse.dll, AMouse.exe (Warp 3)
+DLGTEMPLATE IDD_WHEELSETTINGS1 LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Rotella, 1", IDD_WHEELSETTINGS1, 10, 5, 200, 170, NOT FS_DLGBORDER |
+            WS_VISIBLE
+            PRESPARAMS PP_FONTNAMESIZE, "9.WarpSans"
+    BEGIN
+        LTEXT           "", DID_WHEEL_PAGE_TYPE, 5, 160, 190, 8
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00C00000L
+        GROUPBOX        "Modalit… funzionamento rotella", -1, 5, 90, 190, 65
+        AUTORADIOBUTTON "~nessuna funzione", DID_NOFUNCTION, 10, 138, 175, 10,
+                        WS_TABSTOP
+        AUTORADIOBUTTON "~messaggi di scorrimento", DID_MSG_STD, 10, 127, 175, 10,
+                        WS_TABSTOP
+        AUTORADIOBUTTON "messaggi ~tastiera (tasti cursore)", DID_MSG_LINE,
+                        10, 116, 175, 10, WS_TABSTOP
+        AUTORADIOBUTTON "scorrimento di una intera ~pagina",
+                        DID_MSG_PAGE, 10, 105, 175, 10, WS_TABSTOP
+        AUTORADIOBUTTON "re~golazione volume audio", DID_MSG_VOLUME, 10, 94,
+                        175, 10, WS_TABSTOP
+        GROUPBOX        "Agisci sulla", -1, 5, 55, 190, 32
+        AUTORADIOBUTTON "finestra ~attiva", DID_KBD_FOCUS, 10, 70, 175, 10,
+                        WS_TABSTOP
+        AUTORADIOBUTTON "finestra sotto il puntatore del m~ouse", DID_POINTER_FOCUS, 10,
+                        59, 175, 10, WS_TABSTOP
+        GROUPBOX        "Velocit… rotella", -1, 5, 25, 190, 27
+        LTEXT           "Scorri", -1, 10, 31, 30, 8, NOT WS_GROUP
+        SPINBUTTON      DID_SCROLLITEMS, 40, 33, 30, 12, SPBS_READONLY |
+                        SPBS_MASTER
+        LTEXT           "linee per unit… di scorrimento", -1, 80, 31, 105, 8, NOT
+                        WS_GROUP
+        PUSHBUTTON      "~Regredire", DID_UNDO, 25, 3, 55, 14, WS_GROUP
+        PUSHBUTTON      "~Valore assunto", DID_DEFAULT, 85, 3, 45, 14
+        PUSHBUTTON      "A~iuto", DID_HELP, 135, 3, 40, 14, BS_HELP |
+                        BS_NOPOINTERFOCUS
+    END
+END
+
+// Dialog for AMouse.dll, AMouse.exe (Warp 4)
+DLGTEMPLATE IDD_WHEELSETTINGS1_40 LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Rotella, 1", IDD_WHEELSETTINGS1_40, 10, 5, 200, 145, NOT
+            FS_DLGBORDER | WS_VISIBLE
+            PRESPARAMS PP_FONTNAMESIZE, "9.WarpSans"
+    BEGIN
+        LTEXT           "", DID_WHEEL_PAGE_TYPE, 5, 142, 190, 8
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00C00000L
+        GROUPBOX        "Modalit… funzionamento rotella", -1, 5, 72, 190, 65
+        AUTORADIOBUTTON "~nessuna funzione", DID_NOFUNCTION, 10, 120, 175, 10,
+                        WS_TABSTOP
+        AUTORADIOBUTTON "~messaggi di scorrimento", DID_MSG_STD, 10, 109, 175, 10,
+                        WS_TABSTOP
+        AUTORADIOBUTTON "messaggi ~tastiera (tasti cursore)", DID_MSG_LINE,
+                        10, 98, 175, 10, WS_TABSTOP
+        AUTORADIOBUTTON "scorrimento di una intera ~pagina",
+                        DID_MSG_PAGE, 10, 87, 175, 10, WS_TABSTOP
+        AUTORADIOBUTTON "re~golazione volume audio", DID_MSG_VOLUME, 10, 76,
+                        175, 10, WS_TABSTOP
+        GROUPBOX        "Agisci sulla ", -1, 5, 37, 190, 32
+        AUTORADIOBUTTON "finestra ~attiva", DID_KBD_FOCUS, 10, 52, 175, 10,
+                        WS_TABSTOP
+        AUTORADIOBUTTON "finestra sotto il puntatore del m~ouse", DID_POINTER_FOCUS, 10,
+                        41, 175, 10, WS_TABSTOP
+        GROUPBOX        "Velocit… rotella", -1, 5, 7, 190, 27
+        LTEXT           "Scorri", -1, 10, 13, 30, 8, NOT WS_GROUP
+        SPINBUTTON      DID_SCROLLITEMS, 40, 15, 30, 12, SPBS_READONLY |
+                        SPBS_MASTER
+        LTEXT           "linee per unit… di scorrimento", -1, 80, 13, 105, 8, NOT
+                        WS_GROUP
+        PUSHBUTTON      "~Regredire", DID_UNDO, 30, 3, 55, 14, WS_GROUP | BS_NOTEBOOKBUTTON
+        PUSHBUTTON      "~Valore assunto", DID_DEFAULT, 90, 3, 45, 14, BS_NOTEBOOKBUTTON
+        PUSHBUTTON      "A~iuto", DID_HELP, 140, 3, 40, 14, BS_HELP |
+                        BS_NOPOINTERFOCUS | BS_NOTEBOOKBUTTON
+    END
+END
+
+// Dialog for AMouse.dll, AMouse.exe (Warp 3)
+DLGTEMPLATE IDD_WHEELSETTINGS2 LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Rotellina, 2", IDD_WHEELSETTINGS2, 12, 5, 200, 170, NOT
+            FS_DLGBORDER | WS_VISIBLE
+            PRESPARAMS PP_FONTNAMESIZE, "9.WarpSans"
+    BEGIN
+        GROUPBOX        "Valore all'avvio", -1, 5, 90, 190, 39
+        AUTORADIOBUTTON "scorrimento verticale", DID_SCROLL_VERT, 10, 109, 100,
+                        10, WS_TABSTOP
+        AUTORADIOBUTTON "scorrimento orizzontale", DID_SCROLL_HORZ, 10, 94, 100,
+                        10, WS_TABSTOP
+        GROUPBOX        "Accelerazione rotella", -1, 5, 43, 190, 43
+        SLIDER          DID_ACCEL_VALUE, 10, 56, 85, 20, SLS_SNAPTOINCREMENT |
+                        SLS_BOTTOM | SLS_BUTTONSLEFT | WS_GROUP
+                        CTLDATA 12, 0, TICKNUMBER_VALUE, 0, 0, 0
+        LTEXT           "valore accelerazione", -1, 22, 45, 70, 8
+        SLIDER          DID_ACCEL_DELAY, 105, 56, 85, 20, SLS_SNAPTOINCREMENT |
+                        SLS_BOTTOM | SLS_BUTTONSLEFT | WS_GROUP
+                        CTLDATA 12, 0, TICKNUMBER_DELAY, 0, 0, 0
+        LTEXT           "ritardo in ms", -1, 112, 45, 70, 8
+        GROUPBOX        "Numero rotelle", -1, 5, 20, 190, 19
+        AUTOCHECKBOX    "Rotella 2 o trackball presente", DID_WHEEL2, 10, 23, 180, 10,
+                        WS_GROUP
+        PUSHBUTTON      "~Regredire", DID_UNDO, 25, 3, 55, 14, WS_GROUP
+        PUSHBUTTON      "~Valore assunto", DID_DEFAULT, 85, 3, 45, 14
+        PUSHBUTTON      "A~iuto", DID_HELP, 135, 3, 40, 14, BS_HELP |
+                        BS_NOPOINTERFOCUS
+    END
+END
+
+// Dialog for AMouse.dll, AMouse.exe (Warp 4)
+DLGTEMPLATE IDD_WHEELSETTINGS2_40 LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Rotella, 2", IDD_WHEELSETTINGS2_40, 12, 5, 200, 145, NOT
+            FS_DLGBORDER | WS_VISIBLE
+            PRESPARAMS PP_FONTNAMESIZE, "9.WarpSans"
+    BEGIN
+        GROUPBOX        "Valore all'avvio", -1, 5, 90, 190, 39
+        AUTORADIOBUTTON "scorrimento verticale", DID_SCROLL_VERT, 11, 109, 100,
+                        10, WS_TABSTOP
+        AUTORADIOBUTTON "scorrimento orizzontale", DID_SCROLL_HORZ, 11, 94,
+                        100, 10, WS_TABSTOP
+        GROUPBOX        "Accelerazione rotella", -1, 5, 43, 190, 43
+        SLIDER          DID_ACCEL_VALUE, 10, 56, 85, 20, SLS_SNAPTOINCREMENT |
+                        SLS_BOTTOM | SLS_BUTTONSLEFT | WS_GROUP
+                        CTLDATA 12, 0, TICKNUMBER_VALUE, 0, 0, 0
+        LTEXT           "valore accelerazione", -1, 22, 45, 70, 8
+        SLIDER          DID_ACCEL_DELAY, 105, 56, 85, 20, SLS_SNAPTOINCREMENT |
+                        SLS_BOTTOM | SLS_BUTTONSLEFT | WS_GROUP
+                        CTLDATA 12, 0, TICKNUMBER_DELAY, 0, 0, 0
+        LTEXT           "ritardo in ms", -1, 112, 45, 70, 8
+        GROUPBOX        "Numero rotelle", -1, 5, 20, 190, 19
+        AUTOCHECKBOX    "Rotella 2 o trackball presente", DID_WHEEL2, 10, 23, 180, 10,
+                        WS_GROUP
+        PUSHBUTTON      "~Regredire", DID_UNDO, 20, 0, 55, 14, WS_GROUP | BS_NOTEBOOKBUTTON
+        PUSHBUTTON      "~Valore assunto", DID_DEFAULT, 80, 0, 45, 14, BS_NOTEBOOKBUTTON
+        PUSHBUTTON      "A~iuto", DID_HELP, 130, 0, 40, 14, BS_HELP |
+                        BS_NOPOINTERFOCUS | BS_NOTEBOOKBUTTON
+    END
+END
+
+// Dialog for AMouse.dll, AMouse.exe (Warp 3)
+DLGTEMPLATE IDD_WHEELSETTINGS3 LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Rotella, 3", IDD_WHEELSETTINGS3, 10, 5, 200, 170, NOT
+            FS_DLGBORDER | WS_VISIBLE
+            PRESPARAMS PP_FONTNAMESIZE, "9.WarpSans"
+    BEGIN
+        GROUPBOX        "Descrizione", -1, 5, 101, 190, 54
+        LISTBOX         DID_W3_DESCRIPTION, 10, 104, 150, 45
+        PUSHBUTTON      "", DID_W3_UP, 172, 137, 10, 10
+        PUSHBUTTON      "", DID_W3_DOWN, 172, 126, 10, 10
+        PUSHBUTTON      "~Cancella", DID_W3_DELETE, 165, 115, 25, 10
+        PUSHBUTTON      "~Aggiungi", DID_W3_INSERT, 165, 104, 25, 10
+        GROUPBOX        "Comportamento", -1, 5, 25, 190, 73, NOT WS_GROUP
+        LTEXT           "Application", -1, 10, 72, 35, 8
+        ENTRYFIELD      "", DID_W3_APPLICATION, 48, 75, 46, 5, ES_MARGIN |
+                        ES_READONLY
+        LTEXT           "Class", -1, 10, 63, 35, 8
+        ENTRYFIELD      "", DID_W3_CLASS, 48, 66, 46, 5, ES_MARGIN |
+                        ES_READONLY
+        LTEXT           "Parent Class", -1, 10, 54, 35, 8
+        ENTRYFIELD      "", DID_W3_PARENTCLASS, 48, 57, 46, 5, ES_MARGIN |
+                        ES_READONLY
+        LTEXT           "Option", -1, 10, 45, 35, 8
+        ENTRYFIELD      "", DID_W3_OPTION, 48, 48, 46, 5, ES_MARGIN |
+                        ES_READONLY
+        LTEXT           "Mode", -1, 105, 82, 35, 8
+        ENTRYFIELD      "", DID_W3_MODE, 141, 85, 49, 5, ES_MARGIN |
+                        ES_READONLY
+        LTEXT           "vRelation", -1, 105, 73, 35, 8
+        ENTRYFIELD      "", DID_W3_VREL, 141, 76, 49, 5, ES_MARGIN |
+                        ES_READONLY
+        LTEXT           "vOption", -1, 105, 64, 35, 8
+        ENTRYFIELD      "", DID_W3_VOPT, 141, 67, 49, 5, ES_MARGIN |
+                        ES_READONLY
+        LTEXT           "Up/Down", -1, 105, 55, 35, 8
+        ENTRYFIELD      "", DID_W3_UPDOWN, 141, 58, 49, 5, ES_MARGIN |
+                        ES_READONLY
+        LTEXT           "hRelation", -1, 105, 46, 35, 8
+        ENTRYFIELD      "", DID_W3_HREL, 141, 49, 49, 5, ES_MARGIN |
+                        ES_READONLY
+        LTEXT           "hOption", -1, 105, 37, 35, 8
+        ENTRYFIELD      "", DID_W3_HOPT, 141, 40, 49, 5, ES_MARGIN |
+                        ES_READONLY
+        LTEXT           "Left/Right", -1, 105, 28, 35, 8
+        ENTRYFIELD      "", DID_W3_LEFTRIGHT, 141, 31, 49, 5, ES_MARGIN |
+                        ES_READONLY
+        PUSHBUTTON      "~Regredire", DID_UNDO, 25, 3, 55, 14, WS_GROUP
+        PUSHBUTTON      "A~iuto", DID_HELP, 85, 3, 40, 14, BS_HELP |
+                        BS_NOPOINTERFOCUS
+    END
+END
+
+// Dialog for AMouse.dll, AMouse.exe (Warp 4)
+DLGTEMPLATE IDD_WHEELSETTINGS3_40 LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Rotella, 3", IDD_WHEELSETTINGS3_40, 10, 5, 200, 170, NOT
+            FS_DLGBORDER | WS_VISIBLE
+            PRESPARAMS PP_FONTNAMESIZE, "9.WarpSans"
+    BEGIN
+        GROUPBOX        "Descrizione", -1, 5, 101, 190, 54
+        LISTBOX         DID_W3_DESCRIPTION, 10, 104, 150, 45
+        PUSHBUTTON      "", DID_W3_UP, 172, 137, 10, 10
+        PUSHBUTTON      "", DID_W3_DOWN, 172, 126, 10, 10
+        PUSHBUTTON      "~Cancella", DID_W3_DELETE, 165, 115, 25, 10
+        PUSHBUTTON      "~Aggiungi", DID_W3_INSERT, 165, 104, 25, 10
+        GROUPBOX        "Comportamento", -1, 5, 25, 190, 73, NOT WS_GROUP
+        LTEXT           "Application", -1, 10, 72, 35, 8
+        ENTRYFIELD      "", DID_W3_APPLICATION, 48, 75, 46, 5, ES_MARGIN |
+                        ES_READONLY
+        LTEXT           "Class", -1, 10, 63, 35, 8
+        ENTRYFIELD      "", DID_W3_CLASS, 48, 66, 46, 5, ES_MARGIN |
+                        ES_READONLY
+        LTEXT           "Parent Class", -1, 10, 54, 35, 8
+        ENTRYFIELD      "", DID_W3_PARENTCLASS, 48, 57, 46, 5, ES_MARGIN |
+                        ES_READONLY
+        LTEXT           "Option", -1, 10, 45, 35, 8
+        ENTRYFIELD      "", DID_W3_OPTION, 48, 48, 46, 5, ES_MARGIN |
+                        ES_READONLY
+        LTEXT           "Mode", -1, 105, 82, 35, 8
+        ENTRYFIELD      "", DID_W3_MODE, 141, 85, 49, 5, ES_MARGIN |
+                        ES_READONLY
+        LTEXT           "vRelation", -1, 105, 73, 35, 8
+        ENTRYFIELD      "", DID_W3_VREL, 141, 76, 49, 5, ES_MARGIN |
+                        ES_READONLY
+        LTEXT           "vOption", -1, 105, 64, 35, 8
+        ENTRYFIELD      "", DID_W3_VOPT, 141, 67, 49, 5, ES_MARGIN |
+                        ES_READONLY
+        LTEXT           "Up/Down", -1, 105, 55, 35, 8
+        ENTRYFIELD      "", DID_W3_UPDOWN, 141, 58, 49, 5, ES_MARGIN |
+                        ES_READONLY
+        LTEXT           "hRelation", -1, 105, 46, 35, 8
+        ENTRYFIELD      "", DID_W3_HREL, 141, 49, 49, 5, ES_MARGIN |
+                        ES_READONLY
+        LTEXT           "hOption", -1, 105, 37, 35, 8
+        ENTRYFIELD      "", DID_W3_HOPT, 141, 40, 49, 5, ES_MARGIN |
+                        ES_READONLY
+        LTEXT           "Left/Right", -1, 105, 28, 35, 8
+        ENTRYFIELD      "", DID_W3_LEFTRIGHT, 141, 31, 49, 5, ES_MARGIN |
+                        ES_READONLY
+        PUSHBUTTON      "~Regredire", DID_UNDO, 25, 3, 55, 14, WS_GROUP | BS_NOTEBOOKBUTTON
+        PUSHBUTTON      "A~iuto", DID_HELP, 85, 3, 40, 14, BS_HELP |
+                        BS_NOPOINTERFOCUS | BS_NOTEBOOKBUTTON
+    END
+END
+
+// Dialog for AMouse.dll, AMouse.exe (Warp 3)
+DLGTEMPLATE IDD_TIMINGSETTINGS LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Temporizzazione", IDD_TIMINGSETTINGS, 12, 5, 200, 170, NOT FS_DLGBORDER |
+            WS_VISIBLE
+            PRESPARAMS PP_FONTNAMESIZE, "9.WarpSans"
+    BEGIN
+        GROUPBOX        "Frequenza controllo mouse", -1, 5, 90, 190, 39
+        SLIDER          DID_MOU_POLLRATE, 10, 100, 85, 20, SLS_BOTTOM |
+                        SLS_SNAPTOINCREMENT | SLS_BUTTONSLEFT | WS_GROUP
+                        CTLDATA 12, 0, 5, 0, 0, 0
+        ENTRYFIELD      "", DID_MOU_POLLRATE_TXT, 95, 101, 20, 8, NOT
+                        ES_AUTOSCROLL | ES_READONLY
+        GROUPBOX        "Accelerazione mouse", -1, 5, 43, 190, 43
+        SLIDER          DID_MOU_ACCEL_VALUE, 10, 56, 85, 20, SLS_BOTTOM |
+                        SLS_SNAPTOINCREMENT | SLS_BUTTONSLEFT | WS_GROUP
+                        CTLDATA 12, 0, 20, 0, 0, 0
+        LTEXT           "valore accelerazione", -1, 22, 45, 70, 8
+        SLIDER          DID_MOU_ACCEL_TH, 105, 56, 85, 20, SLS_BOTTOM |
+                        SLS_SNAPTOINCREMENT | SLS_BUTTONSLEFT | WS_GROUP
+                        CTLDATA 12, 0, 20, 0, 0, 0
+        LTEXT           "soglia accelerazione", -1, 112, 45, 80, 8
+        PUSHBUTTON      "~Regredire", DID_UNDO, 20, 0, 55, 14, WS_GROUP
+        PUSHBUTTON      "~Valore assunto", DID_DEFAULT, 80, 0, 45, 14
+        PUSHBUTTON      "A~iuto", DID_HELP, 130, 0, 40, 14, BS_HELP |
+                        BS_NOPOINTERFOCUS
+    END
+END
+
+// Dialog for AMouse.dll, AMouse.exe (Warp 4)
+DLGTEMPLATE IDD_TIMINGSETTINGS_40 LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Temporizzazione", IDD_TIMINGSETTINGS_40, 12, 5, 200, 145, NOT FS_DLGBORDER |
+            WS_VISIBLE
+            PRESPARAMS PP_FONTNAMESIZE, "9.WarpSans"
+    BEGIN
+        GROUPBOX        "Frequenza controllo mouse", -1, 5, 90, 190, 39
+        SLIDER          DID_MOU_POLLRATE, 10, 100, 85, 20, SLS_BOTTOM |
+                        SLS_SNAPTOINCREMENT | SLS_BUTTONSLEFT | WS_GROUP
+                        CTLDATA 12, 0, 5, 0, 0, 0
+        ENTRYFIELD      "", DID_MOU_POLLRATE_TXT, 95, 101, 20, 8, NOT
+                        ES_AUTOSCROLL | ES_READONLY
+        GROUPBOX        "Accelerazione mouse", -1, 5, 43, 190, 43
+        SLIDER          DID_MOU_ACCEL_VALUE, 10, 56, 85, 20, SLS_BOTTOM |
+                        SLS_SNAPTOINCREMENT | SLS_BUTTONSLEFT | WS_GROUP
+                        CTLDATA 12, 0, 20, 0, 0, 0
+        LTEXT           "valore accelerazione", -1, 22, 45, 70, 8
+        SLIDER          DID_MOU_ACCEL_TH, 105, 56, 85, 20, SLS_BOTTOM |
+                        SLS_SNAPTOINCREMENT | SLS_BUTTONSLEFT | WS_GROUP
+                        CTLDATA 12, 0, 20, 0, 0, 0
+        LTEXT           "soglia accelerazione", -1, 112, 45, 80, 8
+        PUSHBUTTON      "~Regredire", DID_UNDO, 20, 0, 55, 14, WS_GROUP | BS_NOTEBOOKBUTTON
+        PUSHBUTTON      "~Valore assunto", DID_DEFAULT, 80, 0, 45, 14, BS_NOTEBOOKBUTTON
+        PUSHBUTTON      "A~iuto", DID_HELP, 130, 0, 40, 14, BS_HELP |
+                        BS_NOPOINTERFOCUS | BS_NOTEBOOKBUTTON
+    END
+END
+
+// Dialog for AMouse.dll, AMouse.exe (Warp 3/4)
+DLGTEMPLATE IDD_INSERTAPPL LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Definizione comportamento", IDD_INSERTAPPL, 10, 5, 200, 130,
+            WS_VISIBLE, FCF_TITLEBAR
+            PRESPARAMS PP_FONTNAMESIZE, "9.WarpSans"
+    BEGIN
+        GROUPBOX        "Nome descrittivo", -1, 5, 101, 190, 25
+        ENTRYFIELD      "", DID_W3_DESCRIPTION, 12, 109, 176, 8, ES_MARGIN
+        GROUPBOX        "Comportamento", -1, 5, 25, 190, 73, NOT WS_GROUP
+        LTEXT           "Application", -1, 10, 72, 35, 8
+        ENTRYFIELD      "", DID_W3_APPLICATION, 48, 74, 46, 5, ES_MARGIN
+        LTEXT           "Class", -1, 10, 63, 35, 8
+        ENTRYFIELD      "", DID_W3_CLASS, 48, 65, 46, 5, ES_MARGIN
+        LTEXT           "Parent Class", -1, 10, 54, 35, 8
+        ENTRYFIELD      "", DID_W3_PARENTCLASS, 48, 56, 46, 5, ES_MARGIN
+        LTEXT           "Option", -1, 10, 45, 35, 8
+        ENTRYFIELD      "", DID_W3_OPTION, 48, 47, 46, 5, ES_MARGIN
+        LTEXT           "Mode", -1, 105, 82, 35, 8
+        SPINBUTTON      DID_W3_MODE, 141, 83, 49, 12, SPBS_MASTER | SPBS_READONLY | WS_GROUP
+        LTEXT           "vRelation", -1, 105, 73, 35, 8
+        SPINBUTTON      DID_W3_VREL, 141, 74, 49, 12, SPBS_MASTER | SPBS_READONLY | WS_GROUP
+        LTEXT           "vOption", -1, 105, 64, 35, 8
+        SPINBUTTON      DID_W3_VOPT, 141, 65, 49, 12, SPBS_MASTER | SPBS_READONLY | WS_GROUP
+        LTEXT           "Up/Down", -1, 105, 55, 35, 8
+        SPINBUTTON      DID_W3_UPDOWN, 141, 56, 49, 12, SPBS_MASTER | SPBS_READONLY | WS_GROUP
+        LTEXT           "hRelation", -1, 105, 46, 35, 8
+        SPINBUTTON      DID_W3_HREL, 141, 47, 49, 12, SPBS_MASTER | SPBS_READONLY | WS_GROUP
+        LTEXT           "hOption", -1, 105, 37, 35, 8
+        SPINBUTTON      DID_W3_HOPT, 141, 38, 49, 12, SPBS_MASTER | SPBS_READONLY | WS_GROUP
+        LTEXT           "Left/Right", -1, 105, 28, 35, 8
+        SPINBUTTON      DID_W3_LEFTRIGHT, 141, 29, 49, 12, SPBS_MASTER | SPBS_READONLY | WS_GROUP
+        DEFPUSHBUTTON   "~OK", DID_OK, 5, 5, 40, 14, WS_GROUP
+        PUSHBUTTON      "~Annulla", DID_CANCEL, 50, 5, 40, 14, WS_GROUP
+        PUSHBUTTON      "A~iuto", DID_HELP, 95, 5, 40, 14, BS_HELP | BS_NOPOINTERFOCUS
+    END
+END
+
+

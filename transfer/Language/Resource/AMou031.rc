@@ -1,0 +1,144 @@
+#include <os2.h>
+#include "res.h"
+#include "dlg.h"
+
+ICON IDI_ICON AMOUSE_ICON
+
+BITMAP (IDB_LOGI_BATT_BASE + 0) "batt0.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 1) "batt1.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 2) "batt2.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 3) "batt3.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 4) "batt4.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 5) "batt5.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 6) "batt6.bmp"
+BITMAP (IDB_LOGI_BATT_BASE + 7) "batt7.bmp"
+
+RCINCLUDE AMou031.dlg
+
+STRINGTABLE
+    {
+    // common strings AMouse.dll, AMouse.exe
+    IDS_ABOUT,              "Over"
+    IDS_PAGENAME_DEVINFO,   "Apparaat ~informatie"
+    IDS_PAGENAME_WHEEL,     "~Wiel"
+    IDS_PAGENAME_BUTTONS,   "~Knoppen"
+    IDS_PAGENAME_TIMING,    "~Timing"
+
+    IDS_BATT_EMPTY,         "Muis: Batterij leeg"
+
+    IDS_PORT_UNKNOWN,       ""
+    IDS_PORT_SERIAL,        "COM0:"
+    IDS_PORT_PS2,           "PS/2"
+    IDS_PORT_USB,           "USB"
+
+    IDS_WHEEL_0,            ""
+    IDS_WHEEL_1,            "aanwezig"
+    IDS_WHEEL_2,            "2 aanwezig"
+
+    IDS_ACCEL_VAL_OFF,      "uit"
+    IDS_ACCEL_VAL_FAST,     "max"
+
+    IDS_PAGE_WHEEL,         "PM + Volledig scherm"
+    IDS_PAGE_WHEEL_C,       "Ctrl + Wiel"
+    IDS_PAGE_WHEEL_A,       "Alt + Wiel"
+
+    IDS_PAGENUMBER,         "Pagina %1 van %2"
+
+    IDS_TYPE_AMBIGUOUS,     "\n\t(of gelijkwaardig)"
+
+    IDS_UNKNOWN,            "onbekend"
+    IDS_UNKNOWN_DEVICE,     "onbekend apparaat"
+    IDS_UNKNOWN_RECEIVER,   "onbekende ontvanger"
+
+    IDS_PAGE_BUTTON,        "Knop"
+    IDS_PAGE_BUTTON_C,      "Ctrl+Knop"
+    IDS_PAGE_BUTTON_A,      "Alt+Knop"
+
+    // strings for AMouse.exe only
+    IDS_SWENTRY,            "AMouse Configuratie"
+    IDS_NOMOUSE,            "er is geen wielmuis aanwezig"
+    IDS_ERR_SEM,            "Niet in staat om de semaphore te openen"
+
+    IDS_HELPWINDOWTITLE,    "Help voor AMouse"
+
+    // hotkey descriptions
+    IDS_KEY_CTRL            "Ctrl+"                 // ???
+    IDS_KEY_ALT             "Alt+"                  // ???
+    IDS_KEY_SHIFT           "Shift+"                // ???
+    IDS_KEY_BACKSPACE       "Backspace"             // ???
+    IDS_KEY_TAB             "Tab"                   // ???
+    IDS_KEY_BACKTABTAB      "Backtab"               // ???
+    IDS_KEY_ENTER           "Enter"                 // ???
+    IDS_KEY_ESC             "Esc"                   // ???
+    IDS_KEY_SPACE           "Space"                 // ???
+    IDS_KEY_PAGEUP          "Page Up"               // ???
+    IDS_KEY_PAGEDOWN        "Page Down"             // ???
+    IDS_KEY_END             "End"                   // ???
+    IDS_KEY_HOME            "Home"                  // ???
+    IDS_KEY_LEFT            "Left"                  // ???
+    IDS_KEY_UP              "Up"                    // ???
+    IDS_KEY_RIGHT           "Right"                 // ???
+    IDS_KEY_DOWN            "Down"                  // ???
+    IDS_KEY_PRINTSCRN       "Print"                 // ???
+    IDS_KEY_INSERT          "Insert"                // ???
+    IDS_KEY_DELETE          "Delete"                // ???
+    IDS_KEY_SCRLLOCK        "Scroll"                // ???
+    IDS_KEY_NUMLOCK         "NumLock"               // ???
+    IDS_KEY_WINLEFT         "Win95 left"            // ???
+    IDS_KEY_WINRIGHT        "Win95 right"           // ???
+    IDS_KEY_WINMENU         "Win95 Menu"            // ???
+    IDS_KEY_SYSRQ           "SysReq"                // ???
+    }
+
+// common strings AMouse.dll, AMouse.exe
+RCDATA IDRC_MOUSETYPE
+    {
+    PORT_UNKNOWN,   WHEEL_0, TYPE_UNAMBIG, "Onbekend"
+    PORT_UNKNOWN,   WHEEL_0, TYPE_UNAMBIG, "Bus-muis"
+    PORT_SERIAL,    WHEEL_0, TYPE_AMBIG,   "Seri‰le MS-muis"
+    PORT_UNKNOWN,   WHEEL_0, TYPE_UNAMBIG, "Inport-muis"
+    PORT_PS2,       WHEEL_0, TYPE_UNAMBIG, "PS/2-muis"
+    PORT_UNKNOWN,   WHEEL_0, TYPE_AMBIG,   "IBM 8516 Aanraakscherm"
+    PORT_SERIAL,    WHEEL_0, TYPE_AMBIG,   "Logitech-muis"
+    PORT_UNKNOWN,   WHEEL_0, TYPE_AMBIG,   "Schermlezer Keypad"
+    PORT_UNKNOWN,   WHEEL_0, TYPE_UNAMBIG, "Geen muis"
+    PORT_SERIAL,    WHEEL_1, TYPE_AMBIG,   "MS-IntelliMouse"
+    PORT_PS2,       WHEEL_1, TYPE_AMBIG,   "MS-IntelliMouse"
+    PORT_PS2,       WHEEL_1, TYPE_AMBIG,   "Typhoon 40159 / Trust 250S"
+    PORT_USB,       WHEEL_1, TYPE_UNAMBIG, "USB muis"
+    PORT_PS2,       WHEEL_1, TYPE_AMBIG,   "PS/2+"
+    PORT_PS2,       WHEEL_1, TYPE_UNAMBIG, "Type 14"
+    }
+
+// common strings AMouse.dll, AMouse.exe
+RCDATA IDRC_BUTTONSETTINGS
+    {
+    IDR_NONE,               "geen actie"
+    IDR_CLIPBOARD_CUT,      "Knippen"
+    IDR_CLIPBOARD_COPY,     "Kopi‰ren"
+    IDR_CLIPBOARD_INSERT,   "Plakken"
+    IDR_BUTTON3,            "Centreer knop"
+    IDR_MINIMIZE_ALL,       "Verkleinen/Alle vensters verbergen"
+    IDR_RESTORE_ALL,        "Alle vensters herstellen"
+    IDR_WINDOW_LIST,        "Vensterlijst"
+    IDR_CLOSE_APPLICATION,  "Applicatie sluiten"
+    IDR_DOUBLECLICK,        "Dubbel klikken"
+    IDR_MAXIMIZE_WND,       "Maximaal venster"
+    IDR_MINIMIZE_WND,       "Verklein/Verberg venster"
+    IDR_RESTORE_WND,        "Herstel venster"
+    IDR_TOGGLE_SCROLL,      "Schakel bladerrichting"
+    IDR_PUSH_TO_BACK,       "Verplaats venster naar de achtergrond"
+    IDR_KEY,                "Key combination"           // ???
+    IDR_END,                ""
+    }
+
+// menu used in AMouse.dll
+MENU IDM_MAINMENU LOADONCALL MOVEABLE DISCARDABLE
+    {
+    MENUITEM "Over",                IDM_ABOUT,          MIS_TEXT
+    #ifdef _TRACE_
+    MENUITEM "DEBUG (AMOUSE)",      IDM_OPENDEBUG,      MIS_TEXT
+    #endif /* _TRACE_ */
+    }
+
+

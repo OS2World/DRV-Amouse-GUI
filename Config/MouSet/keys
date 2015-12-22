@@ -1,0 +1,46 @@
+               fs   ucr ucs    usch usvk
+ALT            3801 10  26     b    0000 KC_TOGGLE KC_INVALIDCHAR KC_INVALIDCOMP KC_CHAR
+
+
+CTRL-L         1d01 00  16     a    0000 KC_TOGGLE KC_INVALIDCOMP KC_COMPOSITE KC_LONEKEY KC_CHAR
+               1d01 01  46     a    0000
+
+CTRL-R         5b01 10  16     a    0000 KC_DBCSRSRVD1 KC_TOGGLE KC_INVALIDCOMP KC_DEADKEY KC_LONEKEY KC_CHAR
+               5b01 11  46     a    0000
+
+SHIFT-L        2a01 00  0e     9    0000 KC_INVALIDCHAR KC_INVALIDCOMP KC_DEADKEY KC_CHAR
+               2a01 01  46     9    0000
+
+SHIFT-R        3601 00  0e     9    0000 KC_INVALIDCHAR KC_TOGGLE KC_COMPOSITE KC_DEADKEY KC_CHAR
+               3601 01  46     9    0000
+
+ALT GR         5e01 00  06     c    0000 KC_DBCSRSRVD1 KC_TOGGLE KC_INVALIDCOMP KC_COMPOSITE KC_DEADKEY KC_CHAR
+
+
+F2             3c01 10  06     21   3c00 KC_TOGGLE KC_INVALIDCHAR KC_INVALIDCOMP KC_COMPOSITE KC_CHAR
+               3c01 11  46     21   3c00
+
+F11            5701 10  06     2a   8500 KC_DBCSRSRVD1 KC_TOGGLE KC_COMPOSITE KC_DEADKEY KC_LONEKEY KC_CHAR
+               5701 11  46     2a   8500
+
+F12            5801 10  06     2b   8600 KC_DBCSRSRVD1 KC_TOGGLE KC_INVALIDCOMP KC_CHAR
+               5801 11  46     2b   8600
+
+
+pmwin.h:  KC_NONE                 0x0000
+pmwin.h:  KC_CHAR                 0x0001 !
+pmwin.h:  KC_VIRTUALKEY           0x0002
+pmwin.h:  KC_SCANCODE             0x0004
+pmwin.h:  KC_SHIFT                0x0008
+pmwin.h:  KC_CTRL                 0x0010
+pmwin.h:  KC_ALT                  0x0020
+pmwin.h:  KC_KEYUP                0x0040
+pmwin.h:  KC_PREVDOWN             0x0080
+pmwin.h:  KC_LONEKEY              0x0100
+pmwin.h:  KC_DEADKEY              0x0200
+pmwin.h:  KC_COMPOSITE            0x0400
+pmwin.h:  KC_INVALIDCOMP          0x0800
+pmwin.h:  KC_TOGGLE               0x1000
+pmwin.h:  KC_INVALIDCHAR          0x2000
+pmwin.h:  KC_DBCSRSRVD1           0x4000
+pmwin.h:  KC_DBCSRSRVD2           0x8000

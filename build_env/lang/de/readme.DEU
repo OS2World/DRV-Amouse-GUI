@@ -1,0 +1,115 @@
+
+                            NMouse - READ.ME
+                            -----------------
+
+Willkommen bei AMouse. Dieser Treiber arbeitet mit allen
+gÑngigen StandardmÑusen, sowie MÑusen mit Tastenrad, wie z. B.:
+- Logitech Pilot Mouse+ mit serieller oder PS/2-Mausschnittstelle
+- Logitech Mouse Man+
+- Logitech MX700/MX1000
+- Microsoft Intellimouse
+- IBM Scrollpoint Mouse
+- Typhoon 40159
+- Trust 250S
+- USB MÑuse
+
+Diese Datei enthÑlt Informationen, die die Installation von
+AMouse betreffen.
+
+Diese Datei ist in folgende Kategorien unterteilt:
+   -  Installationsvoraussetzungen
+       - Software-Voraussetzungen
+       - Hardware-Voraussetzungen
+   -  Hinweise
+   -  UnterstÅtzung
+   -  Installation von AMouse
+
+
+Installationsvoraussetzungen
+----------------------------
+   Software-Voraussetzungen
+   ------------------------
+   - OS/2 ab Version 3.0.
+
+   Hardware-Voraussetzungen
+   ------------------------
+   - Maus mit seriellem, PS/2 oder USB-Anschlu·.
+
+Hinweise
+--------
+   - Ab AMouse Version 2.1 ist eine einfache Multimedia-UnterstÅtzung
+     vorhanden. Mit Hilfe dieser ist es mîglich, durch Drehen des Maus-RÑdchens
+     die LautstÑrke zu verÑndern. Die dazugehîrige DLL "nbaudio.dll" wird auch
+     in unserer DCF77-Treiber Software verwendet. Falls eine Ñltere Version
+     dieses Produktes installiert ist, ist die dort vorhandene gleichnamige DLL
+     zu lîschen oder durch die in diesem Paket mitgelieferte zu ersetzen. Es
+     reicht, wenn eine (die neueste Version) dieser DLL's im LIBPATH vorhanden
+     ist.
+   - Einige alte Versionen der som.dll des Betriebssystems sind nicht kompatibel
+     mit der vorhandenen WPS-Klasse "AMouse.dll". Kommt es beim Systemstart zu
+     Verklemmungen der WPS, sind die "som*.dll"-Dateien durch aktuellere zu
+     ersetzen oder es ist die ausfÅhrbare Version des Konfigurationsprogrammes
+     ("AMouse.exe") zu verwenden (siehe unten).
+
+UnterstÅtzung
+-------------
+   Online-Hilfe
+   Service und Technischer Support der Firma nb software
+
+        noller & breining software
+        Eichhalde 3
+        71554 Weissach im Tal
+        Germany
+
+        Tel.: (+49)7191/960345
+        e-mail: info@nbsoftware.de
+        http://www.nbsoftware.de
+
+
+Installation von AMouse
+-----------------------
+Die Installation erfolgt durch Einlegen der Installationsdiskette
+und Aufruf des Installationsprogrammes mit "INSTALL".
+
+Installation von USB-MÑusen
+---------------------------
+Die UnterstÅtzung von USB-MÑusen erfordert eine Installation des USB-Paketes
+von OS/2. Diese besteht aus mehreren Treibern, die in der CONFIG.SYS eingetragen
+werden mÅssen, z. B.:
+    BASEDEV=USBOHCD.SYS /V
+oder
+    BASEDEV=USBUHCD.SYS /V
+oder
+    BASEDEV=USBEHCD.SYS /V
+(oder mehrere, falls mehrere USB-Hardware-Typen vorhanden sind)
+
+    BASEDEV=USBD.SYS /V /REQ:USBxHCD$  (x je nach Hardware-Treiber OHCD, UHCD oder EHCD)
+    BASEDEV=USBHID.SYS
+    DEVICE=D:\OS2\BOOT\USBMOUSE.SYS
+
+Das Installationsprogramm tauscht den vorhandenen Treiber des Betriebssystems
+USBMOUSE.SYS durch eine geÑnderte Version aus, die maximal 5 anstatt 3 Tasten
+unterstÅtzt. Der Originaltreiber wird als USBMOUSE.ORG gesichert.
+
+Werden die Treiber, so wie oben angegeben, ohne Parameter geladen, sucht das System in der
+Reihenfolge Seriell -> PS/2 -> USB nach MÑusen. Auch wenn das System erlaubt, zusÑtzlich zu
+einer Seriell-/PS/2-Maus mehrere USB-MÑuse zu benutzen, werden die Hardware-Parameter
+(Zahl der Tasten und RÑdchen) von der Seriell-/PS/2-Maus Åbernommen. Dies ist vor allem
+bei Notebooks zu beachten, da das eingebaute Notepad oder andere Eingabemîglichkeit im
+System als PS/2-Maus angeschlossen ist.
+Abhilfe schafft hier der Parameter /DEVICE:1:
+    DEVICE=D:\OS2\BOOT\USBMOUSE.SYS /DEVICE:1
+In diesem Fall werden die Hardware-Parameter von der ersten erkannten USB-Maus Åbernommen
+und die Seriell/PS/2-Maus wird deaktiviert.
+
+Konfiguration der Maus
+----------------------
+Je nach installierter Konfigurationsoption existiert nach Installation
+und Reboot eine der folgenden Methoden zur Konfiguration des Treibers
+und der Maus:
+1.) WPS-Klasse: Im AMOUSE-Ordner gibt es eine Kopie des Maus-Konfigurations-
+    Objektes. Dieses enthÑlt eine Einstellseite fÅr die Maus und die
+    Konfiguration des RÑdchens. Nach einem weiteren Reboot existiert diese
+    Seite auch im Originalobjekt von OS/2 im Systemkonfigurations-Ordner.
+2.) EXE-Programm: Im AMOUSE-Ordner gibt es ein Konfigurationsprogramm zur
+    Konfiguration des RÑdchens.
